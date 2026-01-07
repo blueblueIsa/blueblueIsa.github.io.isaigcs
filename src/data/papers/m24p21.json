@@ -1,0 +1,56 @@
+[
+  {
+    "question": "Tick (✓) one box to complete this sentence. A validation check to make sure that an email address contains an ‘@’ sign is a",
+    "answer": "D format check",
+    "paper": "M24P21",
+    "topic": "1 Validation checks",
+    "tags": ["multiple choice"],
+    "marks": 1,
+    "keywords": ["format check", "email", "@"]
+  },
+  {
+    "question": "Draw one line to link each description to the most appropriate programming concept.",
+    "answer": "subroutine no return → procedure\nvalue in procedure → local variable\nvalue supplied to procedure → parameter\nsubroutine always returns → function",
+    "paper": "M24P21",
+    "topic": "2 Programming concepts",
+    "tags": ["matching"],
+    "marks": 4,
+    "keywords": ["procedure", "local variable", "parameter", "function"]
+  },
+  {
+    "question": "Write pseudocode to use a procedure named Average that passes values 25 and 50.",
+    "answer": "CALL Average(25, 50)",
+    "paper": "M24P21",
+    "topic": "3 Procedures",
+    "tags": ["pseudocode"],
+    "marks": 2,
+    "keywords": ["CALL", "procedure", "parameters"]
+  },
+  {
+    "question": "Outline role of procedures and functions in maintainable programs.",
+    "answer": "They allow code reuse, reduce duplication, make debugging easier, and improve readability.",
+    "paper": "M24P21",
+    "topic": "3 Procedures",
+    "tags": ["explanation"],
+    "marks": 3,
+    "keywords": ["code reuse", "readability", "debugging"]
+  },
+  {
+    "question": "State what is meant by integer and real data types with examples.",
+    "answer": "Integer: whole number (e.g., 42)\nReal: number with decimal (e.g., 3.14)",
+    "paper": "M24P21",
+    "topic": "4 Data types",
+    "tags": ["definition", "examples"],
+    "marks": 4,
+    "keywords": ["integer", "real", "whole number", "decimal"]
+  },
+  {
+    "question": "Write pseudocode to output average rounded to 1 decimal place.",
+    "answer": "OUTPUT ROUND(Total / Limit, 1)",
+    "paper": "M24P21",
+    "topic": "6 Output formatting",
+    "tags": ["pseudocode"],
+    "marks": 2,
+    "keywords": ["ROUND", "average", "decimal"]
+  }
+]

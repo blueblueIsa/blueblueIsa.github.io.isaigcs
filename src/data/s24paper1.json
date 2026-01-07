@@ -1,0 +1,2904 @@
+[
+  {
+    "question": "Identify two input devices built into a portable tablet computer.",
+    "answer": "Any two from:\n• Touch screen\n• Microphone\n• Button\n• Webcam // (digital) camera\n• Accelerometer\n• Biometric device",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "input devices",
+      "tablet",
+      "touch screen",
+      "microphone"
+    ]
+  },
+  {
+    "question": "Identify one output device built into a portable tablet computer.",
+    "answer": "Any one from:\n• Screen\n• Speaker\n• LED",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "output device",
+      "tablet",
+      "screen",
+      "display"
+    ]
+  },
+  {
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "answer": "SSD // Solid-state drive // Solid-state (device)",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "storage device",
+      "tablet",
+      "SSD",
+      "solid-state"
+    ]
+  },
+  {
+    "question": "Identify incorrect statement about hexadecimal number system.",
+    "answer": "It is a base 10 system",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "hexadecimal",
+      "incorrect statement",
+      "base 10",
+      "base 16"
+    ]
+  },
+  {
+    "question": "Convert denary numbers 20, 32, and 165 to hexadecimal.",
+    "answer": "14\n20\nA5",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "denary to hexadecimal",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Perform logical left shift of 3 places on binary number 10100011.",
+    "answer": "00011000",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "logical shift"
+    ],
+    "marks": 1,
+    "keywords": [
+      "logical left shift",
+      "binary shift"
+    ]
+  },
+  {
+    "question": "Identify correct statement about logical left shift of 2 places.",
+    "answer": "It would multiply the binary number by 4",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "logical left shift",
+      "effect",
+      "multiplication"
+    ]
+  },
+  {
+    "question": "Convert two's complement 10100011 to denary.",
+    "answer": "-93",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "two's complement"
+    ],
+    "marks": 2,
+    "keywords": [
+      "two's complement",
+      "to denary",
+      "conversion"
+    ]
+  },
+  {
+    "question": "State how many bytes in a kibibyte (KiB).",
+    "answer": "1024",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "kibibyte",
+      "KiB",
+      "bytes",
+      "storage units"
+    ]
+  },
+  {
+    "question": "Describe structure of a data packet.",
+    "answer": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "describe"
+    ],
+    "marks": 3,
+    "keywords": [
+      "data packet",
+      "structure",
+      "header",
+      "payload",
+      "trailer"
+    ]
+  },
+  {
+    "question": "Identify device controlling packet path in packet switching.",
+    "answer": "Router",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "packet switching",
+      "router",
+      "path control"
+    ]
+  },
+  {
+    "question": "Explain why serial data transmission is used for packets.",
+    "answer": "Any three from:\n• The network may be spread over a long distance …\n• … so it is more reliable\n• Bits will be sent/arrive in sequence\n• …so bits less likely to be skewed\n• Less crosstalk/interference\n• … so less likely to have errors\n• The data may not need to be transmitted at a fast speed // data transmission speed of serial is adequate\n• The cables in the network only use serial transmission",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 3,
+    "keywords": [
+      "serial data transmission",
+      "advantages",
+      "packets"
+    ]
+  },
+  {
+    "question": "State purpose of secondary storage.",
+    "answer": "To store data/files/software permanently",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "secondary storage",
+      "purpose",
+      "permanent storage"
+    ]
+  },
+  {
+    "question": "Circle three examples of optical storage.",
+    "answer": "Compact disk (CD)\nDigital versatile disk (DVD)\nBlu-ray disk",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "circle"
+    ],
+    "marks": 3,
+    "keywords": [
+      "optical storage",
+      "CD",
+      "DVD",
+      "Blu-ray"
+    ]
+  },
+  {
+    "question": "Explain why computer needs RAM.",
+    "answer": "Any three from:\n• To store data temporarily\n• To store data currently in use\n• To store software currently in use\n• Data can be accessed faster (than secondary storage)\n• To speed up the fetch stage (of the fetch-execute cycle)",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "RAM",
+      "purpose",
+      "fast access",
+      "current data"
+    ]
+  },
+  {
+    "question": "State purpose of firmware.",
+    "answer": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)",
+    "paper": "S24P11",
+    "topic": "4 Software",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "firmware",
+      "purpose",
+      "hardware control"
+    ]
+  },
+  {
+    "question": "Give one example of firmware.",
+    "answer": "Any one from:\n• Bootstrap\n• Bootloader\n• BIOS\n• Operating system (in embedded system)\n• Programs (in embedded systems)",
+    "paper": "S24P11",
+    "topic": "4 Software",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "firmware",
+      "example",
+      "BIOS"
+    ]
+  },
+  {
+    "question": "Give two examples of system software.",
+    "answer": "Any two from:\n• Operating system\n• Utility software\nNOTE: Two examples of utility software can be awarded",
+    "paper": "S24P11",
+    "topic": "4 Software",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "system software",
+      "examples",
+      "OS",
+      "utilities"
+    ]
+  },
+  {
+    "question": "Complete paragraph about asymmetric encryption.",
+    "answer": "• plain text\n• cipher text\n• public key\n• private key",
+    "paper": "S24P11",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "complete"
+    ],
+    "marks": 4,
+    "keywords": [
+      "asymmetric encryption",
+      "public key",
+      "private key",
+      "cipher text"
+    ]
+  },
+  {
+    "question": "State meaning of robot being automated.",
+    "answer": "The robot can perform actions without human intervention",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "robot",
+      "automated",
+      "no human intervention"
+    ]
+  },
+  {
+    "question": "Give three characteristics of a robot.",
+    "answer": "Any three from:\n• It has a mechanical structure/framework\n• It has electrical components\n• It is programmable\n• It can move",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 3,
+    "keywords": [
+      "robot",
+      "characteristics",
+      "mechanical",
+      "electrical",
+      "programmable"
+    ]
+  },
+  {
+    "question": "Explain how robot uses sensors and microprocessor to detect fence.",
+    "answer": "Any six from:\n• A proximity sensor is used\n• The sensor continuously sends digitised data to the microprocessor\n• The microprocessor compares the data to a stored value/range of values\n• If the value is within the range/matches the robot continues planting\n• If the value is above/below/outside the range a signal is sent by the microprocessor to turn/stop the robot\n• ... using an actuator to turn/stop the robot\n• This process repeats until the robot is turned off",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 6,
+    "keywords": [
+      "robot",
+      "sensor",
+      "microprocessor",
+      "fence detection"
+    ]
+  },
+  {
+    "question": "Give two advantages of using automated robot for planting.",
+    "answer": "Any two from:\n• The robot is more accurate when planting seeds\n• The robot does not need to take breaks // works 24/7\n• The robot will not get bored of performing a repetitive task\n• The farmer can perform other tasks whilst the robot is planting the seeds\n• The robot may be faster/more efficient (at planting seeds)\n• Safer as the robot can work in a more dangerous environments (e.g. with animals in a field)\n• Doesn’t need to pay labour costs/wages",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "automated robot",
+      "advantages",
+      "efficiency",
+      "24/7"
+    ]
+  },
+  {
+    "question": "Give two disadvantages of using automated robot for planting.",
+    "answer": "Any two from:\n• The robot may have been expensive to purchase\n• The robot may need maintenance and this may be costly\n• The robot may take away jobs from humans that previously planted the seeds\n• Farmer/workers may be deskilled\n• Farmer may need training in how to use the robot\n• If it breaks the farmer will need to manually plant\n• If faulty it may cause damage to farm/seeds\n• Cannot adapt to a new/unexpected event",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "automated robot",
+      "disadvantages",
+      "cost",
+      "maintenance"
+    ]
+  },
+  {
+    "question": "Explain how machine learning improves robot.",
+    "answer": "Any two from:\n• The robot can now adapt itself by changing its own rules/data/ processes\n• The robot will become more efficient\n• ... as it has a greater knowledge of its surroundings/environment\n• ... as it can remember where a fence is\n• ... as it can remember the route it needs to take\n• ... as it can remember where any obstacles are to avoid\n• ... as it can remember where to start and stop sowing seeds\n• ... as it may make fewer errors",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "machine learning",
+      "robot improvement",
+      "learn from experience"
+    ]
+  },
+  {
+    "question": "Explain how data might have errors after transmission.",
+    "answer": "Any three from:\n• Data could be lost\n• Data could be gained/added\n• Data could be changed\n• Bits could be reassembled in the wrong order\n• Interference could occur\n• Crosstalk could occur\n• Data collisions could occur\n• Data packets could time out/reach their hop count\n• Network could be infected with malware",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 3,
+    "keywords": [
+      "data errors",
+      "transmission",
+      "interference",
+      "noise"
+    ]
+  },
+  {
+    "question": "Describe operation of error detection system using odd parity and ARQ.",
+    "answer": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "describe"
+    ],
+    "marks": 8,
+    "keywords": [
+      "error detection",
+      "odd parity",
+      "ARQ",
+      "retransmission"
+    ]
+  },
+  {
+    "question": "Give two other error detection methods.",
+    "answer": "Any two from:\nEcho check\nChecksum\nEven parity check\nNegative ARQ",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "error detection",
+      "checksum",
+      "echo check"
+    ]
+  },
+  {
+    "question": "Explain how firewall protects network.",
+    "answer": "Any five from:\nCriteria can be set (for traffic)\n… such as a blacklist/whitelist (of IP addresses)\nIt will examine traffic coming into the network\nIt will check that the traffic meets the set criteria\n… and will reject it if it does not meet criteria\nCertain ports used by hackers can be blocked/closed",
+    "paper": "S24P11",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "explain"
+    ],
+    "marks": 5,
+    "keywords": [
+      "firewall",
+      "network protection",
+      "traffic filtering",
+      "security rules"
+    ]
+  },
+  {
+    "question": "Give two examples of malware firewall protects against.",
+    "answer": "Any two from:\n• Virus\n• Worm\n• Trojan horse\n• Spyware\n• Adware\n• Ransomware",
+    "paper": "S24P11",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "malware",
+      "firewall",
+      "virus",
+      "worm"
+    ]
+  },
+  {
+    "question": "Give name of data storage measurement equal to 8 bits.",
+    "answer": "byte",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "data storage",
+      "byte",
+      "8 bits"
+    ]
+  },
+  {
+    "question": "State how many bits in a kibibyte (KiB).",
+    "answer": "8192",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "kibibyte",
+      "KiB",
+      "bits"
+    ]
+  },
+  {
+    "question": "Give name of data storage measurement equal to 1024 gibibytes (GiB).",
+    "answer": "Tebibyte // TiB",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "data storage",
+      "tebibyte",
+      "TiB",
+      "1024 GiB"
+    ]
+  },
+  {
+    "question": "Calculate file size of 16-bit colour image 512x512 pixels in KiB.",
+    "answer": "One mark for each correct stage of working (max 2):\n• 512 × 512\n• 262 144 * 2 // multiplied by 16 and divided by 8\n• 524 288/1024\nOne mark for the correct answer:\n512 (KiB)",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "calculation"
+    ],
+    "marks": 3,
+    "keywords": [
+      "file size",
+      "image",
+      "16-bit",
+      "512x512",
+      "KiB"
+    ]
+  },
+  {
+    "question": "Identify term that is not a data transmission method.",
+    "answer": "Parity",
+    "paper": "S24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "data transmission",
+      "methods",
+      "parity",
+      "not a method"
+    ]
+  },
+  {
+    "question": "Give name of unit data is broken into for transmission.",
+    "answer": "Packet",
+    "paper": "S24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "data transmission",
+      "packet",
+      "unit"
+    ]
+  },
+  {
+    "question": "Explain symmetric encryption.",
+    "answer": "Data is encrypted and decrypted using the same key (1 mark)\nAny three from:\n• Plain text is encrypted into cipher text // cipher text is decrypted into plain text\n• Data is encrypted using an algorithm ...\n• ... that uses a key\n• The key can be generated using an algorithm\n• The key is transmitted to the receiver",
+    "paper": "S24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "symmetric encryption",
+      "same key",
+      "encrypt",
+      "decrypt"
+    ]
+  },
+  {
+    "question": "Give purpose of encryption.",
+    "answer": "Any one from:\n• To help keep the data secure\n• To make the data meaningless",
+    "paper": "S24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "encryption",
+      "purpose",
+      "security"
+    ]
+  },
+  {
+    "question": "Give name of base 16 number system.",
+    "answer": "Hexadecimal",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "number system",
+      "base 16",
+      "hexadecimal"
+    ]
+  },
+  {
+    "question": "Convert denary numbers 10, 50, 201 to binary.",
+    "answer": "1010\n110010\n11001001",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "denary to binary",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Explain why data is converted to binary by computer.",
+    "answer": "Two from:\n• Computers use logic gates/switches ...\n• ... that only process the values 1 and 0 // that only have two states",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "binary",
+      "conversion",
+      "computer processing",
+      "circuits"
+    ]
+  },
+  {
+    "question": "Add binary numbers 00110000 and 01100110.",
+    "answer": "One mark for evidence of working, for example 2 carries\nOne mark for each correct nibble (Max 2)\n1 1\n0 0 1 1 0 0 0 0\n0 1 1 0 0 1 1 0\n1 0 0 1 0 1 1 0",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "binary addition"
+    ],
+    "marks": 3,
+    "keywords": [
+      "binary addition",
+      "8-bit"
+    ]
+  },
+  {
+    "question": "Calculate two's complement for denary -32.",
+    "answer": "One marking for evidence of working\nFor example, flip and add\nOne mark for correct binary\n11100000",
+    "paper": "S24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "two's complement"
+    ],
+    "marks": 2,
+    "keywords": [
+      "two's complement",
+      "-32",
+      "negative binary"
+    ]
+  },
+  {
+    "question": "Give one example of system software.",
+    "answer": "Any one from:\n• Operating system\n• Utility software // by example",
+    "paper": "S24P12",
+    "topic": "4 Software",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "system software",
+      "example",
+      "OS"
+    ]
+  },
+  {
+    "question": "Give two examples of application software.",
+    "answer": "Any two from:\n• Word processor\n• Spreadsheet\n• Database\n• Web browser\n• Image/photo-editor\n• Video-editor\n• Email client\n• Game\n• Social media app",
+    "paper": "S24P12",
+    "topic": "4 Software",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "application software",
+      "examples",
+      "word processor",
+      "browser"
+    ]
+  },
+  {
+    "question": "Describe difference between system and application software.",
+    "answer": "Any two from:\n• System software manages/maintains the hardware/software\n• Applications software allows the user to perform tasks",
+    "paper": "S24P12",
+    "topic": "4 Software",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "system software",
+      "application software",
+      "difference",
+      "management",
+      "user tasks"
+    ]
+  },
+  {
+    "question": "Complete paragraph about fetching instruction into CPU.",
+    "answer": "address\nmemory address register // MAR\nrandom access memory // RAM\nmemory data register // MDR\ndata\ncurrent instruction register // CIR\ncontrol unit // CU",
+    "paper": "S24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "complete"
+    ],
+    "marks": 7,
+    "keywords": [
+      "fetch",
+      "CPU",
+      "registers",
+      "instruction",
+      "FDE cycle"
+    ]
+  },
+  {
+    "question": "Define instruction set.",
+    "answer": "A list of (machine code) commands that can be processed by the CPU",
+    "paper": "S24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "define"
+    ],
+    "marks": 1,
+    "keywords": [
+      "instruction set",
+      "definition",
+      "CPU commands"
+    ]
+  },
+  {
+    "question": "Complete table about error detection methods.",
+    "answer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit",
+    "paper": "S24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "complete"
+    ],
+    "marks": 5,
+    "keywords": [
+      "error detection",
+      "parity",
+      "checksum",
+      "echo check",
+      "ARQ",
+      "check digit"
+    ]
+  },
+  {
+    "question": "Identify correct statement about MAC address.",
+    "answer": "It is assigned by the manufacturer",
+    "paper": "S24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "MAC address",
+      "assigned by manufacturer",
+      "characteristics"
+    ]
+  },
+  {
+    "question": "Give example of IPv4 format address.",
+    "answer": "An IP address that has numerical values separated by dots that follows the format with a max value of 255 in any xxx xxx.xxx.xxx.xxx Example: 10.245.3.99",
+    "paper": "S24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "IPv4",
+      "example",
+      "format"
+    ]
+  },
+  {
+    "question": "Give two characteristics of IPv6 format.",
+    "answer": "Any two from:\n• 128-bit // 16 bytes\n• Hexadecimal\n• Separated by colons\n• Characters in groups of 4\n• Has 8 groups of characters\n• Double colons can be used for sets of (consecutive) zeros (only once)",
+    "paper": "S24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "IPv6",
+      "characteristics",
+      "128-bit",
+      "hexadecimal"
+    ]
+  },
+  {
+    "question": "Explain why computer needs secondary storage.",
+    "answer": "Any two from:\n• To store data/files permanently\n• … otherwise, data/programs would need to be downloaded/entered/installed every time the computer was used\n• To allow software to be installed on the computer\n• For the creation of virtual memory",
+    "paper": "S24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "secondary storage",
+      "purpose",
+      "permanent",
+      "power off"
+    ]
+  },
+  {
+    "question": "Describe three differences between solid-state and optical storage.",
+    "answer": "Any six from (Max 3 for one type only):\n• Solid-state has no moving parts\n• … optical does have moving parts\n• Solid-state is faster to access data\n• … optical is slower to access data\n• Solid-state uses less power to operate\n• … optical uses more power to operate\n• Solid-state runs quietly\n• … optical makes more noise\n• Solid state is more durable/robust\n• … optical is less durable/robust\n• Solid state storage has a large storage capacity\n• … optical has a much smaller limit to its storage capacity\n• Solid-state is more expensive per GB of data\n• … optical is cheaper per GB of data\n• Solid-state stores data onto silicon chips/transistors using logic (floating/control/NAND/NOR) gates to control the movement of electrons\n• … optical stores data by using lasers to burning pits and lands onto a disk",
+    "paper": "S24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "describe"
+    ],
+    "marks": 6,
+    "keywords": [
+      "solid-state",
+      "optical storage",
+      "differences",
+      "moving parts",
+      "speed",
+      "durability"
+    ]
+  },
+  {
+    "question": "Describe meaning of AI.",
+    "answer": "Any two from:\n• The **simulation** of intelligent behaviours by computers\n• A collection of data and the rules for using that data\n• Has the ability to reason\n• Has the ability to learn/adapt",
+    "paper": "S24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "AI",
+      "artificial intelligence",
+      "definition",
+      "human intelligence"
+    ]
+  },
+  {
+    "question": "Explain how expert system operates for car diagnosis.",
+    "answer": "Any **five** from:\n• The user will enter data into the **interface** // The user will plug the car into an **interface** // The user is given questions using the **interface**\n• The **inference engine** will decide which questions to ask\n• ... by using the previous answers given\n• The **inference engine** will decide on a diagnosis\n• ... by **comparing the data/answers** entered to the **knowledge base** and **rule base**\n• ... by calculating which option is most likely if there are multiple\n• The **interface** will output the **diagnosis/result**\n• The **explanation system** shows how the diagnosis was reached",
+    "paper": "S24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 5,
+    "keywords": [
+      "expert system",
+      "diagnosis",
+      "knowledge base",
+      "inference engine"
+    ]
+  },
+  {
+    "question": "Describe difference between internet and world wide web.",
+    "answer": "Any two from:\nThe internet is the infrastructure\nThe world wide web is a collection of web pages",
+    "paper": "S24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "internet",
+      "world wide web",
+      "difference",
+      "infrastructure",
+      "service"
+    ]
+  },
+  {
+    "question": "Identify three parts included in URL.",
+    "answer": "Protocol\nDomain name\nFile name // web page name",
+    "paper": "S24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 3,
+    "keywords": [
+      "URL",
+      "parts",
+      "protocol",
+      "domain",
+      "path"
+    ]
+  },
+  {
+    "question": "Give three other functions of web browser.",
+    "answer": "Any three from:\nDisplays a web page\nStoring bookmarks/favourites\nRecording user history\nAllowing use of multiple tabs\nStoring cookies\nProviding navigation tools\nCan set a home page",
+    "paper": "S24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "give"
+    ],
+    "marks": 3,
+    "keywords": [
+      "web browser",
+      "functions",
+      "bookmarks",
+      "history",
+      "plugins"
+    ]
+  },
+  {
+    "question": "State how many bits in a byte.",
+    "answer": "8",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "byte",
+      "bits",
+      "8 bits"
+    ]
+  },
+  {
+    "question": "State how many kilobytes (KiB) in 2 mebibytes (MiB).",
+    "answer": "2048",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "kilobytes",
+      "mebibytes",
+      "KiB",
+      "MiB",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Identify unit equal to 4 bits.",
+    "answer": "nibble",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "4 bits",
+      "unit",
+      "nibble"
+    ]
+  },
+  {
+    "question": "Define 16-bit colour depth.",
+    "answer": "16 bits used to represent each colour in the image",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "define"
+    ],
+    "marks": 1,
+    "keywords": [
+      "colour depth",
+      "16-bit",
+      "definition"
+    ]
+  },
+  {
+    "question": "Give effect of changing resolution from 1000x1750 to 750x1500 on file size.",
+    "answer": "The file size will decrease",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "resolution",
+      "file size",
+      "effect",
+      "reduction"
+    ]
+  },
+  {
+    "question": "Convert hexadecimal A2F to binary.",
+    "answer": "One mark for each correct nibble, in the correct order.\n1010 0010 1111",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "hexadecimal to binary",
+      "A2F",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert hexadecimal A2F to denary.",
+    "answer": "2607",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 1,
+    "keywords": [
+      "hexadecimal to denary",
+      "A2F",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert binary 000110011011 to hexadecimal.",
+    "answer": "One mark for each correct character, in the correct order.\n1 9 B",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "binary to hexadecimal",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert binary 000110011011 to denary.",
+    "answer": "411",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 1,
+    "keywords": [
+      "binary to denary",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Give one reason addresses displayed in hexadecimal instead of binary.",
+    "answer": "Any one from:\n• It is easier/quicker to read/understand/debug\n• It is a shorter representation of binary // It takes up less screen space",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "give reason"
+    ],
+    "marks": 1,
+    "keywords": [
+      "hexadecimal",
+      "addresses",
+      "advantages",
+      "shorter"
+    ]
+  },
+  {
+    "question": "Identify two other uses of hexadecimal in computer science.",
+    "answer": "Any two from:\n• HTML colour codes\n• URL\n• Memory dump\n• IP address\n• MAC address\n• Assembly language\n• Error codes/messages\n• ASCII/Unicode",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "hexadecimal",
+      "uses",
+      "colour codes",
+      "error codes"
+    ]
+  },
+  {
+    "question": "Calculate two's complement 8-bit integer for -25.",
+    "answer": "One mark for correct working:\nExample: flip and add\nOne mark for correct answer.\n11100111",
+    "paper": "S24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "two's complement"
+    ],
+    "marks": 2,
+    "keywords": [
+      "two's complement",
+      "-25",
+      "8-bit"
+    ]
+  },
+  {
+    "question": "Complete table about secondary storage types.",
+    "answer": "One mark for each correct type of storage.\ntype of secondary storage\noptical\nsolid-state\nmagnetic\nmagnetic\noptical",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "complete"
+    ],
+    "marks": 6,
+    "keywords": [
+      "secondary storage",
+      "optical",
+      "solid-state",
+      "magnetic",
+      "types"
+    ]
+  },
+  {
+    "question": "Identify correct statement about RAM.",
+    "answer": "It stores data currently in use",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "RAM",
+      "characteristics",
+      "currently in use"
+    ]
+  },
+  {
+    "question": "State characteristic making ROM primary storage.",
+    "answer": "It is directly accessible by the CPU",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "ROM",
+      "primary storage",
+      "CPU accessible"
+    ]
+  },
+  {
+    "question": "Circle three other input devices.",
+    "answer": "touch screen\nmicrophone\nkeyboard",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "circle"
+    ],
+    "marks": 3,
+    "keywords": [
+      "input devices",
+      "touch screen",
+      "microphone",
+      "keyboard"
+    ]
+  },
+  {
+    "question": "Give two benefits of using sensors in automated system.",
+    "answer": "Any two from:\n• Data can be collected without human intervention\n• Gathers data faster than a human\n• It will be accurate at taking readings\n• It can take readings continuously (24/7)\n• It can take readings in dangerous environments",
+    "paper": "S24P13",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "sensors",
+      "automated system",
+      "benefits",
+      "monitoring",
+      "response"
+    ]
+  },
+  {
+    "question": "Complete table of sensor types and uses.",
+    "answer": "One mark for each use (Max 1) per sensor:\nTemperature\n• Checking whether the water in a kettle is boiling\n• Monitoring the temperature in a room that is climate controlled\nHumidity\n• Checking whether the air is dry enough in a spray-painting garage\n• Checking whether the air is moist enough in a greenhouse\nInfra-red\n• Detecting motion in a room for a security system\n• Detecting whether a person is approaching automatic doors\nMagnetic field\n• Counting vehicles that cross a bridge\n• Monitoring vehicles that enter a car park",
+    "paper": "S24P13",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "complete"
+    ],
+    "marks": 4,
+    "keywords": [
+      "sensors",
+      "temperature",
+      "humidity",
+      "infra-red",
+      "magnetic",
+      "uses"
+    ]
+  },
+  {
+    "question": "Explain serial half-duplex data transmission.",
+    "answer": "One mark for each correct part of the diagram.\nThe diagram shows:\n• Bits beings sent one at a time\n• Bits being sent over a single wire\n• Data can be sent to and from the web server/network component/computers …\n• … not at the same time",
+    "paper": "S24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "serial half-duplex",
+      "data transmission",
+      "one direction at a time"
+    ]
+  },
+  {
+    "question": "Give two benefits of serial half-duplex.",
+    "answer": "Any two from:\n• Bits will not be skewed // Bits are sent in order\n• Less chance of error\n• Less crosstalk/interference\n• Data can be sent over a long distance (if needed)\n• It is possible to download and upload data to the web server\n• Higher bandwidth than full duplex",
+    "paper": "S24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "serial half-duplex",
+      "benefits",
+      "cheaper",
+      "two-way"
+    ]
+  },
+  {
+    "question": "Give one drawback of serial half-duplex.",
+    "answer": "Any one from:\n• The transmission of data may be relatively slow\n• Data cannot be sent and received at the same time\n• May be more data collisions",
+    "paper": "S24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "serial half-duplex",
+      "drawback",
+      "slower"
+    ]
+  },
+  {
+    "question": "Give three cyber threats proxy server protects against.",
+    "answer": "Any three from:\n• DDoS // DoS\n• Hacking\n• Malware // by example\n• Brute-force attack\nNOTE: three different examples of malware can be awarded.",
+    "paper": "S24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "give"
+    ],
+    "marks": 3,
+    "keywords": [
+      "proxy server",
+      "cyber threats",
+      "DDoS",
+      "malware",
+      "unauthorized access"
+    ]
+  },
+  {
+    "question": "Identify two functions of proxy server.",
+    "answer": "Any two from:\n• Can limit the number of requests sent to the web server at a time\n• Can process common requests that will not need to enter the network\n• Act as a firewall\n• Examine incoming data to the webserver/network\n• Can have set rules/criteria for data to meet\n• Can have a blacklist/whitelist/list of IP addresses to block\n• Blocks traffic that doesn’t meet criteria\n• Closing certain ports",
+    "paper": "S24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "proxy server",
+      "functions",
+      "caching",
+      "filtering"
+    ]
+  },
+  {
+    "question": "Describe how web pages are located, retrieved and displayed.",
+    "answer": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page",
+    "paper": "S24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "describe"
+    ],
+    "marks": 6,
+    "keywords": [
+      "web pages",
+      "location",
+      "retrieval",
+      "display",
+      "DNS",
+      "HTML",
+      "browser"
+    ]
+  },
+  {
+    "question": "Describe CPU role in computer.",
+    "answer": "To process instructions/data\nTo run the fetch–decode–execute cycle",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "CPU",
+      "role",
+      "process instructions",
+      "control"
+    ]
+  },
+  {
+    "question": "State purpose of register.",
+    "answer": "Any one from:\n• To temporarily store data/instruction/address\n• To allow immediate access to data during the FDE cycle",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "register",
+      "purpose",
+      "fast memory",
+      "CPU"
+    ]
+  },
+  {
+    "question": "Give three registers built into CPU.",
+    "answer": "Any three from:\n• Memory address register // MAR\n• Memory data register // MDR\n• Accumulator // ACC\n• Program counter // PC\n• Current instruction register // CIR",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "give"
+    ],
+    "marks": 3,
+    "keywords": [
+      "registers",
+      "CPU",
+      "accumulator",
+      "PC",
+      "MAR"
+    ]
+  },
+  {
+    "question": "Describe ALU purpose.",
+    "answer": "Any three from:\n• To execute instructions\n• To perform calculations // by example\n• To perform logical operations // by example\n• To store interim results of calculations\n• Stores/reads/writes data to/from the accumulator",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "ALU",
+      "purpose",
+      "arithmetic",
+      "logic operations"
+    ]
+  },
+  {
+    "question": "Explain why different CPU increases performance.",
+    "answer": "Any Four from:\n• It could have more cores\n• … increasing the number of FDE cycles/instructions it can perform at the same time\n• It could have a higher clock speed\n• … increasing the number of FDE cycles/instructions per second it can perform\n• It could have a greater cache size\n• … meaning more frequently used data can be accessed faster",
+    "paper": "S24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "CPU",
+      "performance",
+      "clock speed",
+      "cores",
+      "cache"
+    ]
+  },
+  {
+    "question": "Complete paragraph about interrupt process.",
+    "answer": "printer\ncomputer\npriority level\nfetch–decode–execute cycle\ninterrupt queue\nhigher\ninterrupt service routine (ISR)",
+    "paper": "S24P13",
+    "topic": "4 Software",
+    "tags": [
+      "complete"
+    ],
+    "marks": 7,
+    "keywords": [
+      "interrupt",
+      "process",
+      "priority",
+      "FDE cycle",
+      "ISR"
+    ]
+  },
+  {
+    "question": "Give two OS functions related to memory.",
+    "answer": "Example:\n• Memory management\n• Multitasking",
+    "paper": "S24P13",
+    "topic": "4 Software",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "operating system",
+      "memory functions",
+      "allocation",
+      "virtual memory"
+    ]
+  },
+  {
+    "question": "Identify cyber security threat not a type of malware.",
+    "answer": "Phishing",
+    "paper": "W24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "malware",
+      "phishing",
+      "not malware"
+    ]
+  },
+  {
+    "question": "Identify another example of malware.",
+    "answer": "Any one from:\n• Spyware // Keylogger\n• Adware\n• Trojan horse",
+    "paper": "W24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "malware",
+      "example",
+      "trojan"
+    ]
+  },
+  {
+    "question": "Identify software used to find and remove malware.",
+    "answer": "Anti-malware",
+    "paper": "W24P12",
+    "topic": "4 Software",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "malware removal",
+      "anti-virus",
+      "software"
+    ]
+  },
+  {
+    "question": "Convert binary 11100011 to denary.",
+    "answer": "227",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 1,
+    "keywords": [
+      "binary to denary",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert binary 11100011 to hexadecimal.",
+    "answer": "One mark for each correct character in the correct order:\nE3",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 2,
+    "keywords": [
+      "binary to hexadecimal",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Perform logical left shift of 2 places on binary 11100011.",
+    "answer": "1\n0 0 0 1 1 0 0 0",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "logical shift"
+    ],
+    "marks": 1,
+    "keywords": [
+      "logical left shift",
+      "binary shift"
+    ]
+  },
+  {
+    "question": "Give two's complement for denary -99.",
+    "answer": "One mark for suitable working method e.g. flip and add 1\nOne mark for correct answer\n• 10011101",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "two's complement"
+    ],
+    "marks": 2,
+    "keywords": [
+      "two's complement",
+      "-99",
+      "negative binary"
+    ]
+  },
+  {
+    "question": "Add binary numbers 01001100 and 11100011.",
+    "answer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\nOne mark for showing overflow bit\n 1\n 1 1 1 0 0 0 1 1\n+ 0 1 0 0 1 1 0 0\n1 0 0 1 0 1 1 1 1",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "binary addition"
+    ],
+    "marks": 4,
+    "keywords": [
+      "binary addition",
+      "8-bit"
+    ]
+  },
+  {
+    "question": "Define clock speed.",
+    "answer": "The maximum number of FDE cycles/instructions a CPU can perform/process/execute in a second",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "define"
+    ],
+    "marks": 1,
+    "keywords": [
+      "clock speed",
+      "definition",
+      "FDE cycles"
+    ]
+  },
+  {
+    "question": "Explain effect of changing CPU from 2 GHz to 3 GHz.",
+    "answer": "Increases/improves the performance // Tasks can be performed quicker/faster\n… because more FDE cycles/instructions can be processed in a second",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "CPU",
+      "clock speed",
+      "performance",
+      "2GHz to 3GHz"
+    ]
+  },
+  {
+    "question": "Describe MAR role in FDE cycle.",
+    "answer": "Stores addresses …\n… of next instruction/data to be fetched // where data is to be written to",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "MAR",
+      "role",
+      "FDE cycle",
+      "address storage"
+    ]
+  },
+  {
+    "question": "State name of list of machine code commands CPU can process.",
+    "answer": "Instruction set",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "machine code",
+      "instruction set",
+      "CPU commands"
+    ]
+  },
+  {
+    "question": "Give two characteristics of embedded system.",
+    "answer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "embedded system",
+      "characteristics",
+      "dedicated",
+      "limited resources"
+    ]
+  },
+  {
+    "question": "Circle three other examples of embedded system.",
+    "answer": "One mark for each correct system:\n• security light system\n• freezer\n• vending machine",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "circle"
+    ],
+    "marks": 3,
+    "keywords": [
+      "embedded system",
+      "examples",
+      "freezer",
+      "security light",
+      "vending machine"
+    ]
+  },
+  {
+    "question": "Give one benefit of higher sample rate for sound recording.",
+    "answer": "Any one from:\n• The recording of the song is more accurate/closer to original",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "sample rate",
+      "benefit",
+      "sound quality"
+    ]
+  },
+  {
+    "question": "Give one drawback of higher sample rate.",
+    "answer": "Any one from:\n• The file size will be increased\n• The file will require more storage space",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "sample rate",
+      "drawback",
+      "file size"
+    ]
+  },
+  {
+    "question": "Define sample resolution.",
+    "answer": "Any two from:\n• The number of bits that are used per sample\n• … that provides the variation in amplitude that can be stored for each sample // defines the number of different amplitudes that can be recorded\n• … that determines how quiet/loud the sounds are that can be recorded\n• Example e.g. 16-bit",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "define"
+    ],
+    "marks": 2,
+    "keywords": [
+      "sample resolution",
+      "definition",
+      "bits per sample"
+    ]
+  },
+  {
+    "question": "Identify compression method that doesn't permanently remove data.",
+    "answer": "Lossless",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "compression",
+      "lossless",
+      "no data removal"
+    ]
+  },
+  {
+    "question": "Complete table about data transmission methods.",
+    "answer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex",
+    "paper": "W24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "complete"
+    ],
+    "marks": 4,
+    "keywords": [
+      "data transmission",
+      "serial",
+      "parallel",
+      "simplex",
+      "half-duplex",
+      "full-duplex"
+    ]
+  },
+  {
+    "question": "Identify two input devices for automatic ticket reading.",
+    "answer": "Any two from e.g.\n• Barcode scanner\n• QR code scanner\n• Digital camera",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "input devices",
+      "ticket reading",
+      "barcode",
+      "RFID"
+    ]
+  },
+  {
+    "question": "Explain how sensor and microprocessor check train door closure.",
+    "answer": "Any six from:\n• Proximity/infrared/pressure sensor used\n• Sensor continually sends digitised data to microprocessor // When driver pushes button, sensor sends digitised data to the microprocessor\n• Microprocessor compares data to stored value(s)\n• If in range/out of range/matches, microprocessor sends signal to close the door\n• Actuator used to close door\n• If not in range/out of range/does not match door will not close // If not in range/out of range/does not match actuator not activated/signal not sent as passenger in door // If not in range/out of range/does not match a timer is set to check again // If not in range/out of range/does not match a signal is sent to alert the driver/output a message\n• This process repeats until the door can close",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 6,
+    "keywords": [
+      "sensor",
+      "microprocessor",
+      "train door",
+      "safety",
+      "passenger detection"
+    ]
+  },
+  {
+    "question": "Identify security solution against data interception.",
+    "answer": "Encryption …\n… if the data is intercepted it will be meaningless (because they do not have the decryption key)",
+    "paper": "W24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "data interception",
+      "security solution",
+      "encryption"
+    ]
+  },
+  {
+    "question": "Complete table about internet terms.",
+    "answer": "Term\nworld wide web\ncookie\nuniform resource locator (URL)\nweb server\nhypertext markup language // HTML\nhypertext transfer protocol // HTTP",
+    "paper": "W24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "complete"
+    ],
+    "marks": 6,
+    "keywords": [
+      "internet terms",
+      "WWW",
+      "cookie",
+      "URL",
+      "web server",
+      "HTML",
+      "HTTP"
+    ]
+  },
+  {
+    "question": "State one main characteristic of AI system.",
+    "answer": "Any one from:\n• The ability to learn/adapt // machine learning abilities\n• The collection of data and the rules for using that data\n• The ability to reason // has problem solving abilities // makes predictions\n• Simulates intelligent/human behaviour\n• Analyses patterns",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "AI",
+      "characteristic",
+      "learning"
+    ]
+  },
+  {
+    "question": "Explain how expert system operates.",
+    "answer": "Any six from:\n• It has an interface …\n• … used to input data/view output\n• It has a knowledge base\n• It has a rule base\n• It has an inference engine\n• Applies the rule base to/and the knowledge base to provide output/diagnosis/result/solution/decision\n• Decides what to ask next based on the data input",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "expert system",
+      "operation",
+      "knowledge base",
+      "inference engine"
+    ]
+  },
+  {
+    "question": "Identify what flow sensor measures.",
+    "answer": "Amount of liquid/gas/steam flowing/moving through an environment",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "flow sensor",
+      "measures",
+      "flow rate"
+    ]
+  },
+  {
+    "question": "Explain one advantage of automated system for employees.",
+    "answer": "Two from (for benefit and matching description) e.g.:\n• Increases safety\n• …meaning that workers do not need to go into dangerous areas to collect data/make checks/do dangerous tasks\n• Can increase jobs/skills\n• …as employees are needed to learn/maintain the equipment\n• No need to do repetitive tasks\n• … so, they can use their time on other/more skilled tasks",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "automated system",
+      "advantage",
+      "employees",
+      "safety"
+    ]
+  },
+  {
+    "question": "Explain one disadvantage of automated system for owners.",
+    "answer": "Two from (for drawback and matching description) e.g.:\n• High set-up/installation costs\n• … it would mean the company need to find a lot of money up front to pay for the equipment // employees will need training\n• Utility/maintenance/repair costs\n• … increase in bills such as electricity // skilled employees will be required to maintain the system // equipment will break/need updating\n• Deskilling of the workforce\n• … may mean that workers will no longer have the skills for some of the manufacturing jobs, should the equipment break",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "automated system",
+      "disadvantage",
+      "owners",
+      "cost"
+    ]
+  },
+  {
+    "question": "Give two other features of digital currency.",
+    "answer": "Any two from:\n• Only exists electronically\n• Can be a decentralised system\n• Can be a centralised system\n• Usually encrypted",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "digital currency",
+      "features",
+      "decentralized",
+      "cryptography"
+    ]
+  },
+  {
+    "question": "Identify process using digital ledger to track digital currency.",
+    "answer": "Blockchain",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "digital ledger",
+      "blockchain",
+      "digital currency"
+    ]
+  },
+  {
+    "question": "Identify example of primary storage.",
+    "answer": "Random access memory (RAM)",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "primary storage",
+      "example",
+      "RAM"
+    ]
+  },
+  {
+    "question": "Give one characteristic of primary storage.",
+    "answer": "Any one from:\n• Directly accessed by the CPU\n• Has both volatile and non-volatile storage",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "primary storage",
+      "characteristic",
+      "volatile"
+    ]
+  },
+  {
+    "question": "Complete description about virtual memory.",
+    "answer": "One mark for each correct term in the correct order:\n• Random access memory (RAM)\n• Hard disk drive (HDD)\n• Pages\n• Random access memory (RAM)\n• Virtual memory // Hard disk drive (HDD)",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "complete"
+    ],
+    "marks": 5,
+    "keywords": [
+      "virtual memory",
+      "RAM",
+      "HDD",
+      "pages"
+    ]
+  },
+  {
+    "question": "Give two input devices built into mobile phone.",
+    "answer": "Any two from e.g.:\n• Touchscreen\n• Microphone\n• Keyboard\n• Keypad\n• Digital camera\n• Sensor // by example\n• Biometric device\n• Button",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "input devices",
+      "mobile phone",
+      "touch screen",
+      "microphone"
+    ]
+  },
+  {
+    "question": "Give one output device built into mobile phone.",
+    "answer": "Any one from e.g.:\n• Screen\n• Speaker\n• LED/Light\n• Actuator/Motor",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "output device",
+      "mobile phone",
+      "speaker"
+    ]
+  },
+  {
+    "question": "State how many bits equal a byte.",
+    "answer": "8",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "byte",
+      "bits",
+      "8 bits"
+    ]
+  },
+  {
+    "question": "State how many kilobytes (KiB) equal a mebibyte (MiB).",
+    "answer": "1024",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "kilobytes",
+      "mebibytes",
+      "KiB",
+      "MiB",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Describe operating system purpose.",
+    "answer": "Any three from:\n• It performs the basic functions of a computer\n• It manages the hardware\n• It provides a platform to run software\n• It provides a user interface\n• It performs tasks such as (any example of function of an operating system)",
+    "paper": "W24P13",
+    "topic": "4 Software",
+    "tags": [
+      "describe"
+    ],
+    "marks": 3,
+    "keywords": [
+      "operating system",
+      "purpose",
+      "resource management"
+    ]
+  },
+  {
+    "question": "Explain meaning of binary number system.",
+    "answer": "Any two from:\n• It has a base of 2\n• It only uses two values\n• ... that are 1 and 0",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "binary",
+      "number system",
+      "base 2",
+      "0 and 1"
+    ]
+  },
+  {
+    "question": "Convert denary numbers 14, 59, 234 to binary.",
+    "answer": "• (0000)1110\n• (00)111011\n• 11101010",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "denary to binary",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert denary numbers 9, 26, 65 to hexadecimal.",
+    "answer": "• 9\n• 1A\n• 41",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "denary to hexadecimal",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert denary 123 to 8-bit two's complement.",
+    "answer": "One mark for suitable working method e.g. conversion to binary\nOne mark for correct answer\n• 01111011",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "two's complement"
+    ],
+    "marks": 2,
+    "keywords": [
+      "two's complement",
+      "123",
+      "positive",
+      "8-bit"
+    ]
+  },
+  {
+    "question": "Add binary numbers 00110011 and 01111000.",
+    "answer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\n1 1 1\n0 0 1 1 0 0 1 1\n+ 0 1 1 1 1 0 0 0\n1 0 1 0 1 0 1 1",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "binary addition"
+    ],
+    "marks": 3,
+    "keywords": [
+      "binary addition",
+      "8-bit"
+    ]
+  },
+  {
+    "question": "Circle three components built into CPU.",
+    "answer": "• Accumulator (ACC)\n• Control unit (CU)\n• Program counter (PC)",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "circle"
+    ],
+    "marks": 3,
+    "keywords": [
+      "CPU components",
+      "accumulator",
+      "control unit",
+      "program counter"
+    ]
+  },
+  {
+    "question": "Explain cache purpose.",
+    "answer": "Any two from:\n• It is a type of storage\n• …that stores frequently used data/instructions\n• To speed up access\n• … as it is faster to access than RAM\n• It has different levels e.g. L1 – L3",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "cache",
+      "purpose",
+      "fast memory",
+      "frequently used data"
+    ]
+  },
+  {
+    "question": "State name of component regulating FDE cycles per second.",
+    "answer": "Clock",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "clock",
+      "FDE cycles",
+      "regulation"
+    ]
+  },
+  {
+    "question": "State name of component carrying out calculations and logical operations.",
+    "answer": "Arithmetic logic unit // ALU",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "ALU",
+      "calculations",
+      "logical operations"
+    ]
+  },
+  {
+    "question": "Describe main purpose of web browser.",
+    "answer": "Any two from:\n• Display web pages\n• … by rendering HTML",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "web browser",
+      "purpose",
+      "retrieve web pages",
+      "display"
+    ]
+  },
+  {
+    "question": "Identify web browser function for automatic payment details.",
+    "answer": "Storing cookies",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "web browser",
+      "function",
+      "auto-fill",
+      "payment details"
+    ]
+  },
+  {
+    "question": "Identify web browser function for quick website access.",
+    "answer": "Any one from:\n• Storing bookmarks\n• Storing favourites",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "web browser",
+      "function",
+      "bookmarks",
+      "quick access"
+    ]
+  },
+  {
+    "question": "State how SSL protocol secures data transmission.",
+    "answer": "Any one from:\n• It encrypts it\n• Uses digital certificates",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "SSL",
+      "security",
+      "encryption",
+      "data transmission"
+    ]
+  },
+  {
+    "question": "Give one reason error may occur during data transmission.",
+    "answer": "Interference // crosstalk",
+    "paper": "W24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "give reason"
+    ],
+    "marks": 1,
+    "keywords": [
+      "error",
+      "data transmission",
+      "electrical interference"
+    ]
+  },
+  {
+    "question": "Identify error detection method not using calculated value.",
+    "answer": "Echo check",
+    "paper": "W24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "error detection",
+      "echo check",
+      "no calculated value"
+    ]
+  },
+  {
+    "question": "Explain how ARQ operates with positive acknowledgement.",
+    "answer": "Any five from:\n• Timer is started when sending device transmits a data packet to receiver\n• Receiving device checks the data packet for errors\n• Once the receiving device knows the packet is error free it sends an acknowledgement back to the sending device …\n• … and the next packet is sent\n• If the sending device does not receive an acknowledgement before the timer ends …\n• … a timeout occurs\n• … the data packet is resent …\n• … until acknowledgement received // until max number of attempts reached",
+    "paper": "W24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 5,
+    "keywords": [
+      "ARQ",
+      "positive acknowledgement",
+      "error correction"
+    ]
+  },
+  {
+    "question": "Identify characteristic not of cloud storage.",
+    "answer": "Data is stored locally",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "cloud storage",
+      "characteristics",
+      "not local"
+    ]
+  },
+  {
+    "question": "Explain two advantages of cloud storage for company owners.",
+    "answer": "Four from e.g.:\n• The data can be accessed from any location\n• … meaning that employees can work from anywhere with a connection\n• The hardware is owned/maintained by a third party\n• … meaning that the company are not responsible for maintaining // meaning the company aren’t responsible for its security\n• Can increase the storage needed easily\n• … without needing to buy new hardware\n• Do not need to house the hardware needed\n• … costs can be saved on the space saved for this\n• Cloud system will back up the data\n• … meaning the company does not need to do this",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "cloud storage",
+      "advantages",
+      "owners",
+      "scalability",
+      "maintenance"
+    ]
+  },
+  {
+    "question": "Explain one disadvantage of cloud storage for employees.",
+    "answer": "Two from e.g.:\n• Internet connection is needed/needs to be stable …\n• … and if this is not available/unstable the data cannot be accessed\n• Employees could be pressured to work outside of hours …\n• … as they can access the data from any location",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "cloud storage",
+      "disadvantage",
+      "employees",
+      "internet dependence"
+    ]
+  },
+  {
+    "question": "Define image resolution.",
+    "answer": "The dimensions of an image // Number of pixels wide by number of pixels high",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "define"
+    ],
+    "marks": 1,
+    "keywords": [
+      "image resolution",
+      "definition",
+      "pixels"
+    ]
+  },
+  {
+    "question": "Define image colour depth.",
+    "answer": "The number of bits used to represent each/a colour",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "define"
+    ],
+    "marks": 1,
+    "keywords": [
+      "colour depth",
+      "definition",
+      "bits per pixel"
+    ]
+  },
+  {
+    "question": "Give one benefit of increasing colour depth.",
+    "answer": "Any one from:\n• A greater range of colours can be seen/used\n• Image will be closer to the actual content of the image/real life\n• The image will have more detail",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "colour depth",
+      "benefit",
+      "more colours"
+    ]
+  },
+  {
+    "question": "Identify compression method reducing colour depth and resolution.",
+    "answer": "Lossy",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "compression",
+      "lossy",
+      "colour depth",
+      "resolution"
+    ]
+  },
+  {
+    "question": "Give two other benefits of compressing image.",
+    "answer": "Any two from:\n• Quicker to transmit/upload/download\n• Not as much bandwidth needed to transmit file\n• To fit in limitation of file size on e.g. email",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "image compression",
+      "benefits",
+      "faster transmission",
+      "bandwidth"
+    ]
+  },
+  {
+    "question": "Complete table about secondary storage statements.",
+    "answer": "One mark for each correct type of storage.\ntype of secondary storage\noptical\nsolid-state\nmagnetic\noptical\nmagnetic\nsolid-state",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "complete"
+    ],
+    "marks": 5,
+    "keywords": [
+      "secondary storage",
+      "optical",
+      "solid-state",
+      "magnetic",
+      "types"
+    ]
+  },
+  {
+    "question": "Explain two differences between primary and secondary storage.",
+    "answer": "Four from:\n• Primary storage is directly accessible by the CPU\n• … whereas secondary storage is not directly accessible by the CPU\n• Primary storage stores the data that is currently in use/for booting the system\n• … whereas secondary storage stores user’s files/data/operating system/application software\n• Primary storage normally has a small capacity\n• … whereas secondary storage normally has a larger capacity\n• Some parts of primary storage are volatile\n• … whereas secondary storage is non volatile\n• Some parts of primary storage the data cannot be changed\n• … whereas data in secondary storage can be changed\n• Primary storage has faster access speeds to data\n• … whereas secondary storage has slower access speeds to data",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "primary storage",
+      "secondary storage",
+      "differences",
+      "speed",
+      "volatility"
+    ]
+  },
+  {
+    "question": "Complete description about expert system operation.",
+    "answer": "One mark for each correct term in the correct order:\n• knowledge base\n• inference engine\n• rule base // knowledge base\n• knowledge base // rule base\n• interface",
+    "paper": "W24P13",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "complete"
+    ],
+    "marks": 5,
+    "keywords": [
+      "expert system",
+      "knowledge base",
+      "inference engine",
+      "rule base",
+      "interface"
+    ]
+  },
+  {
+    "question": "Describe machine learning capabilities.",
+    "answer": "Any four from:\ne.g.\n• It is a form of artificial intelligence\n• Means it can adapt/change (its own processes) // It can edit its own algorithms\n• It can edit its own data\n• It can be trained\n• … this can be supervised/unsupervised\n• … meaning it can learn with/without human interaction\n• Analyses patterns and stores successful/unsuccessful results …\n• … to influence future decisions\n• (Supervised) means a user tells the system the input and output\n• (Unsupervised) means the system is given the input and needs to work out the output",
+    "paper": "W24P13",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "describe"
+    ],
+    "marks": 4,
+    "keywords": [
+      "machine learning",
+      "capabilities",
+      "learn from data",
+      "no explicit programming"
+    ]
+  },
+  {
+    "question": "Identify correct definition of spyware.",
+    "answer": "Software that records all key presses and transmits to third party",
+    "paper": "M24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "spyware",
+      "definition",
+      "key logger"
+    ]
+  },
+  {
+    "question": "Complete table with two other malware examples and descriptions.",
+    "answer": "One mark for identification. E.g. One mark per bullet for description to max two each.\nVirus\n• Software/code that replicates\n• …when the user runs it // with an active host\n• Deletes/damages/corrupts data/files // takes up storage/memory space\nWorm\n• Software/code that replicates itself on a network\n• …without user input // without active host\n• Takes-up bandwidth\n• Deletes/damages/corrupts data/files // takes up storage/memory space\n• Opens back doors to computers over the network\n• Used to deposit other malware on networked computers\nTrojan horse\n• Software/code that is hidden within other software // Software that is disguised as authentic software\n• …when downloaded/installed the other malware/by example it contains is installed\nAdware\n• Software/code that generates/displays (unwanted) adverts on a user’s computer\n• Some may contain spyware/other malware\n• Some when clicked may link to viruses\n• Reduces device performance // reduces internet speed\n• Redirects internet searches/user to fake websites\nRansomware\n• Software/code that stops a user accessing/using their computer/data\n• …by encrypting the data/files/computer\n• A fee has to be paid to decrypt the data // A fee has to be paid to ‘release’ the computer/device/data",
+    "paper": "M24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "complete"
+    ],
+    "marks": 4,
+    "keywords": [
+      "malware",
+      "virus",
+      "worm",
+      "descriptions"
+    ]
+  },
+  {
+    "question": "Identify two similarities and one difference between proxy-servers and firewalls.",
+    "answer": "One mark for each similarity to max two.\nOne mark for difference (both sides needed unless clearly and accurately implied).\nSimilarities e.g.\n• Check incoming and outgoing signals // filter traffic\n• Store whitelist/blacklist\n• Block incoming/outgoing signals\n• Both block unauthorised access\n• Keep a log of traffic\n• Both can be hardware or software (or both)\nDifferences e.g.\n• Proxy can hide user’s IP address, firewall does not hide the user’s IP address\n• Proxy intention is to divert attack from server, firewall is to stop unauthorised access\n• Proxy protects a server, firewall protects individual computer\n• Proxy examines/processes requests for a website but a firewall does not (checks type of signal) // Proxy processes client-side requests whereas firewall filters packets\n• Proxy transmits website data to the user, but a firewall does not (it allows valid signals)\n• Proxy allows faster access to a web page using cache, but a firewall does not (allow faster access or have cache)\n• Proxy can hide internal network from internet, but a firewall cannot",
+    "paper": "M24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 3,
+    "keywords": [
+      "proxy-server",
+      "firewall",
+      "similarities",
+      "differences",
+      "caching"
+    ]
+  },
+  {
+    "question": "Identify whether to use high-level or low-level language for 3D game.",
+    "answer": "High-level language",
+    "paper": "M24P12",
+    "topic": "4 Software",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "programming language",
+      "high-level",
+      "low-level",
+      "3D game"
+    ]
+  },
+  {
+    "question": "Explain reasons for language choice.",
+    "answer": "Any four from:\nHigh-level\n• Easier for programmer to read/write/understand/edit\n• … therefore, the programmer is less likely to make mistakes // can write in shorter timeframe\n• Easier to debug // Easier to find/correct errors\n• …so, the programmer can find and correct errors in less time\n• Game will be machine independent // Game will be portable (between hardware)\n• …the game can be used on any computer without a need for understanding of the hardware / compilation for that hardware\n• Programmer can focus on the problem instead of the manipulation of memory/hardware\nLow-level\n• More memory/RAM efficient\n• … 3D graphics will have high memory consumption anyway\n• Allows direct manipulation of memory\n• … allows for more efficient control/response time\n• Allows for use of specialised hardware",
+    "paper": "M24P12",
+    "topic": "4 Software",
+    "tags": [
+      "explain"
+    ],
+    "marks": 3,
+    "keywords": [
+      "language choice",
+      "reasons",
+      "development speed",
+      "debugging",
+      "portable"
+    ]
+  },
+  {
+    "question": "Describe operation of compiler and interpreter.",
+    "answer": "Two from for each compiler and interpreter.\nCompiler\n• Checks all code before executing any code\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\n• Produces executable file\nInterpreter\n• Checks/translates one line of code and then executes it before moving on to the next line\n• Stops when an error is found\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "paper": "M24P12",
+    "topic": "4 Software",
+    "tags": [
+      "describe"
+    ],
+    "marks": 4,
+    "keywords": [
+      "compiler",
+      "interpreter",
+      "operation",
+      "translation"
+    ]
+  },
+  {
+    "question": "Complete storage unit conversions.",
+    "answer": "One mark each:\n8 bytes = 16 nibbles\n512 KiB = 0.5 MiB\n4 GiB = 4096 MiB\n1 EiB = 1024 PiB",
+    "paper": "M24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 4,
+    "keywords": [
+      "storage units",
+      "conversion",
+      "nibbles",
+      "MiB",
+      "PiB"
+    ]
+  },
+  {
+    "question": "Give three examples of data commonly stored in RAM.",
+    "answer": "Any three from:\n• Currently running data\n• Currently running (application) software\n• Currently running instructions\n• Currently running parts of OS\n• Currently running utility software",
+    "paper": "M24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "give"
+    ],
+    "marks": 3,
+    "keywords": [
+      "RAM",
+      "data stored",
+      "OS",
+      "applications",
+      "current data"
+    ]
+  },
+  {
+    "question": "Describe purpose of secondary storage.",
+    "answer": "Any two from:\n• For non-volatile/permanent/long-term storage of files/data\n• To store data that is not currently required by the CPU\n• To store data to transfer it to another computer",
+    "paper": "M24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "secondary storage",
+      "purpose",
+      "permanent storage"
+    ]
+  },
+  {
+    "question": "Define pixel and resolution.",
+    "answer": "One mark each:\nPixel:\n• One square/circle of one colour // the smallest component of the image\nResolution:\n• The number of pixels per set area/cm/inch // the number of pixels wide by the number of pixels high // number of pixels in an image",
+    "paper": "M24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "define"
+    ],
+    "marks": 2,
+    "keywords": [
+      "pixel",
+      "resolution",
+      "definitions",
+      "image"
+    ]
+  },
+  {
+    "question": "Calculate file size of 1000x1000 image with 2-byte colour depth.",
+    "answer": "One mark for answer:\n• 2 000 000 bytes\nOne mark for working from:\n• 1000 × 1000 (= 1 000 000)\n• 1 000 000 * 2 (= 2 000 000)",
+    "paper": "M24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "calculation"
+    ],
+    "marks": 2,
+    "keywords": [
+      "file size",
+      "image",
+      "1000x1000",
+      "2-byte colour depth"
+    ]
+  },
+  {
+    "question": "Complete description of solid-state storage.",
+    "answer": "One mark for each term:\nSolid-state storage is non-volatile.\nThis means that the data is not lost when the power is turned off.\nSolid-state storage is made of transistors that are laid out in a grid.\nGates are used to control the flow of the electrons through the transistors.\nThis changes the data in the transistors from 1 to 0, or from 0 to 1.",
+    "paper": "M24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "complete"
+    ],
+    "marks": 4,
+    "keywords": [
+      "solid-state storage",
+      "non-volatile",
+      "transistors",
+      "grid",
+      "electrons"
+    ]
+  },
+  {
+    "question": "Give one reason for compressing image file.",
+    "answer": "Any one from:\n• Reduce the file size\n• Increase transmission speed // Reduce transmission time\n• Reduce storage space required\n• Less bandwidth required for transmission",
+    "paper": "M24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "give reason"
+    ],
+    "marks": 1,
+    "keywords": [
+      "compression",
+      "reason",
+      "email",
+      "attachment size"
+    ]
+  },
+  {
+    "question": "Identify two items in packet header.",
+    "answer": "Any two from:\ne.g.\n• Destination IP/address\n• Packet number\n• Originators IP/address\n• Error detection method",
+    "paper": "M24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "packet header",
+      "items",
+      "destination address",
+      "sequence number"
+    ]
+  },
+  {
+    "question": "Identify two other elements of packet.",
+    "answer": "One mark each:\n• Payload\n• Trailer",
+    "paper": "M24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "packet",
+      "elements",
+      "payload",
+      "trailer"
+    ]
+  },
+  {
+    "question": "Identify whether serial or parallel more suitable for computer-router connection.",
+    "answer": "Serial data transmission",
+    "paper": "M24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "serial",
+      "parallel",
+      "data transmission",
+      "computer-router"
+    ]
+  },
+  {
+    "question": "Explain reasons for choice.",
+    "answer": "No mark for choice. Three from for justification that matches choice.\nSerial\n• Data arrives in order sent // does not need reordering\n• Less likely to experience interference\n• ... less likely to have errors\n• Can transmit over a longer distance (i.e. another room)\n• Still fast transmission…\n• ...sufficient for this purpose\nParallel\n• Faster transmission speed than serial\n• ... faster response to requests\n• Very long connection not needed\n• ...next room is (likely) within distance for parallel\n• ... unlikely to error/arrive out of sequence/skew",
+    "paper": "M24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 3,
+    "keywords": [
+      "serial transmission",
+      "advantages",
+      "long distance",
+      "interference",
+      "cost"
+    ]
+  },
+  {
+    "question": "Define full-duplex data transmission.",
+    "answer": "One mark each:\n• Data goes in both directions…\n• ...at the same time",
+    "paper": "M24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "define"
+    ],
+    "marks": 2,
+    "keywords": [
+      "full-duplex",
+      "definition",
+      "both directions",
+      "simultaneously"
+    ]
+  },
+  {
+    "question": "Complete parity bits for even parity byte check.",
+    "answer": "One mark each:\n0\n0",
+    "paper": "M24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "complete"
+    ],
+    "marks": 2,
+    "keywords": [
+      "parity bit",
+      "even parity",
+      "byte check"
+    ]
+  },
+  {
+    "question": "Explain how parity block check might detect error not detected by byte check.",
+    "answer": "One mark each:\n• In parity check, interchange of bits will not be detected // Parity check cannot detect even number of changes // Parity check cannot detect error if parity stays correct ...\n• ...the (possible) position of all changes will be highlighted // will identify the horizontal and vertical position of all differences/changes",
+    "paper": "M24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "parity block check",
+      "error detection",
+      "multiple errors",
+      "column"
+    ]
+  },
+  {
+    "question": "Identify incorrect bit in even parity block check table.",
+    "answer": "One mark each:\n• Bit 6\n• Byte 4",
+    "paper": "M24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "parity block check",
+      "incorrect bit",
+      "error detection"
+    ]
+  },
+  {
+    "question": "Identify two other functions of web browser.",
+    "answer": "Any two from:\ne.g.\n• Storing bookmarks/favourites\n• Recording user history\n• Allow multiple tabs/web pages to be open\n• Allow movement back and forth between web pages // provides navigation tools\n• Allows the user to enter a URL/IP into the address bar\n• Manages HTTP/HTTPS protocol\n• Search cache for IP // Request IP from DNS // Send URL to DNS\n• Sends a request to the IP address/web server (to obtain the contents of a web page)\n• Runs active script/JavaScript/client-side script\n• Allows files to be downloaded from website/internet",
+    "paper": "M24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "web browser",
+      "functions",
+      "password management",
+      "pop-up blocking"
+    ]
+  },
+  {
+    "question": "Identify two ways cookies enhance user experience.",
+    "answer": "Any two from:\ne.g.\n• Storing preferences // so the user does not have to select their preferences each time they visit the site\n• Storing account details // so the user does not have to remember/enter their username and password each time they visit the site\n• Storing recent purchases // to allow the user to quickly re-order more items\n• Storing the pages visited/items selected // to display relevant adverts\n• Storing shopping basket // so when the user leaves the site the items are still in their basket",
+    "paper": "M24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "cookies",
+      "user experience",
+      "login memory",
+      "personalization"
+    ]
+  },
+  {
+    "question": "Complete table of robot movement values.",
+    "answer": "One mark each",
+    "paper": "M24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "complete"
+    ],
+    "marks": 4,
+    "keywords": [
+      "robot",
+      "movement",
+      "binary",
+      "denary",
+      "hexadecimal",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Define robotics.",
+    "answer": "Any two from:\n• The design of robots (to perform tasks/operations/functions)\n• The construction of robots (to perform tasks/operations/functions)\n• The operation of robots (to perform tasks/operations/functions)",
+    "paper": "M24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "define"
+    ],
+    "marks": 2,
+    "keywords": [
+      "robotics",
+      "definition",
+      "robots"
+    ]
+  },
+  {
+    "question": "Explain how sensor and microprocessor automate robot navigation.",
+    "answer": "Seven from:\n• Uses an infra-red/proximity sensor\n• Sensor continuously sends the digitised value/reading/distance to the microprocessor\n• Microprocessor compares the data/signal to the stored value of 10(cm)\n• If the data/signal is greater than the stored value/10 ...\n• ...a signal is sent to make the robot move forward\n• If the data/signal is less than or equal to the stored value/10 ...\n• ...a signal is sent to make robot turn\n• An actuator is used to make the robot turn/move forward\n• The whole process repeats continuously until turned off/stopped",
+    "paper": "M24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 7,
+    "keywords": [
+      "robot",
+      "sensor",
+      "microprocessor",
+      "navigation",
+      "obstacle detection"
+    ]
+  },
+  {
+    "question": "Describe characteristics of AI.",
+    "answer": "Any three from:\ne.g.\n• Collects data\n• Stores rules for using the data\n• The ability to reason\n• The ability to learn // uses machine learning\n• ... by adapting what it does\n• ... for example, from mistakes to not make them again // result from previous decisions impacts future\n• ... by changing its own rules\n• ...by changing its own data\n• ...by being trained\n• Makes one or more predictions (to make a decision)\n• Find/analyse patterns",
+    "paper": "M24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "AI",
+      "characteristics",
+      "learning",
+      "reasoning",
+      "problem-solving"
+    ]
+  },
+  {
+    "question": "Explain how program uses AI for robot puzzle navigation.",
+    "answer": "Four from:\ne.g.\n• Use machine learning algorithms\n• Collects data about where it has been\n• Collect data about obstacles/problems\n• Store successful actions\n• Stores unsuccessful actions\n• Identify/store patterns\n• ... to make sure it does not repeat the same incorrect route\n• ... so, it knows how to react to obstacles next time\n• ...so, it knows what is most likely to work next time",
+    "paper": "M24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "AI",
+      "robot",
+      "puzzle navigation",
+      "learning algorithms",
+      "path optimization"
+    ]
+  }
+]

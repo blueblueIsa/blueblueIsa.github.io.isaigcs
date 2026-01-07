@@ -1,0 +1,795 @@
+{
+  "Unit 1: Data Representation": {
+    "1.1 Number Systems": [
+      {
+        "question": "Convert denary numbers 20, 32, and 165 to hexadecimal.",
+        "answer": "14\n20\nA5",
+        "paper": "S24P11",
+        "topic": "1 Data representation",
+        "tags": ["conversion"],
+        "marks": 3,
+        "keywords": ["denary to hexadecimal", "conversion"],
+        "key_terms": ["denary", "hexadecimal", "conversion"]
+      },
+      {
+        "question": "Convert denary numbers 10, 50, 201 to binary.",
+        "answer": "1010\n110010\n11001001",
+        "paper": "S24P12",
+        "topic": "1 Data representation",
+        "tags": ["conversion"],
+        "marks": 3,
+        "keywords": ["denary to binary", "conversion"],
+        "key_terms": ["denary", "binary", "conversion"]
+      },
+      {
+        "question": "Convert hexadecimal A2F to binary.",
+        "answer": "One mark for each correct nibble, in the correct order.\n1010 0010 1111",
+        "paper": "S24P13",
+        "topic": "1 Data representation",
+        "tags": ["conversion"],
+        "marks": 3,
+        "keywords": ["hexadecimal to binary", "A2F", "conversion"],
+        "key_terms": ["hexadecimal", "binary", "conversion", "nibble"]
+      }
+    ],
+    "1.2 Binary Arithmetic": [
+      {
+        "question": "Add binary numbers 00110000 and 01100110.",
+        "answer": "One mark for evidence of working, for example 2 carries\nOne mark for each correct nibble (Max 2)\n1 1\n0 0 1 1 0 0 0 0\n0 1 1 0 0 1 1 0\n1 0 0 1 0 1 1 0",
+        "paper": "S24P12",
+        "topic": "1 Data representation",
+        "tags": ["binary addition"],
+        "marks": 3,
+        "keywords": ["binary addition", "8-bit"],
+        "key_terms": ["binary addition", "carry", "nibble", "8-bit"]
+      },
+      {
+        "question": "Add binary numbers 01001100 and 11100011.",
+        "answer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\nOne mark for showing overflow bit\n 1\n 1 1 1 0 0 0 1 1\n+ 0 1 0 0 1 1 0 0\n1 0 0 1 0 1 1 1 1",
+        "paper": "W24P12",
+        "topic": "1 Data representation",
+        "tags": ["binary addition"],
+        "marks": 4,
+        "keywords": ["binary addition", "8-bit"],
+        "key_terms": ["binary addition", "overflow", "carry", "8-bit"]
+      }
+    ],
+    "1.3 Two's Complement": [
+      {
+        "question": "Convert two's complement 10100011 to denary.",
+        "answer": "-93",
+        "paper": "S24P11",
+        "topic": "1 Data representation",
+        "tags": ["two's complement"],
+        "marks": 2,
+        "keywords": ["two's complement", "to denary", "conversion"],
+        "key_terms": ["two's complement", "denary", "negative numbers"]
+      },
+      {
+        "question": "Calculate two's complement for denary -32.",
+        "answer": "One marking for evidence of working\nFor example, flip and add\nOne mark for correct binary\n11100000",
+        "paper": "S24P12",
+        "topic": "1 Data representation",
+        "tags": ["two's complement"],
+        "marks": 2,
+        "keywords": ["two's complement", "-32", "negative binary"],
+        "key_terms": ["two's complement", "negative numbers", "flip and add"]
+      }
+    ],
+    "1.4 Storage Units": [
+      {
+        "question": "State how many bytes in a kibibyte (KiB).",
+        "answer": "1024",
+        "paper": "S24P11",
+        "topic": "1 Data representation",
+        "tags": ["state"],
+        "marks": 1,
+        "keywords": ["kibibyte", "KiB", "bytes", "storage units"],
+        "key_terms": ["kibibyte", "KiB", "storage units"]
+      },
+      {
+        "question": "State how many bits in a byte.",
+        "answer": "8",
+        "paper": "S24P13",
+        "topic": "1 Data representation",
+        "tags": ["state"],
+        "marks": 1,
+        "keywords": ["byte", "bits", "8 bits"],
+        "key_terms": ["byte", "bits", "storage units"]
+      }
+    ],
+    "1.5 Images and Sound": [
+      {
+        "question": "Calculate file size of 16-bit colour image 512x512 pixels in KiB.",
+        "answer": "One mark for each correct stage of working (max 2):\n• 512 × 512\n• 262 144 * 2 // multiplied by 16 and divided by 8\n• 524 288/1024\nOne mark for the correct answer:\n512 (KiB)",
+        "paper": "S24P12",
+        "topic": "1 Data representation",
+        "tags": ["calculation"],
+        "marks": 3,
+        "keywords": ["file size", "image", "16-bit", "512x512", "KiB"],
+        "key_terms": ["file size", "image resolution", "colour depth", "pixels"]
+      },
+      {
+        "question": "Define sample resolution.",
+        "answer": "Any two from:\n• The number of bits that are used per sample\n• … that provides the variation in amplitude that can be stored for each sample // defines the number of different amplitudes that can be recorded\n• … that determines how quiet/loud the sounds are that can be recorded\n• Example e.g. 16-bit",
+        "paper": "W24P12",
+        "topic": "1 Data representation",
+        "tags": ["define"],
+        "marks": 2,
+        "keywords": ["sample resolution", "definition", "bits per sample"],
+        "key_terms": ["sample resolution", "bits per sample", "amplitude", "sound quality"]
+      }
+    ],
+    "1.6 Compression": [
+      {
+        "question": "Identify compression method that doesn't permanently remove data.",
+        "answer": "Lossless",
+        "paper": "W24P12",
+        "topic": "1 Data representation",
+        "tags": ["identify"],
+        "marks": 1,
+        "keywords": ["compression", "lossless", "no data removal"],
+        "key_terms": ["lossless compression", "data preservation"]
+      },
+      {
+        "question": "Give one reason for compressing image file.",
+        "answer": "Any one from:\n• Reduce the file size\n• Increase transmission speed // Reduce transmission time\n• Reduce storage space required\n• Less bandwidth required for transmission",
+        "paper": "M24P12",
+        "topic": "1 Data representation",
+        "tags": ["give reason"],
+        "marks": 1,
+        "keywords": ["compression", "reason", "email", "attachment size"],
+        "key_terms": ["compression", "file size reduction", "transmission speed"]
+      }
+    ]
+  },
+
+  "Unit 2: Data Transmission": {
+    "2.1 Transmission Methods": [
+      {
+        "question": "Identify term that is not a data transmission method.",
+        "answer": "Parity",
+        "paper": "S24P12",
+        "topic": "2 Data transmission",
+        "tags": ["multiple-choice"],
+        "marks": 1,
+        "keywords": ["data transmission", "methods", "parity", "not a method"],
+        "key_terms": ["data transmission methods", "serial", "parallel", "simplex", "duplex"]
+      },
+      {
+        "question": "Complete table about data transmission methods.",
+        "answer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex",
+        "paper": "W24P12",
+        "topic": "2 Data transmission",
+        "tags": ["complete"],
+        "marks": 4,
+        "keywords": ["data transmission", "serial", "parallel", "simplex", "half-duplex", "full-duplex"],
+        "key_terms": ["serial", "parallel", "simplex", "half-duplex", "full-duplex"]
+      }
+    ],
+    "2.2 Packet Switching": [
+      {
+        "question": "Describe structure of a data packet.",
+        "answer": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer",
+        "paper": "S24P11",
+        "topic": "2 Data transmission",
+        "tags": ["describe"],
+        "marks": 3,
+        "keywords": ["data packet", "structure", "header", "payload", "trailer"],
+        "key_terms": ["data packet", "header", "payload", "trailer", "packet structure"]
+      },
+      {
+        "question": "Identify two items in packet header.",
+        "answer": "Any two from:\ne.g.\n• Destination IP/address\n• Packet number\n• Originators IP/address\n• Error detection method",
+        "paper": "M24P12",
+        "topic": "2 Data transmission",
+        "tags": ["identify"],
+        "marks": 2,
+        "keywords": ["packet header", "items", "destination address", "sequence number"],
+        "key_terms": ["packet header", "IP address", "sequence number", "error detection"]
+      }
+    ],
+    "2.3 Error Detection and Correction": [
+      {
+        "question": "Complete table about error detection methods.",
+        "answer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit",
+        "paper": "S24P12",
+        "topic": "2 Data transmission",
+        "tags": ["complete"],
+        "marks": 5,
+        "keywords": ["error detection", "parity", "checksum", "echo check", "ARQ", "check digit"],
+        "key_terms": ["error detection", "parity", "checksum", "echo check", "ARQ", "check digit"]
+      },
+      {
+        "question": "Describe operation of error detection system using odd parity and ARQ.",
+        "answer": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent",
+        "paper": "S24P11",
+        "topic": "2 Data transmission",
+        "tags": ["describe"],
+        "marks": 8,
+        "keywords": ["error detection", "odd parity", "ARQ", "retransmission"],
+        "key_terms": ["odd parity", "ARQ", "acknowledgement", "retransmission", "timer"]
+      }
+    ],
+    "2.4 Data Transmission Issues": [
+      {
+        "question": "Explain how data might have errors after transmission.",
+        "answer": "Any three from:\n• Data could be lost\n• Data could be gained/added\n• Data could be changed\n• Bits could be reassembled in the wrong order\n• Interference could occur\n• Crosstalk could occur\n• Data collisions could occur\n• Data packets could time out/reach their hop count\n• Network could be infected with malware",
+        "paper": "S24P11",
+        "topic": "2 Data transmission",
+        "tags": ["explain"],
+        "marks": 3,
+        "keywords": ["data errors", "transmission", "interference", "noise"],
+        "key_terms": ["data errors", "interference", "crosstalk", "collisions", "timeout"]
+      },
+      {
+        "question": "Give one reason error may occur during data transmission.",
+        "answer": "Interference // crosstalk",
+        "paper": "W24P13",
+        "topic": "2 Data transmission",
+        "tags": ["give reason"],
+        "marks": 1,
+        "keywords": ["error", "data transmission", "electrical interference"],
+        "key_terms": ["error causes", "interference", "crosstalk"]
+      }
+    ]
+  },
+
+  "Unit 3: Hardware": {
+    "3.1 Input and Output Devices": [
+      {
+        "question": "Identify two input devices built into a portable tablet computer.",
+        "answer": "Any two from:\n• Touch screen\n• Microphone\n• Button\n• Webcam // (digital) camera\n• Accelerometer\n• Biometric device",
+        "paper": "S24P11",
+        "topic": "3 Hardware",
+        "tags": ["identify"],
+        "marks": 2,
+        "keywords": ["input devices", "tablet", "touch screen", "microphone"],
+        "key_terms": ["input devices", "tablet", "touch screen", "microphone", "camera"]
+      },
+      {
+        "question": "Identify two input devices for automatic ticket reading.",
+        "answer": "Any two from e.g.\n• Barcode scanner\n• QR code scanner\n• Digital camera",
+        "paper": "W24P12",
+        "topic": "3 Hardware",
+        "tags": ["identify"],
+        "marks": 2,
+        "keywords": ["input devices", "ticket reading", "barcode", "RFID"],
+        "key_terms": ["input devices", "barcode scanner", "QR code", "digital camera"]
+      }
+    ],
+    "3.2 Storage Devices": [
+      {
+        "question": "Identify one storage device built into a portable tablet computer.",
+        "answer": "SSD // Solid-state drive // Solid-state (device)",
+        "paper": "S24P11",
+        "topic": "3 Hardware",
+        "tags": ["identify"],
+        "marks": 1,
+        "keywords": ["storage device", "tablet", "SSD", "solid-state"],
+        "key_terms": ["storage device", "SSD", "solid-state", "tablet"]
+      },
+      {
+        "question": "Circle three examples of optical storage.",
+        "answer": "Compact disk (CD)\nDigital versatile disk (DVD)\nBlu-ray disk",
+        "paper": "S24P11",
+        "topic": "3 Hardware",
+        "tags": ["circle"],
+        "marks": 3,
+        "keywords": ["optical storage", "CD", "DVD", "Blu-ray"],
+        "key_terms": ["optical storage", "CD", "DVD", "Blu-ray"]
+      }
+    ],
+    "3.3 RAM and ROM": [
+      {
+        "question": "Explain why computer needs RAM.",
+        "answer": "Any three from:\n• To store data temporarily\n• To store data currently in use\n• To store software currently in use\n• Data can be accessed faster (than secondary storage)\n• To speed up the fetch stage (of the fetch-execute cycle)",
+        "paper": "S24P11",
+        "topic": "3 Hardware",
+        "tags": ["explain"],
+        "marks": 2,
+        "keywords": ["RAM", "purpose", "fast access", "current data"],
+        "key_terms": ["RAM", "temporary storage", "fast access", "current data"]
+      },
+      {
+        "question": "Identify correct statement about RAM.",
+        "answer": "It stores data currently in use",
+        "paper": "S24P13",
+        "topic": "3 Hardware",
+        "tags": ["multiple-choice"],
+        "marks": 1,
+        "keywords": ["RAM", "characteristics", "currently in use"],
+        "key_terms": ["RAM", "characteristics", "current data"]
+      }
+    ],
+    "3.4 CPU and Fetch-Execute Cycle": [
+      {
+        "question": "Complete paragraph about fetching instruction into CPU.",
+        "answer": "address\nmemory address register // MAR\nrandom access memory // RAM\nmemory data register // MDR\ndata\ncurrent instruction register // CIR\ncontrol unit // CU",
+        "paper": "S24P12",
+        "topic": "3 Hardware",
+        "tags": ["complete"],
+        "marks": 7,
+        "keywords": ["fetch", "CPU", "registers", "instruction", "FDE cycle"],
+        "key_terms": ["fetch cycle", "MAR", "MDR", "CIR", "CU", "registers"]
+      },
+      {
+        "question": "Describe MAR role in FDE cycle.",
+        "answer": "Stores addresses …\n… of next instruction/data to be fetched // where data is to be written to",
+        "paper": "W24P12",
+        "topic": "3 Hardware",
+        "tags": ["describe"],
+        "marks": 2,
+        "keywords": ["MAR", "role", "FDE cycle", "address storage"],
+        "key_terms": ["MAR", "FDE cycle", "address storage", "memory access"]
+      }
+    ],
+    "3.5 Clock Speed and Performance": [
+      {
+        "question": "Define clock speed.",
+        "answer": "The maximum number of FDE cycles/instructions a CPU can perform/process/execute in a second",
+        "paper": "W24P12",
+        "topic": "3 Hardware",
+        "tags": ["define"],
+        "marks": 1,
+        "keywords": ["clock speed", "definition", "FDE cycles"],
+        "key_terms": ["clock speed", "FDE cycles", "instructions per second"]
+      },
+      {
+        "question": "Explain effect of changing CPU from 2 GHz to 3 GHz.",
+        "answer": "Increases/improves the performance // Tasks can be performed quicker/faster\n… because more FDE cycles/instructions can be processed in a second",
+        "paper": "W24P12",
+        "topic": "3 Hardware",
+        "tags": ["explain"],
+        "marks": 2,
+        "keywords": ["CPU", "clock speed", "performance", "2GHz to 3GHz"],
+        "key_terms": ["clock speed", "performance", "GHz", "FDE cycles"]
+      }
+    ],
+    "3.6 Virtual Memory": [
+      {
+        "question": "Complete description about virtual memory.",
+        "answer": "One mark for each correct term in the correct order:\n• Random access memory (RAM)\n• Hard disk drive (HDD)\n• Pages\n• Random access memory (RAM)\n• Virtual memory // Hard disk drive (HDD)",
+        "paper": "W24P12",
+        "topic": "3 Hardware",
+        "tags": ["complete"],
+        "marks": 5,
+        "keywords": ["virtual memory", "RAM", "HDD", "pages"],
+        "key_terms": ["virtual memory", "RAM", "HDD", "pages", "swapping"]
+      }
+    ]
+  },
+
+  "Unit 4: Software": {
+    "4.1 System vs Application Software": [
+      {
+        "question": "Give two examples of system software.",
+        "answer": "Any two from:\n• Operating system\n• Utility software\nNOTE: Two examples of utility software can be awarded",
+        "paper": "S24P11",
+        "topic": "4 Software",
+        "tags": ["give"],
+        "marks": 2,
+        "keywords": ["system software", "examples", "OS", "utilities"],
+        "key_terms": ["system software", "operating system", "utility software"]
+      },
+      {
+        "question": "Describe difference between system and application software.",
+        "answer": "Any two from:\n• System software manages/maintains the hardware/software\n• Applications software allows the user to perform tasks",
+        "paper": "S24P12",
+        "topic": "4 Software",
+        "tags": ["describe"],
+        "marks": 2,
+        "keywords": ["system software", "application software", "difference", "management", "user tasks"],
+        "key_terms": ["system software", "application software", "hardware management", "user tasks"]
+      }
+    ],
+    "4.2 Firmware": [
+      {
+        "question": "State purpose of firmware.",
+        "answer": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)",
+        "paper": "S24P11",
+        "topic": "4 Software",
+        "tags": ["state"],
+        "marks": 1,
+        "keywords": ["firmware", "purpose", "hardware control"],
+        "key_terms": ["firmware", "ROM", "boot process", "hardware control"]
+      },
+      {
+        "question": "Give one example of firmware.",
+        "answer": "Any one from:\n• Bootstrap\n• Bootloader\n• BIOS\n• Operating system (in embedded system)\n• Programs (in embedded systems)",
+        "paper": "S24P11",
+        "topic": "4 Software",
+        "tags": ["give"],
+        "marks": 1,
+        "keywords": ["firmware", "example", "BIOS"],
+        "key_terms": ["firmware examples", "BIOS", "bootloader", "embedded systems"]
+      }
+    ],
+    "4.3 Operating System Functions": [
+      {
+        "question": "Describe operating system purpose.",
+        "answer": "Any three from:\n• It performs the basic functions of a computer\n• It manages the hardware\n• It provides a platform to run software\n• It provides a user interface\n• It performs tasks such as (any example of function of an operating system)",
+        "paper": "W24P13",
+        "topic": "4 Software",
+        "tags": ["describe"],
+        "marks": 3,
+        "keywords": ["operating system", "purpose", "resource management"],
+        "key_terms": ["operating system", "resource management", "user interface", "platform"]
+      },
+      {
+        "question": "Give two OS functions related to memory.",
+        "answer": "Example:\n• Memory management\n• Multitasking",
+        "paper": "S24P13",
+        "topic": "4 Software",
+        "tags": ["give"],
+        "marks": 2,
+        "keywords": ["operating system", "memory functions", "allocation", "virtual memory"],
+        "key_terms": ["operating system functions", "memory management", "multitasking", "allocation"]
+      }
+    ],
+    "4.4 Interrupts": [
+      {
+        "question": "Complete paragraph about interrupt process.",
+        "answer": "printer\ncomputer\npriority level\nfetch–decode–execute cycle\ninterrupt queue\nhigher\ninterrupt service routine (ISR)",
+        "paper": "S24P13",
+        "topic": "4 Software",
+        "tags": ["complete"],
+        "marks": 7,
+        "keywords": ["interrupt", "process", "priority", "FDE cycle", "ISR"],
+        "key_terms": ["interrupt", "priority", "FDE cycle", "interrupt queue", "ISR"]
+      }
+    ],
+    "4.5 Programming Languages": [
+      {
+        "question": "Identify whether to use high-level or low-level language for 3D game.",
+        "answer": "High-level language",
+        "paper": "M24P12",
+        "topic": "4 Software",
+        "tags": ["multiple-choice"],
+        "marks": 1,
+        "keywords": ["programming language", "high-level", "low-level", "3D game"],
+        "key_terms": ["high-level language", "low-level language", "3D game development"]
+      },
+      {
+        "question": "Describe operation of compiler and interpreter.",
+        "answer": "Two from for each compiler and interpreter.\nCompiler\n• Checks all code before executing any code\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\n• Produces executable file\nInterpreter\n• Checks/translates one line of code and then executes it before moving on to the next line\n• Stops when an error is found\n• … when corrected the program can be run from the same position // allows error correction in real time",
+        "paper": "M24P12",
+        "topic": "4 Software",
+        "tags": ["describe"],
+        "marks": 4,
+        "keywords": ["compiler", "interpreter", "operation", "translation"],
+        "key_terms": ["compiler", "interpreter", "translation", "error checking", "executable"]
+      }
+    ],
+    "4.6 Anti-malware Software": [
+      {
+        "question": "Identify software used to find and remove malware.",
+        "answer": "Anti-malware",
+        "paper": "W24P12",
+        "topic": "4 Software",
+        "tags": ["identify"],
+        "marks": 1,
+        "keywords": ["malware removal", "anti-virus", "software"],
+        "key_terms": ["anti-malware", "anti-virus", "malware removal"]
+      }
+    ]
+  },
+
+  "Unit 5: Internet and its Uses": {
+    "5.1 Encryption": [
+      {
+        "question": "Complete paragraph about asymmetric encryption.",
+        "answer": "• plain text\n• cipher text\n• public key\n• private key",
+        "paper": "S24P11",
+        "topic": "5 The internet and its uses",
+        "tags": ["complete"],
+        "marks": 4,
+        "keywords": ["asymmetric encryption", "public key", "private key", "cipher text"],
+        "key_terms": ["asymmetric encryption", "public key", "private key", "cipher text"]
+      },
+      {
+        "question": "Explain symmetric encryption.",
+        "answer": "Data is encrypted and decrypted using the same key (1 mark)\nAny three from:\n• Plain text is encrypted into cipher text // cipher text is decrypted into plain text\n• Data is encrypted using an algorithm ...\n• ... that uses a key\n• The key can be generated using an algorithm\n• The key is transmitted to the receiver",
+        "paper": "S24P12",
+        "topic": "5 The internet and its uses",
+        "tags": ["explain"],
+        "marks": 4,
+        "keywords": ["symmetric encryption", "same key", "encrypt", "decrypt"],
+        "key_terms": ["symmetric encryption", "same key", "encryption algorithm"]
+      }
+    ],
+    "5.2 Malware": [
+      {
+        "question": "Identify correct definition of spyware.",
+        "answer": "Software that records all key presses and transmits to third party",
+        "paper": "M24P12",
+        "topic": "5 The internet and its uses",
+        "tags": ["multiple-choice"],
+        "marks": 1,
+        "keywords": ["spyware", "definition", "key logger"],
+        "key_terms": ["spyware", "keylogger", "data theft"]
+      },
+      {
+        "question": "Complete table with two other malware examples and descriptions.",
+        "answer": "One mark for identification. E.g. One mark per bullet for description to max two each.\nVirus\n• Software/code that replicates\n• …when the user runs it // with an active host\n• Deletes/damages/corrupts data/files // takes up storage/memory space\nWorm\n• Software/code that replicates itself on a network\n• …without user input // without active host\n• Takes-up bandwidth\n• Deletes/damages/corrupts data/files // takes up storage/memory space\n• Opens back doors to computers over the network\n• Used to deposit other malware on networked computers\nTrojan horse\n• Software/code that is hidden within other software // Software that is disguised as authentic software\n• …when downloaded/installed the other malware/by example it contains is installed\nAdware\n• Software/code that generates/displays (unwanted) adverts on a user's computer\n• Some may contain spyware/other malware\n• Some when clicked may link to viruses\n• Reduces device performance // reduces internet speed\n• Redirects internet searches/user to fake websites\nRansomware\n• Software/code that stops a user accessing/using their computer/data\n• …by encrypting the data/files/computer\n• A fee has to be paid to decrypt the data // A fee has to be paid to 'release' the computer/device/data",
+        "paper": "M24P12",
+        "topic": "5 The internet and its uses",
+        "tags": ["complete"],
+        "marks": 4,
+        "keywords": ["malware", "virus", "worm", "descriptions"],
+        "key_terms": ["virus", "worm", "trojan horse", "adware", "ransomware"]
+      }
+    ],
+    "5.3 Cookies": [
+      {
+        "question": "Identify two ways cookies enhance user experience.",
+        "answer": "Any two from:\ne.g.\n• Storing preferences // so the user does not have to select their preferences each time they visit the site\n• Storing account details // so the user does not have to remember/enter their username and password each time they visit the site\n• Storing recent purchases // to allow the user to quickly re-order more items\n• Storing the pages visited/items selected // to display relevant adverts\n• Storing shopping basket // so when the user leaves the site the items are still in their basket",
+        "paper": "M24P12",
+        "topic": "5 The internet and its uses",
+        "tags": ["identify"],
+        "marks": 2,
+        "keywords": ["cookies", "user experience", "login memory", "personalization"],
+        "key_terms": ["cookies", "user preferences", "login memory", "shopping basket"]
+      }
+    ],
+    "5.4 Web Browsers": [
+      {
+        "question": "Give three other functions of web browser.",
+        "answer": "Any three from:\nDisplays a web page\nStoring bookmarks/favourites\nRecording user history\nAllowing use of multiple tabs\nStoring cookies\nProviding navigation tools\nCan set a home page",
+        "paper": "S24P12",
+        "topic": "5 The internet and its uses",
+        "tags": ["give"],
+        "marks": 3,
+        "keywords": ["web browser", "functions", "bookmarks", "history", "plugins"],
+        "key_terms": ["web browser functions", "bookmarks", "history", "tabs", "cookies"]
+      },
+      {
+        "question": "Identify web browser function for automatic payment details.",
+        "answer": "Storing cookies",
+        "paper": "W24P13",
+        "topic": "5 The internet and its uses",
+        "tags": ["identify"],
+        "marks": 1,
+        "keywords": ["web browser", "function", "auto-fill", "payment details"],
+        "key_terms": ["web browser", "auto-fill", "payment details", "cookies"]
+      }
+    ],
+    "5.5 Firewalls and Proxy Servers": [
+      {
+        "question": "Explain how firewall protects network.",
+        "answer": "Any five from:\nCriteria can be set (for traffic)\n… such as a blacklist/whitelist (of IP addresses)\nIt will examine traffic coming into the network\nIt will check that the traffic meets the set criteria\n… and will reject it if it does not meet criteria\nCertain ports used by hackers can be blocked/closed",
+        "paper": "S24P11",
+        "topic": "5 The internet and its uses",
+        "tags": ["explain"],
+        "marks": 5,
+        "keywords": ["firewall", "network protection", "traffic filtering", "security rules"],
+        "key_terms": ["firewall", "traffic filtering", "blacklist", "whitelist", "ports"]
+      },
+      {
+        "question": "Identify two similarities and one difference between proxy-servers and firewalls.",
+        "answer": "One mark for each similarity to max two.\nOne mark for difference (both sides needed unless clearly and accurately implied).\nSimilarities e.g.\n• Check incoming and outgoing signals // filter traffic\n• Store whitelist/blacklist\n• Block incoming/outgoing signals\n• Both block unauthorised access\n• Keep a log of traffic\n• Both can be hardware or software (or both)\nDifferences e.g.\n• Proxy can hide user's IP address, firewall does not hide the user's IP address\n• Proxy intention is to divert attack from server, firewall is to stop unauthorised access\n• Proxy protects a server, firewall protects individual computer\n• Proxy examines/processes requests for a website but a firewall does not (checks type of signal) // Proxy processes client-side requests whereas firewall filters packets\n• Proxy transmits website data to the user, but a firewall does not (it allows valid signals)\n• Proxy allows faster access to a web page using cache, but a firewall does not (allow faster access or have cache)\n• Proxy can hide internal network from internet, but a firewall cannot",
+        "paper": "M24P12",
+        "topic": "5 The internet and its uses",
+        "tags": ["identify"],
+        "marks": 3,
+        "keywords": ["proxy-server", "firewall", "similarities", "differences", "caching"],
+        "key_terms": ["proxy server", "firewall", "similarities", "differences", "IP hiding", "caching"]
+      }
+    ],
+    "5.6 DNS and Web Servers": [
+      {
+        "question": "Describe how web pages are located, retrieved and displayed.",
+        "answer": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page",
+        "paper": "S24P13",
+        "topic": "5 The internet and its uses",
+        "tags": ["describe"],
+        "marks": 6,
+        "keywords": ["web pages", "location", "retrieval", "display", "DNS", "HTML", "browser"],
+        "key_terms": ["DNS", "IP address", "web server", "HTML rendering", "URL resolution"]
+      }
+    ],
+    "5.7 SSL Security": [
+      {
+        "question": "State how SSL protocol secures data transmission.",
+        "answer": "Any one from:\n• It encrypts it\n• Uses digital certificates",
+        "paper": "W24P13",
+        "topic": "5 The internet and its uses",
+        "tags": ["state"],
+        "marks": 1,
+        "keywords": ["SSL", "security", "encryption", "data transmission"],
+        "key_terms": ["SSL", "encryption", "digital certificates", "secure transmission"]
+      }
+    ],
+    "5.8 Cloud Storage": [
+      {
+        "question": "Explain two advantages of cloud storage for company owners.",
+        "answer": "Four from e.g.:\n• The data can be accessed from any location\n• … meaning that employees can work from anywhere with a connection\n• The hardware is owned/maintained by a third party\n• … meaning that the company are not responsible for maintaining // meaning the company aren't responsible for its security\n• Can increase the storage needed easily\n• … without needing to buy new hardware\n• Do not need to house the hardware needed\n• … costs can be saved on the space saved for this\n• Cloud system will back up the data\n• … meaning the company does not need to do this",
+        "paper": "W24P13",
+        "topic": "5 The internet and its uses",
+        "tags": ["explain"],
+        "marks": 4,
+        "keywords": ["cloud storage", "advantages", "owners", "scalability", "maintenance"],
+        "key_terms": ["cloud storage", "remote access", "third-party maintenance", "scalability", "backup"]
+      }
+    ]
+  },
+
+  "Unit 6: Automated and Emerging Technologies": {
+    "6.1 Robotics": [
+      {
+        "question": "Define robotics.",
+        "answer": "Any two from:\n• The design of robots (to perform tasks/operations/functions)\n• The construction of robots (to perform tasks/operations/functions)\n• The operation of robots (to perform tasks/operations/functions)",
+        "paper": "M24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["define"],
+        "marks": 2,
+        "keywords": ["robotics", "definition", "robots"],
+        "key_terms": ["robotics", "robot design", "robot construction", "robot operation"]
+      },
+      {
+        "question": "Give three characteristics of a robot.",
+        "answer": "Any three from:\n• It has a mechanical structure/framework\n• It has electrical components\n• It is programmable\n• It can move",
+        "paper": "S24P11",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["give"],
+        "marks": 3,
+        "keywords": ["robot", "characteristics", "mechanical", "electrical", "programmable"],
+        "key_terms": ["robot characteristics", "mechanical", "electrical", "programmable", "movement"]
+      }
+    ],
+    "6.2 Sensors in Automated Systems": [
+      {
+        "question": "Explain how robot uses sensors and microprocessor to detect fence.",
+        "answer": "Any six from:\n• A proximity sensor is used\n• The sensor continuously sends digitised data to the microprocessor\n• The microprocessor compares the data to a stored value/range of values\n• If the value is within the range/matches the robot continues planting\n• If the value is above/below/outside the range a signal is sent by the microprocessor to turn/stop the robot\n• ... using an actuator to turn/stop the robot\n• This process repeats until the robot is turned off",
+        "paper": "S24P11",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["explain"],
+        "marks": 6,
+        "keywords": ["robot", "sensor", "microprocessor", "fence detection"],
+        "key_terms": ["proximity sensor", "microprocessor", "digitised data", "actuator", "automated control"]
+      },
+      {
+        "question": "Complete table of sensor types and uses.",
+        "answer": "One mark for each use (Max 1) per sensor:\nTemperature\n• Checking whether the water in a kettle is boiling\n• Monitoring the temperature in a room that is climate controlled\nHumidity\n• Checking whether the air is dry enough in a spray-painting garage\n• Checking whether the air is moist enough in a greenhouse\nInfra-red\n• Detecting motion in a room for a security system\n• Detecting whether a person is approaching automatic doors\nMagnetic field\n• Counting vehicles that cross a bridge\n• Monitoring vehicles that enter a car park",
+        "paper": "S24P13",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["complete"],
+        "marks": 4,
+        "keywords": ["sensors", "temperature", "humidity", "infra-red", "magnetic", "uses"],
+        "key_terms": ["temperature sensor", "humidity sensor", "infra-red sensor", "magnetic sensor", "applications"]
+      }
+    ],
+    "6.3 Artificial Intelligence (AI)": [
+      {
+        "question": "Describe meaning of AI.",
+        "answer": "Any two from:\n• The **simulation** of intelligent behaviours by computers\n• A collection of data and the rules for using that data\n• Has the ability to reason\n• Has the ability to learn/adapt",
+        "paper": "S24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["describe"],
+        "marks": 2,
+        "keywords": ["AI", "artificial intelligence", "definition", "human intelligence"],
+        "key_terms": ["artificial intelligence", "intelligent behaviour", "reasoning", "learning"]
+      },
+      {
+        "question": "Describe characteristics of AI.",
+        "answer": "Any three from:\ne.g.\n• Collects data\n• Stores rules for using that data\n• The ability to reason\n• The ability to learn // uses machine learning\n• ... by adapting what it does\n• ... for example, from mistakes to not make them again // result from previous decisions impacts future\n• ... by changing its own rules\n• ...by changing its own data\n• ...by being trained\n• Makes one or more predictions (to make a decision)\n• Find/analyse patterns",
+        "paper": "M24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["describe"],
+        "marks": 2,
+        "keywords": ["AI", "characteristics", "learning", "reasoning", "problem-solving"],
+        "key_terms": ["AI characteristics", "data collection", "reasoning", "machine learning", "prediction"]
+      }
+    ],
+    "6.4 Expert Systems": [
+      {
+        "question": "Explain how expert system operates for car diagnosis.",
+        "answer": "Any **five** from:\n• The user will enter data into the **interface** // The user will plug the car into an **interface** // The user is given questions using the **interface**\n• The **inference engine** will decide which questions to ask\n• ... by using the previous answers given\n• The **inference engine** will decide on a diagnosis\n• ... by **comparing the data/answers** entered to the **knowledge base** and **rule base**\n• ... by calculating which option is most likely if there are multiple\n• The **interface** will output the **diagnosis/result**\n• The **explanation system** shows how the diagnosis was reached",
+        "paper": "S24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["explain"],
+        "marks": 5,
+        "keywords": ["expert system", "diagnosis", "knowledge base", "inference engine"],
+        "key_terms": ["expert system", "interface", "inference engine", "knowledge base", "rule base"]
+      },
+      {
+        "question": "Complete description about expert system operation.",
+        "answer": "One mark for each correct term in the correct order:\n• knowledge base\n• inference engine\n• rule base // knowledge base\n• knowledge base // rule base\n• interface",
+        "paper": "W24P13",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["complete"],
+        "marks": 5,
+        "keywords": ["expert system", "knowledge base", "inference engine", "rule base", "interface"],
+        "key_terms": ["expert system components", "knowledge base", "inference engine", "rule base", "interface"]
+      }
+    ],
+    "6.5 Machine Learning": [
+      {
+        "question": "Explain how machine learning improves robot.",
+        "answer": "Any two from:\n• The robot can now adapt itself by changing its own rules/data/ processes\n• The robot will become more efficient\n• ... as it has a greater knowledge of its surroundings/environment\n• ... as it can remember where a fence is\n• ... as it can remember the route it needs to take\n• ... as it can remember where any obstacles are to avoid\n• ... as it can remember where to start and stop sowing seeds\n• ... as it may make fewer errors",
+        "paper": "S24P11",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["explain"],
+        "marks": 2,
+        "keywords": ["machine learning", "robot improvement", "learn from experience"],
+        "key_terms": ["machine learning", "adaptation", "efficiency improvement", "experience learning"]
+      },
+      {
+        "question": "Describe machine learning capabilities.",
+        "answer": "Any four from:\ne.g.\n• It is a form of artificial intelligence\n• Means it can adapt/change (its own processes) // It can edit its own algorithms\n• It can edit its own data\n• It can be trained\n• … this can be supervised/unsupervised\n• … meaning it can learn with/without human interaction\n• Analyses patterns and stores successful/unsuccessful results …\n• … to influence future decisions\n• (Supervised) means a user tells the system the input and output\n• (Unsupervised) means the system is given the input and needs to work out the output",
+        "paper": "W24P13",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["describe"],
+        "marks": 4,
+        "keywords": ["machine learning", "capabilities", "learn from data", "no explicit programming"],
+        "key_terms": ["machine learning", "supervised learning", "unsupervised learning", "pattern analysis", "training"]
+      }
+    ],
+    "6.6 Embedded Systems": [
+      {
+        "question": "Give two characteristics of embedded system.",
+        "answer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system",
+        "paper": "W24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["give"],
+        "marks": 2,
+        "keywords": ["embedded system", "characteristics", "dedicated", "limited resources"],
+        "key_terms": ["embedded system", "dedicated function", "microprocessor", "firmware", "real-time"]
+      },
+      {
+        "question": "Circle three other examples of embedded system.",
+        "answer": "One mark for each correct system:\n• security light system\n• freezer\n• vending machine",
+        "paper": "W24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["circle"],
+        "marks": 3,
+        "keywords": ["embedded system", "examples", "freezer", "security light", "vending machine"],
+        "key_terms": ["embedded system examples", "security light", "freezer", "vending machine"]
+      }
+    ],
+    "6.7 Blockchain and Digital Currency": [
+      {
+        "question": "Give two other features of digital currency.",
+        "answer": "Any two from:\n• Only exists electronically\n• Can be a decentralised system\n• Can be a centralised system\n• Usually encrypted",
+        "paper": "W24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["give"],
+        "marks": 2,
+        "keywords": ["digital currency", "features", "decentralized", "cryptography"],
+        "key_terms": ["digital currency", "electronic", "decentralized", "centralized", "encrypted"]
+      },
+      {
+        "question": "Identify process using digital ledger to track digital currency.",
+        "answer": "Blockchain",
+        "paper": "W24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["identify"],
+        "marks": 1,
+        "keywords": ["digital ledger", "blockchain", "digital currency"],
+        "key_terms": ["blockchain", "digital ledger", "currency tracking"]
+      }
+    ],
+    "6.8 Advantages and Disadvantages of Automation": [
+      {
+        "question": "Give two advantages of using automated robot for planting.",
+        "answer": "Any two from:\n• The robot is more accurate when planting seeds\n• The robot does not need to take breaks // works 24/7\n• The robot will not get bored of performing a repetitive task\n• The farmer can perform other tasks whilst the robot is planting the seeds\n• The robot may be faster/more efficient (at planting seeds)\n• Safer as the robot can work in a more dangerous environments (e.g. with animals in a field)\n• Doesn't need to pay labour costs/wages",
+        "paper": "S24P11",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["give"],
+        "marks": 2,
+        "keywords": ["automated robot", "advantages", "efficiency", "24/7"],
+        "key_terms": ["automation advantages", "accuracy", "24/7 operation", "safety", "cost saving"]
+      },
+      {
+        "question": "Explain one disadvantage of automated system for owners.",
+        "answer": "Two from (for drawback and matching description) e.g.:\n• High set-up/installation costs\n• … it would mean the company need to find a lot of money up front to pay for the equipment // employees will need training\n• Utility/maintenance/repair costs\n• … increase in bills such as electricity // skilled employees will be required to maintain the system // equipment will break/need updating\n• Deskilling of the workforce\n• … may mean that workers will no longer have the skills for some of the manufacturing jobs, should the equipment break",
+        "paper": "W24P12",
+        "topic": "6 Automated and emerging technologies",
+        "tags": ["explain"],
+        "marks": 2,
+        "keywords": ["automated system", "disadvantage", "owners", "cost"],
+        "key_terms": ["automation disadvantages", "setup cost", "maintenance cost", "deskilling", "training"]
+      }
+    ]
+  }
+}

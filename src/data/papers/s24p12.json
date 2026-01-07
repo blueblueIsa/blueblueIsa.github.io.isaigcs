@@ -1,0 +1,462 @@
+[
+      {
+         "question":"Give name of data storage measurement equal to 8 bits.",
+         "answer":"byte",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "give"
+         ],
+         "marks":1,
+         "keywords":[
+            "data storage",
+            "byte",
+            "8 bits"
+         ]
+      },
+      {
+         "question":"State how many bits in a kibibyte (KiB).",
+         "answer":"8192",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "state"
+         ],
+         "marks":1,
+         "keywords":[
+            "kibibyte",
+            "KiB",
+            "bits"
+         ]
+      },
+      {
+         "question":"Give name of data storage measurement equal to 1024 gibibytes (GiB).",
+         "answer":"Tebibyte // TiB",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "give"
+         ],
+         "marks":1,
+         "keywords":[
+            "data storage",
+            "tebibyte",
+            "TiB",
+            "1024 GiB"
+         ]
+      },
+      {
+         "question":"Calculate file size of 16-bit colour image 512x512 pixels in KiB.",
+         "answer":"One mark for each correct stage of working (max 2):\n• 512 × 512\n• 262 144 * 2 // multiplied by 16 and divided by 8\n• 524 288/1024\nOne mark for the correct answer:\n512 (KiB)",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "calculation"
+         ],
+         "marks":3,
+         "keywords":[
+            "file size",
+            "image",
+            "16-bit",
+            "512x512",
+            "KiB"
+         ]
+      },
+      {
+         "question":"Identify term that is not a data transmission method.",
+         "answer":"Parity",
+         "paper":"S24P12",
+         "topic":"2 Data transmission",
+         "tags":[
+            "multiple-choice"
+         ],
+         "marks":1,
+         "keywords":[
+            "data transmission",
+            "methods",
+            "parity",
+            "not a method"
+         ]
+      },
+      {
+         "question":"Give name of unit data is broken into for transmission.",
+         "answer":"Packet",
+         "paper":"S24P12",
+         "topic":"2 Data transmission",
+         "tags":[
+            "give"
+         ],
+         "marks":1,
+         "keywords":[
+            "data transmission",
+            "packet",
+            "unit"
+         ]
+      },
+      {
+         "question":"Explain symmetric encryption.",
+         "answer":"Data is encrypted and decrypted using the same key (1 mark)\nAny three from:\n• Plain text is encrypted into cipher text // cipher text is decrypted into plain text\n• Data is encrypted using an algorithm ...\n• ... that uses a key\n• The key can be generated using an algorithm\n• The key is transmitted to the receiver",
+         "paper":"S24P12",
+         "topic":"5 The internet and its uses",
+         "tags":[
+            "explain"
+         ],
+         "marks":4,
+         "keywords":[
+            "symmetric encryption",
+            "same key",
+            "encrypt",
+            "decrypt"
+         ]
+      },
+      {
+         "question":"Give purpose of encryption.",
+         "answer":"Any one from:\n• To help keep the data secure\n• To make the data meaningless",
+         "paper":"S24P12",
+         "topic":"5 The internet and its uses",
+         "tags":[
+            "give"
+         ],
+         "marks":1,
+         "keywords":[
+            "encryption",
+            "purpose",
+            "security"
+         ]
+      },
+      {
+         "question":"Give name of base 16 number system.",
+         "answer":"Hexadecimal",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "give"
+         ],
+         "marks":1,
+         "keywords":[
+            "number system",
+            "base 16",
+            "hexadecimal"
+         ]
+      },
+      {
+         "question":"Convert denary numbers 10, 50, 201 to binary.",
+         "answer":"1010\n110010\n11001001",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "conversion"
+         ],
+         "marks":3,
+         "keywords":[
+            "denary to binary",
+            "conversion"
+         ]
+      },
+      {
+         "question":"Explain why data is converted to binary by computer.",
+         "answer":"Two from:\n• Computers use logic gates/switches ...\n• ... that only process the values 1 and 0 // that only have two states",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "explain"
+         ],
+         "marks":2,
+         "keywords":[
+            "binary",
+            "conversion",
+            "computer processing",
+            "circuits"
+         ]
+      },
+      {
+         "question":"Add binary numbers 00110000 and 01100110.",
+         "answer":"One mark for evidence of working, for example 2 carries\nOne mark for each correct nibble (Max 2)\n1 1\n0 0 1 1 0 0 0 0\n0 1 1 0 0 1 1 0\n1 0 0 1 0 1 1 0",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "binary addition"
+         ],
+         "marks":3,
+         "keywords":[
+            "binary addition",
+            "8-bit"
+         ]
+      },
+      {
+         "question":"Calculate two's complement for denary -32.",
+         "answer":"One marking for evidence of working\nFor example, flip and add\nOne mark for correct binary\n11100000",
+         "paper":"S24P12",
+         "topic":"1 Data representation",
+         "tags":[
+            "two's complement"
+         ],
+         "marks":2,
+         "keywords":[
+            "two's complement",
+            "-32",
+            "negative binary"
+         ]
+      },
+      {
+         "question":"Give one example of system software.",
+         "answer":"Any one from:\n• Operating system\n• Utility software // by example",
+         "paper":"S24P12",
+         "topic":"4 Software",
+         "tags":[
+            "give"
+         ],
+         "marks":1,
+         "keywords":[
+            "system software",
+            "example",
+            "OS"
+         ]
+      },
+      {
+         "question":"Give two examples of application software.",
+         "answer":"Any two from:\n• Word processor\n• Spreadsheet\n• Database\n• Web browser\n• Image/photo-editor\n• Video-editor\n• Email client\n• Game\n• Social media app",
+         "paper":"S24P12",
+         "topic":"4 Software",
+         "tags":[
+            "give"
+         ],
+         "marks":2,
+         "keywords":[
+            "application software",
+            "examples",
+            "word processor",
+            "browser"
+         ]
+      },
+      {
+         "question":"Describe difference between system and application software.",
+         "answer":"Any two from:\n• System software manages/maintains the hardware/software\n• Applications software allows the user to perform tasks",
+         "paper":"S24P12",
+         "topic":"4 Software",
+         "tags":[
+            "describe"
+         ],
+         "marks":2,
+         "keywords":[
+            "system software",
+            "application software",
+            "difference",
+            "management",
+            "user tasks"
+         ]
+      },
+      {
+         "question":"Complete paragraph about fetching instruction into CPU.",
+         "answer":"address\nmemory address register // MAR\nrandom access memory // RAM\nmemory data register // MDR\ndata\ncurrent instruction register // CIR\ncontrol unit // CU",
+         "paper":"S24P12",
+         "topic":"3 Hardware",
+         "tags":[
+            "complete"
+         ],
+         "marks":7,
+         "keywords":[
+            "fetch",
+            "CPU",
+            "registers",
+            "instruction",
+            "FDE cycle"
+         ]
+      },
+      {
+         "question":"Define instruction set.",
+         "answer":"A list of (machine code) commands that can be processed by the CPU",
+         "paper":"S24P12",
+         "topic":"3 Hardware",
+         "tags":[
+            "define"
+         ],
+         "marks":1,
+         "keywords":[
+            "instruction set",
+            "definition",
+            "CPU commands"
+         ]
+      },
+      {
+         "question":"Complete table about error detection methods.",
+         "answer":"error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit",
+         "paper":"S24P12",
+         "topic":"2 Data transmission",
+         "tags":[
+            "complete"
+         ],
+         "marks":5,
+         "keywords":[
+            "error detection",
+            "parity",
+            "checksum",
+            "echo check",
+            "ARQ",
+            "check digit"
+         ]
+      },
+      {
+         "question":"Identify correct statement about MAC address.",
+         "answer":"It is assigned by the manufacturer",
+         "paper":"S24P12",
+         "topic":"5 The internet and its uses",
+         "tags":[
+            "multiple-choice"
+         ],
+         "marks":1,
+         "keywords":[
+            "MAC address",
+            "assigned by manufacturer",
+            "characteristics"
+         ]
+      },
+      {
+         "question":"Give example of IPv4 format address.",
+         "answer":"An IP address that has numerical values separated by dots that follows the format with a max value of 255 in any xxx xxx.xxx.xxx.xxx Example: 10.245.3.99",
+         "paper":"S24P12",
+         "topic":"5 The internet and its uses",
+         "tags":[
+            "give"
+         ],
+         "marks":1,
+         "keywords":[
+            "IPv4",
+            "example",
+            "format"
+         ]
+      },
+      {
+         "question":"Give two characteristics of IPv6 format.",
+         "answer":"Any two from:\n• 128-bit // 16 bytes\n• Hexadecimal\n• Separated by colons\n• Characters in groups of 4\n• Has 8 groups of characters\n• Double colons can be used for sets of (consecutive) zeros (only once)",
+         "paper":"S24P12",
+         "topic":"5 The internet and its uses",
+         "tags":[
+            "give"
+         ],
+         "marks":2,
+         "keywords":[
+            "IPv6",
+            "characteristics",
+            "128-bit",
+            "hexadecimal"
+         ]
+      },
+      {
+         "question":"Explain why computer needs secondary storage.",
+         "answer":"Any two from:\n• To store data/files permanently\n• … otherwise, data/programs would need to be downloaded/entered/installed every time the computer was used\n• To allow software to be installed on the computer\n• For the creation of virtual memory",
+         "paper":"S24P12",
+         "topic":"3 Hardware",
+         "tags":[
+            "explain"
+         ],
+         "marks":2,
+         "keywords":[
+            "secondary storage",
+            "purpose",
+            "permanent",
+            "power off"
+         ]
+      },
+      {
+         "question":"Describe three differences between solid-state and optical storage.",
+         "answer":"Any six from (Max 3 for one type only):\n• Solid-state has no moving parts\n• … optical does have moving parts\n• Solid-state is faster to access data\n• … optical is slower to access data\n• Solid-state uses less power to operate\n• … optical uses more power to operate\n• Solid-state runs quietly\n• … optical makes more noise\n• Solid state is more durable/robust\n• … optical is less durable/robust\n• Solid state storage has a large storage capacity\n• … optical has a much smaller limit to its storage capacity\n• Solid-state is more expensive per GB of data\n• … optical is cheaper per GB of data\n• Solid-state stores data onto silicon chips/transistors using logic (floating/control/NAND/NOR) gates to control the movement of electrons\n• … optical stores data by using lasers to burning pits and lands onto a disk",
+         "paper":"S24P12",
+         "topic":"3 Hardware",
+         "tags":[
+            "describe"
+         ],
+         "marks":6,
+         "keywords":[
+            "solid-state",
+            "optical storage",
+            "differences",
+            "moving parts",
+            "speed",
+            "durability"
+         ]
+      },
+      {
+         "question":"Describe meaning of AI.",
+         "answer":"Any two from:\n• The **simulation** of intelligent behaviours by computers\n• A collection of data and the rules for using that data\n• Has the ability to reason\n• Has the ability to learn/adapt",
+         "paper":"S24P12",
+         "topic":"6 Automated and emerging technologies",
+         "tags":[
+            "describe"
+         ],
+         "marks":2,
+         "keywords":[
+            "AI",
+            "artificial intelligence",
+            "definition",
+            "human intelligence"
+         ]
+      },
+      {
+         "question":"Explain how expert system operates for car diagnosis.",
+         "answer":"Any **five** from:\n• The user will enter data into the **interface** // The user will plug the car into an **interface** // The user is given questions using the **interface**\n• The **inference engine** will decide which questions to ask\n• ... by using the previous answers given\n• The **inference engine** will decide on a diagnosis\n• ... by **comparing the data/answers** entered to the **knowledge base** and **rule base**\n• ... by calculating which option is most likely if there are multiple\n• The **interface** will output the **diagnosis/result**\n• The **explanation system** shows how the diagnosis was reached",
+         "paper":"S24P12",
+         "topic":"6 Automated and emerging technologies",
+         "tags":[
+            "explain"
+         ],
+         "marks":5,
+         "keywords":[
+            "expert system",
+            "diagnosis",
+            "knowledge base",
+            "inference engine"
+         ]
+      },
+      {
+         "question":"Describe difference between internet and world wide web.",
+         "answer":"Any two from:\nThe internet is the infrastructure\nThe world wide web is a collection of web pages",
+         "paper":"S24P12",
+         "topic":"5 The internet and its uses",
+         "tags":[
+            "describe"
+         ],
+         "marks":2,
+         "keywords":[
+            "internet",
+            "world wide web",
+            "difference",
+            "infrastructure",
+            "service"
+         ]
+      },
+      {
+         "question":"Identify three parts included in URL.",
+         "answer":"Protocol\nDomain name\nFile name // web page name",
+         "paper":"S24P12",
+         "topic":"5 The internet and its uses",
+         "tags":[
+            "identify"
+         ],
+         "marks":3,
+         "keywords":[
+            "URL",
+            "parts",
+            "protocol",
+            "domain",
+            "path"
+         ]
+      },
+      {
+         "question":"Give three other functions of web browser.",
+         "answer":"Any three from:\nDisplays a web page\nStoring bookmarks/favourites\nRecording user history\nAllowing use of multiple tabs\nStoring cookies\nProviding navigation tools\nCan set a home page",
+         "paper":"S24P12",
+         "topic":"5 The internet and its uses",
+         "tags":[
+            "give"
+         ],
+         "marks":3,
+         "keywords":[
+            "web browser",
+            "functions",
+            "bookmarks",
+            "history",
+            "plugins"
+         ]
+      }
+   ]

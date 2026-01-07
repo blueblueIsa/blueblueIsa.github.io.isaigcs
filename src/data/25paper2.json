@@ -1,0 +1,56 @@
+[
+  {
+    "question": "Write pseudocode for double entry verification check.",
+    "answer": "INPUT firstEntry\nINPUT secondEntry\nIF firstEntry = secondEntry THEN\n  OUTPUT \"Accepted\"\nELSE\n  OUTPUT \"Mismatch\"\nENDIF",
+    "paper": "S25P21",
+    "topic": "1 Algorithms",
+    "tags": ["pseudocode", "verification"],
+    "marks": 3,
+    "keywords": ["double entry", "verification", "pseudocode", "compare"]
+  },
+  {
+    "question": "Explain difference between procedure and function using pseudocode.",
+    "answer": "PROCEDURE ShowMenu()\n  OUTPUT \"1) Add\"\n  OUTPUT \"2) Exit\"\nENDPROCEDURE\n\nFUNCTION Square(x)\n  RETURN x * x\nENDFUNCTION\n\n// A procedure performs actions, no return value\n// A function returns a value",
+    "paper": "S25P22",
+    "topic": "2 Programming concepts",
+    "tags": ["explain", "pseudocode"],
+    "marks": 3,
+    "keywords": ["procedure", "function", "return value", "pseudocode"]
+  },
+  {
+    "question": "Write pseudocode to validate integer input between 1 and 100 inclusive.",
+    "answer": "REPEAT\n  INPUT n\nUNTIL n >= 1 AND n <= 100",
+    "paper": "W25P21",
+    "topic": "7 Testing and validation",
+    "tags": ["pseudocode", "validation"],
+    "marks": 2,
+    "keywords": ["validation", "range check", "repeat until", "integer"]
+  },
+  {
+    "question": "Write pseudocode to search for a value in an array and output its index or -1.",
+    "answer": "INPUT target\nindex <- -1\nFOR i <- 1 TO 100\n  IF array[i] = target THEN\n    index <- i\n  ENDIF\nNEXT i\nOUTPUT index",
+    "paper": "M25P21",
+    "topic": "4 Arrays and loops",
+    "tags": ["pseudocode", "array", "search"],
+    "marks": 3,
+    "keywords": ["array", "linear search", "index", "loop"]
+  },
+  {
+    "question": "Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.",
+    "answer": "SELECT StudentName, Age\nFROM Students\nWHERE Age >= 16\nORDER BY StudentName",
+    "paper": "S25P29",
+    "topic": "9 Databases and SQL",
+    "tags": ["sql", "select", "order by"],
+    "marks": 3,
+    "keywords": ["SQL", "SELECT", "FROM", "WHERE", "ORDER BY", "Students"]
+  },
+  {
+    "question": "Explain primary key and give one reason why it is important.",
+    "answer": "A primary key uniquely identifies each record in a table.\nIt prevents duplicate records and supports efficient searching.",
+    "paper": "W25P29",
+    "topic": "9 Databases and SQL",
+    "tags": ["explain", "keys"],
+    "marks": 2,
+    "keywords": ["primary key", "unique", "record", "table"]
+  }
+]

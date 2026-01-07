@@ -1,0 +1,337 @@
+[
+  {
+    "topic": "1 Programming concepts",
+    "questions": [
+      {
+        "question": "Outline role of procedures and functions in maintainable programs.",
+        "answer": "• Procedures / functions divide the program into smaller manageable segments\n• … making it more readable / easier to understand / easier to debug\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\n• Procedures and functions can reduce / eliminate (repeated) code",
+        "paper": "M24P21",
+        "tags": ["explanation"],
+        "marks": 3,
+        "keywords": ["code reuse", "readability", "debugging", "abstraction", "modularity"]
+      },
+      {
+        "question": "State what is meant by integer and real data types with examples.",
+        "answer": "Integer: a whole number … Example 27\nReal: a number that contains a fractional part … Example 18.75",
+        "paper": "M24P21",
+        "tags": ["definition", "examples"],
+        "marks": 4,
+        "keywords": ["integer", "real", "whole number", "decimal", "data type"]
+      },
+      {
+        "question": "Describe characteristics of string and char data types with examples.",
+        "answer": "String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\nChar: a single character, X",
+        "paper": "M24P23",
+        "tags": ["definition", "examples"],
+        "marks": 4,
+        "keywords": ["string", "char", "character", "data type", "example"]
+      }
+    ]
+  },
+  {
+    "topic": "2 Program development life cycle",
+    "questions": [
+      {
+        "question": "Identify three tasks in analysis stage of program development.",
+        "answer": "• abstraction\n• decomposition\n• identification of problem / identification of requirements // outline of success criteria",
+        "paper": "M24P22",
+        "tags": ["list"],
+        "marks": 3,
+        "keywords": ["analysis", "requirements", "decomposition", "abstraction", "program development"]
+      }
+    ]
+  },
+  {
+    "topic": "3 Pseudocode and algorithms",
+    "questions": [
+      {
+        "question": "Write pseudocode to use a procedure named Average that passes values 25 and 50.",
+        "answer": "CALL Average (25, 50)",
+        "paper": "M24P21",
+        "tags": ["pseudocode"],
+        "marks": 2,
+        "keywords": ["CALL", "procedure", "parameters", "passing parameters"]
+      },
+      {
+        "question": "Write pseudocode using CASE statement for input 1-4.",
+        "answer": "INPUT Number\nCASE OF Number\n    1 : OUTPUT Number\n    2 : OUTPUT Number\n    3 : OUTPUT Number\n    4 : OUTPUT Number\n    OTHERWISE OUTPUT \"ERROR\"\nENDCASE",
+        "paper": "M24P21",
+        "tags": ["pseudocode"],
+        "marks": 5,
+        "keywords": ["CASE", "OUTPUT", "ERROR", "selection", "pseudocode"]
+      },
+      {
+        "question": "Write algorithm to total numbers input until 9999.9.",
+        "answer": "Total ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    Total ← Total + Value\n    INPUT Value\nENDWHILE\nOUTPUT Total",
+        "paper": "M24P22",
+        "tags": ["pseudocode"],
+        "marks": 4,
+        "keywords": ["REPEAT", "total", "sentinel value", "algorithm", "iteration"]
+      },
+      {
+        "question": "Write algorithm to count values > 100.",
+        "answer": "Counter ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    IF Value > 100\n    THEN\n        Counter ← Counter + 1\n    ENDIF\n    INPUT Value\nENDWHILE\nOUTPUT Counter",
+        "paper": "M24P22",
+        "tags": ["pseudocode"],
+        "marks": 4,
+        "keywords": ["count", "condition", "sentinel", "algorithm", "iteration", "selection"]
+      },
+      {
+        "question": "Write pseudocode to output array contents until data ends.",
+        "answer": "Count ← 1\nWHILE Count <= 50 AND People[Count, 1] <> \"\" DO\n    OUTPUT People[Count, 1]\n    OUTPUT People[Count, 2]\n    OUTPUT People[Count, 3]\n    Count ← Count + 1\nENDWHILE",
+        "paper": "M24P23",
+        "tags": ["pseudocode"],
+        "marks": 4,
+        "keywords": ["FOR loop", "OUTPUT", "array", "2D array", "iteration"]
+      },
+      {
+        "question": "Explain how to prevent exceeding array size of 50.",
+        "answer": "• Declare/use a variable that is set to the maximum size of the array\n• ... at the start of the program\n• After line 18\n• ... check that the value of the counting variable is not greater than the array maximum variable\n• ... and if it is do not allow any more entries / set the value of Response to 'N' / add additional condition to UNTIL statement that checks if the counting variable is at maximum",
+        "paper": "M24P23",
+        "tags": ["explanation"],
+        "marks": 4,
+        "keywords": ["array full", "validation", "IF", "array bounds", "prevention"]
+      },
+      {
+        "question": "Write pseudocode to implement bubble sort for an array of N items.",
+        "answer": "FOR i ← 1 TO N - 1\n    FOR j ← 1 TO N - i\n        IF A[j] > A[j + 1]\n        THEN\n            Temp ← A[j]\n            A[j] ← A[j + 1]\n            A[j + 1] ← Temp\n        ENDIF\n    NEXT j\nNEXT i\nOUTPUT A",
+        "paper": "M24P23",
+        "tags": ["pseudocode"],
+        "marks": 5,
+        "keywords": ["bubble sort", "swap", "nested loops", "algorithm", "array"]
+      }
+    ]
+  },
+  {
+    "topic": "4 Validation and verification",
+    "questions": [
+      {
+        "question": "Identify three validation checks for product code rules.",
+        "answer": "• length check ... to ensure the product code entered is 6 characters in length\n• format check ... to ensure the first two characters of the product code entered are \"PD\"\n• range check ... to ensure that the value of the last four figures of the product code entered is between 1000 and 9999",
+        "paper": "M24P22",
+        "tags": ["list"],
+        "marks": 6,
+        "keywords": ["length", "format", "range", "validation", "checks"]
+      },
+      {
+        "question": "Write pseudocode to check product code is 6 characters.",
+        "answer": "REPEAT\n    INPUT Product\nUNTIL LENGTH (Product) = 6",
+        "paper": "M24P22",
+        "tags": ["pseudocode"],
+        "marks": 2,
+        "keywords": ["LENGTH", "REPEAT", "validation", "pseudocode"]
+      },
+      {
+        "question": "Write pseudocode to check first two chars are 'PD'.",
+        "answer": "REPEAT\n    INPUT Product\nUNTIL SUBSTRING (Product, 1, 2) = \"PD\"",
+        "paper": "M24P22",
+        "tags": ["pseudocode"],
+        "marks": 2,
+        "keywords": ["SUBSTRING", "REPEAT", "validation", "pseudocode"]
+      },
+      {
+        "question": "Explain how to validate numbers between 1 and 500 inclusive.",
+        "answer": "• After line 09 / after the input\n• Insert a WHILE / pre-condition loop...\n• ... to check if the value entered is between 1 and 500 inclusive\n• If the value is not in range, output an error message\n• ... and insert another input statement for re-input.",
+        "paper": "M24P21",
+        "tags": ["explanation"],
+        "marks": 4,
+        "keywords": ["range check", "WHILE loop", "validation", "error message", "re-input"]
+      }
+    ]
+  },
+  {
+    "topic": "5 Operators",
+    "questions": [
+      {
+        "question": "State how arithmetic, Boolean, logical operators are used with examples.",
+        "answer": "• arithmetic – used in calculations (1) A ← B + C (1)\n• Boolean – used for operations with true or false values (1) IF B AND C (1)\n• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)",
+        "paper": "M24P22",
+        "tags": ["explanation", "examples"],
+        "marks": 6,
+        "keywords": ["arithmetic", "Boolean", "logical", "examples", "operators"]
+      }
+    ]
+  },
+  {
+    "topic": "6 Library routines",
+    "questions": [
+      {
+        "question": "Write pseudocode to output average rounded to 1 decimal place.",
+        "answer": "OUTPUT \"The average of the numbers entered is \", ROUND(Total / Limit,1)",
+        "paper": "M24P21",
+        "tags": ["pseudocode"],
+        "marks": 2,
+        "keywords": ["ROUND", "average", "decimal", "library routine", "output"]
+      },
+      {
+        "question": "Write pseudocode to read file and output string in uppercase and length.",
+        "answer": "DECLARE Words : STRING\nOPENFILE Quotation.txt FOR READ\nREADFILE Quotation.txt, Words\nOUTPUT UCASE(Words), LENGTH(Words)\nCLOSEFILE Quotation.txt",
+        "paper": "M24P21",
+        "tags": ["pseudocode"],
+        "marks": 4,
+        "keywords": ["OPEN", "READ", "UCASE", "LENGTH", "CLOSE", "library routine"]
+      },
+      {
+        "question": "Write pseudocode to extract 'Computer Science' from string.",
+        "answer": "FullText ← \"IGCSE Computer Science at Cambridge\"\nPartText ← SUBSTRING(FullText, 7, 16)\nOUTPUT PartText, UCASE(FullText)",
+        "paper": "M24P23",
+        "tags": ["pseudocode"],
+        "marks": 4,
+        "keywords": ["SUBSTRING", "UCASE", "extract", "string manipulation", "library routine"]
+      }
+    ]
+  },
+  {
+    "topic": "7 File handling",
+    "questions": [
+      {
+        "question": "Outline why it is useful to store data in a file.",
+        "answer": "• Data stored in a file gives a permanent copy / prevents the data from being lost\n• ... so it can be recalled / used again in a program / in another program\n• can be stored elsewhere / transferred to another computer",
+        "paper": "M24P21",
+        "tags": ["explanation"],
+        "marks": 3,
+        "keywords": ["persistence", "reuse", "sharing", "file storage", "data retention"]
+      },
+      {
+        "question": "Write pseudocode to store string in file and close.",
+        "answer": "OPENFILE \"Subjects.txt\" FOR WRITE\nWRITEFILE \"Subjects.txt\", PartText\nCLOSEFILE \"Subjects.txt\"",
+        "paper": "M24P23",
+        "tags": ["pseudocode"],
+        "marks": 3,
+        "keywords": ["OPEN", "WRITE", "CLOSE", "file handling", "pseudocode"]
+      }
+    ]
+  },
+  {
+    "topic": "8 Database concepts",
+    "questions": [
+      {
+        "question": "State whether any field suitable as primary key and give reason.",
+        "answer": "None of the fields are likely to contain unique data.",
+        "paper": "M24P21",
+        "tags": ["short answer"],
+        "marks": 1,
+        "keywords": ["primary key", "unique", "database", "field"]
+      },
+      {
+        "question": "Complete SQL to return number of cans in stock.",
+        "answer": "SELECT SUM [NumberInStock] FROM SoftDrinks WHERE Container = 'Can'",
+        "paper": "M24P21",
+        "tags": ["SQL"],
+        "marks": 5,
+        "keywords": ["SUM", "WHERE", "Container", "SQL", "aggregate"]
+      },
+      {
+        "question": "Identify field most appropriate primary key for Contract table.",
+        "answer": "ContractNumber",
+        "paper": "M24P22",
+        "tags": ["short answer"],
+        "marks": 1,
+        "keywords": ["primary key", "ContractNumber", "database", "field"]
+      },
+      {
+        "question": "Complete table for data types of fields.",
+        "answer": "ContractNumber: text/alphanumeric\nMonths: integer\nEndDate: date/time\nSport: Boolean",
+        "paper": "M24P22",
+        "tags": ["matching"],
+        "marks": 2,
+        "keywords": ["text", "integer", "date", "Boolean", "data types", "database"]
+      },
+      {
+        "question": "Explain purpose of two SQL statements.",
+        "answer": "• to find the total number of months for all contracts\n• to find the total number of contracts\n• ... that are subscribed to News",
+        "paper": "M24P22",
+        "tags": ["explanation"],
+        "marks": 3,
+        "keywords": ["SUM", "COUNT", "WHERE", "SQL", "purpose"]
+      },
+      {
+        "question": "Complete SQL to find contracts with news AND sports services.",
+        "answer": "SELECT ContractNumber FROM Contract WHERE News AND Sport",
+        "paper": "M24P22",
+        "tags": ["SQL"],
+        "marks": 2,
+        "keywords": ["SELECT", "WHERE", "AND", "SQL", "query"]
+      },
+      {
+        "question": "State number of fields and records in Hangar1 table.",
+        "answer": "Fields: 7\nRecords: 11",
+        "paper": "M24P23",
+        "tags": ["short answer"],
+        "marks": 2,
+        "keywords": ["fields", "records", "count", "database", "table"]
+      },
+      {
+        "question": "Give output from SQL statement selecting aircraft with >1 engine.",
+        "answer": "314 Clipper 1936 4\nC-47 Dakota 1942 2\nNimrod 1966 4\nDC-10 1970 3\nConcorde 1973 4",
+        "paper": "M24P23",
+        "tags": ["SQL output"],
+        "marks": 4,
+        "keywords": ["SELECT", "WHERE", "ORDER BY", "SQL", "output"]
+      },
+      {
+        "question": "Complete SQL to display ID and model of airworthy aircraft.",
+        "answer": "SELECT ID, Model FROM Hangar1 WHERE Airworthy = Y // Airworthy",
+        "paper": "M24P23",
+        "tags": ["SQL"],
+        "marks": 4,
+        "keywords": ["SELECT", "WHERE", "Airworthy", "SQL", "query"]
+      }
+    ]
+  },
+  {
+    "topic": "9 Logic expressions",
+    "questions": [
+      {
+        "question": "Write logic expression for safe opening problem.",
+        "answer": "X = (A AND B) AND NOT C",
+        "paper": "M24P22",
+        "tags": ["logic"],
+        "marks": 3,
+        "keywords": ["AND", "NOT", "safe", "logic expression"]
+      }
+    ]
+  },
+  {
+    "topic": "10 Test data",
+    "questions": [
+      {
+        "question": "Give examples of normal, abnormal, extreme test data for 1-80.",
+        "answer": "Normal: 75\nAbnormal: 101\nExtreme: 80",
+        "paper": "M24P23",
+        "tags": ["test data"],
+        "marks": 3,
+        "keywords": ["normal", "abnormal", "extreme", "test data", "range"]
+      },
+      {
+        "question": "Describe what is meant by extreme test data.",
+        "answer": "Test data to test the limits of acceptable data entry … that will only accept the largest and smallest acceptable values.",
+        "paper": "M24P23",
+        "tags": ["definition"],
+        "marks": 2,
+        "keywords": ["limits", "acceptable", "largest", "smallest", "extreme test data"]
+      }
+    ]
+  },
+  {
+    "topic": "11 Naming conventions",
+    "questions": [
+      {
+        "question": "Explain why identifiers L, S, T, A not appropriate.",
+        "answer": "• (The identifiers L, S, T and A) are single letters\n• ... so do not give any indication of what values they hold.\n• For programs to be maintainable, identifiers should have meaningful names.",
+        "paper": "M24P23",
+        "tags": ["explanation"],
+        "marks": 3,
+        "keywords": ["meaningful names", "descriptive", "identifiers", "maintainability"]
+      },
+      {
+        "question": "State improved identifiers for L, S, T, A.",
+        "answer": "L → Largest / Maximum\nS → Smallest / Minimum\nT → Total / Sum\nA → Average / Mean",
+        "paper": "M24P23",
+        "tags": ["short answer"],
+        "marks": 2,
+        "keywords": ["Largest", "Smallest", "Total", "Average", "improved identifiers"]
+      }
+    ]
+  }
+]

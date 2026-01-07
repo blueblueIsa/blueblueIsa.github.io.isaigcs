@@ -1,0 +1,470 @@
+[
+  {
+    "question": "Identify two input devices built into a portable tablet computer.",
+    "answer": "Any two from:\n• Touch screen\n• Microphone\n• Button\n• Webcam // (digital) camera\n• Accelerometer\n• Biometric device",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "input devices",
+      "tablet",
+      "touch screen",
+      "microphone"
+    ]
+  },
+  {
+    "question": "Identify one output device built into a portable tablet computer.",
+    "answer": "Any one from:\n• Screen\n• Speaker\n• LED",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "output device",
+      "tablet",
+      "screen",
+      "display"
+    ]
+  },
+  {
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "answer": "SSD // Solid-state drive // Solid-state (device)",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "storage device",
+      "tablet",
+      "SSD",
+      "solid-state"
+    ]
+  },
+  {
+    "question": "Identify incorrect statement about hexadecimal number system.",
+    "answer": "It is a base 10 system",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "hexadecimal",
+      "incorrect statement",
+      "base 10",
+      "base 16"
+    ]
+  },
+  {
+    "question": "Convert denary numbers 20, 32, and 165 to hexadecimal.",
+    "answer": "14\n20\nA5",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "denary to hexadecimal",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Perform logical left shift of 3 places on binary number 10100011.",
+    "answer": "00011000",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "logical shift"
+    ],
+    "marks": 1,
+    "keywords": [
+      "logical left shift",
+      "binary shift"
+    ]
+  },
+  {
+    "question": "Identify correct statement about logical left shift of 2 places.",
+    "answer": "It would multiply the binary number by 4",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "logical left shift",
+      "effect",
+      "multiplication"
+    ]
+  },
+  {
+    "question": "Convert two's complement 10100011 to denary.",
+    "answer": "-93",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "two's complement"
+    ],
+    "marks": 2,
+    "keywords": [
+      "two's complement",
+      "to denary",
+      "conversion"
+    ]
+  },
+  {
+    "question": "State how many bytes in a kibibyte (KiB).",
+    "answer": "1024",
+    "paper": "S24P11",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "kibibyte",
+      "KiB",
+      "bytes",
+      "storage units"
+    ]
+  },
+  {
+    "question": "Describe structure of a data packet.",
+    "answer": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "describe"
+    ],
+    "marks": 3,
+    "keywords": [
+      "data packet",
+      "structure",
+      "header",
+      "payload",
+      "trailer"
+    ]
+  },
+  {
+    "question": "Identify device controlling packet path in packet switching.",
+    "answer": "Router",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "packet switching",
+      "router",
+      "path control"
+    ]
+  },
+  {
+    "question": "Explain why serial data transmission is used for packets.",
+    "answer": "Any three from:\n• The network may be spread over a long distance …\n• … so it is more reliable\n• Bits will be sent/arrive in sequence\n• …so bits less likely to be skewed\n• Less crosstalk/interference\n• … so less likely to have errors\n• The data may not need to be transmitted at a fast speed // data transmission speed of serial is adequate\n• The cables in the network only use serial transmission",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 3,
+    "keywords": [
+      "serial data transmission",
+      "advantages",
+      "packets"
+    ]
+  },
+  {
+    "question": "State purpose of secondary storage.",
+    "answer": "To store data/files/software permanently",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "secondary storage",
+      "purpose",
+      "permanent storage"
+    ]
+  },
+  {
+    "question": "Circle three examples of optical storage.",
+    "answer": "Compact disk (CD)\nDigital versatile disk (DVD)\nBlu-ray disk",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "circle"
+    ],
+    "marks": 3,
+    "keywords": [
+      "optical storage",
+      "CD",
+      "DVD",
+      "Blu-ray"
+    ]
+  },
+  {
+    "question": "Explain why computer needs RAM.",
+    "answer": "Any three from:\n• To store data temporarily\n• To store data currently in use\n• To store software currently in use\n• Data can be accessed faster (than secondary storage)\n• To speed up the fetch stage (of the fetch-execute cycle)",
+    "paper": "S24P11",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "RAM",
+      "purpose",
+      "fast access",
+      "current data"
+    ]
+  },
+  {
+    "question": "State purpose of firmware.",
+    "answer": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)",
+    "paper": "S24P11",
+    "topic": "4 Software",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "firmware",
+      "purpose",
+      "hardware control"
+    ]
+  },
+  {
+    "question": "Give one example of firmware.",
+    "answer": "Any one from:\n• Bootstrap\n• Bootloader\n• BIOS\n• Operating system (in embedded system)\n• Programs (in embedded systems)",
+    "paper": "S24P11",
+    "topic": "4 Software",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "firmware",
+      "example",
+      "BIOS"
+    ]
+  },
+  {
+    "question": "Give two examples of system software.",
+    "answer": "Any two from:\n• Operating system\n• Utility software\nNOTE: Two examples of utility software can be awarded",
+    "paper": "S24P11",
+    "topic": "4 Software",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "system software",
+      "examples",
+      "OS",
+      "utilities"
+    ]
+  },
+  {
+    "question": "Complete paragraph about asymmetric encryption.",
+    "answer": "• plain text\n• cipher text\n• public key\n• private key",
+    "paper": "S24P11",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "complete"
+    ],
+    "marks": 4,
+    "keywords": [
+      "asymmetric encryption",
+      "public key",
+      "private key",
+      "cipher text"
+    ]
+  },
+  {
+    "question": "State meaning of robot being automated.",
+    "answer": "The robot can perform actions without human intervention",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "robot",
+      "automated",
+      "no human intervention"
+    ]
+  },
+  {
+    "question": "Give three characteristics of a robot.",
+    "answer": "Any three from:\n• It has a mechanical structure/framework\n• It has electrical components\n• It is programmable\n• It can move",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 3,
+    "keywords": [
+      "robot",
+      "characteristics",
+      "mechanical",
+      "electrical",
+      "programmable"
+    ]
+  },
+  {
+    "question": "Explain how robot uses sensors and microprocessor to detect fence.",
+    "answer": "Any six from:\n• A proximity sensor is used\n• The sensor continuously sends digitised data to the microprocessor\n• The microprocessor compares the data to a stored value/range of values\n• If the value is within the range/matches the robot continues planting\n• If the value is above/below/outside the range a signal is sent by the microprocessor to turn/stop the robot\n• ... using an actuator to turn/stop the robot\n• This process repeats until the robot is turned off",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 6,
+    "keywords": [
+      "robot",
+      "sensor",
+      "microprocessor",
+      "fence detection"
+    ]
+  },
+  {
+    "question": "Give two advantages of using automated robot for planting.",
+    "answer": "Any two from:\n• The robot is more accurate when planting seeds\n• The robot does not need to take breaks // works 24/7\n• The robot will not get bored of performing a repetitive task\n• The farmer can perform other tasks whilst the robot is planting the seeds\n• The robot may be faster/more efficient (at planting seeds)\n• Safer as the robot can work in a more dangerous environments (e.g. with animals in a field)\n• Doesn’t need to pay labour costs/wages",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "automated robot",
+      "advantages",
+      "efficiency",
+      "24/7"
+    ]
+  },
+  {
+    "question": "Give two disadvantages of using automated robot for planting.",
+    "answer": "Any two from:\n• The robot may have been expensive to purchase\n• The robot may need maintenance and this may be costly\n• The robot may take away jobs from humans that previously planted the seeds\n• Farmer/workers may be deskilled\n• Farmer may need training in how to use the robot\n• If it breaks the farmer will need to manually plant\n• If faulty it may cause damage to farm/seeds\n• Cannot adapt to a new/unexpected event",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "automated robot",
+      "disadvantages",
+      "cost",
+      "maintenance"
+    ]
+  },
+  {
+    "question": "Explain how machine learning improves robot.",
+    "answer": "Any two from:\n• The robot can now adapt itself by changing its own rules/data/ processes\n• The robot will become more efficient\n• ... as it has a greater knowledge of its surroundings/environment\n• ... as it can remember where a fence is\n• ... as it can remember the route it needs to take\n• ... as it can remember where any obstacles are to avoid\n• ... as it can remember where to start and stop sowing seeds\n• ... as it may make fewer errors",
+    "paper": "S24P11",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "machine learning",
+      "robot improvement",
+      "learn from experience"
+    ]
+  },
+  {
+    "question": "Explain how data might have errors after transmission.",
+    "answer": "Any three from:\n• Data could be lost\n• Data could be gained/added\n• Data could be changed\n• Bits could be reassembled in the wrong order\n• Interference could occur\n• Crosstalk could occur\n• Data collisions could occur\n• Data packets could time out/reach their hop count\n• Network could be infected with malware",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 3,
+    "keywords": [
+      "data errors",
+      "transmission",
+      "interference",
+      "noise"
+    ]
+  },
+  {
+    "question": "Describe operation of error detection system using odd parity and ARQ.",
+    "answer": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "describe"
+    ],
+    "marks": 8,
+    "keywords": [
+      "error detection",
+      "odd parity",
+      "ARQ",
+      "retransmission"
+    ]
+  },
+  {
+    "question": "Give two other error detection methods.",
+    "answer": "Any two from:\nEcho check\nChecksum\nEven parity check\nNegative ARQ",
+    "paper": "S24P11",
+    "topic": "2 Data transmission",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "error detection",
+      "checksum",
+      "echo check"
+    ]
+  },
+  {
+    "question": "Explain how firewall protects network.",
+    "answer": "Any five from:\nCriteria can be set (for traffic)\n… such as a blacklist/whitelist (of IP addresses)\nIt will examine traffic coming into the network\nIt will check that the traffic meets the set criteria\n… and will reject it if it does not meet criteria\nCertain ports used by hackers can be blocked/closed",
+    "paper": "S24P11",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "explain"
+    ],
+    "marks": 5,
+    "keywords": [
+      "firewall",
+      "network protection",
+      "traffic filtering",
+      "security rules"
+    ]
+  },
+  {
+    "question": "Give two examples of malware firewall protects against.",
+    "answer": "Any two from:\n• Virus\n• Worm\n• Trojan horse\n• Spyware\n• Adware\n• Ransomware",
+    "paper": "S24P11",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "malware",
+      "firewall",
+      "virus",
+      "worm"
+    ]
+  }
+]

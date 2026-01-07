@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IGCSE Computer Science Key Terms 2026–2028</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">IGCSE CS 2026–2028</div>
+      <nav id="units-nav"></nav>
+      <nav id="topics-nav"></nav>
+    </aside>
+    <main class="content">
+      <header class="content-header">
+        <button id="sidebar-toggle" class="sidebar-toggle">Units</button>
+        <div class="header-main">
+          <h1 id="unit-title"></h1>
+          <p id="unit-desc" class="muted"></p>
+        </div>
+        <div class="filters">
+          <input id="search-input" type="search" placeholder="Search key terms…" aria-label="Search key terms">
+          <select id="scope-select" aria-label="Scope">
+            <option value="current">Current Unit</option>
+            <option value="all">All Units</option>
+          </select>
+          <select id="topic-select" aria-label="Topic filter">
+            <option value="">All Topics</option>
+          </select>
+          <label class="confusions-toggle">
+            <input id="confusions-only" type="checkbox" aria-label="Confusions only">
+            Confusions only
+          </label>
+          <select id="mode-select" aria-label="View mode">
+            <option value="list">List</option>
+            <option value="flashcards">Flashcards</option>
+            <option value="confusions">Confusions</option>
+            <option value="qa">Q&amp;A</option>
+          </select>
+        </div>
+        <div id="letter-filter" class="letters" aria-label="Filter by first letter"></div>
+      </header>
+      <section class="terms" id="terms"></section>
+      <section class="flashcards hidden" id="flashcards">
+        <div class="flashcard" id="flashcard">
+          <div class="flash-front" id="flash-front"></div>
+          <div class="flash-back" id="flash-back"></div>
+        </div>
+        <div class="flash-controls">
+          <button id="flash-prev">Prev</button>
+          <button id="flash-next">Next</button>
+          <button id="flash-reveal">Reveal</button>
+          <button id="flash-shuffle">Shuffle</button>
+        </div>
+      </section>
+      <section class="qa hidden" id="qa"></section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+<script>
+</script>
+</html>

@@ -1,0 +1,513 @@
+[
+    {
+    "question": "Identify cyber security threat not a type of malware.",
+    "answer": "Phishing",
+    "paper": "W24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "malware",
+      "phishing",
+      "not malware"
+    ]
+  },
+  {
+    "question": "Identify another example of malware.",
+    "answer": "Any one from:\n• Spyware // Keylogger\n• Adware\n• Trojan horse",
+    "paper": "W24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "malware",
+      "example",
+      "trojan"
+    ]
+  },
+  {
+    "question": "Identify software used to find and remove malware.",
+    "answer": "Anti-malware",
+    "paper": "W24P12",
+    "topic": "4 Software",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "malware removal",
+      "anti-virus",
+      "software"
+    ]
+  },
+  {
+    "question": "Convert binary 11100011 to denary.",
+    "answer": "227",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 1,
+    "keywords": [
+      "binary to denary",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert binary 11100011 to hexadecimal.",
+    "answer": "One mark for each correct character in the correct order:\nE3",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 2,
+    "keywords": [
+      "binary to hexadecimal",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Perform logical left shift of 2 places on binary 11100011.",
+    "answer": "1\n0 0 0 1 1 0 0 0",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "logical shift"
+    ],
+    "marks": 1,
+    "keywords": [
+      "logical left shift",
+      "binary shift"
+    ]
+  },
+  {
+    "question": "Give two's complement for denary -99.",
+    "answer": "One mark for suitable working method e.g. flip and add 1\nOne mark for correct answer\n• 10011101",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "two's complement"
+    ],
+    "marks": 2,
+    "keywords": [
+      "two's complement",
+      "-99",
+      "negative binary"
+    ]
+  },
+  {
+    "question": "Add binary numbers 01001100 and 11100011.",
+    "answer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\nOne mark for showing overflow bit\n 1\n 1 1 1 0 0 0 1 1\n+ 0 1 0 0 1 1 0 0\n1 0 0 1 0 1 1 1 1",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "binary addition"
+    ],
+    "marks": 4,
+    "keywords": [
+      "binary addition",
+      "8-bit"
+    ]
+  },
+  {
+    "question": "Define clock speed.",
+    "answer": "The maximum number of FDE cycles/instructions a CPU can perform/process/execute in a second",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "define"
+    ],
+    "marks": 1,
+    "keywords": [
+      "clock speed",
+      "definition",
+      "FDE cycles"
+    ]
+  },
+  {
+    "question": "Explain effect of changing CPU from 2 GHz to 3 GHz.",
+    "answer": "Increases/improves the performance // Tasks can be performed quicker/faster\n… because more FDE cycles/instructions can be processed in a second",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "CPU",
+      "clock speed",
+      "performance",
+      "2GHz to 3GHz"
+    ]
+  },
+  {
+    "question": "Describe MAR role in FDE cycle.",
+    "answer": "Stores addresses …\n… of next instruction/data to be fetched // where data is to be written to",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "MAR",
+      "role",
+      "FDE cycle",
+      "address storage"
+    ]
+  },
+  {
+    "question": "State name of list of machine code commands CPU can process.",
+    "answer": "Instruction set",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "machine code",
+      "instruction set",
+      "CPU commands"
+    ]
+  },
+  {
+    "question": "Give two characteristics of embedded system.",
+    "answer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "embedded system",
+      "characteristics",
+      "dedicated",
+      "limited resources"
+    ]
+  },
+  {
+    "question": "Circle three other examples of embedded system.",
+    "answer": "One mark for each correct system:\n• security light system\n• freezer\n• vending machine",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "circle"
+    ],
+    "marks": 3,
+    "keywords": [
+      "embedded system",
+      "examples",
+      "freezer",
+      "security light",
+      "vending machine"
+    ]
+  },
+  {
+    "question": "Give one benefit of higher sample rate for sound recording.",
+    "answer": "Any one from:\n• The recording of the song is more accurate/closer to original",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "sample rate",
+      "benefit",
+      "sound quality"
+    ]
+  },
+  {
+    "question": "Give one drawback of higher sample rate.",
+    "answer": "Any one from:\n• The file size will be increased\n• The file will require more storage space",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "sample rate",
+      "drawback",
+      "file size"
+    ]
+  },
+  {
+    "question": "Define sample resolution.",
+    "answer": "Any two from:\n• The number of bits that are used per sample\n• … that provides the variation in amplitude that can be stored for each sample // defines the number of different amplitudes that can be recorded\n• … that determines how quiet/loud the sounds are that can be recorded\n• Example e.g. 16-bit",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "define"
+    ],
+    "marks": 2,
+    "keywords": [
+      "sample resolution",
+      "definition",
+      "bits per sample"
+    ]
+  },
+  {
+    "question": "Identify compression method that doesn't permanently remove data.",
+    "answer": "Lossless",
+    "paper": "W24P12",
+    "topic": "1 Data representation",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "compression",
+      "lossless",
+      "no data removal"
+    ]
+  },
+  {
+    "question": "Complete table about data transmission methods.",
+    "answer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex",
+    "paper": "W24P12",
+    "topic": "2 Data transmission",
+    "tags": [
+      "complete"
+    ],
+    "marks": 4,
+    "keywords": [
+      "data transmission",
+      "serial",
+      "parallel",
+      "simplex",
+      "half-duplex",
+      "full-duplex"
+    ]
+  },
+  {
+    "question": "Identify two input devices for automatic ticket reading.",
+    "answer": "Any two from e.g.\n• Barcode scanner\n• QR code scanner\n• Digital camera",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "identify"
+    ],
+    "marks": 2,
+    "keywords": [
+      "input devices",
+      "ticket reading",
+      "barcode",
+      "RFID"
+    ]
+  },
+  {
+    "question": "Explain how sensor and microprocessor check train door closure.",
+    "answer": "Any six from:\n• Proximity/infrared/pressure sensor used\n• Sensor continually sends digitised data to microprocessor // When driver pushes button, sensor sends digitised data to the microprocessor\n• Microprocessor compares data to stored value(s)\n• If in range/out of range/matches, microprocessor sends signal to close the door\n• Actuator used to close door\n• If not in range/out of range/does not match door will not close // If not in range/out of range/does not match actuator not activated/signal not sent as passenger in door // If not in range/out of range/does not match a timer is set to check again // If not in range/out of range/does not match a signal is sent to alert the driver/output a message\n• This process repeats until the door can close",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 6,
+    "keywords": [
+      "sensor",
+      "microprocessor",
+      "train door",
+      "safety",
+      "passenger detection"
+    ]
+  },
+  {
+    "question": "Identify security solution against data interception.",
+    "answer": "Encryption …\n… if the data is intercepted it will be meaningless (because they do not have the decryption key)",
+    "paper": "W24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "data interception",
+      "security solution",
+      "encryption"
+    ]
+  },
+  {
+    "question": "Complete table about internet terms.",
+    "answer": "Term\nworld wide web\ncookie\nuniform resource locator (URL)\nweb server\nhypertext markup language // HTML\nhypertext transfer protocol // HTTP",
+    "paper": "W24P12",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "complete"
+    ],
+    "marks": 6,
+    "keywords": [
+      "internet terms",
+      "WWW",
+      "cookie",
+      "URL",
+      "web server",
+      "HTML",
+      "HTTP"
+    ]
+  },
+  {
+    "question": "State one main characteristic of AI system.",
+    "answer": "Any one from:\n• The ability to learn/adapt // machine learning abilities\n• The collection of data and the rules for using that data\n• The ability to reason // has problem solving abilities // makes predictions\n• Simulates intelligent/human behaviour\n• Analyses patterns",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "AI",
+      "characteristic",
+      "learning"
+    ]
+  },
+  {
+    "question": "Explain how expert system operates.",
+    "answer": "Any six from:\n• It has an interface …\n• … used to input data/view output\n• It has a knowledge base\n• It has a rule base\n• It has an inference engine\n• Applies the rule base to/and the knowledge base to provide output/diagnosis/result/solution/decision\n• Decides what to ask next based on the data input",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "expert system",
+      "operation",
+      "knowledge base",
+      "inference engine"
+    ]
+  },
+  {
+    "question": "Identify what flow sensor measures.",
+    "answer": "Amount of liquid/gas/steam flowing/moving through an environment",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "flow sensor",
+      "measures",
+      "flow rate"
+    ]
+  },
+  {
+    "question": "Explain one advantage of automated system for employees.",
+    "answer": "Two from (for benefit and matching description) e.g.:\n• Increases safety\n• …meaning that workers do not need to go into dangerous areas to collect data/make checks/do dangerous tasks\n• Can increase jobs/skills\n• …as employees are needed to learn/maintain the equipment\n• No need to do repetitive tasks\n• … so, they can use their time on other/more skilled tasks",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "automated system",
+      "advantage",
+      "employees",
+      "safety"
+    ]
+  },
+  {
+    "question": "Explain one disadvantage of automated system for owners.",
+    "answer": "Two from (for drawback and matching description) e.g.:\n• High set-up/installation costs\n• … it would mean the company need to find a lot of money up front to pay for the equipment // employees will need training\n• Utility/maintenance/repair costs\n• … increase in bills such as electricity // skilled employees will be required to maintain the system // equipment will break/need updating\n• Deskilling of the workforce\n• … may mean that workers will no longer have the skills for some of the manufacturing jobs, should the equipment break",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "automated system",
+      "disadvantage",
+      "owners",
+      "cost"
+    ]
+  },
+  {
+    "question": "Give two other features of digital currency.",
+    "answer": "Any two from:\n• Only exists electronically\n• Can be a decentralised system\n• Can be a centralised system\n• Usually encrypted",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "digital currency",
+      "features",
+      "decentralized",
+      "cryptography"
+    ]
+  },
+  {
+    "question": "Identify process using digital ledger to track digital currency.",
+    "answer": "Blockchain",
+    "paper": "W24P12",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "digital ledger",
+      "blockchain",
+      "digital currency"
+    ]
+  },
+  {
+    "question": "Identify example of primary storage.",
+    "answer": "Random access memory (RAM)",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "primary storage",
+      "example",
+      "RAM"
+    ]
+  },
+  {
+    "question": "Give one characteristic of primary storage.",
+    "answer": "Any one from:\n• Directly accessed by the CPU\n• Has both volatile and non-volatile storage",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "primary storage",
+      "characteristic",
+      "volatile"
+    ]
+  },
+  {
+    "question": "Complete description about virtual memory.",
+    "answer": "One mark for each correct term in the correct order:\n• Random access memory (RAM)\n• Hard disk drive (HDD)\n• Pages\n• Random access memory (RAM)\n• Virtual memory // Hard disk drive (HDD)",
+    "paper": "W24P12",
+    "topic": "3 Hardware",
+    "tags": [
+      "complete"
+    ],
+    "marks": 5,
+    "keywords": [
+      "virtual memory",
+      "RAM",
+      "HDD",
+      "pages"
+    ]
+  }
+]

@@ -1,0 +1,517 @@
+[
+    {
+    "question": "Give two input devices built into mobile phone.",
+    "answer": "Any two from e.g.:\n• Touchscreen\n• Microphone\n• Keyboard\n• Keypad\n• Digital camera\n• Sensor // by example\n• Biometric device\n• Button",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "input devices",
+      "mobile phone",
+      "touch screen",
+      "microphone"
+    ]
+  },
+  {
+    "question": "Give one output device built into mobile phone.",
+    "answer": "Any one from e.g.:\n• Screen\n• Speaker\n• LED/Light\n• Actuator/Motor",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "output device",
+      "mobile phone",
+      "speaker"
+    ]
+  },
+  {
+    "question": "State how many bits equal a byte.",
+    "answer": "8",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "byte",
+      "bits",
+      "8 bits"
+    ]
+  },
+  {
+    "question": "State how many kilobytes (KiB) equal a mebibyte (MiB).",
+    "answer": "1024",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "kilobytes",
+      "mebibytes",
+      "KiB",
+      "MiB",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Describe operating system purpose.",
+    "answer": "Any three from:\n• It performs the basic functions of a computer\n• It manages the hardware\n• It provides a platform to run software\n• It provides a user interface\n• It performs tasks such as (any example of function of an operating system)",
+    "paper": "W24P13",
+    "topic": "4 Software",
+    "tags": [
+      "describe"
+    ],
+    "marks": 3,
+    "keywords": [
+      "operating system",
+      "purpose",
+      "resource management"
+    ]
+  },
+  {
+    "question": "Explain meaning of binary number system.",
+    "answer": "Any two from:\n• It has a base of 2\n• It only uses two values\n• ... that are 1 and 0",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "binary",
+      "number system",
+      "base 2",
+      "0 and 1"
+    ]
+  },
+  {
+    "question": "Convert denary numbers 14, 59, 234 to binary.",
+    "answer": "• (0000)1110\n• (00)111011\n• 11101010",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "denary to binary",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert denary numbers 9, 26, 65 to hexadecimal.",
+    "answer": "• 9\n• 1A\n• 41",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "conversion"
+    ],
+    "marks": 3,
+    "keywords": [
+      "denary to hexadecimal",
+      "conversion"
+    ]
+  },
+  {
+    "question": "Convert denary 123 to 8-bit two's complement.",
+    "answer": "One mark for suitable working method e.g. conversion to binary\nOne mark for correct answer\n• 01111011",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "two's complement"
+    ],
+    "marks": 2,
+    "keywords": [
+      "two's complement",
+      "123",
+      "positive",
+      "8-bit"
+    ]
+  },
+  {
+    "question": "Add binary numbers 00110011 and 01111000.",
+    "answer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\n1 1 1\n0 0 1 1 0 0 1 1\n+ 0 1 1 1 1 0 0 0\n1 0 1 0 1 0 1 1",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "binary addition"
+    ],
+    "marks": 3,
+    "keywords": [
+      "binary addition",
+      "8-bit"
+    ]
+  },
+  {
+    "question": "Circle three components built into CPU.",
+    "answer": "• Accumulator (ACC)\n• Control unit (CU)\n• Program counter (PC)",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "circle"
+    ],
+    "marks": 3,
+    "keywords": [
+      "CPU components",
+      "accumulator",
+      "control unit",
+      "program counter"
+    ]
+  },
+  {
+    "question": "Explain cache purpose.",
+    "answer": "Any two from:\n• It is a type of storage\n• …that stores frequently used data/instructions\n• To speed up access\n• … as it is faster to access than RAM\n• It has different levels e.g. L1 – L3",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "cache",
+      "purpose",
+      "fast memory",
+      "frequently used data"
+    ]
+  },
+  {
+    "question": "State name of component regulating FDE cycles per second.",
+    "answer": "Clock",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "clock",
+      "FDE cycles",
+      "regulation"
+    ]
+  },
+  {
+    "question": "State name of component carrying out calculations and logical operations.",
+    "answer": "Arithmetic logic unit // ALU",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "ALU",
+      "calculations",
+      "logical operations"
+    ]
+  },
+  {
+    "question": "Describe main purpose of web browser.",
+    "answer": "Any two from:\n• Display web pages\n• … by rendering HTML",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "describe"
+    ],
+    "marks": 2,
+    "keywords": [
+      "web browser",
+      "purpose",
+      "retrieve web pages",
+      "display"
+    ]
+  },
+  {
+    "question": "Identify web browser function for automatic payment details.",
+    "answer": "Storing cookies",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "web browser",
+      "function",
+      "auto-fill",
+      "payment details"
+    ]
+  },
+  {
+    "question": "Identify web browser function for quick website access.",
+    "answer": "Any one from:\n• Storing bookmarks\n• Storing favourites",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "web browser",
+      "function",
+      "bookmarks",
+      "quick access"
+    ]
+  },
+  {
+    "question": "State how SSL protocol secures data transmission.",
+    "answer": "Any one from:\n• It encrypts it\n• Uses digital certificates",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "state"
+    ],
+    "marks": 1,
+    "keywords": [
+      "SSL",
+      "security",
+      "encryption",
+      "data transmission"
+    ]
+  },
+  {
+    "question": "Give one reason error may occur during data transmission.",
+    "answer": "Interference // crosstalk",
+    "paper": "W24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "give reason"
+    ],
+    "marks": 1,
+    "keywords": [
+      "error",
+      "data transmission",
+      "electrical interference"
+    ]
+  },
+  {
+    "question": "Identify error detection method not using calculated value.",
+    "answer": "Echo check",
+    "paper": "W24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "error detection",
+      "echo check",
+      "no calculated value"
+    ]
+  },
+  {
+    "question": "Explain how ARQ operates with positive acknowledgement.",
+    "answer": "Any five from:\n• Timer is started when sending device transmits a data packet to receiver\n• Receiving device checks the data packet for errors\n• Once the receiving device knows the packet is error free it sends an acknowledgement back to the sending device …\n• … and the next packet is sent\n• If the sending device does not receive an acknowledgement before the timer ends …\n• … a timeout occurs\n• … the data packet is resent …\n• … until acknowledgement received // until max number of attempts reached",
+    "paper": "W24P13",
+    "topic": "2 Data transmission",
+    "tags": [
+      "explain"
+    ],
+    "marks": 5,
+    "keywords": [
+      "ARQ",
+      "positive acknowledgement",
+      "error correction"
+    ]
+  },
+  {
+    "question": "Identify characteristic not of cloud storage.",
+    "answer": "Data is stored locally",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "multiple-choice"
+    ],
+    "marks": 1,
+    "keywords": [
+      "cloud storage",
+      "characteristics",
+      "not local"
+    ]
+  },
+  {
+    "question": "Explain two advantages of cloud storage for company owners.",
+    "answer": "Four from e.g.:\n• The data can be accessed from any location\n• … meaning that employees can work from anywhere with a connection\n• The hardware is owned/maintained by a third party\n• … meaning that the company are not responsible for maintaining // meaning the company aren’t responsible for its security\n• Can increase the storage needed easily\n• … without needing to buy new hardware\n• Do not need to house the hardware needed\n• … costs can be saved on the space saved for this\n• Cloud system will back up the data\n• … meaning the company does not need to do this",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "cloud storage",
+      "advantages",
+      "owners",
+      "scalability",
+      "maintenance"
+    ]
+  },
+  {
+    "question": "Explain one disadvantage of cloud storage for employees.",
+    "answer": "Two from e.g.:\n• Internet connection is needed/needs to be stable …\n• … and if this is not available/unstable the data cannot be accessed\n• Employees could be pressured to work outside of hours …\n• … as they can access the data from any location",
+    "paper": "W24P13",
+    "topic": "5 The internet and its uses",
+    "tags": [
+      "explain"
+    ],
+    "marks": 2,
+    "keywords": [
+      "cloud storage",
+      "disadvantage",
+      "employees",
+      "internet dependence"
+    ]
+  },
+  {
+    "question": "Define image resolution.",
+    "answer": "The dimensions of an image // Number of pixels wide by number of pixels high",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "define"
+    ],
+    "marks": 1,
+    "keywords": [
+      "image resolution",
+      "definition",
+      "pixels"
+    ]
+  },
+  {
+    "question": "Define image colour depth.",
+    "answer": "The number of bits used to represent each/a colour",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "define"
+    ],
+    "marks": 1,
+    "keywords": [
+      "colour depth",
+      "definition",
+      "bits per pixel"
+    ]
+  },
+  {
+    "question": "Give one benefit of increasing colour depth.",
+    "answer": "Any one from:\n• A greater range of colours can be seen/used\n• Image will be closer to the actual content of the image/real life\n• The image will have more detail",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 1,
+    "keywords": [
+      "colour depth",
+      "benefit",
+      "more colours"
+    ]
+  },
+  {
+    "question": "Identify compression method reducing colour depth and resolution.",
+    "answer": "Lossy",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "identify"
+    ],
+    "marks": 1,
+    "keywords": [
+      "compression",
+      "lossy",
+      "colour depth",
+      "resolution"
+    ]
+  },
+  {
+    "question": "Give two other benefits of compressing image.",
+    "answer": "Any two from:\n• Quicker to transmit/upload/download\n• Not as much bandwidth needed to transmit file\n• To fit in limitation of file size on e.g. email",
+    "paper": "W24P13",
+    "topic": "1 Data representation",
+    "tags": [
+      "give"
+    ],
+    "marks": 2,
+    "keywords": [
+      "image compression",
+      "benefits",
+      "faster transmission",
+      "bandwidth"
+    ]
+  },
+  {
+    "question": "Complete table about secondary storage statements.",
+    "answer": "One mark for each correct type of storage.\ntype of secondary storage\noptical\nsolid-state\nmagnetic\noptical\nmagnetic\nsolid-state",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "complete"
+    ],
+    "marks": 5,
+    "keywords": [
+      "secondary storage",
+      "optical",
+      "solid-state",
+      "magnetic",
+      "types"
+    ]
+  },
+  {
+    "question": "Explain two differences between primary and secondary storage.",
+    "answer": "Four from:\n• Primary storage is directly accessible by the CPU\n• … whereas secondary storage is not directly accessible by the CPU\n• Primary storage stores the data that is currently in use/for booting the system\n• … whereas secondary storage stores user’s files/data/operating system/application software\n• Primary storage normally has a small capacity\n• … whereas secondary storage normally has a larger capacity\n• Some parts of primary storage are volatile\n• … whereas secondary storage is non volatile\n• Some parts of primary storage the data cannot be changed\n• … whereas data in secondary storage can be changed\n• Primary storage has faster access speeds to data\n• … whereas secondary storage has slower access speeds to data",
+    "paper": "W24P13",
+    "topic": "3 Hardware",
+    "tags": [
+      "explain"
+    ],
+    "marks": 4,
+    "keywords": [
+      "primary storage",
+      "secondary storage",
+      "differences",
+      "speed",
+      "volatility"
+    ]
+  },
+  {
+    "question": "Complete description about expert system operation.",
+    "answer": "One mark for each correct term in the correct order:\n• knowledge base\n• inference engine\n• rule base // knowledge base\n• knowledge base // rule base\n• interface",
+    "paper": "W24P13",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "complete"
+    ],
+    "marks": 5,
+    "keywords": [
+      "expert system",
+      "knowledge base",
+      "inference engine",
+      "rule base",
+      "interface"
+    ]
+  },
+  {
+    "question": "Describe machine learning capabilities.",
+    "answer": "Any four from:\ne.g.\n• It is a form of artificial intelligence\n• Means it can adapt/change (its own processes) // It can edit its own algorithms\n• It can edit its own data\n• It can be trained\n• … this can be supervised/unsupervised\n• … meaning it can learn with/without human interaction\n• Analyses patterns and stores successful/unsuccessful results …\n• … to influence future decisions\n• (Supervised) means a user tells the system the input and output\n• (Unsupervised) means the system is given the input and needs to work out the output",
+    "paper": "W24P13",
+    "topic": "6 Automated and emerging technologies",
+    "tags": [
+      "describe"
+    ],
+    "marks": 4,
+    "keywords": [
+      "machine learning",
+      "capabilities",
+      "learn from data",
+      "no explicit programming"
+    ]
+  }
+]
