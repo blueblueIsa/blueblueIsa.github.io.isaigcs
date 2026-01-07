@@ -279,6 +279,25 @@ nav .group {
   display: block;
 }
 
+.qa-answer-block {
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.qa-answer-block .keyword {
+  font-weight: 700;
+  color: var(--accent);
+  background-color: rgba(59, 130, 246, 0.12);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
 .qa-line {
   background: #ffffff;
   border: 1px solid var(--border);

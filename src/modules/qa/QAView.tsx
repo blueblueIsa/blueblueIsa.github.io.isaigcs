@@ -9,6 +9,7 @@ export const QAView: React.FC = () => {
   const [selectedUnitId, setSelectedUnitId] = useState<string>(searchParams.get('unit') || units[0].id);
   const [selectedTopic, setSelectedTopic] = useState<string>(searchParams.get('topic') || '');
   const [keyword, setKeyword] = useState<string>(searchParams.get('q') || '');
+  const kwOnly: string = searchParams.get('kw') || '';
 
   const unitQA = qaData[selectedUnitId] || {};
   const topics = Object.keys(unitQA);
@@ -16,6 +17,11 @@ export const QAView: React.FC = () => {
   const sourceQuestions = hasTopicData ? (unitQA[selectedTopic] || []) : Object.values(unitQA).flat();
   const filteredQuestions = sourceQuestions.filter(q => {
     const k = keyword.trim().toLowerCase();
+    const kw = kwOnly.trim().toLowerCase();
+    if (kw) {
+      const inKeywordsStrict = Array.isArray(q.keywords) && q.keywords.some(w => w.toLowerCase() === kw);
+      return inKeywordsStrict;
+    }
     if (!k) return true;
     const inText = q.question.toLowerCase().includes(k) || q.answer.toLowerCase().includes(k);
     const inKeywords = Array.isArray(q.keywords) && q.keywords.some(w => w.toLowerCase().includes(k));
@@ -34,8 +40,9 @@ export const QAView: React.FC = () => {
     params.set('unit', selectedUnitId);
     if (selectedTopic && hasTopicData) params.set('topic', selectedTopic);
     if (keyword) params.set('q', keyword);
+    if (kwOnly) params.set('kw', kwOnly);
     setSearchParams(params, { replace: true });
-  }, [selectedUnitId, selectedTopic, keyword, setSearchParams, hasTopicData]);
+  }, [selectedUnitId, selectedTopic, keyword, kwOnly, setSearchParams, hasTopicData]);
 
   return (
     <div>

@@ -220,7 +220,7 @@ export const units: Unit[] = [
       { term: "Verification", topic: "Testing", definition: "Ensuring product meets specification and intent." },
       { term: "Linear search", topic: "Algorithms", definition: "Searching sequentially through a list." },
       { term: "Binary search", topic: "Algorithms", definition: "Searching a sorted list by halving the search space." },
-      { term: "Bubble sort", topic: "Algorithms", definition: "Repeatedly swapping adjacent out-of-order elements.", example: "REPEAT\n  swapped <- FALSE\n  FOR i <- 0 TO n-2 DO\n    IF A[i] > A[i+1] THEN\n      temp <- A[i]\n      A[i] <- A[i+1]\n      A[i+1] <- temp\n      swapped <- TRUE\n    ENDIF\n  NEXT i\nUNTIL swapped = FALSE" },
+      { term: "Bubble sort", topic: "Algorithms", definition: "Repeatedly swapping adjacent out-of-order elements.", example: "FOR i <- 1 TO N - 1\n  FOR j <- 1 TO N - i\n    IF A[j] > A[j + 1] THEN\n      Temp <- A[j]\n      A[j] <- A[j + 1]\n      A[j + 1] <- Temp\n    ENDIF\n  NEXT j\nNEXT i\nOUTPUT A" },
       { term: "Insertion sort", topic: "Algorithms", definition: "Building sorted list by inserting elements into position." },
       { term: "Merge sort", topic: "Algorithms", definition: "Divide and conquer sorting by merging sorted sublists." },
       { term: "Efficiency", topic: "Algorithms", definition: "Measure of resources used by an algorithm." }

@@ -23,10 +23,6 @@ export const QACard: React.FC<QACardProps> = ({ question }) => {
     return tHit || kHit;
   }, [question.tags, question.answer]);
 
-  const lines = useMemo(() => {
-    return String(question.answer).split('\n');
-  }, [question.answer]);
-
   const isLogic = useMemo(() => {
     const topic = String(question.topic || '').toLowerCase();
     const text = `${question.question} ${question.answer}`.toLowerCase();
@@ -34,6 +30,16 @@ export const QACard: React.FC<QACardProps> = ({ question }) => {
     const textHit = /\b(truth table|logic gate|boolean)\b/.test(text);
     return topicHit || textHit;
   }, [question.topic, question.question, question.answer]);
+
+  const renderHighlightedBlock = (text: string, keywords?: string[]) => {
+    const parts: React.ReactNode[] = [];
+    const lines = String(text).split('\n');
+    lines.forEach((line, idx) => {
+      parts.push(<span key={`line-${idx}`}>{highlightLine(line, keywords)}</span>);
+      if (idx < lines.length - 1) parts.push(<br key={`br-${idx}`} />);
+    });
+    return parts;
+  };
 
   const highlightLine = (line: string, keywords?: string[]) => {
     if (!keywords || keywords.length === 0) return line;
@@ -83,19 +89,12 @@ export const QACard: React.FC<QACardProps> = ({ question }) => {
     return parts;
   };
 
-  const isHeaderLine = (line: string) => {
-    const l = line.trim().toLowerCase();
-    return l.startsWith('any ') && l.includes(' from') || 
-           l.startsWith('examples:') || 
-           l === 'or';
-  };
-
   return (
     <div className="qa-card">
       <div className="qa-question">{question.question}</div>
       <div className="qa-meta">
         {question.paper} · {question.topic}
-        {typeof question.marks === 'number' ? ` · ${question.marks} marks` : ''}
+        {typeof question.marks === 'number' ? ` · [${question.marks}]` : ''}
       </div>
       <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
         {Array.isArray(question.tags) && question.tags.map((t, i) => (
@@ -125,24 +124,9 @@ export const QACard: React.FC<QACardProps> = ({ question }) => {
         {isCode ? (
           <pre className="qa-code"><code>{String(question.answer)}</code></pre>
         ) : (
-          lines.map((line, idx) => {
-            const isHeader = isHeaderLine(line);
-            const showBullet = lines.length > 1 && !isHeader;
-            return (
-              <div key={idx} className={`qa-line qa-line-${difficulty}`}>
-                {showBullet ? (
-                  <div style={{ display: 'flex', gap: '8px' }}>
-                    <span style={{ userSelect: 'none', color: '#64748b' }}>-</span>
-                    <span style={{ flex: 1 }}>{highlightLine(line, question.keywords)}</span>
-                  </div>
-                ) : (
-                  <div style={isHeader ? { fontWeight: 600 } : undefined}>
-                    {highlightLine(line, question.keywords)}
-                  </div>
-                )}
-              </div>
-            );
-          })
+          <div className="qa-answer-block">
+            {renderHighlightedBlock(String(question.answer), question.keywords)}
+          </div>
         )}
       </div>
       <div className="qa-actions">

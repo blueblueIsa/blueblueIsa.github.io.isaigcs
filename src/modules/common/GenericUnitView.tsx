@@ -64,9 +64,8 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
           const k = term.term;
           const escaped = k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
           const re = new RegExp(`\\b${escaped}\\b`, 'i');
-          const inText = re.test(q.question) || re.test(q.answer);
           const inKeywords = Array.isArray(q.keywords) && q.keywords.some(w => re.test(w));
-          if (inText || inKeywords) {
+          if (inKeywords) {
             assignedTerm = term;
             break;
           }
@@ -172,7 +171,7 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
                       onViewQA={hasRelatedQA(term) ? (keyword) => {
                         const params = new URLSearchParams();
                         params.set('unit', unit.id);
-                        params.set('q', keyword);
+                        params.set('kw', keyword);
                         navigate(`/qa?${params.toString()}`);
                       } : undefined}
                     />

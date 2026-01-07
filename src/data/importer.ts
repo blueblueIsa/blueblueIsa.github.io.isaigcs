@@ -103,23 +103,6 @@ function canonicalTopicForUnit(unitId: string, topic: string, answer: string): s
   return topic;
 }
 
-function sanitizeSQL(answer: string): string {
-  const A = answer.toUpperCase();
-  const maybeSQL = /\b(SELECT|FROM|WHERE|ORDER BY)\b/.test(A);
-  if (!maybeSQL) return answer;
-  const unsupported = [
-    'AVG','MIN','MAX','IN','INNER','LEFT','RIGHT','ON','HAVING','GROUP BY',
-    'INSERT','UPDATE','DELETE','CREATE','DROP','ALTER','TRIGGER','PROCEDURE','VIEW',
-    'GRANT','REVOKE','UNION','INTERSECT'
-  ];
-  const lines = String(answer).split('\n');
-  const filtered = lines.filter(line => {
-    const u = line.toUpperCase();
-    return !unsupported.some(tok => u.includes(tok));
-  });
-  const out = filtered.join('\n').trim();
-  return out.length > 0 ? out : answer;
-}
 
 function normalizePaperCode(paper: string): string {
   const p = paper.trim();
@@ -138,6 +121,8 @@ function shouldSkip(q: RawQuestion): boolean {
   if (s.startsWith('identify four errors')) return true;
   if (s.startsWith('complete paragraph')) return true;
   if (s.startsWith('complete the paragraph')) return true;
+  if (s.startsWith('complete table')) return true;
+  if (s.startsWith('complete the table')) return true;
   if (s.includes('interrupt process') && s.startsWith('complete')) return true;
   // New skip conditions
   if (/\bcircle\b/.test(s)) return true;
@@ -154,34 +139,17 @@ function shouldSkip(q: RawQuestion): boolean {
 
 export function loadQAFromPapers(): QAData {
   const modules = {
-    ...import.meta.glob('./papers/*.json', { eager: true }),
-    ...import.meta.glob('./24paper1.json', { eager: true }),
-    ...import.meta.glob('./25paper2.json', { eager: true })
+    ...import.meta.glob('./papers/*.json', { eager: true })
   };
   const out: QAData = {};
   for (const k in modules) {
     const mod = modules[k] as unknown;
     const data = (mod as { default?: unknown })?.default ?? mod;
-    const arr: RawQuestion[] = Array.isArray(data) ? data as RawQuestion[] : extractQuestions(data);
+    const arr: RawQuestion[] = extractQuestions(data);
     for (const rq of arr) {
       if (shouldSkip(rq)) continue;
-      let ans = sanitizeSQL(rq.answer);
-      const isMC = Array.isArray(rq.tags) && rq.tags.some(t => t.toLowerCase() === 'multiple choice');
-      if (isMC) {
-        const firstLine = String(ans).split('\n')[0].trim();
-        const mOpt = /^([A-Z])\s+(.+)$/.exec(firstLine);
-        if (mOpt) {
-          ans = mOpt[2];
-        }
-      }
-      const skipAdvancedDB = /\b(relational database|foreign key|candidate key|erd|entity relationship|integrity)\b/i.test(rq.question) || /\b(relational database|foreign key|candidate key|erd|entity relationship|integrity)\b/i.test(ans);
-      if (skipAdvancedDB) continue;
+      const ans = rq.answer;
       const paperCode = normalizePaperCode(rq.paper);
-      const is25 = /^[SMW]25P\d{2}$/i.test(paperCode) || /^\s*2025\b/.test(String(rq.paper));
-      const is25examples = /25paper2\.json$/.test(k);
-      if (is25 && !is25examples) {
-        continue;
-      }
       const unitId = assignUnitIdByTopic(rq.topic, ans, rq.keywords, paperCode, rq.question);
       const topicNameRaw = normalizeTopic(ans, rq.topic);
       const topicName = canonicalTopicForUnit(unitId, topicNameRaw, ans);
