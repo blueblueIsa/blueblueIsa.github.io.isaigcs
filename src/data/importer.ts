@@ -104,17 +104,13 @@ function canonicalTopicForUnit(unitId: string, topic: string, answer: string): s
 }
 
 
-function normalizePaperCode(paper: string): string {
-  const p = paper.trim();
-  if (/^[SWM]\d{2}P\d{2}$/i.test(p)) return p.toUpperCase();
-  const m = /^(\d{4})\s+(May\/June|Oct\/Nov|Feb\/Mar)\s+Paper\s+(\d{2})$/i.exec(p);
-  if (!m) return p;
-  const year = m[1];
-  const season = m[2].toLowerCase();
-  const num = m[3];
-  const yy = year.slice(2);
-  const code = season === 'may/june' ? 'S' : season === 'oct/nov' ? 'W' : 'M';
-  return `${code}${yy}P${num}`;
+import { normalizePaperCodeStrict } from './importer.helpers.ts';
+function normalizePaperCodeOrNull(paper: string): string | null {
+  try {
+    return normalizePaperCodeStrict(paper);
+  } catch {
+    return null;
+  }
 }
 function shouldSkip(q: RawQuestion): boolean {
   const s = q.question.trim().toLowerCase();
@@ -149,7 +145,8 @@ export function loadQAFromPapers(): QAData {
     for (const rq of arr) {
       if (shouldSkip(rq)) continue;
       const ans = rq.answer;
-      const paperCode = normalizePaperCode(rq.paper);
+      const paperCode = normalizePaperCodeOrNull(rq.paper);
+      if (!paperCode) continue;
       const unitId = assignUnitIdByTopic(rq.topic, ans, rq.keywords, paperCode, rq.question);
       const topicNameRaw = normalizeTopic(ans, rq.topic);
       const topicName = canonicalTopicForUnit(unitId, topicNameRaw, ans);

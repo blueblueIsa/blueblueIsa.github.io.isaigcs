@@ -31,6 +31,11 @@ export const QACard: React.FC<QACardProps> = ({ question }) => {
     return topicHit || textHit;
   }, [question.topic, question.question, question.answer]);
 
+  const isCompleteDescription = useMemo(() => {
+    const s = String(question.question || '').trim().toLowerCase();
+    return s.startsWith('complete description');
+  }, [question.question]);
+
   const renderHighlightedBlock = (text: string, keywords?: string[]) => {
     const parts: React.ReactNode[] = [];
     const lines = String(text).split('\n');
@@ -124,7 +129,7 @@ export const QACard: React.FC<QACardProps> = ({ question }) => {
         {isCode ? (
           <pre className="qa-code"><code>{String(question.answer)}</code></pre>
         ) : (
-          <div className="qa-answer-block">
+          <div className={`qa-answer-block${isCompleteDescription ? ' qa-answer-complete' : ''}`}>
             {renderHighlightedBlock(String(question.answer), question.keywords)}
           </div>
         )}

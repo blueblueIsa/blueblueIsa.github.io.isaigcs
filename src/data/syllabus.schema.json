@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IGCSE CS Syllabus",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "source": { "type": "string" },
+        "version": { "type": "string" },
+        "extractedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["source", "version", "extractedAt"]
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unitId": { "type": "string" },
+          "title": { "type": "string" },
+          "learningObjectives": { "type": "array", "items": { "type": "string" } },
+          "keyConcepts": { "type": "array", "items": { "type": "string" } },
+          "assessmentCriteria": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["unitId", "title", "learningObjectives", "keyConcepts", "assessmentCriteria"]
+      }
+    }
+  },
+  "required": ["metadata", "units"]
+}

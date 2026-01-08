@@ -48,7 +48,7 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
     for (const t of Object.keys(unitQA)) {
       byTopic[t] = unitQA[t] || [];
     }
-    const assigned: Record<string, Set<string>> = {}; // term.term -> keys
+    const assigned: Record<string, Set<string>> = {};
     const termOrderByTopic: Record<string, Term[]> = {};
     for (const t of Array.from(new Set(unit.terms.map(x => x.topic)))) {
       termOrderByTopic[t] = unit.terms.filter(x => x.topic === t);
@@ -65,7 +65,13 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
           const escaped = k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
           const re = new RegExp(`\\b${escaped}\\b`, 'i');
           const inKeywords = Array.isArray(q.keywords) && q.keywords.some(w => re.test(w));
-          if (inKeywords) {
+          const tokens = k.split(/\s+/).filter(tok => tok.length > 1);
+          const fuzzyHit = tokens.some(tok => {
+            const te = tok.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const reTok = new RegExp(`\\b${te}\\b`, 'i');
+            return reTok.test(q.question);
+          });
+          if (inKeywords || fuzzyHit) {
             assignedTerm = term;
             break;
           }
@@ -80,11 +86,15 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
       }
     }
     return assigned;
-  }, [unit, qaData]);
+  }, [unit]);
 
   const hasRelatedQA = (term: Term) => {
     const set = assignedMap[term.term];
-    return set && set.size > 0;
+    if (set && set.size > 0) return true;
+    const unitQA = qaData[unit.id] || {};
+    const allQs = Object.values(unitQA).flat();
+    const re = new RegExp(`\\b${term.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+    return allQs.some(q => re.test(q.question) || (Array.isArray(q.keywords) && q.keywords.some(w => re.test(w))));
   };
 
   return (
@@ -112,7 +122,7 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
 
           <button 
             className="confusions-toggle"
-            onClick={() => navigate(`/qa?unit=${unit.id}`)}
+            onClick={() => navigate(`/qa/unit/${encodeURIComponent(unit.id)}`)}
             style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'white' }}
           >
             <MessageCircleQuestion size={16} />
@@ -169,10 +179,8 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
                       key={`${topicName}-${i}`}
                       term={term}
                       onViewQA={hasRelatedQA(term) ? (keyword) => {
-                        const params = new URLSearchParams();
-                        params.set('unit', unit.id);
-                        params.set('kw', keyword);
-                        navigate(`/qa?${params.toString()}`);
+                        const q = encodeURIComponent(keyword);
+                        navigate(`/qa/unit/${encodeURIComponent(unit.id)}?q=${q}`);
                       } : undefined}
                     />
                   ))}

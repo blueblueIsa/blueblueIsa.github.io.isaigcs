@@ -13,10 +13,7 @@ export const TermCard: React.FC<TermCardProps> = ({ term, onViewQA }) => {
       <p className="term-def">{term.definition}</p>
       
       {term.example && (
-        <div className="detail">
-          <span className="detail-label">Ex: </span>
-          {term.example}
-        </div>
+        <pre className="qa-code" style={{ marginTop: 8 }}><code>{String(term.example)}</code></pre>
       )}
       
       {term.misconception && (

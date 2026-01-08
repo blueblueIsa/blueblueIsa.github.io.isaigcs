@@ -9,15 +9,6 @@
     "keywords": ["double entry", "verification", "pseudocode", "compare"]
   },
   {
-    "question": "Explain difference between procedure and function using pseudocode.",
-    "answer": "PROCEDURE ShowMenu()\n  OUTPUT \"1) Add\"\n  OUTPUT \"2) Exit\"\nENDPROCEDURE\n\nFUNCTION Square(x)\n  RETURN x * x\nENDFUNCTION\n\n// A procedure performs actions, no return value\n// A function returns a value",
-    "paper": "S25P22",
-    "topic": "2 Programming concepts",
-    "tags": ["explain", "pseudocode"],
-    "marks": 3,
-    "keywords": ["procedure", "function", "return value", "pseudocode"]
-  },
-  {
     "question": "Write pseudocode to validate integer input between 1 and 100 inclusive.",
     "answer": "REPEAT\n  INPUT n\nUNTIL n >= 1 AND n <= 100",
     "paper": "W25P21",
@@ -38,19 +29,37 @@
   {
     "question": "Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.",
     "answer": "SELECT StudentName, Age\nFROM Students\nWHERE Age >= 16\nORDER BY StudentName",
-    "paper": "S25P29",
+    "paper": "S25P23",
     "topic": "9 Databases and SQL",
     "tags": ["sql", "select", "order by"],
     "marks": 3,
     "keywords": ["SQL", "SELECT", "FROM", "WHERE", "ORDER BY", "Students"]
   },
   {
-    "question": "Explain primary key and give one reason why it is important.",
-    "answer": "A primary key uniquely identifies each record in a table.\nIt prevents duplicate records and supports efficient searching.",
-    "paper": "W25P29",
-    "topic": "9 Databases and SQL",
-    "tags": ["explain", "keys"],
-    "marks": 2,
-    "keywords": ["primary key", "unique", "record", "table"]
+    "question": "Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\n\nOriginal:\nFOR Count 1 TO 10\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] Name\nNEXT Count",
+    "answer": "Count ← 1\nREPEAT\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] ← Name\n  Count ← Count + 1\nUNTIL Count > 10",
+    "paper": "S25P21",
+    "topic": "4 Arrays and loops",
+    "tags": ["pseudocode", "loops", "arrays"],
+    "marks": 4,
+    "keywords": ["count-controlled loop", "condition-controlled loop", "repeat-until", "while loop", "names array"]
+  },
+  {
+    "question": "A telephone number with 13 characters is input. The first character is a '+', followed by a 2-digit country code, for example: +20xxxxxxxxxx where 20 is the country code and x is a digit between 0 and 9 inclusive. The algorithm includes checks for the country codes: 44 for the UK and 20 for Egypt.\n\n(a) Write an algorithm using pseudocode to: input the telephone number, extract the 2-digit country code, output the matching country, output 'Unknown' if there is no matching country.\n\n(b) Explain how you could change the algorithm to repeatedly prompt for the telephone number until the number entered is 13 characters in length.",
+    "answer": "(a) Example:\nOUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nValue ← SUBSTRING(Telephone, 2, 2)\nIF Value = \"44\"\n  THEN OUTPUT \"UK\"\nELSE IF Value = \"20\"\n  THEN OUTPUT \"Egypt\"\nELSE\n  OUTPUT \"Unknown\"\nENDIF\n\n(b) Example approach:\nUse a loop to check length: REPEAT OUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nUNTIL LENGTH(Telephone) = 13",
+    "paper": "S25P21",
+    "topic": "1 Algorithms",
+    "tags": ["pseudocode", "string", "substring", "validation"],
+    "marks": 5,
+    "keywords": ["telephone", "country code", "substring", "IF", "loop"]
+  },
+  {
+    "question": "An algorithm has been written in pseudocode to generate a random integer between 1 and 100 inclusive and store the value in N. The user enters a guess for the number and the algorithm indicates whether the guess is higher or lower than the random number. The algorithm outputs the number of guesses when the user has correctly guessed the random number. Identify the line numbers of the four errors in the pseudocode and suggest a correction for each error.",
+    "answer": "Corrections (example):\nLine 02 – should be N ← ROUND(RANDOM() * 99, 0) + 1\nLine 12 – should be OUTPUT \"The number is higher than your guess\"\nLine 14/15 – Counter ← Counter + 1 should be placed after ENDIF / before UNTIL G = N\nLine 17 – should be OUTPUT \"Well done, you took \", Counter, \" attempts\"",
+    "paper": "S25P21",
+    "topic": "1 Algorithms",
+    "tags": ["pseudocode", "debugging", "random", "loops"],
+    "marks": 4,
+    "keywords": ["random", "ROUND(RANDOM)", "loop", "counter"]
   }
 ]

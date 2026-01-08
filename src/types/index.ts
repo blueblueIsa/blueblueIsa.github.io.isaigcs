@@ -39,3 +39,48 @@ export interface AppState {
   confusionsOnly: boolean;
   viewMode: ViewMode;
 }
+
+export interface SyllabusMetadata {
+  source: string;
+  version: string;
+  extractedAt: string;
+}
+
+export interface UnitSyllabus {
+  unitId: string;
+  title: string;
+  learningObjectives: string[];
+  keyConcepts: string[];
+  assessmentCriteria: string[];
+}
+
+export interface SyllabusData {
+  metadata: SyllabusMetadata;
+  units: UnitSyllabus[];
+}
+
+export type QAStatus = 'draft' | 'pending_review' | 'approved' | 'rejected' | 'published';
+
+export interface QAItemDraft {
+  id: string;
+  question: string;
+  answer: string;
+  paper: string;
+  topic: string;
+  tags?: string[];
+  marks?: number;
+  keywords?: string[];
+  status: QAStatus;
+  createdAt: number;
+  updatedAt: number;
+  hash: string;
+  version: number;
+}
+
+export interface AuditLogEntry {
+  id: string;
+  actor: string;
+  action: string;
+  timestamp: number;
+  details: Record<string, unknown>;
+}
