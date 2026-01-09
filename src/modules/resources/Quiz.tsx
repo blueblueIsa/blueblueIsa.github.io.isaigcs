@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import paper1 from '../../data/papers/25paper1.json';
+import { units } from '../../data/units';
 import { FillInQuestion } from './FillInQuestion';
 
 type QItem = {
@@ -14,9 +14,15 @@ type QItem = {
 const STORAGE_KEY = 'bb_quiz_progress_v1';
 
 export const Quiz: React.FC = () => {
-  // load sample paper questions
+  // load questions derived from unit terms (flattened across units)
   const questions: QItem[] = useMemo(() => {
-    return (paper1 as any[]).map((q, idx) => ({ ...q, id: q.id || `p1-${idx}` }));
+    return units.flatMap(u => (u.terms || []).map((t, idx) => ({
+      id: `${u.id}-${idx}`,
+      question: `Define: ${t.term}`,
+      answer: t.definition || t.example || '',
+      type: 'short_answer' as const,
+      marks: 1,
+    })));
   }, []);
 
   const [index, setIndex] = useState(0);
