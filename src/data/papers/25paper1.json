@@ -1,0 +1,64 @@
+[
+  {
+    "question": "State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).",
+    "answer": "2048",
+    "paper": "S25P11",
+    "topic": "Data representation",
+    "tags": ["conversion","units"],
+    "marks": 1,
+    "keywords": ["TiB","PiB","2048"],
+    "type": "short_answer"
+  },
+  {
+    "question": "Give the name of the process that is used to reduce the size of a file.",
+    "answer": "(Data) Compression",
+    "paper": "S25P11",
+    "topic": "Data storage",
+    "tags": ["compression"],
+    "marks": 1,
+    "keywords": ["compression"],
+    "type": "short_answer"
+  },
+  {
+    "question": "Identify an appropriate output device to produce the paper ticket.",
+    "answer": "Printer",
+    "paper": "S25P11",
+    "topic": "Hardware",
+    "tags": ["output device","printer"],
+    "marks": 1,
+    "keywords": ["printer"],
+    "type": "short_answer"
+  },
+  {
+    "question": "Complete the paragraph about asymmetric encryption. Use the terms from the list.",
+    "paper": "S25P11",
+    "topic": "Security",
+    "tags": ["encryption","asymmetric"],
+    "marks": 8,
+    "type": "fill_in",
+    "blanks": [
+      "algorithm",
+      "plain text",
+      "cipher text",
+      "meaningless",
+      "public/private",
+      "private/public",
+      "public",
+      "private"
+    ],
+    "prompt_with_answers": "Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.",
+    "keywords": ["public key","private key","cipher text"]
+  },
+  {
+    "question": "Complete the table with the missing terms and definitions about processing data.",
+    "paper": "S25P11",
+    "topic": "CPU and processing",
+    "tags": ["cpu","registers"],
+    "marks": 5,
+    "type": "fill_in",
+    "blanks": [
+      {"term": "current instruction register","definition":"stores the instruction that is being decoded/executed (CIR)"}
+    ],
+    "keywords": ["CIR","register"]
+  }
+]

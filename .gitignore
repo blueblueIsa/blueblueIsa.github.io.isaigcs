@@ -20,5 +20,5 @@ Gemfile.lock
 .venv/
 node_modules/
 assets/dist/
-src/data/papers/
-
+src/data/units/
+src/data/papers/raw_2025_test/
