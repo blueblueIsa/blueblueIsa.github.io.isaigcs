@@ -1,0 +1,104 @@
+{
+  "OS": [
+    {
+      "question": "Describe how an interrupt is handled by the CPU.",
+      "answer": "Any four from:\nThe CPU completes the current fetch-execute cycle\nThe contents of the registers (PC/ACC) are saved\n... to the stack\nThe source of the interrupt is identified\nThe appropriate Interrupt Service Routine (ISR) is called/executed\nOnce the ISR is complete, the saved register values are restored\n... from the stack\nThe CPU continues with the next instruction of the original program",
+      "paper": "2024 May/June Paper 11",
+      "topic": "OS",
+      "tags": [
+        "describe"
+      ],
+      "marks": 4,
+      "keywords": [
+        "interrupt",
+        "CPU",
+        "ISR",
+        "stack",
+        "registers"
+      ]
+    },
+    {
+      "question": "Compare CLI and GUI with one advantage of each.",
+      "answer": "CLI:\nAllows precise control via commands\n... uses fewer system resources\n\nGUI:\nMore intuitive/easier for beginners\n... allows WIMP interactions (windows, icons, menus, pointer)",
+      "paper": "2024 Oct/Nov Paper 12",
+      "topic": "OS",
+      "tags": [
+        "compare"
+      ],
+      "marks": 2,
+      "keywords": [
+        "CLI",
+        "GUI",
+        "interface",
+        "advantages"
+      ]
+    }
+  ],
+  "Languages": [
+    {
+      "question": "Compare compiler and interpreter.",
+      "answer": "A compiler translates the whole program into object code before execution; an interpreter translates and executes line by line at runtime.",
+      "paper": "2024 Oct/Nov Paper 12",
+      "topic": "Languages",
+      "tags": [
+        "compare"
+      ],
+      "marks": 4,
+      "keywords": [
+        "compiler",
+        "interpreter",
+        "object code",
+        "runtime"
+      ]
+    },
+    {
+      "question": "State two advantages of using a High-Level Language (HLL) compared to a Low-Level Language (LLL).",
+      "answer": "Any two from:\nEasier to understand/read/write (for humans)\n... as it uses English-like statements\nEasier to debug/find errors\nPortable/machine independent\n... code can run on different hardware without rewrite",
+      "paper": "2024 May/June Paper 12",
+      "topic": "Languages",
+      "tags": [
+        "state",
+        "compare"
+      ],
+      "marks": 2,
+      "keywords": [
+        "high-level language",
+        "low-level language",
+        "portable",
+        "debug"
+      ]
+    }
+  ],
+  "Software": [
+    {
+      "question": "Explain the difference between system software and application software.",
+      "answer": "System software manages and supports computer operations; application software performs user-facing tasks.",
+      "paper": "2025 May/June Paper 12",
+      "topic": "Software",
+      "tags": [
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "system software",
+        "application software"
+      ]
+    },
+    {
+      "question": "State one advantage of open-source software and one advantage of proprietary software.",
+      "answer": "Open-source: free to use/modify; community support; transparency.\nProprietary: dedicated vendor support; regular updates; polished features.",
+      "paper": "2025 May/June Paper 11",
+      "topic": "Software",
+      "tags": [
+        "state",
+        "compare"
+      ],
+      "marks": 2,
+      "keywords": [
+        "open source",
+        "proprietary",
+        "advantage"
+      ]
+    }
+  ]
+}

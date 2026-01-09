@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Navigate to={`/unit/${units[0].id}`} replace />} />
         <Route path="unit/:id" element={<UnitRoute />} />
-        <Route path="qa" element={<QAView />} />
+        <Route path="qa/*" element={<QAView />} />
         <Route path="resources" element={<Resources />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>

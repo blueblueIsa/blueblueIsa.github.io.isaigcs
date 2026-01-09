@@ -5,6 +5,7 @@ import { Flashcard } from '../../components/shared/Flashcard';
 import { qaData } from '../../data/qa';
 import { Shuffle, BookOpen, Layers, MessageCircleQuestion } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { buildQAPath } from '../qa/qaUrl.ts';
 import type { Question } from '../../types';
 
 interface GenericUnitViewProps {
@@ -53,10 +54,14 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
     for (const t of Array.from(new Set(unit.terms.map(x => x.topic)))) {
       termOrderByTopic[t] = unit.terms.filter(x => x.topic === t);
     }
+    const skipAssignRe = /identify.*error|identify.*incorrect|identify.*incorrect statement/i;
     for (const t of Object.keys(byTopic)) {
       const questions = byTopic[t];
       const termsForTopic = termOrderByTopic[t] || [];
       for (const q of questions) {
+        // Skip 'identify ... error / incorrect' style questions from being assigned to terms
+        if (skipAssignRe.test(q.question)) continue;
+
         const key = `${q.paper}::${q.question.trim()}`;
         let assignedTerm: Term | undefined;
         const pool = termsForTopic.length > 0 ? termsForTopic : unit.terms;
@@ -94,7 +99,16 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
     const unitQA = qaData[unit.id] || {};
     const allQs = Object.values(unitQA).flat();
     const re = new RegExp(`\\b${term.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-    return allQs.some(q => re.test(q.question) || (Array.isArray(q.keywords) && q.keywords.some(w => re.test(w))));
+    const skipAssignRe = /identify.*error|identify.*incorrect|identify.*incorrect statement/i;
+    const matches = allQs.filter(q => {
+      if (skipAssignRe.test(q.question)) return false;
+      return re.test(q.question) || (Array.isArray(q.keywords) && q.keywords.some(w => re.test(w)));
+    });
+    const found = matches.length > 0;
+    if (import.meta.env.MODE !== 'production') {
+      console.debug('[hasRelatedQA]', term.term, 'assignedSetSize', set ? set.size : 0, 'foundInAllQs', found, 'unitQAKeys', Object.keys(unitQA), 'matches', matches.map(m => m.question).slice(0, 5));
+    }
+    return found;
   };
 
   return (
@@ -179,8 +193,11 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
                       key={`${topicName}-${i}`}
                       term={term}
                       onViewQA={hasRelatedQA(term) ? (keyword) => {
-                        const q = encodeURIComponent(keyword);
-                        navigate(`/qa/unit/${encodeURIComponent(unit.id)}?q=${q}`);
+                        // Use buildQAPath so encoding/format is consistent with QAView
+                        if (import.meta.env.MODE !== 'production') {
+                          console.debug('[onViewQA] keyword:', keyword, 'unit:', unit.id, 'path:', buildQAPath({ unit: unit.id, q: keyword.trim() }));
+                        }
+                        navigate(buildQAPath({ unit: unit.id, q: keyword.trim() }));
                       } : undefined}
                     />
                   ))}

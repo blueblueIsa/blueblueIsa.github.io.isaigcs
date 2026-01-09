@@ -95,7 +95,7 @@ export const QACard: React.FC<QACardProps> = ({ question }) => {
   };
 
   return (
-    <div className="qa-card">
+    <div className="qa-card" tabIndex={-1} aria-label={`Question: ${question.question}`}>
       <div className="qa-question">{question.question}</div>
       <div className="qa-meta">
         {question.paper} · {question.topic}

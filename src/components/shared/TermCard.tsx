@@ -35,7 +35,16 @@ export const TermCard: React.FC<TermCardProps> = ({ term, onViewQA }) => {
       </div>
       {onViewQA && (
         <div style={{ marginTop: 10 }}>
-          <button className="confusions-toggle" onClick={() => onViewQA(term.term)}>
+          <button
+            className="confusions-toggle"
+            data-term={term.term}
+            data-testid={`related-qa-${term.term.replace(/\s+/g, '-').toLowerCase()}`}
+            aria-label={`Related Q and A for ${term.term}`}
+            onClick={(e) => {
+              try { (e.currentTarget as HTMLElement).setAttribute('data-clicked', '1'); } catch (err) {}
+              onViewQA(term.term);
+            }}
+          >
             Related Q&A
           </button>
         </div>

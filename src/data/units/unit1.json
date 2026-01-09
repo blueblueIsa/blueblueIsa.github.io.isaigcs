@@ -1,0 +1,168 @@
+{
+  "Numbers": [
+    {
+      "question": "Convert 11010110₂ to denary and hexadecimal.",
+      "answer": "Denary: 214\nHexadecimal: D6",
+      "paper": "2024 Oct/Nov Paper 12",
+      "topic": "Numbers",
+      "tags": [
+        "calculate"
+      ],
+      "marks": 3,
+      "keywords": [
+        "convert",
+        "binary",
+        "hexadecimal",
+        "denary"
+      ]
+    },
+    {
+      "question": "Give two reasons why ticket numbers are displayed as hexadecimal.",
+      "answer": "1. Shorter representation than binary\n2. Easier for humans to read",
+      "paper": "2025 May/June Paper 11",
+      "topic": "Numbers",
+      "tags": [
+        "give reasons"
+      ],
+      "marks": 2,
+      "keywords": [
+        "hexadecimal",
+        "advantages",
+        "display",
+        "binary"
+      ]
+    },
+    {
+      "question": "Identify correct statement about logical left shift of 2 places.",
+      "answer": "It would multiply the binary number by 4",
+      "paper": "2024 May/June Paper 11",
+      "topic": "Numbers",
+      "tags": [
+        "multiple-choice"
+      ],
+      "marks": 1,
+      "keywords": [
+        "logical left shift",
+        "effect",
+        "multiplication"
+      ]
+    },
+    {
+      "question": "Convert two's complement 10100011 to denary.",
+      "answer": "-93",
+      "paper": "2024 May/June Paper 11",
+      "topic": "Numbers",
+      "tags": [
+        "two's complement"
+      ],
+      "marks": 2,
+      "keywords": [
+        "two's complement",
+        "conversion"
+      ]
+    }
+  ],
+  "Text": [
+    {
+      "question": "Describe a difference between ASCII and Unicode and why Unicode is needed.",
+      "answer": "Difference:\nASCII uses 7 or 8 bits (per character)\nUnicode uses 16 or 32 bits (per character)\n\nReason:\nASCII has a limited character set (Latin only)\nUnicode covers all major languages/symbols (internationalization)",
+      "paper": "2024 Oct/Nov Paper 12",
+      "topic": "Text",
+      "tags": [
+        "compare",
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "ASCII",
+        "Unicode",
+        "code points",
+        "character set"
+      ]
+    }
+  ],
+  "Images": [
+    {
+      "question": "Define colour depth and explain its effect on image file size.",
+      "answer": "Colour depth is the number of bits used to represent each pixel\nGreater colour depth allows more colours to be represented\n... which increases the file size\n... as more bits are needed for each pixel",
+      "paper": "2025 Feb/Mar Paper 13",
+      "topic": "Images",
+      "tags": [
+        "define",
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "colour depth",
+        "bits per pixel",
+        "file size"
+      ]
+    },
+    {
+      "question": "Calculate the file size of a 400×300 image with 16-bit colour depth, uncompressed.",
+      "answer": "Pixels: 400 × 300 = 120,000\nBits: 120,000 × 16 = 1,920,000 bits\nBytes: 1,920,000 / 8 = 240,000 bytes\n(≈ 234.4 KB)",
+      "paper": "2024 May/June Paper 21",
+      "topic": "Images",
+      "tags": [
+        "calculate"
+      ],
+      "marks": 4,
+      "keywords": [
+        "file size",
+        "image",
+        "colour depth",
+        "resolution"
+      ]
+    }
+  ],
+  "Sound": [
+    {
+      "question": "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed.",
+      "answer": "Samples: 44,100 × 30 = 1,323,000\nTotal bits: 1,323,000 × 16 = 21,168,000 bits\nBytes: 21,168,000 / 8 = 2,646,000 bytes\n(≈ 2.52 MB)",
+      "paper": "2025 Oct/Nov Paper 12",
+      "topic": "Sound",
+      "tags": [
+        "calculate"
+      ],
+      "marks": 4,
+      "keywords": [
+        "audio",
+        "file size",
+        "sample rate",
+        "resolution"
+      ]
+    }
+  ],
+  "Compression": [
+    {
+      "question": "Compare lossless and lossy compression with a suitable use case for each.",
+      "answer": "Lossless:\nNo data is lost/original file can be recreated perfectly\nUse: Text files/Source code/Spreadsheets\n\nLossy:\nSome data is permanently removed/discarded (to reduce size)\nUse: Images (JPEG)/Audio (MP3)/Video",
+      "paper": "2024 May/June Paper 21",
+      "topic": "Compression",
+      "tags": [
+        "compare"
+      ],
+      "marks": 4,
+      "keywords": [
+        "lossless",
+        "lossy",
+        "use case"
+      ]
+    },
+    {
+      "question": "Explain RLE and when it is effective.",
+      "answer": "Run-length encoding stores consecutive identical values as a count and the value\nExample: AAAAA becomes 5A\nEffective for data with long runs of repeated values (e.g., simple graphics)\nNot effective for random data",
+      "paper": "2025 Oct/Nov Paper 12",
+      "topic": "Compression",
+      "tags": [
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "RLE",
+        "runs",
+        "graphics"
+      ]
+    }
+  ]
+}

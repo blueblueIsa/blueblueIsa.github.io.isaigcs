@@ -1,0 +1,140 @@
+{
+  "Architecture": [
+    {
+      "question": "Explain the function of the ALU and Control Unit in a CPU.",
+      "answer": "The ALU performs arithmetic and logic operations; the Control Unit fetches, decodes and coordinates execution of instructions.",
+      "paper": "2024 Oct/Nov Paper 12",
+      "topic": "Architecture",
+      "tags": [
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "ALU",
+        "control unit",
+        "CPU",
+        "fetch-decode-execute"
+      ]
+    },
+    {
+      "question": "Describe the steps of the Fetch-Execute cycle.",
+      "answer": "Any four from:\nThe PC holds the address of the next instruction\nThe address is copied to the MAR\nThe address is sent along the address bus\nThe instruction is fetched from that address in memory\n... and transferred to the MDR\nThe instruction is sent to the CIR\nThe PC is incremented\nThe instruction is decoded and executed",
+      "paper": "2024 May/June Paper 11",
+      "topic": "Architecture",
+      "tags": [
+        "describe"
+      ],
+      "marks": 4,
+      "keywords": [
+        "fetch-execute",
+        "PC",
+        "MAR",
+        "MDR",
+        "CIR"
+      ]
+    },
+    {
+      "question": "Explain how clock speed and cache size affect CPU performance.",
+      "answer": "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM.",
+      "paper": "2025 Feb/Mar Paper 12",
+      "topic": "Architecture",
+      "tags": [
+        "explain"
+      ],
+      "marks": 4,
+      "keywords": [
+        "clock speed",
+        "cache",
+        "performance",
+        "CPU"
+      ]
+    }
+  ],
+  "Memory": [
+    {
+      "question": "Compare RAM and ROM with one use case for each.",
+      "answer": "RAM is volatile working memory used during program execution. ROM is non-volatile and stores firmware that runs at start-up.",
+      "paper": "2025 Feb/Mar Paper 13",
+      "topic": "Memory",
+      "tags": [
+        "compare"
+      ],
+      "marks": 4,
+      "keywords": [
+        "RAM",
+        "ROM",
+        "volatile",
+        "firmware"
+      ]
+    },
+    {
+      "question": "Explain the purpose of Virtual Memory.",
+      "answer": "Any three from:\nIt is used when RAM is full\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\n... creating 'pages'\nIt extends the available memory for running programs\nData is swapped back to RAM when needed",
+      "paper": "2024 May/June Paper 12",
+      "topic": "Memory",
+      "tags": [
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "virtual memory",
+        "paging",
+        "RAM",
+        "secondary storage"
+      ]
+    }
+  ],
+  "I/O": [
+    {
+      "question": "Give one example each of an input device, output device and sensor.",
+      "answer": "Input: keyboard; Output: monitor; Sensor: temperature sensor.",
+      "paper": "2024 May/June Paper 21",
+      "topic": "I/O",
+      "tags": [
+        "state"
+      ],
+      "marks": 3,
+      "keywords": [
+        "input",
+        "output",
+        "sensor",
+        "devices"
+      ]
+    },
+    {
+      "question": "A greenhouse system controls temperature automatically. Describe how the system uses sensors and actuators to maintain temperature.",
+      "answer": "Any four from:\nThe temperature sensor constantly measures the temperature\nIt sends analogue data to the ADC\n... which converts it to digital data for the microprocessor\nThe microprocessor compares the reading to a pre-set value\nIf temperature < pre-set value, it signals the actuator\n... to turn on the heater\nIf temperature > pre-set value, it signals the actuator to turn off the heater/open windows",
+      "paper": "2024 Oct/Nov Paper 12",
+      "topic": "I/O",
+      "tags": [
+        "describe",
+        "application"
+      ],
+      "marks": 4,
+      "keywords": [
+        "sensor",
+        "microprocessor",
+        "actuator",
+        "ADC",
+        "control loop"
+      ]
+    }
+  ],
+  "Systems": [
+    {
+      "question": "Define embedded system and give an example.",
+      "answer": "An embedded system is dedicated to a specific function within a larger system, e.g., a washing machine controller.",
+      "paper": "2025 Oct/Nov Paper 12",
+      "topic": "Systems",
+      "tags": [
+        "define",
+        "example"
+      ],
+      "marks": 2,
+      "keywords": [
+        "embedded system",
+        "controller"
+      ]
+    }
+  ]
+}

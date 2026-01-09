@@ -1,0 +1,157 @@
+{
+  "Web": [
+    {
+      "question": "Explain the difference between HTTP and HTTPS.",
+      "answer": "HTTP:\nData is sent in plain text\n... so it can be intercepted/read by a third party\nDoes not provide authentication of the server\n\nHTTPS:\nUses TLS/SSL to encrypt communication\n... so intercepted data cannot be understood\nVerifies the identity of the web server (via digital certificates)",
+      "paper": "2024 May/June Paper 21",
+      "topic": "Web",
+      "tags": [
+        "compare",
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "HTTP",
+        "HTTPS",
+        "TLS",
+        "SSL",
+        "encryption"
+      ]
+    },
+    {
+      "question": "Explain the purpose of a cookie.",
+      "answer": "Any two from:\nTo store user preferences/settings\n... e.g., language choice, theme\nTo track user browsing habits/analytics\nTo implement shopping carts\n... holding items while user browses\nTo keep a user logged in (session management)",
+      "paper": "2024 May/June Paper 12",
+      "topic": "Web",
+      "tags": [
+        "explain"
+      ],
+      "marks": 2,
+      "keywords": [
+        "cookie",
+        "preferences",
+        "tracking",
+        "session"
+      ]
+    },
+    {
+      "question": "State two advantages of using HTTPS when shopping online.",
+      "answer": "Encrypts data to prevent interception/read by third parties\nAuthenticates the web server via digital certificates",
+      "paper": "2025 May/June Paper 12",
+      "topic": "Web",
+      "tags": [
+        "state"
+      ],
+      "marks": 2,
+      "keywords": [
+        "HTTPS",
+        "encryption",
+        "authentication",
+        "shopping"
+      ]
+    }
+  ],
+  "Security": [
+    {
+      "question": "State two methods to protect users from phishing.",
+      "answer": "Any two from:\nEducate users to check URLs/email addresses carefully\nUse spam filters to block suspicious emails\nDo not click links in unsolicited emails\nCheck for the padlock symbol/HTTPS",
+      "paper": "2025 Feb/Mar Paper 13",
+      "topic": "Security",
+      "tags": [
+        "state"
+      ],
+      "marks": 2,
+      "keywords": [
+        "phishing",
+        "awareness",
+        "filters",
+        "HTTPS"
+      ]
+    },
+    {
+      "question": "Describe the process of SSL/TLS handshaking.",
+      "answer": "Any four from:\nThe client sends a request to the server to establish a secure connection\nThe server sends its digital certificate to the client\n... which includes the server's public key\nThe client verifies the digital certificate (authenticity and date)\nThe client generates a session key\n... encrypts it with the server's public key\n... and sends it to the server\nThe server decrypts the session key with its private key\nBoth parties now use the session key for encrypted communication",
+      "paper": "2024 May/June Paper 11",
+      "topic": "Security",
+      "tags": [
+        "describe"
+      ],
+      "marks": 4,
+      "keywords": [
+        "SSL",
+        "TLS",
+        "handshake",
+        "encryption",
+        "certificate",
+        "public key",
+        "private key"
+      ]
+    },
+    {
+      "question": "Explain how a digital signature is used to verify the authenticity of a document.",
+      "answer": "Any three from:\nA hash/digest of the document is created\n... using a hashing algorithm\nThe hash is encrypted using the sender's private key\n... to create the digital signature\nThe receiver decrypts the signature using the sender's public key\n... to get the original hash\nThe receiver recalculates the hash of the received document\nIf the two hashes match, the document is authentic and unaltered",
+      "paper": "2025 May/June Paper 12",
+      "topic": "Security",
+      "tags": [
+        "explain"
+      ],
+      "marks": 4,
+      "keywords": [
+        "digital signature",
+        "hash",
+        "private key",
+        "public key",
+        "authenticity"
+      ]
+    },
+    {
+      "question": "Explain how a firewall helps protect a network.",
+      "answer": "Monitors and filters incoming/outgoing traffic\nBlocks unauthorised access based on rules\nCan prevent certain types of attacks (e.g., port scans)\nAllows permitted traffic while denying suspicious connections",
+      "paper": "2024 May/June Paper 21",
+      "topic": "Security",
+      "tags": [
+        "explain"
+      ],
+      "marks": 2,
+      "keywords": [
+        "firewall",
+        "filter",
+        "rules",
+        "unauthorised access"
+      ]
+    },
+    {
+      "question": "Explain what a denial-of-service (DoS) attack is and state one method to prevent it.",
+      "answer": "DoS attack: A malicious attempt to make a network or service unavailable by overwhelming it with traffic/requests\nPrevention: Use a firewall to filter incoming traffic or apply rate limiting to block excessive requests",
+      "paper": "2025 May/June Paper 12",
+      "topic": "Security",
+      "tags": [
+        "explain",
+        "state"
+      ],
+      "marks": 3,
+      "keywords": [
+        "DoS",
+        "denial-of-service",
+        "firewall",
+        "rate limiting"
+      ]
+    },
+    {
+      "question": "Describe what a Trojan horse is and one way it can be spread.",
+      "answer": "Trojan horse: Malware disguised as legitimate software that performs malicious actions when executed\nSpread: Via email attachments or through downloads from untrusted/malicious websites",
+      "paper": "2024 Oct/Nov Paper 12",
+      "topic": "Security",
+      "tags": [
+        "describe"
+      ],
+      "marks": 2,
+      "keywords": [
+        "Trojan",
+        "malware",
+        "email attachments",
+        "downloads"
+      ]
+    }
+  ]
+}

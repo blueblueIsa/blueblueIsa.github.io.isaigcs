@@ -1,0 +1,172 @@
+{
+  "Modes": [
+    {
+      "question": "Serial data transmission is used to transmit the data packets across the network.\nExplain why serial data transmission is used to transmit the data packets.",
+      "answer": "Any three from:\nThe network may be spread over a long distance ...\n... so it is more reliable\nBits will be sent/arrive in sequence\n...so bits less likely to be skewed\nLess crosstalk/interference\n... so less likely to have errors\nThe data may not need to be transmitted at a fast speed // data transmission speed of serial is adequate\nThe cables in the network only use serial transmission",
+      "paper": "2024 May/June Paper 11",
+      "topic": "Modes",
+      "tags": [
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "serial",
+        "parallel",
+        "transmission",
+        "reliability",
+        "skew",
+        "interference"
+      ]
+    },
+    {
+      "question": "Tick (✓) one box to show which of the terms is not a method for transmitting data.\nA serial\nB simplex\nC parallel\nD parity",
+      "answer": "D parity",
+      "paper": "2024 May/June Paper 12",
+      "topic": "Modes",
+      "tags": [
+        "identify"
+      ],
+      "marks": 1,
+      "keywords": [
+        "transmission method",
+        "parity",
+        "serial",
+        "simplex",
+        "parallel"
+      ]
+    },
+    {
+      "question": "Describe how a USB connection works when a device is plugged in.",
+      "answer": "Any three from:\nThe computer detects the device automatically\n... due to a change in voltage on the data lines\nThe device is automatically recognised\n... and the appropriate driver software is loaded\nIf no driver is found, the user is prompted to install one",
+      "paper": "2024 Oct/Nov Paper 12",
+      "topic": "Modes",
+      "tags": [
+        "describe"
+      ],
+      "marks": 3,
+      "keywords": [
+        "USB",
+        "driver",
+        "plug and play",
+        "detection"
+      ]
+    }
+  ],
+  "Packets": [
+    {
+      "question": "Describe the structure of a data packet.",
+      "answer": "Any three from:\nA packet is split into three different sections\n... the header\n... the payload\n... the trailer",
+      "paper": "2024 May/June Paper 11",
+      "topic": "Packets",
+      "tags": [
+        "describe"
+      ],
+      "marks": 3,
+      "keywords": [
+        "packet",
+        "structure",
+        "header",
+        "payload",
+        "trailer"
+      ]
+    },
+    {
+      "question": "Data is broken down into smaller units to be transmitted from one device to another.\nGive the name of the unit that data is broken down into.",
+      "answer": "Packet",
+      "paper": "2024 May/June Paper 12",
+      "topic": "Packets",
+      "tags": [
+        "identify"
+      ],
+      "marks": 1,
+      "keywords": [
+        "packet",
+        "data unit"
+      ]
+    }
+  ],
+  "Switching": [
+    {
+      "question": "Packet switching is used to transmit the data packets across the network.\nIdentify the device that controls which path is taken by each data packet.",
+      "answer": "Router",
+      "paper": "2024 May/June Paper 11",
+      "topic": "Switching",
+      "tags": [
+        "identify"
+      ],
+      "marks": 1,
+      "keywords": [
+        "router",
+        "packet switching",
+        "path"
+      ]
+    }
+  ],
+  "Encryption": [
+    {
+      "question": "State one benefit of using symmetric encryption over asymmetric encryption.",
+      "answer": "Symmetric encryption is faster/more efficient to calculate than asymmetric encryption",
+      "paper": "2024 Oct/Nov Paper 11",
+      "topic": "Encryption",
+      "tags": [
+        "state"
+      ],
+      "marks": 1,
+      "keywords": [
+        "symmetric",
+        "speed",
+        "efficiency"
+      ]
+    }
+  ],
+  "Errors": [
+    {
+      "question": "Describe how an Automatic Repeat Request (ARQ) system is used to check for errors.",
+      "answer": "Any four from:\nThe sender transmits a data packet\n... and waits for an acknowledgement (ACK)\nIf no ACK is received within a timeout period\n... or if a negative acknowledgement (NACK) is received\nThe sender retransmits the packet\nThis process repeats until an ACK is received or a limit is reached",
+      "paper": "2024 May/June Paper 11",
+      "topic": "Errors",
+      "tags": [
+        "describe"
+      ],
+      "marks": 4,
+      "keywords": [
+        "ARQ",
+        "ACK",
+        "NACK",
+        "timeout",
+        "retransmit",
+        "packet"
+      ]
+    },
+    {
+      "question": "Describe parity bits and a limitation of parity checking.",
+      "answer": "Parity adds a bit to make the number of 1s even or odd\nLimitation: it detects single-bit errors\n... but not all multi-bit errors (e.g., two-bit flips retain parity)",
+      "paper": "2024 Oct/Nov Paper 23",
+      "topic": "Errors",
+      "tags": [
+        "describe",
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "parity",
+        "error detection",
+        "limitation"
+      ]
+    },
+    {
+      "question": "Explain what a checksum is and how it is used.",
+      "answer": "A checksum is a value computed from the data\nThe sender transmits it with the packet\nThe receiver recomputes the checksum\n... and compares it to the received checksum to detect errors",
+      "paper": "2025 May/June Paper 12",
+      "topic": "Errors",
+      "tags": [
+        "explain"
+      ],
+      "marks": 3,
+      "keywords": [
+        "checksum",
+        "error detection"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { qaData } from '../../data/qa';
 import { units } from '../../data/units';
 import { QACard } from '../../components/shared/QACard';
@@ -37,12 +37,39 @@ export const QAView: React.FC = () => {
     return inText || inKeywords;
   });
 
+  useEffect(() => {
+    if (import.meta.env.MODE !== 'production') {
+      const sample = sourceQuestions.slice(0, 5).map(q => q.question);
+      console.debug('[QAView] selectedUnitId', selectedUnitId, 'keyword', keyword, 'sourceCount', sourceQuestions.length, 'filteredCount', filteredQuestions.length, 'sample', sample);
+    }
+  }, [selectedUnitId, keyword, sourceQuestions, filteredQuestions]);
+
   React.useEffect(() => {
     if (selectedTopic && !hasTopicData) {
       setSelectedTopic('');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedUnitId]);
+
+  // Refs and readiness marker for E2E/tests: set qaReady when the keyword input and
+  // the QA list have been rendered. This is a dev/test-only helper and will be
+  // present only when not in production.
+  const kwRef = useRef<HTMLInputElement | null>(null);
+  const qaRef = useRef<HTMLDivElement | null>(null);
+  const [qaReady, setQaReady] = useState(false);
+
+  useEffect(() => {
+    // If both elements exist and there are questions rendered, mark ready.
+    const hasInput = !!kwRef.current;
+    const hasCards = !!(qaRef.current && qaRef.current.children && qaRef.current.children.length > 0);
+    const ready = hasInput && hasCards;
+    if (import.meta.env.MODE !== 'production') {
+      if (ready && !qaReady) console.debug('[QAView] QA ready: input and cards attached');
+      if (!ready && qaReady) console.debug('[QAView] QA not ready yet');
+    }
+    setQaReady(ready);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filteredQuestions.length, keyword, selectedUnitId, selectedTopic]);
 
   // Sync state when URL (path or search) changes
   useEffect(() => {
@@ -72,6 +99,28 @@ export const QAView: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedUnitId, selectedTopic, keyword, kwOnly, hasTopicData]);
 
+  // If navigated from a term's "Related Q&A" button (keyword present), scroll to the first matching question
+  useEffect(() => {
+    if (!keyword) return; // nothing to focus on
+    if (!Array.isArray(filteredQuestions) || filteredQuestions.length === 0) return;
+
+    // Wait for DOM to update then find first matching .qa-card and scroll/focus it
+    const raf = requestAnimationFrame(() => {
+      try {
+        const list = Array.from(document.querySelectorAll('.qa-card')) as HTMLElement[];
+        if (list.length === 0) return;
+        const lower = keyword.trim().toLowerCase();
+        let el: HTMLElement | undefined = list.find(l => (l.textContent || '').toLowerCase().includes(lower));
+        if (!el) el = list[0];
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // focus so screen readers jump to it
+        el.focus();
+      } catch (e) { /* swallow DOM errors in non-browser env */ }
+    });
+
+    return () => cancelAnimationFrame(raf);
+  }, [keyword, filteredQuestions]);
+
   return (
     <div>
       <div className="content-header">
@@ -82,6 +131,7 @@ export const QAView: React.FC = () => {
 
         <div className="filters">
           <input 
+            ref={kwRef}
             type="text"
             placeholder="Keyword..."
             value={keyword}
@@ -113,7 +163,11 @@ export const QAView: React.FC = () => {
         </div>
       </div>
 
-      <div className="qa">
+      <div
+        className="qa"
+        ref={qaRef}
+        data-testid={import.meta.env.MODE !== 'production' && qaReady ? 'qa-ready' : undefined}
+      >
         {filteredQuestions.length > 0 ? (
           filteredQuestions.map((q, i) => (
             <QACard key={i} question={q} />
