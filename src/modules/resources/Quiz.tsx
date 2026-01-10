@@ -27,6 +27,7 @@ export const Quiz: React.FC = () => {
 
   const [index, setIndex] = useState(0);
   const [revealedMap, setRevealedMap] = useState<Record<string, boolean>>({});
+  const [viewMode, setViewMode] = useState<'list' | 'paginated'>('list');
 
   useEffect(() => {
     try {
@@ -44,45 +45,83 @@ export const Quiz: React.FC = () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
   }, [index, revealedMap]);
 
-  const q = questions[index];
-  if (!q) return <div className="quiz">No questions available.</div>;
-
   const toggleReveal = (id?: string) => {
-    const key = id || q.id!;
+    const key = id || questions[0]?.id!;
     setRevealedMap(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
-  // reveal state is stored in revealedMap (no local alias required)
+  // reveal state is stored in revealedMap
+
+  if (questions.length === 0) return <div className="quiz">No questions available.</div>;
 
   return (
     <div className="quiz">
       <div className="quiz-header">
-        <div className="quiz-meta">Question {index + 1} of {questions.length} • {q.marks || 1} mark{q.marks === 1 ? '' : 's'}</div>
+        <div className="quiz-meta">{viewMode === 'paginated' ? `Question ${index + 1} of ${questions.length}` : `${questions.length} questions`}</div>
         <div className="quiz-controls">
-          <button onClick={() => setIndex(i => Math.max(0, i - 1))} disabled={index === 0}>Prev</button>
-          <button onClick={() => setIndex(i => Math.min(questions.length - 1, i + 1))} disabled={index === questions.length - 1}>Next</button>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button onClick={() => setViewMode('list')} aria-pressed={viewMode === 'list'}>List view</button>
+            <button onClick={() => setViewMode('paginated')} aria-pressed={viewMode === 'paginated'}>Paginated</button>
+          </div>
+          {viewMode === 'paginated' && (
+            <div style={{ marginLeft: 12 }}>
+              <button onClick={() => setIndex(i => Math.max(0, i - 1))} disabled={index === 0}>Prev</button>
+              <button onClick={() => setIndex(i => Math.min(questions.length - 1, i + 1))} disabled={index === questions.length - 1}>Next</button>
+            </div>
+          )}
         </div>
       </div>
 
       <div className="quiz-body" style={{ marginTop: 12 }}>
-        {q.type === 'fill_in' ? (
-          <FillInQuestion
-            id={q.id!}
-            prompt={q.question}
-            blanks={q.blanks || []}
-            reveal={!!revealedMap[q.id!]}
-            onRevealToggle={() => toggleReveal(q.id)}
-          />
-        ) : (
-          <div className="question short-answer">
-            <div className="prompt">{q.question}</div>
-            <div style={{ marginTop: 8 }}>
-              <button onClick={() => toggleReveal(q.id)}>Show answer</button>
-            </div>
-            {revealedMap[q.id!] && (
-              <div className="answer" style={{ marginTop: 8 }}><strong>Answer:</strong> {q.answer}</div>
-            )}
+        {viewMode === 'list' ? (
+          <div className="quiz-list">
+            {questions.map(qItem => (
+              <div key={qItem.id} className="question short-answer" style={{ marginBottom: 12 }}>
+                {qItem.type === 'fill_in' ? (
+                  <FillInQuestion
+                    id={qItem.id!}
+                    prompt={qItem.question}
+                    blanks={qItem.blanks || []}
+                    reveal={!!revealedMap[qItem.id!]}
+                    onRevealToggle={() => setRevealedMap(prev => ({ ...prev, [qItem.id!]: !prev[qItem.id!] }))}
+                  />
+                ) : (
+                  <>
+                    <div className="prompt">{qItem.question}</div>
+                    <div style={{ marginTop: 8 }}>
+                      <button onClick={() => setRevealedMap(prev => ({ ...prev, [qItem.id!]: !prev[qItem.id!] }))}>Show answer</button>
+                    </div>
+                    {revealedMap[qItem.id!] && (
+                      <div className="answer" style={{ marginTop: 8 }}><strong>Answer:</strong> {qItem.answer}</div>
+                    )}
+                  </>
+                )}
+              </div>
+            ))}
           </div>
+        ) : (
+          (() => {
+            const q = questions[index];
+            return q.type === 'fill_in' ? (
+              <FillInQuestion
+                id={q.id!}
+                prompt={q.question}
+                blanks={q.blanks || []}
+                reveal={!!revealedMap[q.id!]}
+                onRevealToggle={() => setRevealedMap(prev => ({ ...prev, [q.id!]: !prev[q.id!] }))}
+              />
+            ) : (
+              <div className="question short-answer">
+                <div className="prompt">{q.question}</div>
+                <div style={{ marginTop: 8 }}>
+                  <button onClick={() => setRevealedMap(prev => ({ ...prev, [q.id!]: !prev[q.id!] }))}>Show answer</button>
+                </div>
+                {revealedMap[q.id!] && (
+                  <div className="answer" style={{ marginTop: 8 }}><strong>Answer:</strong> {q.answer}</div>
+                )}
+              </div>
+            );
+          })()
         )}
       </div>
     </div>
