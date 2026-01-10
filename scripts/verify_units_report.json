@@ -1,0 +1,1882 @@
+{
+  "generatedAt": "2026-01-09T08:45:06.347Z",
+  "mode": "quick-scan",
+  "results": [
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Bit",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper1.json",
+          "excerpt": "{\"Unit 1: Data Representation\":{\"1.1 Number Systems\":[{\"question\":\"Convert denary numbers 20, 32, and 165 to hexadecimal.\",\"answer\":\"14\\n20\\nA5\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to hexadecimal\",\"conversion\"],\"key_terms\":[\"denary\",\"hexadecimal\",\"conversion\"]},{\"question\":\"Convert denary numbers 10, 50, 201 to binary.\",\"answer\":\"1010\\n110010\\n11001001\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to binary\",\"conversion\"],\"key_terms\":[\"denary\",\"binary\",\"conversion\"]},{\"question\":\"Convert hexadecimal A2F to binary.\",\"answer\":\"One mark for each correct nibble, in the correct order.\\n1010 0010 1111\",\"paper\":\"S24P13\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"hexadecimal to binary\",\"A2F\",\"conversion\"],\"key_terms\":[\"hexadecimal\",\"binary\",\"conversion\",\"nibble\"]}],\"1.2 Binary Arithmetic\":[{\"question\":\"Add binary numbers 00110000 and 01100110.\",\"answer\":\"One mark for evidence of working, for example 2 carries\\nOne mark for each correct nibble (Max 2)\\n1 1\\n0 0 1 1 0 0 0 0\\n0 1 1 0 0 1 1 0\\n1 0 0 1 0 1 1 0\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":3,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"carry\",\"nibble\",\"8-bit\"]},{\"question\":\"Add binary numbers 01001100 and 11100011.\",\"answer\":\"One mark for each correct nibble (max 2)\\nOne mark for correct working e.g. correct carries\\nOne mark for showing overflow bit\\n 1\\n 1 1 1 0 0 0 1 1\\n+ 0 1 0 0 1 1 0 0\\n1 0 0 1 0 1 1 1 1\",\"paper\":\"W24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":4,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"overflow\",\"carry\",\"8-bit\"]}],\"1.3 Two's Complement\":[{\"question\":\"Convert two's complement 10100011 to denary.\",\"answer\":\"-93\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"two's complement\"],\"marks\":2,\"keywords\":[\"two's comp",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Nibble",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper1.json",
+          "excerpt": "{\"Unit 1: Data Representation\":{\"1.1 Number Systems\":[{\"question\":\"Convert denary numbers 20, 32, and 165 to hexadecimal.\",\"answer\":\"14\\n20\\nA5\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to hexadecimal\",\"conversion\"],\"key_terms\":[\"denary\",\"hexadecimal\",\"conversion\"]},{\"question\":\"Convert denary numbers 10, 50, 201 to binary.\",\"answer\":\"1010\\n110010\\n11001001\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to binary\",\"conversion\"],\"key_terms\":[\"denary\",\"binary\",\"conversion\"]},{\"question\":\"Convert hexadecimal A2F to binary.\",\"answer\":\"One mark for each correct nibble, in the correct order.\\n1010 0010 1111\",\"paper\":\"S24P13\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"hexadecimal to binary\",\"A2F\",\"conversion\"],\"key_terms\":[\"hexadecimal\",\"binary\",\"conversion\",\"nibble\"]}],\"1.2 Binary Arithmetic\":[{\"question\":\"Add binary numbers 00110000 and 01100110.\",\"answer\":\"One mark for evidence of working, for example 2 carries\\nOne mark for each correct nibble (Max 2)\\n1 1\\n0 0 1 1 0 0 0 0\\n0 1 1 0 0 1 1 0\\n1 0 0 1 0 1 1 0\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":3,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"carry\",\"nibble\",\"8-bit\"]},{\"question\":\"Add binary numbers 01001100 and 11100011.\",\"answer\":\"One mark for each correct nibble (max 2)\\nOne mark for correct working e.g. correct carries\\nOne mark for showing overflow bit\\n 1\\n 1 1 1 0 0 0 1 1\\n+ 0 1 0 0 1 1 0 0\\n1 0 0 1 0 1 1 1 1\",\"paper\":\"W24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":4,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"overflow\",\"carry\",\"8-bit\"]}],\"1.3 Two's Complement\":[{\"question\":\"Convert two's complement 10100011 to denary.\",\"answer\":\"-93\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"two's complement\"],\"marks\":2,\"keywords\":[\"two's comp",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Byte",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Binary",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper1.json",
+          "excerpt": "{\"Unit 1: Data Representation\":{\"1.1 Number Systems\":[{\"question\":\"Convert denary numbers 20, 32, and 165 to hexadecimal.\",\"answer\":\"14\\n20\\nA5\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to hexadecimal\",\"conversion\"],\"key_terms\":[\"denary\",\"hexadecimal\",\"conversion\"]},{\"question\":\"Convert denary numbers 10, 50, 201 to binary.\",\"answer\":\"1010\\n110010\\n11001001\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to binary\",\"conversion\"],\"key_terms\":[\"denary\",\"binary\",\"conversion\"]},{\"question\":\"Convert hexadecimal A2F to binary.\",\"answer\":\"One mark for each correct nibble, in the correct order.\\n1010 0010 1111\",\"paper\":\"S24P13\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"hexadecimal to binary\",\"A2F\",\"conversion\"],\"key_terms\":[\"hexadecimal\",\"binary\",\"conversion\",\"nibble\"]}],\"1.2 Binary Arithmetic\":[{\"question\":\"Add binary numbers 00110000 and 01100110.\",\"answer\":\"One mark for evidence of working, for example 2 carries\\nOne mark for each correct nibble (Max 2)\\n1 1\\n0 0 1 1 0 0 0 0\\n0 1 1 0 0 1 1 0\\n1 0 0 1 0 1 1 0\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":3,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"carry\",\"nibble\",\"8-bit\"]},{\"question\":\"Add binary numbers 01001100 and 11100011.\",\"answer\":\"One mark for each correct nibble (max 2)\\nOne mark for correct working e.g. correct carries\\nOne mark for showing overflow bit\\n 1\\n 1 1 1 0 0 0 1 1\\n+ 0 1 0 0 1 1 0 0\\n1 0 0 1 0 1 1 1 1\",\"paper\":\"W24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":4,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"overflow\",\"carry\",\"8-bit\"]}],\"1.3 Two's Complement\":[{\"question\":\"Convert two's complement 10100011 to denary.\",\"answer\":\"-93\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"two's complement\"],\"marks\":2,\"keywords\":[\"two's comp",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Denary",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper1.json",
+          "excerpt": "{\"Unit 1: Data Representation\":{\"1.1 Number Systems\":[{\"question\":\"Convert denary numbers 20, 32, and 165 to hexadecimal.\",\"answer\":\"14\\n20\\nA5\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to hexadecimal\",\"conversion\"],\"key_terms\":[\"denary\",\"hexadecimal\",\"conversion\"]},{\"question\":\"Convert denary numbers 10, 50, 201 to binary.\",\"answer\":\"1010\\n110010\\n11001001\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to binary\",\"conversion\"],\"key_terms\":[\"denary\",\"binary\",\"conversion\"]},{\"question\":\"Convert hexadecimal A2F to binary.\",\"answer\":\"One mark for each correct nibble, in the correct order.\\n1010 0010 1111\",\"paper\":\"S24P13\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"hexadecimal to binary\",\"A2F\",\"conversion\"],\"key_terms\":[\"hexadecimal\",\"binary\",\"conversion\",\"nibble\"]}],\"1.2 Binary Arithmetic\":[{\"question\":\"Add binary numbers 00110000 and 01100110.\",\"answer\":\"One mark for evidence of working, for example 2 carries\\nOne mark for each correct nibble (Max 2)\\n1 1\\n0 0 1 1 0 0 0 0\\n0 1 1 0 0 1 1 0\\n1 0 0 1 0 1 1 0\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":3,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"carry\",\"nibble\",\"8-bit\"]},{\"question\":\"Add binary numbers 01001100 and 11100011.\",\"answer\":\"One mark for each correct nibble (max 2)\\nOne mark for correct working e.g. correct carries\\nOne mark for showing overflow bit\\n 1\\n 1 1 1 0 0 0 1 1\\n+ 0 1 0 0 1 1 0 0\\n1 0 0 1 0 1 1 1 1\",\"paper\":\"W24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":4,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"overflow\",\"carry\",\"8-bit\"]}],\"1.3 Two's Complement\":[{\"question\":\"Convert two's complement 10100011 to denary.\",\"answer\":\"-93\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"two's complement\"],\"marks\":2,\"keywords\":[\"two's comp",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Hexadecimal",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper1.json",
+          "excerpt": "{\"Unit 1: Data Representation\":{\"1.1 Number Systems\":[{\"question\":\"Convert denary numbers 20, 32, and 165 to hexadecimal.\",\"answer\":\"14\\n20\\nA5\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to hexadecimal\",\"conversion\"],\"key_terms\":[\"denary\",\"hexadecimal\",\"conversion\"]},{\"question\":\"Convert denary numbers 10, 50, 201 to binary.\",\"answer\":\"1010\\n110010\\n11001001\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to binary\",\"conversion\"],\"key_terms\":[\"denary\",\"binary\",\"conversion\"]},{\"question\":\"Convert hexadecimal A2F to binary.\",\"answer\":\"One mark for each correct nibble, in the correct order.\\n1010 0010 1111\",\"paper\":\"S24P13\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"hexadecimal to binary\",\"A2F\",\"conversion\"],\"key_terms\":[\"hexadecimal\",\"binary\",\"conversion\",\"nibble\"]}],\"1.2 Binary Arithmetic\":[{\"question\":\"Add binary numbers 00110000 and 01100110.\",\"answer\":\"One mark for evidence of working, for example 2 carries\\nOne mark for each correct nibble (Max 2)\\n1 1\\n0 0 1 1 0 0 0 0\\n0 1 1 0 0 1 1 0\\n1 0 0 1 0 1 1 0\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":3,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"carry\",\"nibble\",\"8-bit\"]},{\"question\":\"Add binary numbers 01001100 and 11100011.\",\"answer\":\"One mark for each correct nibble (max 2)\\nOne mark for correct working e.g. correct carries\\nOne mark for showing overflow bit\\n 1\\n 1 1 1 0 0 0 1 1\\n+ 0 1 0 0 1 1 0 0\\n1 0 0 1 0 1 1 1 1\",\"paper\":\"W24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":4,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"overflow\",\"carry\",\"8-bit\"]}],\"1.3 Two's Complement\":[{\"question\":\"Convert two's complement 10100011 to denary.\",\"answer\":\"-93\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"two's complement\"],\"marks\":2,\"keywords\":[\"two's comp",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Overflow",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper1.json",
+          "excerpt": "{\"Unit 1: Data Representation\":{\"1.1 Number Systems\":[{\"question\":\"Convert denary numbers 20, 32, and 165 to hexadecimal.\",\"answer\":\"14\\n20\\nA5\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to hexadecimal\",\"conversion\"],\"key_terms\":[\"denary\",\"hexadecimal\",\"conversion\"]},{\"question\":\"Convert denary numbers 10, 50, 201 to binary.\",\"answer\":\"1010\\n110010\\n11001001\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to binary\",\"conversion\"],\"key_terms\":[\"denary\",\"binary\",\"conversion\"]},{\"question\":\"Convert hexadecimal A2F to binary.\",\"answer\":\"One mark for each correct nibble, in the correct order.\\n1010 0010 1111\",\"paper\":\"S24P13\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"hexadecimal to binary\",\"A2F\",\"conversion\"],\"key_terms\":[\"hexadecimal\",\"binary\",\"conversion\",\"nibble\"]}],\"1.2 Binary Arithmetic\":[{\"question\":\"Add binary numbers 00110000 and 01100110.\",\"answer\":\"One mark for evidence of working, for example 2 carries\\nOne mark for each correct nibble (Max 2)\\n1 1\\n0 0 1 1 0 0 0 0\\n0 1 1 0 0 1 1 0\\n1 0 0 1 0 1 1 0\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":3,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"carry\",\"nibble\",\"8-bit\"]},{\"question\":\"Add binary numbers 01001100 and 11100011.\",\"answer\":\"One mark for each correct nibble (max 2)\\nOne mark for correct working e.g. correct carries\\nOne mark for showing overflow bit\\n 1\\n 1 1 1 0 0 0 1 1\\n+ 0 1 0 0 1 1 0 0\\n1 0 0 1 0 1 1 1 1\",\"paper\":\"W24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":4,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"overflow\",\"carry\",\"8-bit\"]}],\"1.3 Two's Complement\":[{\"question\":\"Convert two's complement 10100011 to denary.\",\"answer\":\"-93\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"two's complement\"],\"marks\":2,\"keywords\":[\"two's comp",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Character set",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "ASCII",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Unicode",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "pixel",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Resolution",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Colour depth",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Metadata",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "graphic",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Vector graphics",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Sample rate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Bit rate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Sampling resolution",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Compression",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Lossless compression",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Lossy compression",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-1",
+      "unitTitle": "Data representation",
+      "term": "Run-length encoding (RLE)",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Serial transmission",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Parallel transmission",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Simplex",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Half-duplex",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Full-duplex",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Packet",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Header",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Payload",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Trailer",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Checksum",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Parity bit",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Even parity",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Odd parity",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "ARQ",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "ACK/NACK",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Protocol",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Packet switching",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-2",
+      "unitTitle": "Data transmission",
+      "term": "Buffering",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "CPU",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "ALU",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Control unit",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Clock",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Register",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Cache memory",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "RAM",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "ROM",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Bus",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Data bus",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Address bus",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Control bus",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Von Neumann architecture",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Input device",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Output device",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Sensor",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Actuator",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Secondary storage",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "HDD",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "SSD",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Optical storage",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Magnetic tape",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Embedded system",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "Microcontroller",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-3",
+      "unitTitle": "Hardware",
+      "term": "GPU",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "System software",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Application software",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Utility software",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Firmware",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Operating system",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Device driver",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "User interface",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "CLI",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "GUI",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Multitasking",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Scheduling",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Memory management",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "File management",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Process management",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Security",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Translator",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Compiler",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Interpreter",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Assembler",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Source code",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Object code",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "High-level language",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Low-level language",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Open source",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "Proprietary software",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-4",
+      "unitTitle": "Software",
+      "term": "IDE",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper1.json",
+          "excerpt": "{\"Unit 1: Data Representation\":{\"1.1 Number Systems\":[{\"question\":\"Convert denary numbers 20, 32, and 165 to hexadecimal.\",\"answer\":\"14\\n20\\nA5\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to hexadecimal\",\"conversion\"],\"key_terms\":[\"denary\",\"hexadecimal\",\"conversion\"]},{\"question\":\"Convert denary numbers 10, 50, 201 to binary.\",\"answer\":\"1010\\n110010\\n11001001\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to binary\",\"conversion\"],\"key_terms\":[\"denary\",\"binary\",\"conversion\"]},{\"question\":\"Convert hexadecimal A2F to binary.\",\"answer\":\"One mark for each correct nibble, in the correct order.\\n1010 0010 1111\",\"paper\":\"S24P13\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"hexadecimal to binary\",\"A2F\",\"conversion\"],\"key_terms\":[\"hexadecimal\",\"binary\",\"conversion\",\"nibble\"]}],\"1.2 Binary Arithmetic\":[{\"question\":\"Add binary numbers 00110000 and 01100110.\",\"answer\":\"One mark for evidence of working, for example 2 carries\\nOne mark for each correct nibble (Max 2)\\n1 1\\n0 0 1 1 0 0 0 0\\n0 1 1 0 0 1 1 0\\n1 0 0 1 0 1 1 0\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":3,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"carry\",\"nibble\",\"8-bit\"]},{\"question\":\"Add binary numbers 01001100 and 11100011.\",\"answer\":\"One mark for each correct nibble (max 2)\\nOne mark for correct working e.g. correct carries\\nOne mark for showing overflow bit\\n 1\\n 1 1 1 0 0 0 1 1\\n+ 0 1 0 0 1 1 0 0\\n1 0 0 1 0 1 1 1 1\",\"paper\":\"W24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":4,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"overflow\",\"carry\",\"8-bit\"]}],\"1.3 Two's Complement\":[{\"question\":\"Convert two's complement 10100011 to denary.\",\"answer\":\"-93\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"two's complement\"],\"marks\":2,\"keywords\":[\"two's comp",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Internet",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "World Wide Web",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Web browser",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "URL",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Domain name",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "DNS",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "IP address",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "HTTP",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "HTTPS",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "HTML",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "CSS",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "JavaScript",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "ISP",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Email",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "FTP",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Cookie",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Firewall",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Malware",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Phishing",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Trojan",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Spyware",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Antivirus",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Encryption",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "TLS/SSL",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Digital certificate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Digital signature",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Authentication",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-5",
+      "unitTitle": "The internet and its uses",
+      "term": "Proxy server",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Automation",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Artificial intelligence",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Machine learning",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Expert system",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Robotics",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Computer vision",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Natural language processing",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Speech recognition",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Actuator",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Sensor",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Internet of Things",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Wearable technology",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Autonomous vehicle",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Drone",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Big data",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Data mining",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Biometric authentication",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "3D printing",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "AR",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper1.json",
+          "excerpt": "{\"Unit 1: Data Representation\":{\"1.1 Number Systems\":[{\"question\":\"Convert denary numbers 20, 32, and 165 to hexadecimal.\",\"answer\":\"14\\n20\\nA5\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to hexadecimal\",\"conversion\"],\"key_terms\":[\"denary\",\"hexadecimal\",\"conversion\"]},{\"question\":\"Convert denary numbers 10, 50, 201 to binary.\",\"answer\":\"1010\\n110010\\n11001001\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"denary to binary\",\"conversion\"],\"key_terms\":[\"denary\",\"binary\",\"conversion\"]},{\"question\":\"Convert hexadecimal A2F to binary.\",\"answer\":\"One mark for each correct nibble, in the correct order.\\n1010 0010 1111\",\"paper\":\"S24P13\",\"topic\":\"1 Data representation\",\"tags\":[\"conversion\"],\"marks\":3,\"keywords\":[\"hexadecimal to binary\",\"A2F\",\"conversion\"],\"key_terms\":[\"hexadecimal\",\"binary\",\"conversion\",\"nibble\"]}],\"1.2 Binary Arithmetic\":[{\"question\":\"Add binary numbers 00110000 and 01100110.\",\"answer\":\"One mark for evidence of working, for example 2 carries\\nOne mark for each correct nibble (Max 2)\\n1 1\\n0 0 1 1 0 0 0 0\\n0 1 1 0 0 1 1 0\\n1 0 0 1 0 1 1 0\",\"paper\":\"S24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":3,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"carry\",\"nibble\",\"8-bit\"]},{\"question\":\"Add binary numbers 01001100 and 11100011.\",\"answer\":\"One mark for each correct nibble (max 2)\\nOne mark for correct working e.g. correct carries\\nOne mark for showing overflow bit\\n 1\\n 1 1 1 0 0 0 1 1\\n+ 0 1 0 0 1 1 0 0\\n1 0 0 1 0 1 1 1 1\",\"paper\":\"W24P12\",\"topic\":\"1 Data representation\",\"tags\":[\"binary addition\"],\"marks\":4,\"keywords\":[\"binary addition\",\"8-bit\"],\"key_terms\":[\"binary addition\",\"overflow\",\"carry\",\"8-bit\"]}],\"1.3 Two's Complement\":[{\"question\":\"Convert two's complement 10100011 to denary.\",\"answer\":\"-93\",\"paper\":\"S24P11\",\"topic\":\"1 Data representation\",\"tags\":[\"two's complement\"],\"marks\":2,\"keywords\":[\"two's comp",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "VR",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Ethical bias",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Transparency",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "cs-6",
+      "unitTitle": "Automated and emerging technologies",
+      "term": "Explainability",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Problem decomposition",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Abstraction",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Algorithm",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Pseudocode",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Flowchart",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Trace table",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Dry run",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Test plan",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Normal data",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Boundary data",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Erroneous data",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Validation",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Verification",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Linear search",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Binary search",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Bubble sort",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Insertion sort",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Merge sort",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-7",
+      "unitTitle": "Algorithm design and problem-solving",
+      "term": "Efficiency",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Variable",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Constant",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Integer",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Real",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Boolean",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Character",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "String",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Casting",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Input/Output",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Assignment",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Arithmetic operator",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Relational operator",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Logical operator",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Sequence",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Selection",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Iteration",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "FOR loop",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "WHILE loop",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "REPEAT…UNTIL",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Array",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "2D Array",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "String operations",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Subroutine",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Procedure",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Function",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Parameter",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Argument",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Return value",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "Scope",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "ROUND",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "RANDOM",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "DIV",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-8",
+      "unitTitle": "Programming",
+      "term": "MOD",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "Database",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "Table",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "Record",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "Field",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "Primary key",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "SQL",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "SELECT",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "FROM",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:24paper2.json",
+          "excerpt": "[{\"topic\":\"1 Programming concepts\",\"questions\":[{\"question\":\"Outline role of procedures and functions in maintainable programs.\",\"answer\":\"• Procedures / functions divide the program into smaller manageable segments\\n• … making it more readable / easier to understand / easier to debug\\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\\n• Procedures and functions can reduce / eliminate (repeated) code\",\"paper\":\"M24P21\",\"tags\":[\"explanation\"],\"marks\":3,\"keywords\":[\"code reuse\",\"readability\",\"debugging\",\"abstraction\",\"modularity\"]},{\"question\":\"State what is meant by integer and real data types with examples.\",\"answer\":\"Integer: a whole number … Example 27\\nReal: a number that contains a fractional part … Example 18.75\",\"paper\":\"M24P21\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"integer\",\"real\",\"whole number\",\"decimal\",\"data type\"]},{\"question\":\"Describe characteristics of string and char data types with examples.\",\"answer\":\"String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\\nChar: a single character, X\",\"paper\":\"M24P23\",\"tags\":[\"definition\",\"examples\"],\"marks\":4,\"keywords\":[\"string\",\"char\",\"character\",\"data type\",\"example\"]}]},{\"topic\":\"2 Program development life cycle\",\"questions\":[{\"question\":\"Identify three tasks in analysis stage of program development.\",\"answer\":\"• abstraction\\n• decomposition\\n• identification of problem / identification of requirements // outline of success criteria\",\"paper\":\"M24P22\",\"tags\":[\"list\"],\"marks\":3,\"keywords\":[\"analysis\",\"requirements\",\"decomposition\",\"abstraction\",\"program development\"]}]},{\"topic\":\"3 Pseudocode and algorithms\",\"questions\":[{\"question\":\"Write pseudocode to use a procedure named Average that passes values 25 and 50.\",\"answer\":\"CALL Average (25, 50)\",\"paper",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper1.json",
+          "excerpt": "[{\"question\":\"State how many tebibytes (TiB) are equal to 2 pebibytes (PiB).\",\"answer\":\"2048\",\"paper\":\"S25P11\",\"topic\":\"Data representation\",\"tags\":[\"conversion\",\"units\"],\"marks\":1,\"keywords\":[\"TiB\",\"PiB\",\"2048\"],\"type\":\"short_answer\"},{\"question\":\"Give the name of the process that is used to reduce the size of a file.\",\"answer\":\"(Data) Compression\",\"paper\":\"S25P11\",\"topic\":\"Data storage\",\"tags\":[\"compression\"],\"marks\":1,\"keywords\":[\"compression\"],\"type\":\"short_answer\"},{\"question\":\"Identify an appropriate output device to produce the paper ticket.\",\"answer\":\"Printer\",\"paper\":\"S25P11\",\"topic\":\"Hardware\",\"tags\":[\"output device\",\"printer\"],\"marks\":1,\"keywords\":[\"printer\"],\"type\":\"short_answer\"},{\"question\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list.\",\"paper\":\"S25P11\",\"topic\":\"Security\",\"tags\":[\"encryption\",\"asymmetric\"],\"marks\":8,\"type\":\"fill_in\",\"blanks\":[\"algorithm\",\"plain text\",\"cipher text\",\"meaningless\",\"public/private\",\"private/public\",\"public\",\"private\"],\"prompt_with_answers\":\"Complete the paragraph about asymmetric encryption. Use the terms from the list (answers shown in **bold**): algorithm, **plain text**, **cipher text**, meaningless, **public/private**, **private/public**, public, **private**.\",\"keywords\":[\"public key\",\"private key\",\"cipher text\"]},{\"question\":\"Complete the table with the missing terms and definitions about processing data.\",\"paper\":\"S25P11\",\"topic\":\"CPU and processing\",\"tags\":[\"cpu\",\"registers\"],\"marks\":5,\"type\":\"fill_in\",\"blanks\":[{\"term\":\"current instruction register\",\"definition\":\"stores the instruction that is being decoded/executed (CIR)\"}],\"keywords\":[\"CIR\",\"register\"]}]",
+          "score": 1,
+          "type": "exact"
+        },
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "WHERE",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-9",
+      "unitTitle": "Databases",
+      "term": "ORDER BY",
+      "sourceVerified": false,
+      "matches": [
+        {
+          "source": "paper:25paper2.json",
+          "excerpt": "[{\"question\":\"Write pseudocode for double entry verification check.\",\"answer\":\"INPUT firstEntry\\nINPUT secondEntry\\nIF firstEntry = secondEntry THEN\\n  OUTPUT \\\"Accepted\\\"\\nELSE\\n  OUTPUT \\\"Mismatch\\\"\\nENDIF\",\"paper\":\"S25P21\",\"topic\":\"1 Algorithms\",\"tags\":[\"pseudocode\",\"verification\"],\"marks\":3,\"keywords\":[\"double entry\",\"verification\",\"pseudocode\",\"compare\"]},{\"question\":\"Write pseudocode to validate integer input between 1 and 100 inclusive.\",\"answer\":\"REPEAT\\n  INPUT n\\nUNTIL n >= 1 AND n <= 100\",\"paper\":\"W25P21\",\"topic\":\"7 Testing and validation\",\"tags\":[\"pseudocode\",\"validation\"],\"marks\":2,\"keywords\":[\"validation\",\"range check\",\"repeat until\",\"integer\"]},{\"question\":\"Write pseudocode to search for a value in an array and output its index or -1.\",\"answer\":\"INPUT target\\nindex <- -1\\nFOR i <- 1 TO 100\\n  IF array[i] = target THEN\\n    index <- i\\n  ENDIF\\nNEXT i\\nOUTPUT index\",\"paper\":\"M25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"array\",\"search\"],\"marks\":3,\"keywords\":[\"array\",\"linear search\",\"index\",\"loop\"]},{\"question\":\"Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.\",\"answer\":\"SELECT StudentName, Age\\nFROM Students\\nWHERE Age >= 16\\nORDER BY StudentName\",\"paper\":\"S25P23\",\"topic\":\"9 Databases and SQL\",\"tags\":[\"sql\",\"select\",\"order by\"],\"marks\":3,\"keywords\":[\"SQL\",\"SELECT\",\"FROM\",\"WHERE\",\"ORDER BY\",\"Students\"]},{\"question\":\"Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\\n\\nOriginal:\\nFOR Count 1 TO 10\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] Name\\nNEXT Count\",\"answer\":\"Count ← 1\\nREPEAT\\n  OUTPUT \\\"Please enter a name\\\"\\n  INPUT Name\\n  Names[Count] ← Name\\n  Count ← Count + 1\\nUNTIL Count > 10\",\"paper\":\"S25P21\",\"topic\":\"4 Arrays and loops\",\"tags\":[\"pseudocode\",\"loops\",\"arrays\"],\"marks\":4,\"keywords\":[\"count-controlled loop\",\"condition-controlled loop\",\"repeat-until\",\"while loop\",\"names array\"]},{\"question\":\"A telepho",
+          "score": 1,
+          "type": "exact"
+        }
+      ]
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "Boolean",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "Logic gate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "AND gate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "OR gate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "NOT gate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "NAND gate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "NOR gate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "XOR gate",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "Truth table",
+      "sourceVerified": false,
+      "matches": []
+    },
+    {
+      "unitId": "apl-10",
+      "unitTitle": "Boolean logic",
+      "term": "Boolean expression",
+      "sourceVerified": false,
+      "matches": []
+    }
+  ]
+}

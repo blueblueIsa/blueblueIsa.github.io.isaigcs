@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": "2026-01-10T12:00:00Z",
+    "unitId": "cs-1",
+    "term": "Byte",
+    "oldDefinition": "8",
+    "newDefinition": "Group of 8 bits.",
+    "reason": "Definition should be descriptive rather than a direct exam answer; reverted per user request.",
+    "sourceLog": "src/data/strict_topic_v2_applied.json"
+  },
+  {
+    "timestamp": "2026-01-10T12:15:00Z",
+    "unitId": "cs-2",
+    "term": "Header",
+    "oldDefinition": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer",
+    "newDefinition": "Control information at the start of a packet.",
+    "reason": "Mark-scheme answer applied to canonical unit definition; reverted to concise definition.",
+    "sourceLog": "src/data/strict_topic_v2_applied.json"
+  },
+  {
+    "timestamp": "2026-01-10T12:15:00Z",
+    "unitId": "cs-2",
+    "term": "Payload",
+    "oldDefinition": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer",
+    "newDefinition": "User data carried in a packet.",
+    "reason": "Mark-scheme answer applied to canonical unit definition; reverted to concise definition.",
+    "sourceLog": "src/data/strict_topic_v2_applied.json"
+  },
+  {
+    "timestamp": "2026-01-10T12:15:00Z",
+    "unitId": "cs-2",
+    "term": "Trailer",
+    "oldDefinition": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer",
+    "newDefinition": "Data at the end of a packet, often for error checking.",
+    "reason": "Mark-scheme answer applied to canonical unit definition; reverted to concise definition.",
+    "sourceLog": "src/data/strict_topic_v2_applied.json"
+  },
+  {
+    "timestamp": "2026-01-10T12:15:00Z",
+    "unitId": "cs-2",
+    "term": "Odd parity",
+    "oldDefinition": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent",
+    "newDefinition": "Parity method ensuring an odd number of 1s.",
+    "reason": "Replaced long procedural mark-scheme with concise definition.",
+    "sourceLog": "src/data/strict_topic_v2_applied.json"
+  },
+  {
+    "timestamp": "2026-01-10T12:15:00Z",
+    "unitId": "cs-2",
+    "term": "ARQ",
+    "oldDefinition": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent",
+    "newDefinition": "Automatic repeat request protocol for retransmission.",
+    "reason": "Replaced long procedural mark-scheme with concise definition.",
+    "sourceLog": "src/data/strict_topic_v2_applied.json"
+  },
+  {
+    "timestamp": "2026-01-10T12:15:00Z",
+    "unitId": "cs-5",
+    "term": "DNS",
+    "oldDefinition": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page",
+    "newDefinition": "Domain Name System translating names to IP addresses.",
+    "reason": "Replaced process description with concise definition.",
+    "sourceLog": "src/data/strict_topic_v2_applied.json"
+  },
+  {
+    "timestamp": "2026-01-10T12:15:00Z",
+    "unitId": "cs-5",
+    "term": "IP address",
+    "oldDefinition": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page",
+    "newDefinition": "Numerical label identifying a device on a network.",
+    "reason": "Replaced process description with concise definition.",
+    "sourceLog": "src/data/strict_topic_v2_applied.json"
+  }
+]

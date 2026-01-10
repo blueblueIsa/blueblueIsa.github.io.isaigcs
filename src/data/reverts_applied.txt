@@ -1,0 +1,8 @@
+2026-01-10T12:00:00Z - Reverted cs-1 Byte: "8" -> "Group of 8 bits." (source: strict_topic_v2_applied.json). Reason: preserve descriptive canonical definition; numeric-only answer inappropriate as unit definition.
+2026-01-10T12:15:00Z - Reverted cs-2 Header: long mark-scheme -> "Control information at the start of a packet." (source: strict_topic_v2_applied.json). Reason: concise canonical definition preferred.
+2026-01-10T12:15:00Z - Reverted cs-2 Payload: long mark-scheme -> "User data carried in a packet." (source: strict_topic_v2_applied.json). Reason: concise canonical definition preferred.
+2026-01-10T12:15:00Z - Reverted cs-2 Trailer: long mark-scheme -> "Data at the end of a packet, often for error checking." (source: strict_topic_v2_applied.json). Reason: concise canonical definition preferred.
+2026-01-10T12:15:00Z - Reverted cs-2 Odd parity: long procedural -> "Parity method ensuring an odd number of 1s." (source: strict_topic_v2_applied.json). Reason: concise canonical definition preferred.
+2026-01-10T12:15:00Z - Reverted cs-2 ARQ: long procedural -> "Automatic repeat request protocol for retransmission." (source: strict_topic_v2_applied.json). Reason: concise canonical definition preferred.
+2026-01-10T12:15:00Z - Reverted cs-5 DNS: long process -> "Domain Name System translating names to IP addresses." (source: strict_topic_v2_applied.json). Reason: concise canonical definition preferred.
+2026-01-10T12:15:00Z - Reverted cs-5 IP address: long process -> "Numerical label identifying a device on a network." (source: strict_topic_v2_applied.json). Reason: concise canonical definition preferred.
