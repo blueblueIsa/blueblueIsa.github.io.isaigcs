@@ -1,0 +1,30 @@
+[
+  {
+    "unitId": "cs-2",
+    "term": "Odd parity",
+    "oldDefinition": "Parity method ensuring an odd number of 1s.",
+    "newDefinition": "Parity",
+    "source": "24paper1.json"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Even parity",
+    "oldDefinition": "Parity method ensuring an even number of 1s.",
+    "newDefinition": "Parity",
+    "source": "24paper1.json"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "ASCII",
+    "oldDefinition": "7/8-bit character encoding for Latin characters.",
+    "newDefinition": "8",
+    "source": "24paper1.json"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Byte",
+    "oldDefinition": "Group of 8 bits.",
+    "newDefinition": "8",
+    "source": "24paper1.json"
+  }
+]

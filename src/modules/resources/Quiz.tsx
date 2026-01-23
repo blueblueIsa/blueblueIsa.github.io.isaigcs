@@ -83,13 +83,13 @@ export const Quiz: React.FC = () => {
                     prompt={qItem.question}
                     blanks={qItem.blanks || []}
                     reveal={!!revealedMap[qItem.id!]}
-                    onRevealToggle={() => setRevealedMap(prev => ({ ...prev, [qItem.id!]: !prev[qItem.id!] }))}
+                    onRevealToggle={() => toggleReveal(qItem.id)}
                   />
                 ) : (
                   <>
                     <div className="prompt">{qItem.question}</div>
                     <div style={{ marginTop: 8 }}>
-                      <button onClick={() => setRevealedMap(prev => ({ ...prev, [qItem.id!]: !prev[qItem.id!] }))}>Show answer</button>
+                      <button onClick={() => toggleReveal(qItem.id)}>Show answer</button>
                     </div>
                     {revealedMap[qItem.id!] && (
                       <div className="answer" style={{ marginTop: 8 }}><strong>Answer:</strong> {qItem.answer}</div>
@@ -108,13 +108,13 @@ export const Quiz: React.FC = () => {
                 prompt={q.question}
                 blanks={q.blanks || []}
                 reveal={!!revealedMap[q.id!]}
-                onRevealToggle={() => setRevealedMap(prev => ({ ...prev, [q.id!]: !prev[q.id!] }))}
+                onRevealToggle={() => toggleReveal(q.id)}
               />
             ) : (
               <div className="question short-answer">
                 <div className="prompt">{q.question}</div>
                 <div style={{ marginTop: 8 }}>
-                  <button onClick={() => setRevealedMap(prev => ({ ...prev, [q.id!]: !prev[q.id!] }))}>Show answer</button>
+                  <button onClick={() => toggleReveal(q.id)}>Show answer</button>
                 </div>
                 {revealedMap[q.id!] && (
                   <div className="answer" style={{ marginTop: 8 }}><strong>Answer:</strong> {q.answer}</div>

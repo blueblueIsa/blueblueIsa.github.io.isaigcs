@@ -1,0 +1,2214 @@
+[
+  {
+    "unitId": "cs-1",
+    "term": "Bit",
+    "definition": "Smallest unit of data; represents 0 or 1.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain why overflow occurs in 8-bit unsigned binary addition. Give an example.",
+      "Calculate the file size of a 400×300 image with 16-bit colour depth, uncompressed.",
+      "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed."
+    ],
+    "answersContainingDefinition": [
+      "Any three from:\\nIn 8-bit unsigned binary, the largest value is 255\\nThe result of the addition exceeds 255\\nThe most significant bit (carry bit) is discarded\\n... causing wrap-around\\nExample: 11111111₂ (255) + 00000001₂ (1) → 00000000₂"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Nibble",
+    "definition": "Group of 4 bits.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Byte",
+    "definition": "Group of 8 bits.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Binary",
+    "definition": "Base-2 number system using digits 0 and 1.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain why overflow occurs in 8-bit unsigned binary addition. Give an example.",
+      "Perform logical left shift of 3 places on binary number 10100011."
+    ],
+    "answersContainingDefinition": [
+      "Any three from:\\nIn 8-bit unsigned binary, the largest value is 255\\nThe result of the addition exceeds 255\\nThe most significant bit (carry bit) is discarded\\n... causing wrap-around\\nExample: 11111111₂ (255) + 00000001₂ (1) → 00000000₂",
+      "1. Shorter representation than binary\\n2. Easier for humans to read",
+      "It would multiply the binary number by 4"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Denary",
+    "definition": "Base-10 number system using digits 0–9.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Convert 11010110₂ to denary and hexadecimal.",
+      "Convert denary numbers 20, 32, and 165 to hexadecimal.",
+      "Convert two's complement 10100011 to denary."
+    ],
+    "answersContainingDefinition": [
+      "Denary: 214\\nHexadecimal: D6"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Hexadecimal",
+    "definition": "Base-16 number system using 0–9 and A–F.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Convert 11010110₂ to denary and hexadecimal.",
+      "Give two reasons why ticket numbers are displayed as hexadecimal.",
+      "Identify incorrect statement about hexadecimal number system.",
+      "Convert denary numbers 20, 32, and 165 to hexadecimal."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Overflow",
+    "definition": "Condition when a value exceeds the representable range.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain why overflow occurs in 8-bit unsigned binary addition. Give an example."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Character set",
+    "definition": "Collection of characters each with a unique code.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Difference:\\nASCII uses 7 or 8 bits (per character)\\nUnicode uses 16 or 32 bits (per character)\\n\\nReason:\\nASCII has a limited character set (Latin only)\\nUnicode covers all major languages/symbols (internationalization)"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "ASCII",
+    "definition": "7/8-bit character encoding for Latin characters.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe a difference between ASCII and Unicode and why Unicode is needed.",
+      "Explain why extended ASCII is insufficient for representing some languages."
+    ],
+    "answersContainingDefinition": [
+      "Extended ASCII provides 256 codes\\n... which is insufficient for languages with many characters (e.g., Chinese/Japanese)\\nUnicode supports thousands of code points"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Unicode",
+    "definition": "Universal character encoding standard with code points.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe a difference between ASCII and Unicode and why Unicode is needed."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "pixel",
+    "definition": "Smallest addressable element of a raster image.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Colour depth is the number of bits used to represent each pixel\\nGreater colour depth allows more colours to be represented\\n... which increases the file size\\n... as more bits are needed for each pixel"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Resolution",
+    "definition": "Number of pixels in each dimension of an image.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State how sample rate and resolution affect sound quality and file size.",
+      "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed."
+    ],
+    "answersContainingDefinition": [
+      "Sample rate: Number of samples taken per second\\nHigher sample rate improves sound accuracy/quality\\n... but increases file size\\n\\nResolution: Number of bits per sample\\nHigher resolution improves dynamic range/quality\\n... but increases file size"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Colour depth",
+    "definition": "Bits used to represent the colour of a pixel.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Define colour depth and explain its effect on image file size.",
+      "Calculate the file size of a 400×300 image with 16-bit colour depth, uncompressed."
+    ],
+    "answersContainingDefinition": [
+      "Colour depth is the number of bits used to represent each pixel\\nGreater colour depth allows more colours to be represented\\n... which increases the file size\\n... as more bits are needed for each pixel"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Metadata",
+    "definition": "Data describing other data such as dimensions or format.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "graphic",
+    "definition": "Visual representation; raster or vector forms.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Vector graphics",
+    "definition": "Images defined using geometric primitives.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Sample rate",
+    "definition": "Samples per second measured in Hz.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State how sample rate and resolution affect sound quality and file size.",
+      "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed."
+    ],
+    "answersContainingDefinition": [
+      "Sample rate: Number of samples taken per second\\nHigher sample rate improves sound accuracy/quality\\n... but increases file size\\n\\nResolution: Number of bits per sample\\nHigher resolution improves dynamic range/quality\\n... but increases file size"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit rate",
+    "definition": "Bits transmitted/stored per second.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Sampling resolution",
+    "definition": "Bits used to store each sample’s amplitude.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Compression",
+    "definition": "Reducing file size while preserving information.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare lossless and lossy compression with a suitable use case for each.",
+      "Describe what a dictionary-based compression method does in general terms."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossless compression",
+    "definition": "Compression without losing information.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossy compression",
+    "definition": "Compression that removes some information.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare lossless and lossy compression with a suitable use case for each."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Run-length encoding (RLE)",
+    "definition": "Encoding consecutive repeated values as count-value pairs.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Serial transmission",
+    "definition": "Bits sent one after another over a single channel.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any three from:\\nThe network may be spread over a long distance ...\\n... so it is more reliable\\nBits will be sent/arrive in sequence\\n...so bits less likely to be skewed\\nLess crosstalk/interference\\n... so less likely to have errors\\nThe data may not need to be transmitted at a fast speed // data transmission speed of serial is adequate\\nThe cables in the network only use serial transmission"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parallel transmission",
+    "definition": "Multiple bits sent simultaneously across several channels.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Simplex",
+    "definition": "Communication in one direction only.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Tick (✓) one box to show which of the terms is not a method for transmitting data.\\nA serial\\nB simplex\\nC parallel\\nD parity",
+      "Explain the difference between simplex, half-duplex and full-duplex data transmission."
+    ],
+    "answersContainingDefinition": [
+      "Simplex:\\nData flows in one direction only\\nExample: Keyboard to CPU\\n\\nHalf-duplex:\\nData flows in both directions but not at the same time\\nExample: Walkie-talkie\\n\\nFull-duplex:\\nData flows in both directions simultaneously\\nExample: Telephone call"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Half-duplex",
+    "definition": "Communication both ways but not at the same time.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the difference between simplex, half-duplex and full-duplex data transmission."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Full-duplex",
+    "definition": "Communication both ways simultaneously.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the difference between simplex, half-duplex and full-duplex data transmission."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "definition": "Unit of data sent across a network with header and payload.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe the structure of a data packet.",
+      "Packet switching is used to transmit the data packets across the network.\\nIdentify the device that controls which path is taken by each data packet."
+    ],
+    "answersContainingDefinition": [
+      "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer",
+      "Packet",
+      "Any four from:\\nThe sender transmits a data packet\\n... and waits for an acknowledgement (ACK)\\nIf no ACK is received within a timeout period\\n... or if a negative acknowledgement (NACK) is received\\nThe sender retransmits the packet\\nThis process repeats until an ACK is received or a limit is reached",
+      "A checksum is a value computed from the data\\nThe sender transmits it with the packet\\nThe receiver recomputes the checksum\\n... and compares it to the received checksum to detect errors"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Header",
+    "definition": "Control information at the start of a packet.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Payload",
+    "definition": "User data carried in a packet.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Trailer",
+    "definition": "Data at the end of a packet, often for error checking.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Checksum",
+    "definition": "Calculated value used to detect errors in data.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain what a checksum is and how it is used."
+    ],
+    "answersContainingDefinition": [
+      "A checksum is a value computed from the data\\nThe sender transmits it with the packet\\nThe receiver recomputes the checksum\\n... and compares it to the received checksum to detect errors"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parity bit",
+    "definition": "Bit added to make the total number of 1s even/odd.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Even parity",
+    "definition": "Parity method ensuring an even number of 1s.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Odd parity",
+    "definition": "Parity method ensuring an odd number of 1s.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "ARQ",
+    "definition": "Automatic repeat request protocol for retransmission.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe how an Automatic Repeat Request (ARQ) system is used to check for errors."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "ACK/NACK",
+    "definition": "Positive/negative acknowledgements to confirm receipt.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Protocol",
+    "definition": "Agreed rules for data communication.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet switching",
+    "definition": "Data split into packets routed independently.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Packet switching is used to transmit the data packets across the network.\\nIdentify the device that controls which path is taken by each data packet."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Buffering",
+    "definition": "Storing data temporarily to manage differences in speed.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "CPU",
+    "definition": "Central processing unit executing instructions.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the function of the ALU and Control Unit in a CPU.",
+      "Explain how clock speed and cache size affect CPU performance."
+    ],
+    "answersContainingDefinition": [
+      "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ALU",
+    "definition": "Arithmetic logic unit performing operations.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the function of the ALU and Control Unit in a CPU."
+    ],
+    "answersContainingDefinition": [
+      "The ALU performs arithmetic and logic operations; the Control Unit fetches, decodes and coordinates execution of instructions."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Control unit",
+    "definition": "Directs operations of the processor.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the function of the ALU and Control Unit in a CPU."
+    ],
+    "answersContainingDefinition": [
+      "The ALU performs arithmetic and logic operations; the Control Unit fetches, decodes and coordinates execution of instructions."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Clock",
+    "definition": "Generates timing signals controlling the processor.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain how clock speed and cache size affect CPU performance."
+    ],
+    "answersContainingDefinition": [
+      "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Register",
+    "definition": "Small, fast storage within the CPU.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Cache memory",
+    "definition": "Fast memory storing frequently accessed data.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "definition": "Volatile main memory for programs and data in use.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare RAM and ROM with one use case for each."
+    ],
+    "answersContainingDefinition": [
+      "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM.",
+      "RAM is volatile working memory used during program execution. ROM is non-volatile and stores firmware that runs at start-up.",
+      "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ROM",
+    "definition": "Any one from:\\n• Permanently store instructions (in ROM)\\n• Stores instructions to boot up/start up the computer\\n• Provides the operating system with a platform to run on\\n• Controls/manages/allows communication with hardware\\n• Store instructions securely (to stop them being easily corrupted)",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare RAM and ROM with one use case for each."
+    ],
+    "answersContainingDefinition": [
+      "RAM is volatile working memory used during program execution. ROM is non-volatile and stores firmware that runs at start-up."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Bus",
+    "definition": "Set of wires carrying data, addresses and control signals.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+      "Any four from:\\nThe PC holds the address of the next instruction\\nThe address is copied to the MAR\\nThe address is sent along the address bus\\nThe instruction is fetched from that address in memory\\n... and transferred to the MDR\\nThe instruction is sent to the CIR\\nThe PC is incremented\\nThe instruction is decoded and executed"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Data bus",
+    "definition": "Transfers actual data between components.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Address bus",
+    "definition": "Carries memory addresses for data access.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+      "Any four from:\\nThe PC holds the address of the next instruction\\nThe address is copied to the MAR\\nThe address is sent along the address bus\\nThe instruction is fetched from that address in memory\\n... and transferred to the MDR\\nThe instruction is sent to the CIR\\nThe PC is incremented\\nThe instruction is decoded and executed"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Control bus",
+    "definition": "Carries control signals coordinating operations.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Von Neumann architecture",
+    "definition": "Shared memory for instructions and data.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Name the three buses in Von Neumann architecture and state their roles."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Input device",
+    "definition": "Hardware used to enter data into a system.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Give one example each of an input device, output device and sensor."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Output device",
+    "definition": "Hardware used to present data from a system.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Give one example each of an input device, output device and sensor.",
+      "Identify one output device built into a portable tablet computer."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Sensor",
+    "definition": "Device detecting physical properties to produce data.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Give one example each of an input device, output device and sensor."
+    ],
+    "answersContainingDefinition": [
+      "Input: keyboard; Output: monitor; Sensor: temperature sensor.",
+      "Any four from:\\nThe temperature sensor constantly measures the temperature\\nIt sends analogue data to the ADC\\n... which converts it to digital data for the microprocessor\\nThe microprocessor compares the reading to a pre-set value\\nIf temperature < pre-set value, it signals the actuator\\n... to turn on the heater\\nIf temperature > pre-set value, it signals the actuator to turn off the heater/open windows"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Actuator",
+    "definition": "Device converting data signals into physical action.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any four from:\\nThe temperature sensor constantly measures the temperature\\nIt sends analogue data to the ADC\\n... which converts it to digital data for the microprocessor\\nThe microprocessor compares the reading to a pre-set value\\nIf temperature < pre-set value, it signals the actuator\\n... to turn on the heater\\nIf temperature > pre-set value, it signals the actuator to turn off the heater/open windows"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Secondary storage",
+    "definition": "Non-volatile storage for long-term data.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "HDD",
+    "definition": "Magnetic storage using spinning disks.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State one advantage and one disadvantage of SSD compared to HDD."
+    ],
+    "answersContainingDefinition": [
+      "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "SSD",
+    "definition": "Solid-state storage using flash memory.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State one advantage and one disadvantage of SSD compared to HDD."
+    ],
+    "answersContainingDefinition": [
+      "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed",
+      "SSD // Solid-state drive // Solid-state (device)"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Optical storage",
+    "definition": "Storage using lasers to read/write data.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe how data is written to and read from optical storage."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Magnetic tape",
+    "definition": "Sequential access magnetic storage medium.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Embedded system",
+    "definition": "Computer dedicated to a specific function within a larger system.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Define embedded system and give an example."
+    ],
+    "answersContainingDefinition": [
+      "An embedded system is dedicated to a specific function within a larger system, e.g., a washing machine controller."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Microcontroller",
+    "definition": "Integrated chip with CPU, memory and I/O for control tasks.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-3",
+    "term": "GPU",
+    "definition": "Processor specialized for graphics and parallel tasks.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "System software",
+    "definition": "Any two from:\\n• System software manages/maintains the hardware/software\\n• Applications software allows the user to perform tasks",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the difference between system software and application software."
+    ],
+    "answersContainingDefinition": [
+      "System software manages and supports computer operations; application software performs user-facing tasks."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Application software",
+    "definition": "Any two from:\\n• System software manages/maintains the hardware/software\\n• Applications software allows the user to perform tasks",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the difference between system software and application software."
+    ],
+    "answersContainingDefinition": [
+      "System software manages and supports computer operations; application software performs user-facing tasks."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Utility software",
+    "definition": "Programs performing maintenance or optimization tasks.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Firmware",
+    "definition": "Any one from:\\n• Permanently store instructions (in ROM)\\n• Stores instructions to boot up/start up the computer\\n• Provides the operating system with a platform to run on\\n• Controls/manages/allows communication with hardware\\n• Store instructions securely (to stop them being easily corrupted)",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Operating system",
+    "definition": "Any three from:\\n• It performs the basic functions of a computer\\n• It manages the hardware\\n• It provides a platform to run software\\n• It provides a user interface\\n• It performs tasks such as (any example of function of an operating system)",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State two functions of an operating system."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Device driver",
+    "definition": "Software controlling communication with hardware devices.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "User interface",
+    "definition": "Any three from:\\n• It performs the basic functions of a computer\\n• It manages the hardware\\n• It provides a platform to run software\\n• It provides a user interface\\n• It performs tasks such as (any example of function of an operating system)",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "CLI",
+    "definition": "Command-line interface using typed commands.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare CLI and GUI with one advantage of each."
+    ],
+    "answersContainingDefinition": [
+      "CLI:\\nAllows precise control via commands\\n... uses fewer system resources\\n\\nGUI:\\nMore intuitive/easier for beginners\\n... allows WIMP interactions (windows, icons, menus, pointer)"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "GUI",
+    "definition": "Graphical user interface using windows, icons and menus.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare CLI and GUI with one advantage of each."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Multitasking",
+    "definition": "Running multiple tasks apparently simultaneously.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Scheduling",
+    "definition": "Deciding which process runs and for how long.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Examples: memory management, file management, process scheduling, device control, security."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Memory management",
+    "definition": "Allocation and control of primary memory.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Examples: memory management, file management, process scheduling, device control, security."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "File management",
+    "definition": "Creation, storage and access of files and directories.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Examples: memory management, file management, process scheduling, device control, security."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Process management",
+    "definition": "Scheduling and control of running tasks.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Security",
+    "definition": "Authentication, authorization and protection mechanisms.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Examples: memory management, file management, process scheduling, device control, security."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Translator",
+    "definition": "Software converting source code into machine code.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Compiler",
+    "definition": "Two from for each compiler and interpreter.\\nCompiler\\n• Checks all code before executing any code\\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\\n• Produces executable file\\nInterpreter\\n• Checks/translates one line of code and then executes it before moving on to the next line\\n• Stops when an error is found\\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare compiler and interpreter."
+    ],
+    "answersContainingDefinition": [
+      "A compiler translates the whole program into object code before execution; an interpreter translates and executes line by line at runtime.",
+      "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Interpreter",
+    "definition": "Two from for each compiler and interpreter.\\nCompiler\\n• Checks all code before executing any code\\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\\n• Produces executable file\\nInterpreter\\n• Checks/translates one line of code and then executes it before moving on to the next line\\n• Stops when an error is found\\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare compiler and interpreter."
+    ],
+    "answersContainingDefinition": [
+      "A compiler translates the whole program into object code before execution; an interpreter translates and executes line by line at runtime.",
+      "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Assembler",
+    "definition": "Converts assembly language to machine code.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Source code",
+    "definition": "Human-readable program text.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Object code",
+    "definition": "Machine code produced by a translator.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "A compiler translates the whole program into object code before execution; an interpreter translates and executes line by line at runtime."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "High-level language",
+    "definition": "Language close to human readability and abstraction.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State two advantages of using a High-Level Language (HLL) compared to a Low-Level Language (LLL)."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Low-level language",
+    "definition": "Language close to machine operations and hardware.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State two advantages of using a High-Level Language (HLL) compared to a Low-Level Language (LLL)."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Open source",
+    "definition": "Software released with source code and permissive license.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Proprietary software",
+    "definition": "Software licensed with restricted use and access.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State one advantage of open-source software and one advantage of proprietary software."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-4",
+    "term": "IDE",
+    "definition": "Integrated development environment supporting coding tasks.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Internet",
+    "definition": "Global network of interconnected networks.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "World Wide Web",
+    "definition": "Interlinked documents and resources accessed via browsers.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Web browser",
+    "definition": "Software used to retrieve, render and navigate web pages.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "URL",
+    "definition": "Uniform Resource Locator identifying a resource.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups",
+      "Phishing:\\nInvolves sending fraudulent emails/messages\\n... to trick users into revealing personal data (by clicking links)\\n\\nPharming:\\nInvolves malicious code installed on a user's hard drive or web server\\n... which redirects the user to a fake website (even if correct URL is typed)\\n... without the user's knowledge"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Domain name",
+    "definition": "Human-readable address of an internet resource.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "DNS",
+    "definition": "Domain Name System translating names to IP addresses.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe the role of DNS in accessing websites."
+    ],
+    "answersContainingDefinition": [
+      "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "IP address",
+    "definition": "Numerical label identifying a device on a network.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "HTTP",
+    "definition": "HyperText Transfer Protocol for web communication.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the difference between HTTP and HTTPS."
+    ],
+    "answersContainingDefinition": [
+      "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "HTTPS",
+    "definition": "Secure version of HTTP using TLS encryption.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the difference between HTTP and HTTPS.",
+      "State two advantages of using HTTPS when shopping online."
+    ],
+    "answersContainingDefinition": [
+      "Any two from:\\nEducate users to check URLs/email addresses carefully\\nUse spam filters to block suspicious emails\\nDo not click links in unsolicited emails\\nCheck for the padlock symbol/HTTPS"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "HTML",
+    "definition": "Markup language for structuring web content.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "CSS",
+    "definition": "Style sheet language for describing presentation.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "JavaScript",
+    "definition": "Programming language for dynamic web content.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "ISP",
+    "definition": "Internet Service Provider offering connectivity.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Email",
+    "definition": "Electronic mail system for messages.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any two from:\\nEducate users to check URLs/email addresses carefully\\nUse spam filters to block suspicious emails\\nDo not click links in unsolicited emails\\nCheck for the padlock symbol/HTTPS",
+      "Trojan horse: Malware disguised as legitimate software that performs malicious actions when executed\\nSpread: Via email attachments or through downloads from untrusted/malicious websites"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "FTP",
+    "definition": "File Transfer Protocol for moving files.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Cookie",
+    "definition": "Small data stored by a browser for a website.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the purpose of a cookie."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Firewall",
+    "definition": "Network security system controlling traffic.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain how a firewall helps protect a network."
+    ],
+    "answersContainingDefinition": [
+      "DoS attack: A malicious attempt to make a network or service unavailable by overwhelming it with traffic/requests\\nPrevention: Use a firewall to filter incoming traffic or apply rate limiting to block excessive requests"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Malware",
+    "definition": "Malicious software designed to cause harm.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Trojan horse: Malware disguised as legitimate software that performs malicious actions when executed\\nSpread: Via email attachments or through downloads from untrusted/malicious websites"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Phishing",
+    "definition": "Fraudulent attempt to obtain sensitive information.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "State two methods to protect users from phishing.",
+      "Explain the difference between phishing and pharming."
+    ],
+    "answersContainingDefinition": [
+      "Phishing:\\nInvolves sending fraudulent emails/messages\\n... to trick users into revealing personal data (by clicking links)\\n\\nPharming:\\nInvolves malicious code installed on a user's hard drive or web server\\n... which redirects the user to a fake website (even if correct URL is typed)\\n... without the user's knowledge"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Trojan",
+    "definition": "Malware disguised as legitimate software.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe what a Trojan horse is and one way it can be spread."
+    ],
+    "answersContainingDefinition": [
+      "Trojan horse: Malware disguised as legitimate software that performs malicious actions when executed\\nSpread: Via email attachments or through downloads from untrusted/malicious websites"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Spyware",
+    "definition": "Malware that secretly gathers information.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Antivirus",
+    "definition": "Software that detects and removes malware.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Encryption",
+    "definition": "Any one from:\\n• It encrypts it\\n• Uses digital certificates",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "TLS/SSL",
+    "definition": "Protocols providing secure communication.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital certificate",
+    "definition": "Electronic document verifying identity and public key.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Any four from:\\nThe client sends a request to the server to establish a secure connection\\nThe server sends its digital certificate to the client\\n... which includes the server's public key\\nThe client verifies the digital certificate (authenticity and date)\\nThe client generates a session key\\n... encrypts it with the server's public key\\n... and sends it to the server\\nThe server decrypts the session key with its private key\\nBoth parties now use the session key for encrypted communication"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital signature",
+    "definition": "Cryptographic proof of content integrity and origin.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain how a digital signature is used to verify the authenticity of a document."
+    ],
+    "answersContainingDefinition": [
+      "Any three from:\\nA hash/digest of the document is created\\n... using a hashing algorithm\\nThe hash is encrypted using the sender's private key\\n... to create the digital signature\\nThe receiver decrypts the signature using the sender's public key\\n... to get the original hash\\nThe receiver recalculates the hash of the received document\\nIf the two hashes match, the document is authentic and unaltered"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Authentication",
+    "definition": "Verifying user identity.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Proxy server",
+    "definition": "Intermediate server forwarding requests.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Automation",
+    "definition": "Use of technology to perform tasks with minimal human input.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Artificial intelligence",
+    "definition": "Any two from:\\n• The **simulation** of intelligent behaviours by computers\\n• A collection of data and the rules for using that data\\n• Has the ability to reason\\n• Has the ability to learn/adapt",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Machine learning",
+    "definition": "Algorithms improving performance through data experience.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Expert system",
+    "definition": "Computer system emulating decision-making of human experts.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Robotics",
+    "definition": "Any two from:\\n• The design of robots (to perform tasks/operations/functions)\\n• The construction of robots (to perform tasks/operations/functions)\\n• The operation of robots (to perform tasks/operations/functions)",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Computer vision",
+    "definition": "Enabling computers to interpret visual information.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Natural language processing",
+    "definition": "Computational techniques for understanding human language.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Speech recognition",
+    "definition": "Converting spoken language to text.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Actuator",
+    "definition": "Device converting signals into physical movement.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Sensor",
+    "definition": "Device detecting changes in environment.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Internet of Things",
+    "definition": "Network of connected devices collecting and sharing data.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Wearable technology",
+    "definition": "Electronics worn on the body collecting data.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Autonomous vehicle",
+    "definition": "Vehicle capable of self-navigation without human input.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Drone",
+    "definition": "Unmanned aerial vehicle controlled remotely or autonomously.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Big data",
+    "definition": "Large, complex datasets requiring advanced processing.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Data mining",
+    "definition": "Discovering patterns and insights in large datasets.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Biometric authentication",
+    "definition": "Identification using biological characteristics.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "3D printing",
+    "definition": "Creating physical objects layer by layer from a digital model.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "definition": "Augmented reality overlaying digital content onto the real world.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "VR",
+    "definition": "Virtual reality creating immersive simulated environments.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Ethical bias",
+    "definition": "Systematic errors unfairly affecting groups or outcomes.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Transparency",
+    "definition": "Clarity about how systems operate and make decisions.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Explainability",
+    "definition": "Ability to understand and justify system outputs.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Problem decomposition",
+    "definition": "Breaking a problem into smaller manageable parts.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Abstraction",
+    "definition": "Hiding unnecessary detail to focus on relevant aspects.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "definition": "Finite sequence of steps to solve a problem.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe how a Bubble Sort algorithm sorts a list of numbers into ascending order."
+    ],
+    "answersContainingDefinition": [
+      "Any four from:\\nThe algorithm loops through the list\\nIt compares each pair of adjacent elements\\nIf they are in the wrong order, it swaps them\\nIt records that a swap has occurred\\nIt repeats the loop until a pass is made with no swaps"
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "definition": "Structured English describing algorithms independent of language.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Trace this pseudocode and state the final value of total given input n=5.",
+      "Explain the difference between selection and iteration using pseudocode examples."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Flowchart",
+    "definition": "Diagram representing sequence and control flow.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Identify the standard flowchart symbol used for an assignment or process."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Trace table",
+    "definition": "Table tracking variable values step by step.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Explain the purpose of a trace table."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Dry run",
+    "definition": "Manual simulation of code to check logic.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Test plan",
+    "definition": "Structured approach outlining tests to validate software.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Normal data",
+    "definition": "Typical valid inputs expected during regular use.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Normal data (valid/typical), Boundary data (extreme ends of valid range), Erroneous/Abnormal data (invalid)."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Boundary data",
+    "definition": "Inputs at the extremes of acceptable ranges.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [
+      "Normal data (valid/typical), Boundary data (extreme ends of valid range), Erroneous/Abnormal data (invalid)."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Erroneous data",
+    "definition": "Inputs with incorrect types or invalid values.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Validation",
+    "definition": "Checking input meets format or constraints.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Verification",
+    "definition": "Ensuring product meets specification and intent.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Linear search",
+    "definition": "Searching sequentially through a list.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare Linear Search and Binary Search."
+    ],
+    "answersContainingDefinition": [
+      "Linear search checks every item in sequence; it works on any list but is slow for large lists. Binary search keeps dividing the list in half; it is much faster but requires the list to be sorted."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Binary search",
+    "definition": "Searching a sorted list by halving the search space.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Compare Linear Search and Binary Search."
+    ],
+    "answersContainingDefinition": [
+      "Linear search checks every item in sequence; it works on any list but is slow for large lists. Binary search keeps dividing the list in half; it is much faster but requires the list to be sorted."
+    ],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Bubble sort",
+    "definition": "Repeatedly swapping adjacent out-of-order elements.",
+    "hasRelatedQA": true,
+    "matchingQuestions": [
+      "Describe how a Bubble Sort algorithm sorts a list of numbers into ascending order."
+    ],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Insertion sort",
+    "definition": "Building sorted list by inserting elements into position.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Merge sort",
+    "definition": "Divide and conquer sorting by merging sorted sublists.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Efficiency",
+    "definition": "Measure of resources used by an algorithm.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Variable",
+    "definition": "Named storage location holding a value.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Constant",
+    "definition": "Value that does not change during execution.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Integer",
+    "definition": "Whole number data type.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Real",
+    "definition": "Numeric data type representing real numbers (IG scope: used without floating-point internals).",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Boolean",
+    "definition": "Logical true/false data type.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Character",
+    "definition": "Single symbol data type.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String",
+    "definition": "Sequence of characters.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Casting",
+    "definition": "Converting a value from one data type to another.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Input/Output",
+    "definition": "Reading data from user and displaying results.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Assignment",
+    "definition": "Storing a value in a variable.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Arithmetic operator",
+    "definition": "Performs mathematical operations (+, −, ×, ÷).",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Relational operator",
+    "definition": "Compares values to produce Boolean results.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Logical operator",
+    "definition": "Combines/complements Boolean expressions.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Sequence",
+    "definition": "Ordered execution of statements.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Selection",
+    "definition": "Branching based on a condition (IF/ELSE).",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Iteration",
+    "definition": "Looping to repeat a block of code.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "FOR loop",
+    "definition": "Definite iteration over a range or count.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "WHILE loop",
+    "definition": "Indefinite iteration while condition is true.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "REPEAT…UNTIL",
+    "definition": "Loop executing until condition becomes true.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Array",
+    "definition": "Indexed collection of elements of the same type.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "2D Array",
+    "definition": "Array of arrays accessed by row and column.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String operations",
+    "definition": "Concatenation, substring, length and indexing.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Subroutine",
+    "definition": "Named block of code performing a task.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Procedure",
+    "definition": "Subroutine that does not return a value.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Function",
+    "definition": "Subroutine that returns a value.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Parameter",
+    "definition": "Variable used to pass data into a subroutine.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Argument",
+    "definition": "Actual value passed to a subroutine.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Return value",
+    "definition": "Data sent back from a function to the caller.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Scope",
+    "definition": "Visibility of variables (local/global).",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "ROUND",
+    "definition": "Rounds a number to a specified number of decimal places.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "RANDOM",
+    "definition": "Generates a random number within a specified range.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "DIV",
+    "definition": "Integer division operator returning the quotient.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-8",
+    "term": "MOD",
+    "definition": "Modulo operator returning the remainder after division.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Database",
+    "definition": "Organised collection of related data.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "definition": "Structure containing records arranged in fields and rows.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Record",
+    "definition": "Single row of related data in a table.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Field",
+    "definition": "Single column representing an attribute.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Primary key",
+    "definition": "Unique identifier for a record.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SQL",
+    "definition": "Structured Query Language for managing data.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SELECT",
+    "definition": "Statement to retrieve data from tables.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "FROM",
+    "definition": "Clause specifying the source table.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "WHERE",
+    "definition": "Clause filtering rows by conditions.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-9",
+    "term": "ORDER BY",
+    "definition": "Clause sorting results.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "Boolean",
+    "definition": "Data type with only two values: true/false.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "Logic gate",
+    "definition": "Electronic component performing Boolean operations.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "AND gate",
+    "definition": "Outputs true only if all inputs are true.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "OR gate",
+    "definition": "Outputs true if any input is true.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "NOT gate",
+    "definition": "Inverts the input value.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "NAND gate",
+    "definition": "Outputs false only if all inputs are true.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "NOR gate",
+    "definition": "Outputs true only if all inputs are false.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "XOR gate",
+    "definition": "Outputs true if inputs are different.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "Truth table",
+    "definition": "Table listing outputs for all input combinations.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  },
+  {
+    "unitId": "apl-10",
+    "term": "Boolean expression",
+    "definition": "Algebraic formula using Boolean variables and operators.",
+    "hasRelatedQA": false,
+    "matchingQuestions": [],
+    "answersContainingDefinition": [],
+    "keywordMatches": []
+  }
+]

@@ -22,3 +22,4 @@ node_modules/
 assets/dist/
 src/data/units/
 src/data/papers/raw_2025_test/
+*.bak*
