@@ -406,13 +406,6 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
     }, 500);
   }, [gameState, toggleFlag]);
 
-  const handleTouchEnd = useCallback(() => {
-    if (touchTimeoutRef.current) {
-      clearTimeout(touchTimeoutRef.current);
-      touchTimeoutRef.current = null;
-    }
-  }, []);
-
   const handleTouchCancel = useCallback(() => {
     if (touchTimeoutRef.current) {
       clearTimeout(touchTimeoutRef.current);
@@ -422,12 +415,6 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
 
   const handleTouchClick = useCallback((e: React.TouchEvent<HTMLCanvasElement>) => {
     if (!gameState || !gameState.isPlaying) return;
-
-    // Clear any pending timeout
-    if (touchTimeoutRef.current) {
-      clearTimeout(touchTimeoutRef.current);
-      touchTimeoutRef.current = null;
-    }
 
     const touch = e.changedTouches[0];
     const startPos = touchStartRef.current;
@@ -526,7 +513,6 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
             cursor: 'pointer',
             fontWeight: 600,
             fontSize: '12px',
-            display: window.innerWidth < 768 ? 'inline-block' : 'none',
           }}
           title="Toggle flagging mode on mobile"
         >
@@ -542,9 +528,8 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
         onClick={handleCanvasClick}
         onContextMenu={handleContextMenu}
         onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
+        onTouchEnd={handleTouchClick}
         onTouchCancel={handleTouchCancel}
-        onTouchMove={handleTouchClick}
         style={{ cursor: 'pointer', border: '2px solid #333', borderRadius: '8px' }}
       />
 
