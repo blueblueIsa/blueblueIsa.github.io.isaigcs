@@ -427,10 +427,12 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
       style={{
         position: 'relative',
         width: '100%',
-        height: 'calc(100vh - 100px)',
+        height: '100vh',
         background: 'linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 100%)',
-        borderRadius: '12px',
+        borderRadius: '0',
         overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
       <canvas
@@ -449,18 +451,27 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
       <button
         onClick={onBack}
         style={{
-          position: 'absolute',
+          position: 'fixed',
           top: '20px',
           left: '20px',
           background: 'rgba(110, 231, 255, 0.2)',
           border: '1px solid rgba(110, 231, 255, 0.4)',
           color: '#6ee7ff',
-          padding: '10px 16px',
+          padding: '8px 14px',
           borderRadius: '8px',
           cursor: 'pointer',
-          zIndex: 10,
-          fontSize: '14px',
+          zIndex: 50,
+          fontSize: 'clamp(12px, 3.5vw, 14px)',
           fontWeight: 600,
+          transition: 'all 0.2s ease',
+        }}
+        onMouseEnter={(e) => {
+          (e.target as HTMLButtonElement).style.background = 'rgba(110, 231, 255, 0.4)';
+          (e.target as HTMLButtonElement).style.transform = 'scale(1.05)';
+        }}
+        onMouseLeave={(e) => {
+          (e.target as HTMLButtonElement).style.background = 'rgba(110, 231, 255, 0.2)';
+          (e.target as HTMLButtonElement).style.transform = 'scale(1)';
         }}
       >
         ← Back
@@ -469,57 +480,61 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
       {/* Game Stats */}
       <div
         style={{
-          position: 'absolute',
+          position: 'fixed',
           top: '20px',
           right: '20px',
-          background: 'rgba(10, 15, 35, 0.9)',
+          background: 'rgba(10, 15, 35, 0.95)',
           backdropFilter: 'blur(20px)',
           borderRadius: '12px',
-          padding: '16px',
+          padding: 'clamp(10px, 2.5vw, 16px)',
           border: '1px solid rgba(110, 231, 255, 0.2)',
           color: '#e5e7eb',
-          minWidth: '200px',
-          zIndex: 5,
+          minWidth: 'clamp(160px, 20vw, 200px)',
+          maxWidth: '90vw',
+          zIndex: 45,
+          fontSize: 'clamp(11px, 2.2vw, 14px)',
         }}
       >
         <div style={{ marginBottom: '12px', fontSize: '14px' }}>
           <div style={{ color: '#9ca3af', marginBottom: '4px' }}>Score</div>
-          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#6ee7ff' }}>{score}</div>
+          <div style={{ fontSize: 'clamp(16px, 3vw, 20px)', fontWeight: 'bold', color: '#6ee7ff' }}>{score}</div>
         </div>
         <div style={{ marginBottom: '12px', fontSize: '14px' }}>
           <div style={{ color: '#9ca3af', marginBottom: '4px' }}>Combo</div>
-          <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#6ee7ff' }}>x{combo}</div>
+          <div style={{ fontSize: 'clamp(16px, 3vw, 20px)', fontWeight: 'bold', color: '#6ee7ff' }}>x{combo}</div>
         </div>
         <div style={{ marginBottom: '12px', fontSize: '14px' }}>
           <div style={{ color: '#9ca3af', marginBottom: '4px' }}>Time</div>
-          <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#6ee7ff' }}>{gameTime}</div>
+          <div style={{ fontSize: 'clamp(14px, 2.5vw, 18px)', fontWeight: 'bold', color: '#6ee7ff' }}>{gameTime}</div>
         </div>
         <div style={{ marginBottom: '12px', fontSize: '14px' }}>
           <div style={{ color: '#9ca3af', marginBottom: '4px' }}>Cuts</div>
-          <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#6ee7ff' }}>{sliceCount}</div>
+          <div style={{ fontSize: 'clamp(14px, 2.5vw, 18px)', fontWeight: 'bold', color: '#6ee7ff' }}>{sliceCount}</div>
         </div>
         <div style={{ fontSize: '14px' }}>
           <div style={{ color: '#9ca3af', marginBottom: '4px' }}>Accuracy</div>
-          <div style={{ fontSize: '18px', fontWeight: 'bold', color: '#6ee7ff' }}>{accuracy}</div>
+          <div style={{ fontSize: 'clamp(14px, 2.5vw, 18px)', fontWeight: 'bold', color: '#6ee7ff' }}>{accuracy}</div>
         </div>
       </div>
 
       {/* Control Panel */}
       <div
         style={{
-          position: 'absolute',
-          bottom: '30px',
-          left: '20px',
-          background: 'rgba(10, 15, 35, 0.9)',
+          position: 'fixed',
+          bottom: 'clamp(10px, 2vh, 30px)',
+          left: 'clamp(10px, 2vw, 20px)',
+          background: 'rgba(10, 15, 35, 0.95)',
           backdropFilter: 'blur(20px)',
           borderRadius: '12px',
-          padding: '16px',
+          padding: 'clamp(12px, 2vw, 16px)',
           border: '1px solid rgba(110, 231, 255, 0.2)',
           color: '#e5e7eb',
-          zIndex: 5,
-          minWidth: '220px',
-          maxHeight: '80vh',
+          zIndex: 40,
+          minWidth: 'clamp(180px, 25vw, 280px)',
+          maxWidth: '90vw',
+          maxHeight: 'calc(100vh - 140px)',
           overflowY: 'auto',
+          fontSize: 'clamp(11px, 2vw, 13px)',
         }}
       >
         <div style={{ marginBottom: '12px' }}>
@@ -619,18 +634,20 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
       {/* Instructions */}
       <div
         style={{
-          position: 'absolute',
-          bottom: '30px',
-          right: '20px',
-          background: 'rgba(10, 15, 35, 0.85)',
+          position: 'fixed',
+          bottom: 'clamp(10px, 2vh, 30px)',
+          right: 'clamp(10px, 2vw, 20px)',
+          background: 'rgba(10, 15, 35, 0.95)',
           backdropFilter: 'blur(15px)',
           borderRadius: '12px',
-          padding: '12px',
+          padding: 'clamp(10px, 2vw, 12px)',
           border: '1px solid rgba(110, 231, 255, 0.2)',
           color: '#ccc',
-          fontSize: '12px',
-          maxWidth: '280px',
-          zIndex: 5,
+          fontSize: 'clamp(10px, 1.8vw, 12px)',
+          maxWidth: 'clamp(200px, 22vw, 280px)',
+          maxHeight: 'calc(100vh - 140px)',
+          overflowY: 'auto',
+          zIndex: 40,
         }}
       >
         <div style={{ color: '#6ee7ff', fontWeight: 'bold', marginBottom: '8px' }}>📖 Instructions:</div>
