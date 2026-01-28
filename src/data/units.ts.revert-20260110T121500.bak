@@ -1,0 +1,70 @@
+import type { Unit } from '../types';
+
+export const units: Unit[] = [
+  {
+    id: "cs-1",
+    number: 1,
+    title: "Data representation",
+    group: "Computer systems",
+    description: "Binary, numbers, text, images, sound, compression and encoding.",
+    terms: [
+      { term: "Bit", topic: "Numbers", definition: "Smallest unit of data; represents 0 or 1.", sourceVerified: false, example: "A single on/off state, e.g., 1 or 0.", misconception: "Assuming 1 always means 'true' in all contexts.", contrast: "Bit vs Byte" },
+      { term: "Nibble", topic: "Numbers", definition: "Group of 4 bits.", sourceVerified: false, example: "1010₂ is a nibble.", contrast: "Nibble vs Byte" },
+      { term: "Byte", topic: "Numbers", definition: "Group of 8 bits.", sourceVerified: false, example: "11110000₂ is one byte (240₁₀).", misconception: "1 byte equals 1 character universally (not with Unicode)." },
+      { term: "Binary", topic: "Numbers", definition: "Base-2 number system using digits 0 and 1.", sourceVerified: false, example: "1010₂ = 10₁₀.", misconception: "Reading 10₂ as denary ten.", contrast: "Binary vs Denary" },
+      { term: "Denary", topic: "Numbers", definition: "Base-10 number system using digits 0–9.", sourceVerified: false, contrast: "Denary vs Binary" },
+      { term: "Hexadecimal", topic: "Numbers", definition: "Base-16 number system using 0–9 and A–F.", sourceVerified: false, example: "FF₁₆ = 255₁₀.", misconception: "Assuming A equals 11; A is 10." },
+      { term: "Overflow", topic: "Numbers", definition: "Condition when a value exceeds the representable range.", sourceVerified: false, example: "8-bit unsigned: 255 + 1 wraps to 0." },
+      { term: "Character set", topic: "Text", definition: "Collection of characters each with a unique code.", sourceVerified: false, example: "ASCII maps 'A' to 65.", contrast: "ASCII vs Unicode" },
+      { term: "ASCII", topic: "Text", definition: "7/8-bit character encoding for Latin characters.", sourceVerified: false, example: "Newline is 10 in ASCII.", misconception: "ASCII covers all languages." },
+      { term: "Unicode", topic: "Text", definition: "Universal character encoding standard with code points.", sourceVerified: false, example: "😀 U+1F600.", contrast: "Unicode vs Extended ASCII" },
+      { term: "pixel", topic: "Images", definition: "Smallest addressable element of a raster image.", sourceVerified: false, example: "A 1920×1080 image has 2,073,600 pixels." },
+      { term: "Resolution", topic: "Images", definition: "Number of pixels in each dimension of an image.", sourceVerified: false, misconception: "Higher resolution always means smaller file size." },
+      { term: "Colour depth", topic: "Images", definition: "Bits used to represent the colour of a pixel.", sourceVerified: false, example: "24-bit colour ≈ 16.7 million colours.", contrast: "8-bit vs 24-bit" },
+      { term: "Metadata", topic: "Images", definition: "Data describing other data such as dimensions or format.", sourceVerified: false, example: "EXIF stores camera model and timestamp." },
+      { term: "graphic", topic: "Images", definition: "Visual representation; raster or vector forms.", sourceVerified: false, contrast: "Vector vs Raster" },
+      { term: "Vector graphics", topic: "Images", definition: "Images defined using geometric primitives.", sourceVerified: false, example: "SVG logo scales without pixelation." },
+      { term: "Sample rate", topic: "Sound", definition: "Samples per second measured in Hz.", sourceVerified: false, example: "44.1 kHz for CD audio." },
+      { term: "Bit rate", topic: "Sound", definition: "Bits transmitted/stored per second.", sourceVerified: false, example: "128 kbps MP3." },
+      { term: "Sampling resolution", topic: "Sound", definition: "Bits used to store each sample’s amplitude.", sourceVerified: false, contrast: "Sample rate vs Resolution" },
+      { term: "Compression", topic: "Compression", definition: "Reducing file size while preserving information.", sourceVerified: false, contrast: "Lossless vs Lossy" },
+      { term: "Lossless compression", topic: "Compression", definition: "Compression without losing information.", sourceVerified: false, example: "PNG images." },
+      { term: "Lossy compression", topic: "Compression", definition: "Compression that removes some information.", sourceVerified: false, example: "JPEG images." },
+      { term: "Run-length encoding (RLE)", topic: "Compression", definition: "Encoding consecutive repeated values as count-value pairs.", sourceVerified: false, example: "AAAAA → 5A.", misconception: "Effective for random data (it is not)." }
+    ]
+  },
+  {
+    id: "cs-2",
+    number: 2,
+    title: "Data transmission",
+    group: "Computer systems",
+    description: "Transmission modes, errors, protocols and switching.",
+    terms: [
+      { term: "Serial transmission", topic: "Modes", definition: "Bits sent one after another over a single channel.", sourceVerified: false },
+      { term: "Parallel transmission", topic: "Modes", definition: "Multiple bits sent simultaneously across several channels.", sourceVerified: false },
+      { term: "Simplex", topic: "Modes", definition: "Communication in one direction only.", sourceVerified: false },
+      { term: "Half-duplex", topic: "Modes", definition: "Communication both ways but not at the same time.", sourceVerified: false },
+      { term: "Full-duplex", topic: "Modes", definition: "Communication both ways simultaneously.", sourceVerified: false },
+      { term: "Packet", topic: "Packets", definition: "Unit of data sent across a network with header and payload.", sourceVerified: false },
+      { term: "Header", topic: "Packets", definition: "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer", sourceVerified: false },
+      { term: "Payload", topic: "Packets", definition: "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer", sourceVerified: false },
+      { term: "Trailer", topic: "Packets", definition: "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer", sourceVerified: false },
+      { term: "Checksum", topic: "Errors", definition: "Calculated value used to detect errors in data.", sourceVerified: false },
+      { term: "Parity bit", topic: "Errors", definition: "Bit added to make the total number of 1s even/odd.", sourceVerified: false },
+      { term: "Even parity", topic: "Errors", definition: "Parity method ensuring an even number of 1s.", sourceVerified: false },
+      { term: "Odd parity", topic: "Errors", definition: "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent", sourceVerified: false },
+      { term: "ARQ", topic: "Errors", definition: "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent", sourceVerified: false },
+      { term: "ACK/NACK", topic: "Errors", definition: "Positive/negative acknowledgements to confirm receipt.", sourceVerified: false },
+      { term: "Protocol", topic: "Protocols", definition: "Agreed rules for data communication.", sourceVerified: false },
+      { term: "Packet switching", topic: "Switching", definition: "Data split into packets routed independently.", sourceVerified: false },
+      { term: "Buffering", topic: "Control", definition: "Storing data temporarily to manage differences in speed.", sourceVerified: false }
+    ]
+  },
+  {
+    id: "cs-3",
+    number: 3,
+    title: "Hardware",
+    group: "Computer systems",
+    description: "Components, architecture, input/output and storage.",
+    terms: [
+... (backup contains full current contents)

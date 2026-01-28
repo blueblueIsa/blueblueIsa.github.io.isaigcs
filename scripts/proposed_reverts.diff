@@ -1,0 +1,24 @@
+*** Begin Patch
+*** Update File: src/data/units.ts
+@@
+-      { term: "Header", topic: "Packets", definition: "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer", sourceVerified: false },
++      { term: "Header", topic: "Packets", definition: "Control information at the start of a packet.", sourceVerified: false },
+@@
+-      { term: "Payload", topic: "Packets", definition: "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer", sourceVerified: false },
++      { term: "Payload", topic: "Packets", definition: "User data carried in a packet.", sourceVerified: false },
+@@
+-      { term: "Trailer", topic: "Packets", definition: "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer", sourceVerified: false },
++      { term: "Trailer", topic: "Packets", definition: "Data at the end of a packet, often for error checking.", sourceVerified: false },
+@@
+-      { term: "Odd parity", topic: "Errors", definition: "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent", sourceVerified: false },
++      { term: "Odd parity", topic: "Errors", definition: "Parity method ensuring an odd number of 1s.", sourceVerified: false },
+@@
+-      { term: "ARQ", topic: "Errors", definition: "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent", sourceVerified: false },
++      { term: "ARQ", topic: "Errors", definition: "Automatic repeat request protocol for retransmission.", sourceVerified: false },
+@@
+-      { term: "DNS", topic: "Web", definition: "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page", sourceVerified: false },
++      { term: "DNS", topic: "Web", definition: "Domain Name System translating names to IP addresses.", sourceVerified: false },
+@@
+-      { term: "IP address", topic: "Web", definition: "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page", sourceVerified: false },
++      { term: "IP address", topic: "Web", definition: "Numerical label identifying a device on a network.", sourceVerified: false },
+*** End Patch

@@ -1,0 +1,2610 @@
+[
+  {
+    "unitId": "cs-1",
+    "term": "Bit",
+    "unitDef": "Smallest unit of data; represents 0 or 1.",
+    "paperFile": "24paper1.json",
+    "question": "Add binary numbers 00110000 and 01100110.",
+    "paperAnswer": "One mark for evidence of working, for example 2 carries\nOne mark for each correct nibble (Max 2)\n1 1\n0 0 1 1 0 0 0 0\n0 1 1 0 0 1 1 0\n1 0 0 1 0 1 1 0"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit",
+    "unitDef": "Smallest unit of data; represents 0 or 1.",
+    "paperFile": "24paper1.json",
+    "question": "Add binary numbers 01001100 and 11100011.",
+    "paperAnswer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\nOne mark for showing overflow bit\n 1\n 1 1 1 0 0 0 1 1\n+ 0 1 0 0 1 1 0 0\n1 0 0 1 0 1 1 1 1"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit",
+    "unitDef": "Smallest unit of data; represents 0 or 1.",
+    "paperFile": "24paper1.json",
+    "question": "Calculate file size of 16-bit colour image 512x512 pixels in KiB.",
+    "paperAnswer": "One mark for each correct stage of working (max 2):\n• 512 × 512\n• 262 144 * 2 // multiplied by 16 and divided by 8\n• 524 288/1024\nOne mark for the correct answer:\n512 (KiB)"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit",
+    "unitDef": "Smallest unit of data; represents 0 or 1.",
+    "paperFile": "24paper1.json",
+    "question": "Define sample resolution.",
+    "paperAnswer": "Any two from:\n• The number of bits that are used per sample\n• … that provides the variation in amplitude that can be stored for each sample // defines the number of different amplitudes that can be recorded\n• … that determines how quiet/loud the sounds are that can be recorded\n• Example e.g. 16-bit"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Nibble",
+    "unitDef": "Group of 4 bits.",
+    "paperFile": "24paper1.json",
+    "question": "Convert hexadecimal A2F to binary.",
+    "paperAnswer": "One mark for each correct nibble, in the correct order.\n1010 0010 1111"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Nibble",
+    "unitDef": "Group of 4 bits.",
+    "paperFile": "24paper1.json",
+    "question": "Add binary numbers 00110000 and 01100110.",
+    "paperAnswer": "One mark for evidence of working, for example 2 carries\nOne mark for each correct nibble (Max 2)\n1 1\n0 0 1 1 0 0 0 0\n0 1 1 0 0 1 1 0\n1 0 0 1 0 1 1 0"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Byte",
+    "unitDef": "Group of 8 bits.",
+    "paperFile": "24paper1.json",
+    "question": "State how many bytes in a kibibyte (KiB).",
+    "paperAnswer": "1024"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Byte",
+    "unitDef": "Group of 8 bits.",
+    "paperFile": "24paper1.json",
+    "question": "State how many bits in a byte.",
+    "paperAnswer": "8"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Binary",
+    "unitDef": "Base-2 number system using digits 0 and 1.",
+    "paperFile": "24paper1.json",
+    "question": "Convert hexadecimal A2F to binary.",
+    "paperAnswer": "One mark for each correct nibble, in the correct order.\n1010 0010 1111"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Binary",
+    "unitDef": "Base-2 number system using digits 0 and 1.",
+    "paperFile": "24paper1.json",
+    "question": "Add binary numbers 00110000 and 01100110.",
+    "paperAnswer": "One mark for evidence of working, for example 2 carries\nOne mark for each correct nibble (Max 2)\n1 1\n0 0 1 1 0 0 0 0\n0 1 1 0 0 1 1 0\n1 0 0 1 0 1 1 0"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Binary",
+    "unitDef": "Base-2 number system using digits 0 and 1.",
+    "paperFile": "24paper1.json",
+    "question": "Add binary numbers 01001100 and 11100011.",
+    "paperAnswer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\nOne mark for showing overflow bit\n 1\n 1 1 1 0 0 0 1 1\n+ 0 1 0 0 1 1 0 0\n1 0 0 1 0 1 1 1 1"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Hexadecimal",
+    "unitDef": "Base-16 number system using 0–9 and A–F.",
+    "paperFile": "24paper1.json",
+    "question": "Convert hexadecimal A2F to binary.",
+    "paperAnswer": "One mark for each correct nibble, in the correct order.\n1010 0010 1111"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Overflow",
+    "unitDef": "Condition when a value exceeds the representable range.",
+    "paperFile": "24paper1.json",
+    "question": "Add binary numbers 01001100 and 11100011.",
+    "paperAnswer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\nOne mark for showing overflow bit\n 1\n 1 1 1 0 0 0 1 1\n+ 0 1 0 0 1 1 0 0\n1 0 0 1 0 1 1 1 1"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "pixel",
+    "unitDef": "Smallest addressable element of a raster image.",
+    "paperFile": "24paper1.json",
+    "question": "Calculate file size of 16-bit colour image 512x512 pixels in KiB.",
+    "paperAnswer": "One mark for each correct stage of working (max 2):\n• 512 × 512\n• 262 144 * 2 // multiplied by 16 and divided by 8\n• 524 288/1024\nOne mark for the correct answer:\n512 (KiB)"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Resolution",
+    "unitDef": "Number of pixels in each dimension of an image.",
+    "paperFile": "24paper1.json",
+    "question": "Calculate file size of 16-bit colour image 512x512 pixels in KiB.",
+    "paperAnswer": "One mark for each correct stage of working (max 2):\n• 512 × 512\n• 262 144 * 2 // multiplied by 16 and divided by 8\n• 524 288/1024\nOne mark for the correct answer:\n512 (KiB)"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Resolution",
+    "unitDef": "Number of pixels in each dimension of an image.",
+    "paperFile": "24paper1.json",
+    "question": "Define sample resolution.",
+    "paperAnswer": "Any two from:\n• The number of bits that are used per sample\n• … that provides the variation in amplitude that can be stored for each sample // defines the number of different amplitudes that can be recorded\n• … that determines how quiet/loud the sounds are that can be recorded\n• Example e.g. 16-bit"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Resolution",
+    "unitDef": "Number of pixels in each dimension of an image.",
+    "paperFile": "24paper1.json",
+    "question": "Describe how web pages are located, retrieved and displayed.",
+    "paperAnswer": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Colour depth",
+    "unitDef": "Bits used to represent the colour of a pixel.",
+    "paperFile": "24paper1.json",
+    "question": "Calculate file size of 16-bit colour image 512x512 pixels in KiB.",
+    "paperAnswer": "One mark for each correct stage of working (max 2):\n• 512 × 512\n• 262 144 * 2 // multiplied by 16 and divided by 8\n• 524 288/1024\nOne mark for the correct answer:\n512 (KiB)"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Compression",
+    "unitDef": "Reducing file size while preserving information.",
+    "paperFile": "24paper1.json",
+    "question": "Identify compression method that doesn't permanently remove data.",
+    "paperAnswer": "Lossless"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Compression",
+    "unitDef": "Reducing file size while preserving information.",
+    "paperFile": "24paper1.json",
+    "question": "Give one reason for compressing image file.",
+    "paperAnswer": "Any one from:\n• Reduce the file size\n• Increase transmission speed // Reduce transmission time\n• Reduce storage space required\n• Less bandwidth required for transmission"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Compression",
+    "unitDef": "Reducing file size while preserving information.",
+    "paperFile": "25paper1.json",
+    "question": "Give the name of the process that is used to reduce the size of a file.",
+    "paperAnswer": "(Data) Compression"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossless compression",
+    "unitDef": "Compression without losing information.",
+    "paperFile": "24paper1.json",
+    "question": "Identify compression method that doesn't permanently remove data.",
+    "paperAnswer": "Lossless"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossless compression",
+    "unitDef": "Compression without losing information.",
+    "paperFile": "24paper1.json",
+    "question": "Give one reason for compressing image file.",
+    "paperAnswer": "Any one from:\n• Reduce the file size\n• Increase transmission speed // Reduce transmission time\n• Reduce storage space required\n• Less bandwidth required for transmission"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossless compression",
+    "unitDef": "Compression without losing information.",
+    "paperFile": "24paper1.json",
+    "question": "State how SSL protocol secures data transmission.",
+    "paperAnswer": "Any one from:\n• It encrypts it\n• Uses digital certificates"
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossy compression",
+    "unitDef": "Compression that removes some information.",
+    "paperFile": "24paper1.json",
+    "question": "Give one reason for compressing image file.",
+    "paperAnswer": "Any one from:\n• Reduce the file size\n• Increase transmission speed // Reduce transmission time\n• Reduce storage space required\n• Less bandwidth required for transmission"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Serial transmission",
+    "unitDef": "Bits sent one after another over a single channel.",
+    "paperFile": "24paper1.json",
+    "question": "Identify term that is not a data transmission method.",
+    "paperAnswer": "Parity"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Serial transmission",
+    "unitDef": "Bits sent one after another over a single channel.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about data transmission methods.",
+    "paperAnswer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parallel transmission",
+    "unitDef": "Multiple bits sent simultaneously across several channels.",
+    "paperFile": "24paper1.json",
+    "question": "Identify term that is not a data transmission method.",
+    "paperAnswer": "Parity"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parallel transmission",
+    "unitDef": "Multiple bits sent simultaneously across several channels.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about data transmission methods.",
+    "paperAnswer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Simplex",
+    "unitDef": "Communication in one direction only.",
+    "paperFile": "24paper1.json",
+    "question": "Identify term that is not a data transmission method.",
+    "paperAnswer": "Parity"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Simplex",
+    "unitDef": "Communication in one direction only.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about data transmission methods.",
+    "paperAnswer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Half-duplex",
+    "unitDef": "Communication both ways but not at the same time.",
+    "paperFile": "24paper1.json",
+    "question": "Identify term that is not a data transmission method.",
+    "paperAnswer": "Parity"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Half-duplex",
+    "unitDef": "Communication both ways but not at the same time.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about data transmission methods.",
+    "paperAnswer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Full-duplex",
+    "unitDef": "Communication both ways simultaneously.",
+    "paperFile": "24paper1.json",
+    "question": "Identify term that is not a data transmission method.",
+    "paperAnswer": "Parity"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Full-duplex",
+    "unitDef": "Communication both ways simultaneously.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about data transmission methods.",
+    "paperAnswer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "unitDef": "Unit of data sent across a network with header and payload.",
+    "paperFile": "24paper1.json",
+    "question": "Describe structure of a data packet.",
+    "paperAnswer": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "unitDef": "Unit of data sent across a network with header and payload.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two items in packet header.",
+    "paperAnswer": "Any two from:\ne.g.\n• Destination IP/address\n• Packet number\n• Originators IP/address\n• Error detection method"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Header",
+    "unitDef": "Control information at the start of a packet.",
+    "paperFile": "24paper1.json",
+    "question": "Describe structure of a data packet.",
+    "paperAnswer": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Header",
+    "unitDef": "Control information at the start of a packet.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two items in packet header.",
+    "paperAnswer": "Any two from:\ne.g.\n• Destination IP/address\n• Packet number\n• Originators IP/address\n• Error detection method"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Payload",
+    "unitDef": "User data carried in a packet.",
+    "paperFile": "24paper1.json",
+    "question": "Describe structure of a data packet.",
+    "paperAnswer": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Trailer",
+    "unitDef": "Data at the end of a packet, often for error checking.",
+    "paperFile": "24paper1.json",
+    "question": "Describe structure of a data packet.",
+    "paperAnswer": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Checksum",
+    "unitDef": "Calculated value used to detect errors in data.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about error detection methods.",
+    "paperAnswer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parity bit",
+    "unitDef": "Bit added to make the total number of 1s even/odd.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about error detection methods.",
+    "paperAnswer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Even parity",
+    "unitDef": "Parity method ensuring an even number of 1s.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about error detection methods.",
+    "paperAnswer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Odd parity",
+    "unitDef": "Parity method ensuring an odd number of 1s.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about error detection methods.",
+    "paperAnswer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Odd parity",
+    "unitDef": "Parity method ensuring an odd number of 1s.",
+    "paperFile": "24paper1.json",
+    "question": "Describe operation of error detection system using odd parity and ARQ.",
+    "paperAnswer": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "ARQ",
+    "unitDef": "Automatic repeat request protocol for retransmission.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about error detection methods.",
+    "paperAnswer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "ARQ",
+    "unitDef": "Automatic repeat request protocol for retransmission.",
+    "paperFile": "24paper1.json",
+    "question": "Describe operation of error detection system using odd parity and ARQ.",
+    "paperAnswer": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent"
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Protocol",
+    "unitDef": "Agreed rules for data communication.",
+    "paperFile": "24paper1.json",
+    "question": "State how SSL protocol secures data transmission.",
+    "paperAnswer": "Any one from:\n• It encrypts it\n• Uses digital certificates"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "CPU",
+    "unitDef": "Central processing unit executing instructions.",
+    "paperFile": "24paper1.json",
+    "question": "Complete paragraph about fetching instruction into CPU.",
+    "paperAnswer": "address\nmemory address register // MAR\nrandom access memory // RAM\nmemory data register // MDR\ndata\ncurrent instruction register // CIR\ncontrol unit // CU"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "CPU",
+    "unitDef": "Central processing unit executing instructions.",
+    "paperFile": "24paper1.json",
+    "question": "Explain effect of changing CPU from 2 GHz to 3 GHz.",
+    "paperAnswer": "Increases/improves the performance // Tasks can be performed quicker/faster\n… because more FDE cycles/instructions can be processed in a second"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ALU",
+    "unitDef": "Arithmetic logic unit performing operations.",
+    "paperFile": "24paper2.json",
+    "question": "Write algorithm to total numbers input until 9999.9.",
+    "paperAnswer": "Total ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    Total ← Total + Value\n    INPUT Value\nENDWHILE\nOUTPUT Total"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Clock",
+    "unitDef": "Generates timing signals controlling the processor.",
+    "paperFile": "24paper1.json",
+    "question": "Define clock speed.",
+    "paperAnswer": "The maximum number of FDE cycles/instructions a CPU can perform/process/execute in a second"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Clock",
+    "unitDef": "Generates timing signals controlling the processor.",
+    "paperFile": "24paper1.json",
+    "question": "Explain effect of changing CPU from 2 GHz to 3 GHz.",
+    "paperAnswer": "Increases/improves the performance // Tasks can be performed quicker/faster\n… because more FDE cycles/instructions can be processed in a second"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Register",
+    "unitDef": "Small, fast storage within the CPU.",
+    "paperFile": "24paper1.json",
+    "question": "Complete paragraph about fetching instruction into CPU.",
+    "paperAnswer": "address\nmemory address register // MAR\nrandom access memory // RAM\nmemory data register // MDR\ndata\ncurrent instruction register // CIR\ncontrol unit // CU"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "unitDef": "Volatile main memory for programs and data in use.",
+    "paperFile": "24paper1.json",
+    "question": "Explain why computer needs RAM.",
+    "paperAnswer": "Any three from:\n• To store data temporarily\n• To store data currently in use\n• To store software currently in use\n• Data can be accessed faster (than secondary storage)\n• To speed up the fetch stage (of the fetch-execute cycle)"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "unitDef": "Volatile main memory for programs and data in use.",
+    "paperFile": "24paper1.json",
+    "question": "Identify correct statement about RAM.",
+    "paperAnswer": "It stores data currently in use"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "unitDef": "Volatile main memory for programs and data in use.",
+    "paperFile": "24paper1.json",
+    "question": "Complete description about virtual memory.",
+    "paperAnswer": "One mark for each correct term in the correct order:\n• Random access memory (RAM)\n• Hard disk drive (HDD)\n• Pages\n• Random access memory (RAM)\n• Virtual memory // Hard disk drive (HDD)"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "unitDef": "Volatile main memory for programs and data in use.",
+    "paperFile": "24paper1.json",
+    "question": "Identify whether to use high-level or low-level language for 3D game.",
+    "paperAnswer": "High-level language"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "unitDef": "Volatile main memory for programs and data in use.",
+    "paperFile": "24paper1.json",
+    "question": "Give three characteristics of a robot.",
+    "paperAnswer": "Any three from:\n• It has a mechanical structure/framework\n• It has electrical components\n• It is programmable\n• It can move"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "unitDef": "Volatile main memory for programs and data in use.",
+    "paperFile": "24paper1.json",
+    "question": "Describe machine learning capabilities.",
+    "paperAnswer": "Any four from:\ne.g.\n• It is a form of artificial intelligence\n• Means it can adapt/change (its own processes) // It can edit its own algorithms\n• It can edit its own data\n• It can be trained\n• … this can be supervised/unsupervised\n• … meaning it can learn with/without human interaction\n• Analyses patterns and stores successful/unsuccessful results …\n• … to influence future decisions\n• (Supervised) means a user tells the system the input and output\n• (Unsupervised) means the system is given the input and needs to work out the output"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "unitDef": "Volatile main memory for programs and data in use.",
+    "paperFile": "24paper2.json",
+    "question": "Identify three tasks in analysis stage of program development.",
+    "paperAnswer": "• abstraction\n• decomposition\n• identification of problem / identification of requirements // outline of success criteria"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "unitDef": "Volatile main memory for programs and data in use.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to use a procedure named Average that passes values 25 and 50.",
+    "paperAnswer": "CALL Average (25, 50)"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ROM",
+    "unitDef": "Non-volatile memory storing firmware.",
+    "paperFile": "24paper1.json",
+    "question": "State purpose of firmware.",
+    "paperAnswer": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ROM",
+    "unitDef": "Non-volatile memory storing firmware.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how machine learning improves robot.",
+    "paperAnswer": "Any two from:\n• The robot can now adapt itself by changing its own rules/data/ processes\n• The robot will become more efficient\n• ... as it has a greater knowledge of its surroundings/environment\n• ... as it can remember where a fence is\n• ... as it can remember the route it needs to take\n• ... as it can remember where any obstacles are to avoid\n• ... as it can remember where to start and stop sowing seeds\n• ... as it may make fewer errors"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ROM",
+    "unitDef": "Non-volatile memory storing firmware.",
+    "paperFile": "24paper1.json",
+    "question": "Describe machine learning capabilities.",
+    "paperAnswer": "Any four from:\ne.g.\n• It is a form of artificial intelligence\n• Means it can adapt/change (its own processes) // It can edit its own algorithms\n• It can edit its own data\n• It can be trained\n• … this can be supervised/unsupervised\n• … meaning it can learn with/without human interaction\n• Analyses patterns and stores successful/unsuccessful results …\n• … to influence future decisions\n• (Supervised) means a user tells the system the input and output\n• (Unsupervised) means the system is given the input and needs to work out the output"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ROM",
+    "unitDef": "Non-volatile memory storing firmware.",
+    "paperFile": "25paper2.json",
+    "question": "Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.",
+    "paperAnswer": "SELECT StudentName, Age\nFROM Students\nWHERE Age >= 16\nORDER BY StudentName"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Input device",
+    "unitDef": "Hardware used to enter data into a system.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two input devices built into a portable tablet computer.",
+    "paperAnswer": "Any two from:\n• Touch screen\n• Microphone\n• Button\n• Webcam // (digital) camera\n• Accelerometer\n• Biometric device"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Input device",
+    "unitDef": "Hardware used to enter data into a system.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two input devices for automatic ticket reading.",
+    "paperAnswer": "Any two from e.g.\n• Barcode scanner\n• QR code scanner\n• Digital camera"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Output device",
+    "unitDef": "Hardware used to present data from a system.",
+    "paperFile": "25paper1.json",
+    "question": "Identify an appropriate output device to produce the paper ticket.",
+    "paperAnswer": "Printer"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Sensor",
+    "unitDef": "Device detecting physical properties to produce data.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how robot uses sensors and microprocessor to detect fence.",
+    "paperAnswer": "Any six from:\n• A proximity sensor is used\n• The sensor continuously sends digitised data to the microprocessor\n• The microprocessor compares the data to a stored value/range of values\n• If the value is within the range/matches the robot continues planting\n• If the value is above/below/outside the range a signal is sent by the microprocessor to turn/stop the robot\n• ... using an actuator to turn/stop the robot\n• This process repeats until the robot is turned off"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Sensor",
+    "unitDef": "Device detecting physical properties to produce data.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table of sensor types and uses.",
+    "paperAnswer": "One mark for each use (Max 1) per sensor:\nTemperature\n• Checking whether the water in a kettle is boiling\n• Monitoring the temperature in a room that is climate controlled\nHumidity\n• Checking whether the air is dry enough in a spray-painting garage\n• Checking whether the air is moist enough in a greenhouse\nInfra-red\n• Detecting motion in a room for a security system\n• Detecting whether a person is approaching automatic doors\nMagnetic field\n• Counting vehicles that cross a bridge\n• Monitoring vehicles that enter a car park"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Actuator",
+    "unitDef": "Device converting data signals into physical action.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how robot uses sensors and microprocessor to detect fence.",
+    "paperAnswer": "Any six from:\n• A proximity sensor is used\n• The sensor continuously sends digitised data to the microprocessor\n• The microprocessor compares the data to a stored value/range of values\n• If the value is within the range/matches the robot continues planting\n• If the value is above/below/outside the range a signal is sent by the microprocessor to turn/stop the robot\n• ... using an actuator to turn/stop the robot\n• This process repeats until the robot is turned off"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "HDD",
+    "unitDef": "Magnetic storage using spinning disks.",
+    "paperFile": "24paper1.json",
+    "question": "Complete description about virtual memory.",
+    "paperAnswer": "One mark for each correct term in the correct order:\n• Random access memory (RAM)\n• Hard disk drive (HDD)\n• Pages\n• Random access memory (RAM)\n• Virtual memory // Hard disk drive (HDD)"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "SSD",
+    "unitDef": "Solid-state storage using flash memory.",
+    "paperFile": "24paper1.json",
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "paperAnswer": "SSD // Solid-state drive // Solid-state (device)"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Optical storage",
+    "unitDef": "Storage using lasers to read/write data.",
+    "paperFile": "24paper1.json",
+    "question": "Circle three examples of optical storage.",
+    "paperAnswer": "Compact disk (CD)\nDigital versatile disk (DVD)\nBlu-ray disk"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Embedded system",
+    "unitDef": "Computer dedicated to a specific function within a larger system.",
+    "paperFile": "24paper1.json",
+    "question": "Give one example of firmware.",
+    "paperAnswer": "Any one from:\n• Bootstrap\n• Bootloader\n• BIOS\n• Operating system (in embedded system)\n• Programs (in embedded systems)"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Embedded system",
+    "unitDef": "Computer dedicated to a specific function within a larger system.",
+    "paperFile": "24paper1.json",
+    "question": "Give two characteristics of embedded system.",
+    "paperAnswer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system"
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Embedded system",
+    "unitDef": "Computer dedicated to a specific function within a larger system.",
+    "paperFile": "24paper1.json",
+    "question": "Circle three other examples of embedded system.",
+    "paperAnswer": "One mark for each correct system:\n• security light system\n• freezer\n• vending machine"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "System software",
+    "unitDef": "Software managing and supporting computer operations.",
+    "paperFile": "24paper1.json",
+    "question": "Give two examples of system software.",
+    "paperAnswer": "Any two from:\n• Operating system\n• Utility software\nNOTE: Two examples of utility software can be awarded"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "System software",
+    "unitDef": "Software managing and supporting computer operations.",
+    "paperFile": "24paper1.json",
+    "question": "Describe difference between system and application software.",
+    "paperAnswer": "Any two from:\n• System software manages/maintains the hardware/software\n• Applications software allows the user to perform tasks"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Application software",
+    "unitDef": "Programs designed for end-user tasks.",
+    "paperFile": "24paper1.json",
+    "question": "Describe difference between system and application software.",
+    "paperAnswer": "Any two from:\n• System software manages/maintains the hardware/software\n• Applications software allows the user to perform tasks"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Utility software",
+    "unitDef": "Programs performing maintenance or optimization tasks.",
+    "paperFile": "24paper1.json",
+    "question": "Give two examples of system software.",
+    "paperAnswer": "Any two from:\n• Operating system\n• Utility software\nNOTE: Two examples of utility software can be awarded"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Firmware",
+    "unitDef": "Software stored in ROM controlling hardware.",
+    "paperFile": "24paper1.json",
+    "question": "State purpose of firmware.",
+    "paperAnswer": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Firmware",
+    "unitDef": "Software stored in ROM controlling hardware.",
+    "paperFile": "24paper1.json",
+    "question": "Give one example of firmware.",
+    "paperAnswer": "Any one from:\n• Bootstrap\n• Bootloader\n• BIOS\n• Operating system (in embedded system)\n• Programs (in embedded systems)"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Firmware",
+    "unitDef": "Software stored in ROM controlling hardware.",
+    "paperFile": "24paper1.json",
+    "question": "Give two characteristics of embedded system.",
+    "paperAnswer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Operating system",
+    "unitDef": "Manages hardware, resources and provides user interface.",
+    "paperFile": "24paper1.json",
+    "question": "Give two examples of system software.",
+    "paperAnswer": "Any two from:\n• Operating system\n• Utility software\nNOTE: Two examples of utility software can be awarded"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Operating system",
+    "unitDef": "Manages hardware, resources and provides user interface.",
+    "paperFile": "24paper1.json",
+    "question": "Describe operating system purpose.",
+    "paperAnswer": "Any three from:\n• It performs the basic functions of a computer\n• It manages the hardware\n• It provides a platform to run software\n• It provides a user interface\n• It performs tasks such as (any example of function of an operating system)"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Operating system",
+    "unitDef": "Manages hardware, resources and provides user interface.",
+    "paperFile": "24paper1.json",
+    "question": "Give two OS functions related to memory.",
+    "paperAnswer": "Example:\n• Memory management\n• Multitasking"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "User interface",
+    "unitDef": "Means by which users interact with a computer.",
+    "paperFile": "24paper1.json",
+    "question": "Describe operating system purpose.",
+    "paperAnswer": "Any three from:\n• It performs the basic functions of a computer\n• It manages the hardware\n• It provides a platform to run software\n• It provides a user interface\n• It performs tasks such as (any example of function of an operating system)"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "User interface",
+    "unitDef": "Means by which users interact with a computer.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how expert system operates for car diagnosis.",
+    "paperAnswer": "Any **five** from:\n• The user will enter data into the **interface** // The user will plug the car into an **interface** // The user is given questions using the **interface**\n• The **inference engine** will decide which questions to ask\n• ... by using the previous answers given\n• The **inference engine** will decide on a diagnosis\n• ... by **comparing the data/answers** entered to the **knowledge base** and **rule base**\n• ... by calculating which option is most likely if there are multiple\n• The **interface** will output the **diagnosis/result**\n• The **explanation system** shows how the diagnosis was reached"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "User interface",
+    "unitDef": "Means by which users interact with a computer.",
+    "paperFile": "24paper1.json",
+    "question": "Complete description about expert system operation.",
+    "paperAnswer": "One mark for each correct term in the correct order:\n• knowledge base\n• inference engine\n• rule base // knowledge base\n• knowledge base // rule base\n• interface"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Multitasking",
+    "unitDef": "Running multiple tasks apparently simultaneously.",
+    "paperFile": "24paper1.json",
+    "question": "Give two OS functions related to memory.",
+    "paperAnswer": "Example:\n• Memory management\n• Multitasking"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Memory management",
+    "unitDef": "Allocation and control of primary memory.",
+    "paperFile": "24paper1.json",
+    "question": "Give two OS functions related to memory.",
+    "paperAnswer": "Example:\n• Memory management\n• Multitasking"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Security",
+    "unitDef": "Authentication, authorization and protection mechanisms.",
+    "paperFile": "24paper1.json",
+    "question": "Complete paragraph about fetching instruction into CPU.",
+    "paperAnswer": "address\nmemory address register // MAR\nrandom access memory // RAM\nmemory data register // MDR\ndata\ncurrent instruction register // CIR\ncontrol unit // CU"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Security",
+    "unitDef": "Authentication, authorization and protection mechanisms.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how firewall protects network.",
+    "paperAnswer": "Any five from:\nCriteria can be set (for traffic)\n… such as a blacklist/whitelist (of IP addresses)\nIt will examine traffic coming into the network\nIt will check that the traffic meets the set criteria\n… and will reject it if it does not meet criteria\nCertain ports used by hackers can be blocked/closed"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Security",
+    "unitDef": "Authentication, authorization and protection mechanisms.",
+    "paperFile": "24paper1.json",
+    "question": "State how SSL protocol secures data transmission.",
+    "paperAnswer": "Any one from:\n• It encrypts it\n• Uses digital certificates"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Security",
+    "unitDef": "Authentication, authorization and protection mechanisms.",
+    "paperFile": "24paper1.json",
+    "question": "Circle three other examples of embedded system.",
+    "paperAnswer": "One mark for each correct system:\n• security light system\n• freezer\n• vending machine"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Compiler",
+    "unitDef": "Translates whole program to object code before execution.",
+    "paperFile": "24paper1.json",
+    "question": "Describe operation of compiler and interpreter.",
+    "paperAnswer": "Two from for each compiler and interpreter.\nCompiler\n• Checks all code before executing any code\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\n• Produces executable file\nInterpreter\n• Checks/translates one line of code and then executes it before moving on to the next line\n• Stops when an error is found\n• … when corrected the program can be run from the same position // allows error correction in real time"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Interpreter",
+    "unitDef": "Executes program line by line translating at runtime.",
+    "paperFile": "24paper1.json",
+    "question": "Describe operation of compiler and interpreter.",
+    "paperAnswer": "Two from for each compiler and interpreter.\nCompiler\n• Checks all code before executing any code\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\n• Produces executable file\nInterpreter\n• Checks/translates one line of code and then executes it before moving on to the next line\n• Stops when an error is found\n• … when corrected the program can be run from the same position // allows error correction in real time"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "High-level language",
+    "unitDef": "Language close to human readability and abstraction.",
+    "paperFile": "24paper1.json",
+    "question": "Identify whether to use high-level or low-level language for 3D game.",
+    "paperAnswer": "High-level language"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Low-level language",
+    "unitDef": "Language close to machine operations and hardware.",
+    "paperFile": "24paper1.json",
+    "question": "Identify whether to use high-level or low-level language for 3D game.",
+    "paperAnswer": "High-level language"
+  },
+  {
+    "unitId": "cs-4",
+    "term": "IDE",
+    "unitDef": "Integrated development environment supporting coding tasks.",
+    "paperFile": "24paper2.json",
+    "question": "Explain why identifiers L, S, T, A not appropriate.",
+    "paperAnswer": "• (The identifiers L, S, T and A) are single letters\n• ... so do not give any indication of what values they hold.\n• For programs to be maintainable, identifiers should have meaningful names."
+  },
+  {
+    "unitId": "cs-4",
+    "term": "IDE",
+    "unitDef": "Integrated development environment supporting coding tasks.",
+    "paperFile": "24paper2.json",
+    "question": "State improved identifiers for L, S, T, A.",
+    "paperAnswer": "L → Largest / Maximum\nS → Smallest / Minimum\nT → Total / Sum\nA → Average / Mean"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Web browser",
+    "unitDef": "Software used to retrieve, render and navigate web pages.",
+    "paperFile": "24paper1.json",
+    "question": "Give three other functions of web browser.",
+    "paperAnswer": "Any three from:\nDisplays a web page\nStoring bookmarks/favourites\nRecording user history\nAllowing use of multiple tabs\nStoring cookies\nProviding navigation tools\nCan set a home page"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Web browser",
+    "unitDef": "Software used to retrieve, render and navigate web pages.",
+    "paperFile": "24paper1.json",
+    "question": "Identify web browser function for automatic payment details.",
+    "paperAnswer": "Storing cookies"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "URL",
+    "unitDef": "Uniform Resource Locator identifying a resource.",
+    "paperFile": "24paper1.json",
+    "question": "Describe how web pages are located, retrieved and displayed.",
+    "paperAnswer": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "DNS",
+    "unitDef": "Domain Name System translating names to IP addresses.",
+    "paperFile": "24paper1.json",
+    "question": "Describe how web pages are located, retrieved and displayed.",
+    "paperAnswer": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "IP address",
+    "unitDef": "Numerical label identifying a device on a network.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two items in packet header.",
+    "paperAnswer": "Any two from:\ne.g.\n• Destination IP/address\n• Packet number\n• Originators IP/address\n• Error detection method"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "IP address",
+    "unitDef": "Numerical label identifying a device on a network.",
+    "paperFile": "24paper1.json",
+    "question": "Describe how web pages are located, retrieved and displayed.",
+    "paperAnswer": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "HTML",
+    "unitDef": "Markup language for structuring web content.",
+    "paperFile": "24paper1.json",
+    "question": "Describe how web pages are located, retrieved and displayed.",
+    "paperAnswer": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "ISP",
+    "unitDef": "Internet Service Provider offering connectivity.",
+    "paperFile": "24paper1.json",
+    "question": "Describe how web pages are located, retrieved and displayed.",
+    "paperAnswer": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Email",
+    "unitDef": "Electronic mail system for messages.",
+    "paperFile": "24paper1.json",
+    "question": "Give one reason for compressing image file.",
+    "paperAnswer": "Any one from:\n• Reduce the file size\n• Increase transmission speed // Reduce transmission time\n• Reduce storage space required\n• Less bandwidth required for transmission"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Cookie",
+    "unitDef": "Small data stored by a browser for a website.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two ways cookies enhance user experience.",
+    "paperAnswer": "Any two from:\ne.g.\n• Storing preferences // so the user does not have to select their preferences each time they visit the site\n• Storing account details // so the user does not have to remember/enter their username and password each time they visit the site\n• Storing recent purchases // to allow the user to quickly re-order more items\n• Storing the pages visited/items selected // to display relevant adverts\n• Storing shopping basket // so when the user leaves the site the items are still in their basket"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Cookie",
+    "unitDef": "Small data stored by a browser for a website.",
+    "paperFile": "24paper1.json",
+    "question": "Give three other functions of web browser.",
+    "paperAnswer": "Any three from:\nDisplays a web page\nStoring bookmarks/favourites\nRecording user history\nAllowing use of multiple tabs\nStoring cookies\nProviding navigation tools\nCan set a home page"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Cookie",
+    "unitDef": "Small data stored by a browser for a website.",
+    "paperFile": "24paper1.json",
+    "question": "Identify web browser function for automatic payment details.",
+    "paperAnswer": "Storing cookies"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Firewall",
+    "unitDef": "Network security system controlling traffic.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how firewall protects network.",
+    "paperAnswer": "Any five from:\nCriteria can be set (for traffic)\n… such as a blacklist/whitelist (of IP addresses)\nIt will examine traffic coming into the network\nIt will check that the traffic meets the set criteria\n… and will reject it if it does not meet criteria\nCertain ports used by hackers can be blocked/closed"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Firewall",
+    "unitDef": "Network security system controlling traffic.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two similarities and one difference between proxy-servers and firewalls.",
+    "paperAnswer": "One mark for each similarity to max two.\nOne mark for difference (both sides needed unless clearly and accurately implied).\nSimilarities e.g.\n• Check incoming and outgoing signals // filter traffic\n• Store whitelist/blacklist\n• Block incoming/outgoing signals\n• Both block unauthorised access\n• Keep a log of traffic\n• Both can be hardware or software (or both)\nDifferences e.g.\n• Proxy can hide user's IP address, firewall does not hide the user's IP address\n• Proxy intention is to divert attack from server, firewall is to stop unauthorised access\n• Proxy protects a server, firewall protects individual computer\n• Proxy examines/processes requests for a website but a firewall does not (checks type of signal) // Proxy processes client-side requests whereas firewall filters packets\n• Proxy transmits website data to the user, but a firewall does not (it allows valid signals)\n• Proxy allows faster access to a web page using cache, but a firewall does not (allow faster access or have cache)\n• Proxy can hide internal network from internet, but a firewall cannot"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Malware",
+    "unitDef": "Malicious software designed to cause harm.",
+    "paperFile": "24paper1.json",
+    "question": "Identify software used to find and remove malware.",
+    "paperAnswer": "Anti-malware"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Malware",
+    "unitDef": "Malicious software designed to cause harm.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table with two other malware examples and descriptions.",
+    "paperAnswer": "One mark for identification. E.g. One mark per bullet for description to max two each.\nVirus\n• Software/code that replicates\n• …when the user runs it // with an active host\n• Deletes/damages/corrupts data/files // takes up storage/memory space\nWorm\n• Software/code that replicates itself on a network\n• …without user input // without active host\n• Takes-up bandwidth\n• Deletes/damages/corrupts data/files // takes up storage/memory space\n• Opens back doors to computers over the network\n• Used to deposit other malware on networked computers\nTrojan horse\n• Software/code that is hidden within other software // Software that is disguised as authentic software\n• …when downloaded/installed the other malware/by example it contains is installed\nAdware\n• Software/code that generates/displays (unwanted) adverts on a user's computer\n• Some may contain spyware/other malware\n• Some when clicked may link to viruses\n• Reduces device performance // reduces internet speed\n• Redirects internet searches/user to fake websites\nRansomware\n• Software/code that stops a user accessing/using their computer/data\n• …by encrypting the data/files/computer\n• A fee has to be paid to decrypt the data // A fee has to be paid to 'release' the computer/device/data"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Trojan",
+    "unitDef": "Malware disguised as legitimate software.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table with two other malware examples and descriptions.",
+    "paperAnswer": "One mark for identification. E.g. One mark per bullet for description to max two each.\nVirus\n• Software/code that replicates\n• …when the user runs it // with an active host\n• Deletes/damages/corrupts data/files // takes up storage/memory space\nWorm\n• Software/code that replicates itself on a network\n• …without user input // without active host\n• Takes-up bandwidth\n• Deletes/damages/corrupts data/files // takes up storage/memory space\n• Opens back doors to computers over the network\n• Used to deposit other malware on networked computers\nTrojan horse\n• Software/code that is hidden within other software // Software that is disguised as authentic software\n• …when downloaded/installed the other malware/by example it contains is installed\nAdware\n• Software/code that generates/displays (unwanted) adverts on a user's computer\n• Some may contain spyware/other malware\n• Some when clicked may link to viruses\n• Reduces device performance // reduces internet speed\n• Redirects internet searches/user to fake websites\nRansomware\n• Software/code that stops a user accessing/using their computer/data\n• …by encrypting the data/files/computer\n• A fee has to be paid to decrypt the data // A fee has to be paid to 'release' the computer/device/data"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Spyware",
+    "unitDef": "Malware that secretly gathers information.",
+    "paperFile": "24paper1.json",
+    "question": "Identify correct definition of spyware.",
+    "paperAnswer": "Software that records all key presses and transmits to third party"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Antivirus",
+    "unitDef": "Software that detects and removes malware.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table with two other malware examples and descriptions.",
+    "paperAnswer": "One mark for identification. E.g. One mark per bullet for description to max two each.\nVirus\n• Software/code that replicates\n• …when the user runs it // with an active host\n• Deletes/damages/corrupts data/files // takes up storage/memory space\nWorm\n• Software/code that replicates itself on a network\n• …without user input // without active host\n• Takes-up bandwidth\n• Deletes/damages/corrupts data/files // takes up storage/memory space\n• Opens back doors to computers over the network\n• Used to deposit other malware on networked computers\nTrojan horse\n• Software/code that is hidden within other software // Software that is disguised as authentic software\n• …when downloaded/installed the other malware/by example it contains is installed\nAdware\n• Software/code that generates/displays (unwanted) adverts on a user's computer\n• Some may contain spyware/other malware\n• Some when clicked may link to viruses\n• Reduces device performance // reduces internet speed\n• Redirects internet searches/user to fake websites\nRansomware\n• Software/code that stops a user accessing/using their computer/data\n• …by encrypting the data/files/computer\n• A fee has to be paid to decrypt the data // A fee has to be paid to 'release' the computer/device/data"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Encryption",
+    "unitDef": "Converting data into a secure coded form.",
+    "paperFile": "24paper1.json",
+    "question": "Complete paragraph about asymmetric encryption.",
+    "paperAnswer": "• plain text\n• cipher text\n• public key\n• private key"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Encryption",
+    "unitDef": "Converting data into a secure coded form.",
+    "paperFile": "24paper1.json",
+    "question": "Explain symmetric encryption.",
+    "paperAnswer": "Data is encrypted and decrypted using the same key (1 mark)\nAny three from:\n• Plain text is encrypted into cipher text // cipher text is decrypted into plain text\n• Data is encrypted using an algorithm ...\n• ... that uses a key\n• The key can be generated using an algorithm\n• The key is transmitted to the receiver"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Encryption",
+    "unitDef": "Converting data into a secure coded form.",
+    "paperFile": "24paper1.json",
+    "question": "State how SSL protocol secures data transmission.",
+    "paperAnswer": "Any one from:\n• It encrypts it\n• Uses digital certificates"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "TLS/SSL",
+    "unitDef": "Protocols providing secure communication.",
+    "paperFile": "24paper1.json",
+    "question": "State how SSL protocol secures data transmission.",
+    "paperAnswer": "Any one from:\n• It encrypts it\n• Uses digital certificates"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital certificate",
+    "unitDef": "Electronic document verifying identity and public key.",
+    "paperFile": "24paper1.json",
+    "question": "State how SSL protocol secures data transmission.",
+    "paperAnswer": "Any one from:\n• It encrypts it\n• Uses digital certificates"
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Proxy server",
+    "unitDef": "Intermediate server forwarding requests.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two similarities and one difference between proxy-servers and firewalls.",
+    "paperAnswer": "One mark for each similarity to max two.\nOne mark for difference (both sides needed unless clearly and accurately implied).\nSimilarities e.g.\n• Check incoming and outgoing signals // filter traffic\n• Store whitelist/blacklist\n• Block incoming/outgoing signals\n• Both block unauthorised access\n• Keep a log of traffic\n• Both can be hardware or software (or both)\nDifferences e.g.\n• Proxy can hide user's IP address, firewall does not hide the user's IP address\n• Proxy intention is to divert attack from server, firewall is to stop unauthorised access\n• Proxy protects a server, firewall protects individual computer\n• Proxy examines/processes requests for a website but a firewall does not (checks type of signal) // Proxy processes client-side requests whereas firewall filters packets\n• Proxy transmits website data to the user, but a firewall does not (it allows valid signals)\n• Proxy allows faster access to a web page using cache, but a firewall does not (allow faster access or have cache)\n• Proxy can hide internal network from internet, but a firewall cannot"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Automation",
+    "unitDef": "Use of technology to perform tasks with minimal human input.",
+    "paperFile": "24paper1.json",
+    "question": "Give two advantages of using automated robot for planting.",
+    "paperAnswer": "Any two from:\n• The robot is more accurate when planting seeds\n• The robot does not need to take breaks // works 24/7\n• The robot will not get bored of performing a repetitive task\n• The farmer can perform other tasks whilst the robot is planting the seeds\n• The robot may be faster/more efficient (at planting seeds)\n• Safer as the robot can work in a more dangerous environments (e.g. with animals in a field)\n• Doesn't need to pay labour costs/wages"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Automation",
+    "unitDef": "Use of technology to perform tasks with minimal human input.",
+    "paperFile": "24paper1.json",
+    "question": "Explain one disadvantage of automated system for owners.",
+    "paperAnswer": "Two from (for drawback and matching description) e.g.:\n• High set-up/installation costs\n• … it would mean the company need to find a lot of money up front to pay for the equipment // employees will need training\n• Utility/maintenance/repair costs\n• … increase in bills such as electricity // skilled employees will be required to maintain the system // equipment will break/need updating\n• Deskilling of the workforce\n• … may mean that workers will no longer have the skills for some of the manufacturing jobs, should the equipment break"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Artificial intelligence",
+    "unitDef": "Systems that perform tasks requiring human intelligence.",
+    "paperFile": "24paper1.json",
+    "question": "Describe meaning of AI.",
+    "paperAnswer": "Any two from:\n• The **simulation** of intelligent behaviours by computers\n• A collection of data and the rules for using that data\n• Has the ability to reason\n• Has the ability to learn/adapt"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Machine learning",
+    "unitDef": "Algorithms improving performance through data experience.",
+    "paperFile": "24paper1.json",
+    "question": "Describe meaning of AI.",
+    "paperAnswer": "Any two from:\n• The **simulation** of intelligent behaviours by computers\n• A collection of data and the rules for using that data\n• Has the ability to reason\n• Has the ability to learn/adapt"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Machine learning",
+    "unitDef": "Algorithms improving performance through data experience.",
+    "paperFile": "24paper1.json",
+    "question": "Describe characteristics of AI.",
+    "paperAnswer": "Any three from:\ne.g.\n• Collects data\n• Stores rules for using that data\n• The ability to reason\n• The ability to learn // uses machine learning\n• ... by adapting what it does\n• ... for example, from mistakes to not make them again // result from previous decisions impacts future\n• ... by changing its own rules\n• ...by changing its own data\n• ...by being trained\n• Makes one or more predictions (to make a decision)\n• Find/analyse patterns"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Machine learning",
+    "unitDef": "Algorithms improving performance through data experience.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how machine learning improves robot.",
+    "paperAnswer": "Any two from:\n• The robot can now adapt itself by changing its own rules/data/ processes\n• The robot will become more efficient\n• ... as it has a greater knowledge of its surroundings/environment\n• ... as it can remember where a fence is\n• ... as it can remember the route it needs to take\n• ... as it can remember where any obstacles are to avoid\n• ... as it can remember where to start and stop sowing seeds\n• ... as it may make fewer errors"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Machine learning",
+    "unitDef": "Algorithms improving performance through data experience.",
+    "paperFile": "24paper1.json",
+    "question": "Describe machine learning capabilities.",
+    "paperAnswer": "Any four from:\ne.g.\n• It is a form of artificial intelligence\n• Means it can adapt/change (its own processes) // It can edit its own algorithms\n• It can edit its own data\n• It can be trained\n• … this can be supervised/unsupervised\n• … meaning it can learn with/without human interaction\n• Analyses patterns and stores successful/unsuccessful results …\n• … to influence future decisions\n• (Supervised) means a user tells the system the input and output\n• (Unsupervised) means the system is given the input and needs to work out the output"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Expert system",
+    "unitDef": "Computer system emulating decision-making of human experts.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how expert system operates for car diagnosis.",
+    "paperAnswer": "Any **five** from:\n• The user will enter data into the **interface** // The user will plug the car into an **interface** // The user is given questions using the **interface**\n• The **inference engine** will decide which questions to ask\n• ... by using the previous answers given\n• The **inference engine** will decide on a diagnosis\n• ... by **comparing the data/answers** entered to the **knowledge base** and **rule base**\n• ... by calculating which option is most likely if there are multiple\n• The **interface** will output the **diagnosis/result**\n• The **explanation system** shows how the diagnosis was reached"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Expert system",
+    "unitDef": "Computer system emulating decision-making of human experts.",
+    "paperFile": "24paper1.json",
+    "question": "Complete description about expert system operation.",
+    "paperAnswer": "One mark for each correct term in the correct order:\n• knowledge base\n• inference engine\n• rule base // knowledge base\n• knowledge base // rule base\n• interface"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Robotics",
+    "unitDef": "Design and use of robots for tasks.",
+    "paperFile": "24paper1.json",
+    "question": "Define robotics.",
+    "paperAnswer": "Any two from:\n• The design of robots (to perform tasks/operations/functions)\n• The construction of robots (to perform tasks/operations/functions)\n• The operation of robots (to perform tasks/operations/functions)"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Actuator",
+    "unitDef": "Device converting signals into physical movement.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how robot uses sensors and microprocessor to detect fence.",
+    "paperAnswer": "Any six from:\n• A proximity sensor is used\n• The sensor continuously sends digitised data to the microprocessor\n• The microprocessor compares the data to a stored value/range of values\n• If the value is within the range/matches the robot continues planting\n• If the value is above/below/outside the range a signal is sent by the microprocessor to turn/stop the robot\n• ... using an actuator to turn/stop the robot\n• This process repeats until the robot is turned off"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Sensor",
+    "unitDef": "Device detecting changes in environment.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how robot uses sensors and microprocessor to detect fence.",
+    "paperAnswer": "Any six from:\n• A proximity sensor is used\n• The sensor continuously sends digitised data to the microprocessor\n• The microprocessor compares the data to a stored value/range of values\n• If the value is within the range/matches the robot continues planting\n• If the value is above/below/outside the range a signal is sent by the microprocessor to turn/stop the robot\n• ... using an actuator to turn/stop the robot\n• This process repeats until the robot is turned off"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Sensor",
+    "unitDef": "Device detecting changes in environment.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table of sensor types and uses.",
+    "paperAnswer": "One mark for each use (Max 1) per sensor:\nTemperature\n• Checking whether the water in a kettle is boiling\n• Monitoring the temperature in a room that is climate controlled\nHumidity\n• Checking whether the air is dry enough in a spray-painting garage\n• Checking whether the air is moist enough in a greenhouse\nInfra-red\n• Detecting motion in a room for a security system\n• Detecting whether a person is approaching automatic doors\nMagnetic field\n• Counting vehicles that cross a bridge\n• Monitoring vehicles that enter a car park"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Convert hexadecimal A2F to binary.",
+    "paperAnswer": "One mark for each correct nibble, in the correct order.\n1010 0010 1111"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Add binary numbers 00110000 and 01100110.",
+    "paperAnswer": "One mark for evidence of working, for example 2 carries\nOne mark for each correct nibble (Max 2)\n1 1\n0 0 1 1 0 0 0 0\n0 1 1 0 0 1 1 0\n1 0 0 1 0 1 1 0"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Add binary numbers 01001100 and 11100011.",
+    "paperAnswer": "One mark for each correct nibble (max 2)\nOne mark for correct working e.g. correct carries\nOne mark for showing overflow bit\n 1\n 1 1 1 0 0 0 1 1\n+ 0 1 0 0 1 1 0 0\n1 0 0 1 0 1 1 1 1"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Identify term that is not a data transmission method.",
+    "paperAnswer": "Parity"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about data transmission methods.",
+    "paperAnswer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about error detection methods.",
+    "paperAnswer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Describe operation of error detection system using odd parity and ARQ.",
+    "paperAnswer": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two input devices for automatic ticket reading.",
+    "paperAnswer": "Any two from e.g.\n• Barcode scanner\n• QR code scanner\n• Digital camera"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Explain why computer needs RAM.",
+    "paperAnswer": "Any three from:\n• To store data temporarily\n• To store data currently in use\n• To store software currently in use\n• Data can be accessed faster (than secondary storage)\n• To speed up the fetch stage (of the fetch-execute cycle)"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Identify correct statement about RAM.",
+    "paperAnswer": "It stores data currently in use"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Complete paragraph about fetching instruction into CPU.",
+    "paperAnswer": "address\nmemory address register // MAR\nrandom access memory // RAM\nmemory data register // MDR\ndata\ncurrent instruction register // CIR\ncontrol unit // CU"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Describe MAR role in FDE cycle.",
+    "paperAnswer": "Stores addresses …\n… of next instruction/data to be fetched // where data is to be written to"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Give two examples of system software.",
+    "paperAnswer": "Any two from:\n• Operating system\n• Utility software\nNOTE: Two examples of utility software can be awarded"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Describe difference between system and application software.",
+    "paperAnswer": "Any two from:\n• System software manages/maintains the hardware/software\n• Applications software allows the user to perform tasks"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "State purpose of firmware.",
+    "paperAnswer": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Give one example of firmware.",
+    "paperAnswer": "Any one from:\n• Bootstrap\n• Bootloader\n• BIOS\n• Operating system (in embedded system)\n• Programs (in embedded systems)"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Identify software used to find and remove malware.",
+    "paperAnswer": "Anti-malware"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Identify correct definition of spyware.",
+    "paperAnswer": "Software that records all key presses and transmits to third party"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table with two other malware examples and descriptions.",
+    "paperAnswer": "One mark for identification. E.g. One mark per bullet for description to max two each.\nVirus\n• Software/code that replicates\n• …when the user runs it // with an active host\n• Deletes/damages/corrupts data/files // takes up storage/memory space\nWorm\n• Software/code that replicates itself on a network\n• …without user input // without active host\n• Takes-up bandwidth\n• Deletes/damages/corrupts data/files // takes up storage/memory space\n• Opens back doors to computers over the network\n• Used to deposit other malware on networked computers\nTrojan horse\n• Software/code that is hidden within other software // Software that is disguised as authentic software\n• …when downloaded/installed the other malware/by example it contains is installed\nAdware\n• Software/code that generates/displays (unwanted) adverts on a user's computer\n• Some may contain spyware/other malware\n• Some when clicked may link to viruses\n• Reduces device performance // reduces internet speed\n• Redirects internet searches/user to fake websites\nRansomware\n• Software/code that stops a user accessing/using their computer/data\n• …by encrypting the data/files/computer\n• A fee has to be paid to decrypt the data // A fee has to be paid to 'release' the computer/device/data"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Give three other functions of web browser.",
+    "paperAnswer": "Any three from:\nDisplays a web page\nStoring bookmarks/favourites\nRecording user history\nAllowing use of multiple tabs\nStoring cookies\nProviding navigation tools\nCan set a home page"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two similarities and one difference between proxy-servers and firewalls.",
+    "paperAnswer": "One mark for each similarity to max two.\nOne mark for difference (both sides needed unless clearly and accurately implied).\nSimilarities e.g.\n• Check incoming and outgoing signals // filter traffic\n• Store whitelist/blacklist\n• Block incoming/outgoing signals\n• Both block unauthorised access\n• Keep a log of traffic\n• Both can be hardware or software (or both)\nDifferences e.g.\n• Proxy can hide user's IP address, firewall does not hide the user's IP address\n• Proxy intention is to divert attack from server, firewall is to stop unauthorised access\n• Proxy protects a server, firewall protects individual computer\n• Proxy examines/processes requests for a website but a firewall does not (checks type of signal) // Proxy processes client-side requests whereas firewall filters packets\n• Proxy transmits website data to the user, but a firewall does not (it allows valid signals)\n• Proxy allows faster access to a web page using cache, but a firewall does not (allow faster access or have cache)\n• Proxy can hide internal network from internet, but a firewall cannot"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Explain two advantages of cloud storage for company owners.",
+    "paperAnswer": "Four from e.g.:\n• The data can be accessed from any location\n• … meaning that employees can work from anywhere with a connection\n• The hardware is owned/maintained by a third party\n• … meaning that the company are not responsible for maintaining // meaning the company aren't responsible for its security\n• Can increase the storage needed easily\n• … without needing to buy new hardware\n• Do not need to house the hardware needed\n• … costs can be saved on the space saved for this\n• Cloud system will back up the data\n• … meaning the company does not need to do this"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Give three characteristics of a robot.",
+    "paperAnswer": "Any three from:\n• It has a mechanical structure/framework\n• It has electrical components\n• It is programmable\n• It can move"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Describe meaning of AI.",
+    "paperAnswer": "Any two from:\n• The **simulation** of intelligent behaviours by computers\n• A collection of data and the rules for using that data\n• Has the ability to reason\n• Has the ability to learn/adapt"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Describe characteristics of AI.",
+    "paperAnswer": "Any three from:\ne.g.\n• Collects data\n• Stores rules for using that data\n• The ability to reason\n• The ability to learn // uses machine learning\n• ... by adapting what it does\n• ... for example, from mistakes to not make them again // result from previous decisions impacts future\n• ... by changing its own rules\n• ...by changing its own data\n• ...by being trained\n• Makes one or more predictions (to make a decision)\n• Find/analyse patterns"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how machine learning improves robot.",
+    "paperAnswer": "Any two from:\n• The robot can now adapt itself by changing its own rules/data/ processes\n• The robot will become more efficient\n• ... as it has a greater knowledge of its surroundings/environment\n• ... as it can remember where a fence is\n• ... as it can remember the route it needs to take\n• ... as it can remember where any obstacles are to avoid\n• ... as it can remember where to start and stop sowing seeds\n• ... as it may make fewer errors"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Describe machine learning capabilities.",
+    "paperAnswer": "Any four from:\ne.g.\n• It is a form of artificial intelligence\n• Means it can adapt/change (its own processes) // It can edit its own algorithms\n• It can edit its own data\n• It can be trained\n• … this can be supervised/unsupervised\n• … meaning it can learn with/without human interaction\n• Analyses patterns and stores successful/unsuccessful results …\n• … to influence future decisions\n• (Supervised) means a user tells the system the input and output\n• (Unsupervised) means the system is given the input and needs to work out the output"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper1.json",
+    "question": "Give two characteristics of embedded system.",
+    "paperAnswer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Outline role of procedures and functions in maintainable programs.",
+    "paperAnswer": "• Procedures / functions divide the program into smaller manageable segments\n• … making it more readable / easier to understand / easier to debug\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\n• Procedures and functions can reduce / eliminate (repeated) code"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Describe characteristics of string and char data types with examples.",
+    "paperAnswer": "String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\nChar: a single character, X"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to use a procedure named Average that passes values 25 and 50.",
+    "paperAnswer": "CALL Average (25, 50)"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output array contents until data ends.",
+    "paperAnswer": "Count ← 1\nWHILE Count <= 50 AND People[Count, 1] <> \"\" DO\n    OUTPUT People[Count, 1]\n    OUTPUT People[Count, 2]\n    OUTPUT People[Count, 3]\n    Count ← Count + 1\nENDWHILE"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Explain how to prevent exceeding array size of 50.",
+    "paperAnswer": "• Declare/use a variable that is set to the maximum size of the array\n• ... at the start of the program\n• After line 18\n• ... check that the value of the counting variable is not greater than the array maximum variable\n• ... and if it is do not allow any more entries / set the value of Response to 'N' / add additional condition to UNTIL statement that checks if the counting variable is at maximum"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to implement bubble sort for an array of N items.",
+    "paperAnswer": "FOR i ← 1 TO N - 1\n    FOR j ← 1 TO N - i\n        IF A[j] > A[j + 1]\n        THEN\n            Temp ← A[j]\n            A[j] ← A[j + 1]\n            A[j + 1] ← Temp\n        ENDIF\n    NEXT j\nNEXT i\nOUTPUT A"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "State how arithmetic, Boolean, logical operators are used with examples.",
+    "paperAnswer": "• arithmetic – used in calculations (1) A ← B + C (1)\n• Boolean – used for operations with true or false values (1) IF B AND C (1)\n• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output average rounded to 1 decimal place.",
+    "paperAnswer": "OUTPUT \"The average of the numbers entered is \", ROUND(Total / Limit,1)"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to read file and output string in uppercase and length.",
+    "paperAnswer": "DECLARE Words : STRING\nOPENFILE Quotation.txt FOR READ\nREADFILE Quotation.txt, Words\nOUTPUT UCASE(Words), LENGTH(Words)\nCLOSEFILE Quotation.txt"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to extract 'Computer Science' from string.",
+    "paperAnswer": "FullText ← \"IGCSE Computer Science at Cambridge\"\nPartText ← SUBSTRING(FullText, 7, 16)\nOUTPUT PartText, UCASE(FullText)"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Outline why it is useful to store data in a file.",
+    "paperAnswer": "• Data stored in a file gives a permanent copy / prevents the data from being lost\n• ... so it can be recalled / used again in a program / in another program\n• can be stored elsewhere / transferred to another computer"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "State whether any field suitable as primary key and give reason.",
+    "paperAnswer": "None of the fields are likely to contain unique data."
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Identify field most appropriate primary key for Contract table.",
+    "paperAnswer": "ContractNumber"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "Describe what is meant by extreme test data.",
+    "paperAnswer": "Test data to test the limits of acceptable data entry … that will only accept the largest and smallest acceptable values."
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "24paper2.json",
+    "question": "State improved identifiers for L, S, T, A.",
+    "paperAnswer": "L → Largest / Maximum\nS → Smallest / Minimum\nT → Total / Sum\nA → Average / Mean"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode for double entry verification check.",
+    "paperAnswer": "INPUT firstEntry\nINPUT secondEntry\nIF firstEntry = secondEntry THEN\n  OUTPUT \"Accepted\"\nELSE\n  OUTPUT \"Mismatch\"\nENDIF"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode to search for a value in an array and output its index or -1.",
+    "paperAnswer": "INPUT target\nindex <- -1\nFOR i <- 1 TO 100\n  IF array[i] = target THEN\n    index <- i\n  ENDIF\nNEXT i\nOUTPUT index"
+  },
+  {
+    "unitId": "cs-6",
+    "term": "AR",
+    "unitDef": "Augmented reality overlaying digital content onto the real world.",
+    "paperFile": "25paper2.json",
+    "question": "Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\n\nOriginal:\nFOR Count 1 TO 10\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] Name\nNEXT Count",
+    "paperAnswer": "Count ← 1\nREPEAT\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] ← Name\n  Count ← Count + 1\nUNTIL Count > 10"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Abstraction",
+    "unitDef": "Hiding unnecessary detail to focus on relevant aspects.",
+    "paperFile": "24paper2.json",
+    "question": "Outline role of procedures and functions in maintainable programs.",
+    "paperAnswer": "• Procedures / functions divide the program into smaller manageable segments\n• … making it more readable / easier to understand / easier to debug\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\n• Procedures and functions can reduce / eliminate (repeated) code"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Abstraction",
+    "unitDef": "Hiding unnecessary detail to focus on relevant aspects.",
+    "paperFile": "24paper2.json",
+    "question": "Identify three tasks in analysis stage of program development.",
+    "paperAnswer": "• abstraction\n• decomposition\n• identification of problem / identification of requirements // outline of success criteria"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "unitDef": "Finite sequence of steps to solve a problem.",
+    "paperFile": "24paper1.json",
+    "question": "Explain symmetric encryption.",
+    "paperAnswer": "Data is encrypted and decrypted using the same key (1 mark)\nAny three from:\n• Plain text is encrypted into cipher text // cipher text is decrypted into plain text\n• Data is encrypted using an algorithm ...\n• ... that uses a key\n• The key can be generated using an algorithm\n• The key is transmitted to the receiver"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "unitDef": "Finite sequence of steps to solve a problem.",
+    "paperFile": "24paper2.json",
+    "question": "Write algorithm to total numbers input until 9999.9.",
+    "paperAnswer": "Total ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    Total ← Total + Value\n    INPUT Value\nENDWHILE\nOUTPUT Total"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "unitDef": "Finite sequence of steps to solve a problem.",
+    "paperFile": "24paper2.json",
+    "question": "Write algorithm to count values > 100.",
+    "paperAnswer": "Counter ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    IF Value > 100\n    THEN\n        Counter ← Counter + 1\n    ENDIF\n    INPUT Value\nENDWHILE\nOUTPUT Counter"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "unitDef": "Finite sequence of steps to solve a problem.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to implement bubble sort for an array of N items.",
+    "paperAnswer": "FOR i ← 1 TO N - 1\n    FOR j ← 1 TO N - i\n        IF A[j] > A[j + 1]\n        THEN\n            Temp ← A[j]\n            A[j] ← A[j + 1]\n            A[j + 1] ← Temp\n        ENDIF\n    NEXT j\nNEXT i\nOUTPUT A"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "unitDef": "Finite sequence of steps to solve a problem.",
+    "paperFile": "25paper2.json",
+    "question": "Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\n\nOriginal:\nFOR Count 1 TO 10\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] Name\nNEXT Count",
+    "paperAnswer": "Count ← 1\nREPEAT\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] ← Name\n  Count ← Count + 1\nUNTIL Count > 10"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "unitDef": "Finite sequence of steps to solve a problem.",
+    "paperFile": "25paper2.json",
+    "question": "A telephone number with 13 characters is input. The first character is a '+', followed by a 2-digit country code, for example: +20xxxxxxxxxx where 20 is the country code and x is a digit between 0 and 9 inclusive. The algorithm includes checks for the country codes: 44 for the UK and 20 for Egypt.\n\n(a) Write an algorithm using pseudocode to: input the telephone number, extract the 2-digit country code, output the matching country, output 'Unknown' if there is no matching country.\n\n(b) Explain how you could change the algorithm to repeatedly prompt for the telephone number until the number entered is 13 characters in length.",
+    "paperAnswer": "(a) Example:\nOUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nValue ← SUBSTRING(Telephone, 2, 2)\nIF Value = \"44\"\n  THEN OUTPUT \"UK\"\nELSE IF Value = \"20\"\n  THEN OUTPUT \"Egypt\"\nELSE\n  OUTPUT \"Unknown\"\nENDIF\n\n(b) Example approach:\nUse a loop to check length: REPEAT OUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nUNTIL LENGTH(Telephone) = 13"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "unitDef": "Finite sequence of steps to solve a problem.",
+    "paperFile": "25paper2.json",
+    "question": "An algorithm has been written in pseudocode to generate a random integer between 1 and 100 inclusive and store the value in N. The user enters a guess for the number and the algorithm indicates whether the guess is higher or lower than the random number. The algorithm outputs the number of guesses when the user has correctly guessed the random number. Identify the line numbers of the four errors in the pseudocode and suggest a correction for each error.",
+    "paperAnswer": "Corrections (example):\nLine 02 – should be N ← ROUND(RANDOM() * 99, 0) + 1\nLine 12 – should be OUTPUT \"The number is higher than your guess\"\nLine 14/15 – Counter ← Counter + 1 should be placed after ENDIF / before UNTIL G = N\nLine 17 – should be OUTPUT \"Well done, you took \", Counter, \" attempts\""
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to use a procedure named Average that passes values 25 and 50.",
+    "paperAnswer": "CALL Average (25, 50)"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode using CASE statement for input 1-4.",
+    "paperAnswer": "INPUT Number\nCASE OF Number\n    1 : OUTPUT Number\n    2 : OUTPUT Number\n    3 : OUTPUT Number\n    4 : OUTPUT Number\n    OTHERWISE OUTPUT \"ERROR\"\nENDCASE"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output array contents until data ends.",
+    "paperAnswer": "Count ← 1\nWHILE Count <= 50 AND People[Count, 1] <> \"\" DO\n    OUTPUT People[Count, 1]\n    OUTPUT People[Count, 2]\n    OUTPUT People[Count, 3]\n    Count ← Count + 1\nENDWHILE"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to implement bubble sort for an array of N items.",
+    "paperAnswer": "FOR i ← 1 TO N - 1\n    FOR j ← 1 TO N - i\n        IF A[j] > A[j + 1]\n        THEN\n            Temp ← A[j]\n            A[j] ← A[j + 1]\n            A[j + 1] ← Temp\n        ENDIF\n    NEXT j\nNEXT i\nOUTPUT A"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to check product code is 6 characters.",
+    "paperAnswer": "REPEAT\n    INPUT Product\nUNTIL LENGTH (Product) = 6"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to check first two chars are 'PD'.",
+    "paperAnswer": "REPEAT\n    INPUT Product\nUNTIL SUBSTRING (Product, 1, 2) = \"PD\""
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output average rounded to 1 decimal place.",
+    "paperAnswer": "OUTPUT \"The average of the numbers entered is \", ROUND(Total / Limit,1)"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to read file and output string in uppercase and length.",
+    "paperAnswer": "DECLARE Words : STRING\nOPENFILE Quotation.txt FOR READ\nREADFILE Quotation.txt, Words\nOUTPUT UCASE(Words), LENGTH(Words)\nCLOSEFILE Quotation.txt"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to extract 'Computer Science' from string.",
+    "paperAnswer": "FullText ← \"IGCSE Computer Science at Cambridge\"\nPartText ← SUBSTRING(FullText, 7, 16)\nOUTPUT PartText, UCASE(FullText)"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to store string in file and close.",
+    "paperAnswer": "OPENFILE \"Subjects.txt\" FOR WRITE\nWRITEFILE \"Subjects.txt\", PartText\nCLOSEFILE \"Subjects.txt\""
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode for double entry verification check.",
+    "paperAnswer": "INPUT firstEntry\nINPUT secondEntry\nIF firstEntry = secondEntry THEN\n  OUTPUT \"Accepted\"\nELSE\n  OUTPUT \"Mismatch\"\nENDIF"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode to validate integer input between 1 and 100 inclusive.",
+    "paperAnswer": "REPEAT\n  INPUT n\nUNTIL n >= 1 AND n <= 100"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode to search for a value in an array and output its index or -1.",
+    "paperAnswer": "INPUT target\nindex <- -1\nFOR i <- 1 TO 100\n  IF array[i] = target THEN\n    index <- i\n  ENDIF\nNEXT i\nOUTPUT index"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "25paper2.json",
+    "question": "Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\n\nOriginal:\nFOR Count 1 TO 10\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] Name\nNEXT Count",
+    "paperAnswer": "Count ← 1\nREPEAT\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] ← Name\n  Count ← Count + 1\nUNTIL Count > 10"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "25paper2.json",
+    "question": "A telephone number with 13 characters is input. The first character is a '+', followed by a 2-digit country code, for example: +20xxxxxxxxxx where 20 is the country code and x is a digit between 0 and 9 inclusive. The algorithm includes checks for the country codes: 44 for the UK and 20 for Egypt.\n\n(a) Write an algorithm using pseudocode to: input the telephone number, extract the 2-digit country code, output the matching country, output 'Unknown' if there is no matching country.\n\n(b) Explain how you could change the algorithm to repeatedly prompt for the telephone number until the number entered is 13 characters in length.",
+    "paperAnswer": "(a) Example:\nOUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nValue ← SUBSTRING(Telephone, 2, 2)\nIF Value = \"44\"\n  THEN OUTPUT \"UK\"\nELSE IF Value = \"20\"\n  THEN OUTPUT \"Egypt\"\nELSE\n  OUTPUT \"Unknown\"\nENDIF\n\n(b) Example approach:\nUse a loop to check length: REPEAT OUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nUNTIL LENGTH(Telephone) = 13"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "unitDef": "Structured English describing algorithms independent of language.",
+    "paperFile": "25paper2.json",
+    "question": "An algorithm has been written in pseudocode to generate a random integer between 1 and 100 inclusive and store the value in N. The user enters a guess for the number and the algorithm indicates whether the guess is higher or lower than the random number. The algorithm outputs the number of guesses when the user has correctly guessed the random number. Identify the line numbers of the four errors in the pseudocode and suggest a correction for each error.",
+    "paperAnswer": "Corrections (example):\nLine 02 – should be N ← ROUND(RANDOM() * 99, 0) + 1\nLine 12 – should be OUTPUT \"The number is higher than your guess\"\nLine 14/15 – Counter ← Counter + 1 should be placed after ENDIF / before UNTIL G = N\nLine 17 – should be OUTPUT \"Well done, you took \", Counter, \" attempts\""
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Validation",
+    "unitDef": "Checking input meets format or constraints.",
+    "paperFile": "24paper2.json",
+    "question": "Explain how to prevent exceeding array size of 50.",
+    "paperAnswer": "• Declare/use a variable that is set to the maximum size of the array\n• ... at the start of the program\n• After line 18\n• ... check that the value of the counting variable is not greater than the array maximum variable\n• ... and if it is do not allow any more entries / set the value of Response to 'N' / add additional condition to UNTIL statement that checks if the counting variable is at maximum"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Validation",
+    "unitDef": "Checking input meets format or constraints.",
+    "paperFile": "24paper2.json",
+    "question": "Identify three validation checks for product code rules.",
+    "paperAnswer": "• length check ... to ensure the product code entered is 6 characters in length\n• format check ... to ensure the first two characters of the product code entered are \"PD\"\n• range check ... to ensure that the value of the last four figures of the product code entered is between 1000 and 9999"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Validation",
+    "unitDef": "Checking input meets format or constraints.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to check product code is 6 characters.",
+    "paperAnswer": "REPEAT\n    INPUT Product\nUNTIL LENGTH (Product) = 6"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Validation",
+    "unitDef": "Checking input meets format or constraints.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to check first two chars are 'PD'.",
+    "paperAnswer": "REPEAT\n    INPUT Product\nUNTIL SUBSTRING (Product, 1, 2) = \"PD\""
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Validation",
+    "unitDef": "Checking input meets format or constraints.",
+    "paperFile": "24paper2.json",
+    "question": "Explain how to validate numbers between 1 and 500 inclusive.",
+    "paperAnswer": "• After line 09 / after the input\n• Insert a WHILE / pre-condition loop...\n• ... to check if the value entered is between 1 and 500 inclusive\n• If the value is not in range, output an error message\n• ... and insert another input statement for re-input."
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Validation",
+    "unitDef": "Checking input meets format or constraints.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode to validate integer input between 1 and 100 inclusive.",
+    "paperAnswer": "REPEAT\n  INPUT n\nUNTIL n >= 1 AND n <= 100"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Verification",
+    "unitDef": "Ensuring product meets specification and intent.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode for double entry verification check.",
+    "paperAnswer": "INPUT firstEntry\nINPUT secondEntry\nIF firstEntry = secondEntry THEN\n  OUTPUT \"Accepted\"\nELSE\n  OUTPUT \"Mismatch\"\nENDIF"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Linear search",
+    "unitDef": "Searching sequentially through a list.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode to search for a value in an array and output its index or -1.",
+    "paperAnswer": "INPUT target\nindex <- -1\nFOR i <- 1 TO 100\n  IF array[i] = target THEN\n    index <- i\n  ENDIF\nNEXT i\nOUTPUT index"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Binary search",
+    "unitDef": "Searching a sorted list by halving the search space.",
+    "paperFile": "24paper1.json",
+    "question": "Convert hexadecimal A2F to binary.",
+    "paperAnswer": "One mark for each correct nibble, in the correct order.\n1010 0010 1111"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Bubble sort",
+    "unitDef": "Repeatedly swapping adjacent out-of-order elements.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to implement bubble sort for an array of N items.",
+    "paperAnswer": "FOR i ← 1 TO N - 1\n    FOR j ← 1 TO N - i\n        IF A[j] > A[j + 1]\n        THEN\n            Temp ← A[j]\n            A[j] ← A[j + 1]\n            A[j + 1] ← Temp\n        ENDIF\n    NEXT j\nNEXT i\nOUTPUT A"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Efficiency",
+    "unitDef": "Measure of resources used by an algorithm.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how machine learning improves robot.",
+    "paperAnswer": "Any two from:\n• The robot can now adapt itself by changing its own rules/data/ processes\n• The robot will become more efficient\n• ... as it has a greater knowledge of its surroundings/environment\n• ... as it can remember where a fence is\n• ... as it can remember the route it needs to take\n• ... as it can remember where any obstacles are to avoid\n• ... as it can remember where to start and stop sowing seeds\n• ... as it may make fewer errors"
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Efficiency",
+    "unitDef": "Measure of resources used by an algorithm.",
+    "paperFile": "24paper1.json",
+    "question": "Give two advantages of using automated robot for planting.",
+    "paperAnswer": "Any two from:\n• The robot is more accurate when planting seeds\n• The robot does not need to take breaks // works 24/7\n• The robot will not get bored of performing a repetitive task\n• The farmer can perform other tasks whilst the robot is planting the seeds\n• The robot may be faster/more efficient (at planting seeds)\n• Safer as the robot can work in a more dangerous environments (e.g. with animals in a field)\n• Doesn't need to pay labour costs/wages"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Integer",
+    "unitDef": "Whole number data type.",
+    "paperFile": "24paper2.json",
+    "question": "State what is meant by integer and real data types with examples.",
+    "paperAnswer": "Integer: a whole number … Example 27\nReal: a number that contains a fractional part … Example 18.75"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Integer",
+    "unitDef": "Whole number data type.",
+    "paperFile": "24paper2.json",
+    "question": "Complete table for data types of fields.",
+    "paperAnswer": "ContractNumber: text/alphanumeric\nMonths: integer\nEndDate: date/time\nSport: Boolean"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Integer",
+    "unitDef": "Whole number data type.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode to validate integer input between 1 and 100 inclusive.",
+    "paperAnswer": "REPEAT\n  INPUT n\nUNTIL n >= 1 AND n <= 100"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Integer",
+    "unitDef": "Whole number data type.",
+    "paperFile": "25paper2.json",
+    "question": "An algorithm has been written in pseudocode to generate a random integer between 1 and 100 inclusive and store the value in N. The user enters a guess for the number and the algorithm indicates whether the guess is higher or lower than the random number. The algorithm outputs the number of guesses when the user has correctly guessed the random number. Identify the line numbers of the four errors in the pseudocode and suggest a correction for each error.",
+    "paperAnswer": "Corrections (example):\nLine 02 – should be N ← ROUND(RANDOM() * 99, 0) + 1\nLine 12 – should be OUTPUT \"The number is higher than your guess\"\nLine 14/15 – Counter ← Counter + 1 should be placed after ENDIF / before UNTIL G = N\nLine 17 – should be OUTPUT \"Well done, you took \", Counter, \" attempts\""
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Real",
+    "unitDef": "Numeric data type representing real numbers (IG scope: used without floating-point internals).",
+    "paperFile": "24paper1.json",
+    "question": "Give two characteristics of embedded system.",
+    "paperAnswer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Real",
+    "unitDef": "Numeric data type representing real numbers (IG scope: used without floating-point internals).",
+    "paperFile": "24paper2.json",
+    "question": "State what is meant by integer and real data types with examples.",
+    "paperAnswer": "Integer: a whole number … Example 27\nReal: a number that contains a fractional part … Example 18.75"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Boolean",
+    "unitDef": "Logical true/false data type.",
+    "paperFile": "24paper2.json",
+    "question": "State how arithmetic, Boolean, logical operators are used with examples.",
+    "paperAnswer": "• arithmetic – used in calculations (1) A ← B + C (1)\n• Boolean – used for operations with true or false values (1) IF B AND C (1)\n• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Boolean",
+    "unitDef": "Logical true/false data type.",
+    "paperFile": "24paper2.json",
+    "question": "Complete table for data types of fields.",
+    "paperAnswer": "ContractNumber: text/alphanumeric\nMonths: integer\nEndDate: date/time\nSport: Boolean"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Character",
+    "unitDef": "Single symbol data type.",
+    "paperFile": "24paper1.json",
+    "question": "Identify correct statement about RAM.",
+    "paperAnswer": "It stores data currently in use"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Character",
+    "unitDef": "Single symbol data type.",
+    "paperFile": "24paper1.json",
+    "question": "Give three characteristics of a robot.",
+    "paperAnswer": "Any three from:\n• It has a mechanical structure/framework\n• It has electrical components\n• It is programmable\n• It can move"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Character",
+    "unitDef": "Single symbol data type.",
+    "paperFile": "24paper1.json",
+    "question": "Describe characteristics of AI.",
+    "paperAnswer": "Any three from:\ne.g.\n• Collects data\n• Stores rules for using that data\n• The ability to reason\n• The ability to learn // uses machine learning\n• ... by adapting what it does\n• ... for example, from mistakes to not make them again // result from previous decisions impacts future\n• ... by changing its own rules\n• ...by changing its own data\n• ...by being trained\n• Makes one or more predictions (to make a decision)\n• Find/analyse patterns"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Character",
+    "unitDef": "Single symbol data type.",
+    "paperFile": "24paper1.json",
+    "question": "Give two characteristics of embedded system.",
+    "paperAnswer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Character",
+    "unitDef": "Single symbol data type.",
+    "paperFile": "24paper2.json",
+    "question": "Describe characteristics of string and char data types with examples.",
+    "paperAnswer": "String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\nChar: a single character, X"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Character",
+    "unitDef": "Single symbol data type.",
+    "paperFile": "25paper2.json",
+    "question": "A telephone number with 13 characters is input. The first character is a '+', followed by a 2-digit country code, for example: +20xxxxxxxxxx where 20 is the country code and x is a digit between 0 and 9 inclusive. The algorithm includes checks for the country codes: 44 for the UK and 20 for Egypt.\n\n(a) Write an algorithm using pseudocode to: input the telephone number, extract the 2-digit country code, output the matching country, output 'Unknown' if there is no matching country.\n\n(b) Explain how you could change the algorithm to repeatedly prompt for the telephone number until the number entered is 13 characters in length.",
+    "paperAnswer": "(a) Example:\nOUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nValue ← SUBSTRING(Telephone, 2, 2)\nIF Value = \"44\"\n  THEN OUTPUT \"UK\"\nELSE IF Value = \"20\"\n  THEN OUTPUT \"Egypt\"\nELSE\n  OUTPUT \"Unknown\"\nENDIF\n\n(b) Example approach:\nUse a loop to check length: REPEAT OUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nUNTIL LENGTH(Telephone) = 13"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String",
+    "unitDef": "Sequence of characters.",
+    "paperFile": "24paper2.json",
+    "question": "Describe characteristics of string and char data types with examples.",
+    "paperAnswer": "String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\nChar: a single character, X"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String",
+    "unitDef": "Sequence of characters.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to check first two chars are 'PD'.",
+    "paperAnswer": "REPEAT\n    INPUT Product\nUNTIL SUBSTRING (Product, 1, 2) = \"PD\""
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String",
+    "unitDef": "Sequence of characters.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to read file and output string in uppercase and length.",
+    "paperAnswer": "DECLARE Words : STRING\nOPENFILE Quotation.txt FOR READ\nREADFILE Quotation.txt, Words\nOUTPUT UCASE(Words), LENGTH(Words)\nCLOSEFILE Quotation.txt"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String",
+    "unitDef": "Sequence of characters.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to extract 'Computer Science' from string.",
+    "paperAnswer": "FullText ← \"IGCSE Computer Science at Cambridge\"\nPartText ← SUBSTRING(FullText, 7, 16)\nOUTPUT PartText, UCASE(FullText)"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String",
+    "unitDef": "Sequence of characters.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to store string in file and close.",
+    "paperAnswer": "OPENFILE \"Subjects.txt\" FOR WRITE\nWRITEFILE \"Subjects.txt\", PartText\nCLOSEFILE \"Subjects.txt\""
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String",
+    "unitDef": "Sequence of characters.",
+    "paperFile": "25paper2.json",
+    "question": "A telephone number with 13 characters is input. The first character is a '+', followed by a 2-digit country code, for example: +20xxxxxxxxxx where 20 is the country code and x is a digit between 0 and 9 inclusive. The algorithm includes checks for the country codes: 44 for the UK and 20 for Egypt.\n\n(a) Write an algorithm using pseudocode to: input the telephone number, extract the 2-digit country code, output the matching country, output 'Unknown' if there is no matching country.\n\n(b) Explain how you could change the algorithm to repeatedly prompt for the telephone number until the number entered is 13 characters in length.",
+    "paperAnswer": "(a) Example:\nOUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nValue ← SUBSTRING(Telephone, 2, 2)\nIF Value = \"44\"\n  THEN OUTPUT \"UK\"\nELSE IF Value = \"20\"\n  THEN OUTPUT \"Egypt\"\nELSE\n  OUTPUT \"Unknown\"\nENDIF\n\n(b) Example approach:\nUse a loop to check length: REPEAT OUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nUNTIL LENGTH(Telephone) = 13"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Sequence",
+    "unitDef": "Ordered execution of statements.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two items in packet header.",
+    "paperAnswer": "Any two from:\ne.g.\n• Destination IP/address\n• Packet number\n• Originators IP/address\n• Error detection method"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Selection",
+    "unitDef": "Branching based on a condition (IF/ELSE).",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode using CASE statement for input 1-4.",
+    "paperAnswer": "INPUT Number\nCASE OF Number\n    1 : OUTPUT Number\n    2 : OUTPUT Number\n    3 : OUTPUT Number\n    4 : OUTPUT Number\n    OTHERWISE OUTPUT \"ERROR\"\nENDCASE"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Selection",
+    "unitDef": "Branching based on a condition (IF/ELSE).",
+    "paperFile": "24paper2.json",
+    "question": "Write algorithm to count values > 100.",
+    "paperAnswer": "Counter ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    IF Value > 100\n    THEN\n        Counter ← Counter + 1\n    ENDIF\n    INPUT Value\nENDWHILE\nOUTPUT Counter"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Iteration",
+    "unitDef": "Looping to repeat a block of code.",
+    "paperFile": "24paper2.json",
+    "question": "Write algorithm to total numbers input until 9999.9.",
+    "paperAnswer": "Total ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    Total ← Total + Value\n    INPUT Value\nENDWHILE\nOUTPUT Total"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Iteration",
+    "unitDef": "Looping to repeat a block of code.",
+    "paperFile": "24paper2.json",
+    "question": "Write algorithm to count values > 100.",
+    "paperAnswer": "Counter ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    IF Value > 100\n    THEN\n        Counter ← Counter + 1\n    ENDIF\n    INPUT Value\nENDWHILE\nOUTPUT Counter"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Iteration",
+    "unitDef": "Looping to repeat a block of code.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output array contents until data ends.",
+    "paperAnswer": "Count ← 1\nWHILE Count <= 50 AND People[Count, 1] <> \"\" DO\n    OUTPUT People[Count, 1]\n    OUTPUT People[Count, 2]\n    OUTPUT People[Count, 3]\n    Count ← Count + 1\nENDWHILE"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "FOR loop",
+    "unitDef": "Definite iteration over a range or count.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output array contents until data ends.",
+    "paperAnswer": "Count ← 1\nWHILE Count <= 50 AND People[Count, 1] <> \"\" DO\n    OUTPUT People[Count, 1]\n    OUTPUT People[Count, 2]\n    OUTPUT People[Count, 3]\n    Count ← Count + 1\nENDWHILE"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "WHILE loop",
+    "unitDef": "Indefinite iteration while condition is true.",
+    "paperFile": "24paper2.json",
+    "question": "Explain how to validate numbers between 1 and 500 inclusive.",
+    "paperAnswer": "• After line 09 / after the input\n• Insert a WHILE / pre-condition loop...\n• ... to check if the value entered is between 1 and 500 inclusive\n• If the value is not in range, output an error message\n• ... and insert another input statement for re-input."
+  },
+  {
+    "unitId": "apl-8",
+    "term": "WHILE loop",
+    "unitDef": "Indefinite iteration while condition is true.",
+    "paperFile": "25paper2.json",
+    "question": "Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\n\nOriginal:\nFOR Count 1 TO 10\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] Name\nNEXT Count",
+    "paperAnswer": "Count ← 1\nREPEAT\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] ← Name\n  Count ← Count + 1\nUNTIL Count > 10"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Array",
+    "unitDef": "Indexed collection of elements of the same type.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output array contents until data ends.",
+    "paperAnswer": "Count ← 1\nWHILE Count <= 50 AND People[Count, 1] <> \"\" DO\n    OUTPUT People[Count, 1]\n    OUTPUT People[Count, 2]\n    OUTPUT People[Count, 3]\n    Count ← Count + 1\nENDWHILE"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Array",
+    "unitDef": "Indexed collection of elements of the same type.",
+    "paperFile": "24paper2.json",
+    "question": "Explain how to prevent exceeding array size of 50.",
+    "paperAnswer": "• Declare/use a variable that is set to the maximum size of the array\n• ... at the start of the program\n• After line 18\n• ... check that the value of the counting variable is not greater than the array maximum variable\n• ... and if it is do not allow any more entries / set the value of Response to 'N' / add additional condition to UNTIL statement that checks if the counting variable is at maximum"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Array",
+    "unitDef": "Indexed collection of elements of the same type.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to implement bubble sort for an array of N items.",
+    "paperAnswer": "FOR i ← 1 TO N - 1\n    FOR j ← 1 TO N - i\n        IF A[j] > A[j + 1]\n        THEN\n            Temp ← A[j]\n            A[j] ← A[j + 1]\n            A[j + 1] ← Temp\n        ENDIF\n    NEXT j\nNEXT i\nOUTPUT A"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Array",
+    "unitDef": "Indexed collection of elements of the same type.",
+    "paperFile": "25paper2.json",
+    "question": "Write pseudocode to search for a value in an array and output its index or -1.",
+    "paperAnswer": "INPUT target\nindex <- -1\nFOR i <- 1 TO 100\n  IF array[i] = target THEN\n    index <- i\n  ENDIF\nNEXT i\nOUTPUT index"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Array",
+    "unitDef": "Indexed collection of elements of the same type.",
+    "paperFile": "25paper2.json",
+    "question": "Rewrite the algorithm in pseudocode, using a condition-controlled loop instead of a count-controlled loop.\n\nOriginal:\nFOR Count 1 TO 10\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] Name\nNEXT Count",
+    "paperAnswer": "Count ← 1\nREPEAT\n  OUTPUT \"Please enter a name\"\n  INPUT Name\n  Names[Count] ← Name\n  Count ← Count + 1\nUNTIL Count > 10"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "2D Array",
+    "unitDef": "Array of arrays accessed by row and column.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output array contents until data ends.",
+    "paperAnswer": "Count ← 1\nWHILE Count <= 50 AND People[Count, 1] <> \"\" DO\n    OUTPUT People[Count, 1]\n    OUTPUT People[Count, 2]\n    OUTPUT People[Count, 3]\n    Count ← Count + 1\nENDWHILE"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Procedure",
+    "unitDef": "Subroutine that does not return a value.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to use a procedure named Average that passes values 25 and 50.",
+    "paperAnswer": "CALL Average (25, 50)"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Function",
+    "unitDef": "Subroutine that returns a value.",
+    "paperFile": "24paper1.json",
+    "question": "Give two OS functions related to memory.",
+    "paperAnswer": "Example:\n• Memory management\n• Multitasking"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Function",
+    "unitDef": "Subroutine that returns a value.",
+    "paperFile": "24paper1.json",
+    "question": "Give three other functions of web browser.",
+    "paperAnswer": "Any three from:\nDisplays a web page\nStoring bookmarks/favourites\nRecording user history\nAllowing use of multiple tabs\nStoring cookies\nProviding navigation tools\nCan set a home page"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Function",
+    "unitDef": "Subroutine that returns a value.",
+    "paperFile": "24paper1.json",
+    "question": "Identify web browser function for automatic payment details.",
+    "paperAnswer": "Storing cookies"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Function",
+    "unitDef": "Subroutine that returns a value.",
+    "paperFile": "24paper1.json",
+    "question": "Give two characteristics of embedded system.",
+    "paperAnswer": "Any two from:\n• Performs a single/limited/dedicated function/task\n• It has a microprocessor\n• It has dedicated hardware\n• Uses firmware\n• It is normally built into a larger device/system\n• User normally cannot reprogram\n• It does not require much power\n• It is cheap to manufacture\n• Works automatically // works without human intervention\n• It is small (in size)\n• It is a real-time system"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Parameter",
+    "unitDef": "Variable used to pass data into a subroutine.",
+    "paperFile": "24paper1.json",
+    "question": "Explain why computer needs RAM.",
+    "paperAnswer": "Any three from:\n• To store data temporarily\n• To store data currently in use\n• To store software currently in use\n• Data can be accessed faster (than secondary storage)\n• To speed up the fetch stage (of the fetch-execute cycle)"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Parameter",
+    "unitDef": "Variable used to pass data into a subroutine.",
+    "paperFile": "24paper1.json",
+    "question": "Identify correct statement about RAM.",
+    "paperAnswer": "It stores data currently in use"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Parameter",
+    "unitDef": "Variable used to pass data into a subroutine.",
+    "paperFile": "24paper1.json",
+    "question": "Complete description about virtual memory.",
+    "paperAnswer": "One mark for each correct term in the correct order:\n• Random access memory (RAM)\n• Hard disk drive (HDD)\n• Pages\n• Random access memory (RAM)\n• Virtual memory // Hard disk drive (HDD)"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Parameter",
+    "unitDef": "Variable used to pass data into a subroutine.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to use a procedure named Average that passes values 25 and 50.",
+    "paperAnswer": "CALL Average (25, 50)"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "ROUND",
+    "unitDef": "Rounds a number to a specified number of decimal places.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to output average rounded to 1 decimal place.",
+    "paperAnswer": "OUTPUT \"The average of the numbers entered is \", ROUND(Total / Limit,1)"
+  },
+  {
+    "unitId": "apl-8",
+    "term": "ROUND",
+    "unitDef": "Rounds a number to a specified number of decimal places.",
+    "paperFile": "25paper2.json",
+    "question": "An algorithm has been written in pseudocode to generate a random integer between 1 and 100 inclusive and store the value in N. The user enters a guess for the number and the algorithm indicates whether the guess is higher or lower than the random number. The algorithm outputs the number of guesses when the user has correctly guessed the random number. Identify the line numbers of the four errors in the pseudocode and suggest a correction for each error.",
+    "paperAnswer": "Corrections (example):\nLine 02 – should be N ← ROUND(RANDOM() * 99, 0) + 1\nLine 12 – should be OUTPUT \"The number is higher than your guess\"\nLine 14/15 – Counter ← Counter + 1 should be placed after ENDIF / before UNTIL G = N\nLine 17 – should be OUTPUT \"Well done, you took \", Counter, \" attempts\""
+  },
+  {
+    "unitId": "apl-8",
+    "term": "RANDOM",
+    "unitDef": "Generates a random number within a specified range.",
+    "paperFile": "25paper2.json",
+    "question": "An algorithm has been written in pseudocode to generate a random integer between 1 and 100 inclusive and store the value in N. The user enters a guess for the number and the algorithm indicates whether the guess is higher or lower than the random number. The algorithm outputs the number of guesses when the user has correctly guessed the random number. Identify the line numbers of the four errors in the pseudocode and suggest a correction for each error.",
+    "paperAnswer": "Corrections (example):\nLine 02 – should be N ← ROUND(RANDOM() * 99, 0) + 1\nLine 12 – should be OUTPUT \"The number is higher than your guess\"\nLine 14/15 – Counter ← Counter + 1 should be placed after ENDIF / before UNTIL G = N\nLine 17 – should be OUTPUT \"Well done, you took \", Counter, \" attempts\""
+  },
+  {
+    "unitId": "apl-8",
+    "term": "MOD",
+    "unitDef": "Modulo operator returning the remainder after division.",
+    "paperFile": "24paper2.json",
+    "question": "Outline role of procedures and functions in maintainable programs.",
+    "paperAnswer": "• Procedures / functions divide the program into smaller manageable segments\n• … making it more readable / easier to understand / easier to debug\n• Procedures / functions with meaningful names help to provide documentation for the program / enable/help/provide abstraction\n• Procedures and functions may be re-used (in the program / in other programs / as part of a library) / run from a single line\n• Procedures and functions can reduce / eliminate (repeated) code"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Database",
+    "unitDef": "Organised collection of related data.",
+    "paperFile": "24paper2.json",
+    "question": "State whether any field suitable as primary key and give reason.",
+    "paperAnswer": "None of the fields are likely to contain unique data."
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Database",
+    "unitDef": "Organised collection of related data.",
+    "paperFile": "24paper2.json",
+    "question": "Identify field most appropriate primary key for Contract table.",
+    "paperAnswer": "ContractNumber"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Database",
+    "unitDef": "Organised collection of related data.",
+    "paperFile": "24paper2.json",
+    "question": "Complete table for data types of fields.",
+    "paperAnswer": "ContractNumber: text/alphanumeric\nMonths: integer\nEndDate: date/time\nSport: Boolean"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Database",
+    "unitDef": "Organised collection of related data.",
+    "paperFile": "24paper2.json",
+    "question": "State number of fields and records in Hangar1 table.",
+    "paperAnswer": "Fields: 7\nRecords: 11"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about data transmission methods.",
+    "paperAnswer": "One mark for each correct data transmission method:\ndata transmission method\nserial simplex\nparallel half-duplex\nserial full-duplex\nparallel simplex"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table about error detection methods.",
+    "paperAnswer": "error detection method\nparity (check/bit/byte/block)\nchecksum\necho check\nautomatic repeat query/request // ARQ\ncheck digit"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper1.json",
+    "question": "Identify two input devices built into a portable tablet computer.",
+    "paperAnswer": "Any two from:\n• Touch screen\n• Microphone\n• Button\n• Webcam // (digital) camera\n• Accelerometer\n• Biometric device"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper1.json",
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "paperAnswer": "SSD // Solid-state drive // Solid-state (device)"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper1.json",
+    "question": "Describe operation of compiler and interpreter.",
+    "paperAnswer": "Two from for each compiler and interpreter.\nCompiler\n• Checks all code before executing any code\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\n• Produces executable file\nInterpreter\n• Checks/translates one line of code and then executes it before moving on to the next line\n• Stops when an error is found\n• … when corrected the program can be run from the same position // allows error correction in real time"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table with two other malware examples and descriptions.",
+    "paperAnswer": "One mark for identification. E.g. One mark per bullet for description to max two each.\nVirus\n• Software/code that replicates\n• …when the user runs it // with an active host\n• Deletes/damages/corrupts data/files // takes up storage/memory space\nWorm\n• Software/code that replicates itself on a network\n• …without user input // without active host\n• Takes-up bandwidth\n• Deletes/damages/corrupts data/files // takes up storage/memory space\n• Opens back doors to computers over the network\n• Used to deposit other malware on networked computers\nTrojan horse\n• Software/code that is hidden within other software // Software that is disguised as authentic software\n• …when downloaded/installed the other malware/by example it contains is installed\nAdware\n• Software/code that generates/displays (unwanted) adverts on a user's computer\n• Some may contain spyware/other malware\n• Some when clicked may link to viruses\n• Reduces device performance // reduces internet speed\n• Redirects internet searches/user to fake websites\nRansomware\n• Software/code that stops a user accessing/using their computer/data\n• …by encrypting the data/files/computer\n• A fee has to be paid to decrypt the data // A fee has to be paid to 'release' the computer/device/data"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper1.json",
+    "question": "Complete table of sensor types and uses.",
+    "paperAnswer": "One mark for each use (Max 1) per sensor:\nTemperature\n• Checking whether the water in a kettle is boiling\n• Monitoring the temperature in a room that is climate controlled\nHumidity\n• Checking whether the air is dry enough in a spray-painting garage\n• Checking whether the air is moist enough in a greenhouse\nInfra-red\n• Detecting motion in a room for a security system\n• Detecting whether a person is approaching automatic doors\nMagnetic field\n• Counting vehicles that cross a bridge\n• Monitoring vehicles that enter a car park"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper2.json",
+    "question": "Identify field most appropriate primary key for Contract table.",
+    "paperAnswer": "ContractNumber"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper2.json",
+    "question": "Complete table for data types of fields.",
+    "paperAnswer": "ContractNumber: text/alphanumeric\nMonths: integer\nEndDate: date/time\nSport: Boolean"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper2.json",
+    "question": "State number of fields and records in Hangar1 table.",
+    "paperAnswer": "Fields: 7\nRecords: 11"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "unitDef": "Structure containing records arranged in fields and rows.",
+    "paperFile": "24paper2.json",
+    "question": "Describe what is meant by extreme test data.",
+    "paperAnswer": "Test data to test the limits of acceptable data entry … that will only accept the largest and smallest acceptable values."
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Record",
+    "unitDef": "Single row of related data in a table.",
+    "paperFile": "24paper2.json",
+    "question": "State number of fields and records in Hangar1 table.",
+    "paperAnswer": "Fields: 7\nRecords: 11"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Field",
+    "unitDef": "Single column representing an attribute.",
+    "paperFile": "24paper2.json",
+    "question": "State whether any field suitable as primary key and give reason.",
+    "paperAnswer": "None of the fields are likely to contain unique data."
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Field",
+    "unitDef": "Single column representing an attribute.",
+    "paperFile": "24paper2.json",
+    "question": "Identify field most appropriate primary key for Contract table.",
+    "paperAnswer": "ContractNumber"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Field",
+    "unitDef": "Single column representing an attribute.",
+    "paperFile": "24paper2.json",
+    "question": "State number of fields and records in Hangar1 table.",
+    "paperAnswer": "Fields: 7\nRecords: 11"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Primary key",
+    "unitDef": "Unique identifier for a record.",
+    "paperFile": "24paper1.json",
+    "question": "Complete paragraph about fetching instruction into CPU.",
+    "paperAnswer": "address\nmemory address register // MAR\nrandom access memory // RAM\nmemory data register // MDR\ndata\ncurrent instruction register // CIR\ncontrol unit // CU"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Primary key",
+    "unitDef": "Unique identifier for a record.",
+    "paperFile": "24paper1.json",
+    "question": "Describe MAR role in FDE cycle.",
+    "paperAnswer": "Stores addresses …\n… of next instruction/data to be fetched // where data is to be written to"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Primary key",
+    "unitDef": "Unique identifier for a record.",
+    "paperFile": "24paper2.json",
+    "question": "State whether any field suitable as primary key and give reason.",
+    "paperAnswer": "None of the fields are likely to contain unique data."
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Primary key",
+    "unitDef": "Unique identifier for a record.",
+    "paperFile": "24paper2.json",
+    "question": "Identify field most appropriate primary key for Contract table.",
+    "paperAnswer": "ContractNumber"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SQL",
+    "unitDef": "Structured Query Language for managing data.",
+    "paperFile": "24paper2.json",
+    "question": "Complete SQL to return number of cans in stock.",
+    "paperAnswer": "SELECT SUM [NumberInStock] FROM SoftDrinks WHERE Container = 'Can'"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SQL",
+    "unitDef": "Structured Query Language for managing data.",
+    "paperFile": "24paper2.json",
+    "question": "Explain purpose of two SQL statements.",
+    "paperAnswer": "• to find the total number of months for all contracts\n• to find the total number of contracts\n• ... that are subscribed to News"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SQL",
+    "unitDef": "Structured Query Language for managing data.",
+    "paperFile": "24paper2.json",
+    "question": "Complete SQL to find contracts with news AND sports services.",
+    "paperAnswer": "SELECT ContractNumber FROM Contract WHERE News AND Sport"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SQL",
+    "unitDef": "Structured Query Language for managing data.",
+    "paperFile": "24paper2.json",
+    "question": "Give output from SQL statement selecting aircraft with >1 engine.",
+    "paperAnswer": "314 Clipper 1936 4\nC-47 Dakota 1942 2\nNimrod 1966 4\nDC-10 1970 3\nConcorde 1973 4"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SQL",
+    "unitDef": "Structured Query Language for managing data.",
+    "paperFile": "24paper2.json",
+    "question": "Complete SQL to display ID and model of airworthy aircraft.",
+    "paperAnswer": "SELECT ID, Model FROM Hangar1 WHERE Airworthy = Y // Airworthy"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SQL",
+    "unitDef": "Structured Query Language for managing data.",
+    "paperFile": "25paper2.json",
+    "question": "Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.",
+    "paperAnswer": "SELECT StudentName, Age\nFROM Students\nWHERE Age >= 16\nORDER BY StudentName"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SELECT",
+    "unitDef": "Statement to retrieve data from tables.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode using CASE statement for input 1-4.",
+    "paperAnswer": "INPUT Number\nCASE OF Number\n    1 : OUTPUT Number\n    2 : OUTPUT Number\n    3 : OUTPUT Number\n    4 : OUTPUT Number\n    OTHERWISE OUTPUT \"ERROR\"\nENDCASE"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SELECT",
+    "unitDef": "Statement to retrieve data from tables.",
+    "paperFile": "24paper2.json",
+    "question": "Write algorithm to count values > 100.",
+    "paperAnswer": "Counter ← 0\nINPUT Value\nWHILE Value <> 9999.9\n    IF Value > 100\n    THEN\n        Counter ← Counter + 1\n    ENDIF\n    INPUT Value\nENDWHILE\nOUTPUT Counter"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SELECT",
+    "unitDef": "Statement to retrieve data from tables.",
+    "paperFile": "24paper2.json",
+    "question": "Complete SQL to find contracts with news AND sports services.",
+    "paperAnswer": "SELECT ContractNumber FROM Contract WHERE News AND Sport"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SELECT",
+    "unitDef": "Statement to retrieve data from tables.",
+    "paperFile": "24paper2.json",
+    "question": "Give output from SQL statement selecting aircraft with >1 engine.",
+    "paperAnswer": "314 Clipper 1936 4\nC-47 Dakota 1942 2\nNimrod 1966 4\nDC-10 1970 3\nConcorde 1973 4"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SELECT",
+    "unitDef": "Statement to retrieve data from tables.",
+    "paperFile": "24paper2.json",
+    "question": "Complete SQL to display ID and model of airworthy aircraft.",
+    "paperAnswer": "SELECT ID, Model FROM Hangar1 WHERE Airworthy = Y // Airworthy"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "SELECT",
+    "unitDef": "Statement to retrieve data from tables.",
+    "paperFile": "25paper2.json",
+    "question": "Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.",
+    "paperAnswer": "SELECT StudentName, Age\nFROM Students\nWHERE Age >= 16\nORDER BY StudentName"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "FROM",
+    "unitDef": "Clause specifying the source table.",
+    "paperFile": "24paper1.json",
+    "question": "Explain effect of changing CPU from 2 GHz to 3 GHz.",
+    "paperAnswer": "Increases/improves the performance // Tasks can be performed quicker/faster\n… because more FDE cycles/instructions can be processed in a second"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "FROM",
+    "unitDef": "Clause specifying the source table.",
+    "paperFile": "24paper1.json",
+    "question": "State purpose of firmware.",
+    "paperAnswer": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "FROM",
+    "unitDef": "Clause specifying the source table.",
+    "paperFile": "24paper1.json",
+    "question": "Explain how machine learning improves robot.",
+    "paperAnswer": "Any two from:\n• The robot can now adapt itself by changing its own rules/data/ processes\n• The robot will become more efficient\n• ... as it has a greater knowledge of its surroundings/environment\n• ... as it can remember where a fence is\n• ... as it can remember the route it needs to take\n• ... as it can remember where any obstacles are to avoid\n• ... as it can remember where to start and stop sowing seeds\n• ... as it may make fewer errors"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "FROM",
+    "unitDef": "Clause specifying the source table.",
+    "paperFile": "24paper1.json",
+    "question": "Describe machine learning capabilities.",
+    "paperAnswer": "Any four from:\ne.g.\n• It is a form of artificial intelligence\n• Means it can adapt/change (its own processes) // It can edit its own algorithms\n• It can edit its own data\n• It can be trained\n• … this can be supervised/unsupervised\n• … meaning it can learn with/without human interaction\n• Analyses patterns and stores successful/unsuccessful results …\n• … to influence future decisions\n• (Supervised) means a user tells the system the input and output\n• (Unsupervised) means the system is given the input and needs to work out the output"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "FROM",
+    "unitDef": "Clause specifying the source table.",
+    "paperFile": "24paper2.json",
+    "question": "Write pseudocode to extract 'Computer Science' from string.",
+    "paperAnswer": "FullText ← \"IGCSE Computer Science at Cambridge\"\nPartText ← SUBSTRING(FullText, 7, 16)\nOUTPUT PartText, UCASE(FullText)"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "FROM",
+    "unitDef": "Clause specifying the source table.",
+    "paperFile": "24paper2.json",
+    "question": "Give output from SQL statement selecting aircraft with >1 engine.",
+    "paperAnswer": "314 Clipper 1936 4\nC-47 Dakota 1942 2\nNimrod 1966 4\nDC-10 1970 3\nConcorde 1973 4"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "FROM",
+    "unitDef": "Clause specifying the source table.",
+    "paperFile": "25paper2.json",
+    "question": "Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.",
+    "paperAnswer": "SELECT StudentName, Age\nFROM Students\nWHERE Age >= 16\nORDER BY StudentName"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "WHERE",
+    "unitDef": "Clause filtering rows by conditions.",
+    "paperFile": "24paper2.json",
+    "question": "Complete SQL to return number of cans in stock.",
+    "paperAnswer": "SELECT SUM [NumberInStock] FROM SoftDrinks WHERE Container = 'Can'"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "WHERE",
+    "unitDef": "Clause filtering rows by conditions.",
+    "paperFile": "24paper2.json",
+    "question": "Explain purpose of two SQL statements.",
+    "paperAnswer": "• to find the total number of months for all contracts\n• to find the total number of contracts\n• ... that are subscribed to News"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "WHERE",
+    "unitDef": "Clause filtering rows by conditions.",
+    "paperFile": "24paper2.json",
+    "question": "Complete SQL to find contracts with news AND sports services.",
+    "paperAnswer": "SELECT ContractNumber FROM Contract WHERE News AND Sport"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "WHERE",
+    "unitDef": "Clause filtering rows by conditions.",
+    "paperFile": "24paper2.json",
+    "question": "Give output from SQL statement selecting aircraft with >1 engine.",
+    "paperAnswer": "314 Clipper 1936 4\nC-47 Dakota 1942 2\nNimrod 1966 4\nDC-10 1970 3\nConcorde 1973 4"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "WHERE",
+    "unitDef": "Clause filtering rows by conditions.",
+    "paperFile": "24paper2.json",
+    "question": "Complete SQL to display ID and model of airworthy aircraft.",
+    "paperAnswer": "SELECT ID, Model FROM Hangar1 WHERE Airworthy = Y // Airworthy"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "WHERE",
+    "unitDef": "Clause filtering rows by conditions.",
+    "paperFile": "25paper2.json",
+    "question": "Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.",
+    "paperAnswer": "SELECT StudentName, Age\nFROM Students\nWHERE Age >= 16\nORDER BY StudentName"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "WHERE",
+    "unitDef": "Clause filtering rows by conditions.",
+    "paperFile": "25paper2.json",
+    "question": "A telephone number with 13 characters is input. The first character is a '+', followed by a 2-digit country code, for example: +20xxxxxxxxxx where 20 is the country code and x is a digit between 0 and 9 inclusive. The algorithm includes checks for the country codes: 44 for the UK and 20 for Egypt.\n\n(a) Write an algorithm using pseudocode to: input the telephone number, extract the 2-digit country code, output the matching country, output 'Unknown' if there is no matching country.\n\n(b) Explain how you could change the algorithm to repeatedly prompt for the telephone number until the number entered is 13 characters in length.",
+    "paperAnswer": "(a) Example:\nOUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nValue ← SUBSTRING(Telephone, 2, 2)\nIF Value = \"44\"\n  THEN OUTPUT \"UK\"\nELSE IF Value = \"20\"\n  THEN OUTPUT \"Egypt\"\nELSE\n  OUTPUT \"Unknown\"\nENDIF\n\n(b) Example approach:\nUse a loop to check length: REPEAT OUTPUT \"Please enter a telephone number\"\nINPUT Telephone\nUNTIL LENGTH(Telephone) = 13"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "ORDER BY",
+    "unitDef": "Clause sorting results.",
+    "paperFile": "24paper2.json",
+    "question": "Give output from SQL statement selecting aircraft with >1 engine.",
+    "paperAnswer": "314 Clipper 1936 4\nC-47 Dakota 1942 2\nNimrod 1966 4\nDC-10 1970 3\nConcorde 1973 4"
+  },
+  {
+    "unitId": "apl-9",
+    "term": "ORDER BY",
+    "unitDef": "Clause sorting results.",
+    "paperFile": "25paper2.json",
+    "question": "Write an SQL query to list StudentName and Age from Students where Age >= 16 sorted by StudentName.",
+    "paperAnswer": "SELECT StudentName, Age\nFROM Students\nWHERE Age >= 16\nORDER BY StudentName"
+  },
+  {
+    "unitId": "apl-10",
+    "term": "Boolean",
+    "unitDef": "Data type with only two values: true/false.",
+    "paperFile": "24paper2.json",
+    "question": "State how arithmetic, Boolean, logical operators are used with examples.",
+    "paperAnswer": "• arithmetic – used in calculations (1) A ← B + C (1)\n• Boolean – used for operations with true or false values (1) IF B AND C (1)\n• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)"
+  },
+  {
+    "unitId": "apl-10",
+    "term": "Boolean",
+    "unitDef": "Data type with only two values: true/false.",
+    "paperFile": "24paper2.json",
+    "question": "Complete table for data types of fields.",
+    "paperAnswer": "ContractNumber: text/alphanumeric\nMonths: integer\nEndDate: date/time\nSport: Boolean"
+  }
+]

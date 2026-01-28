@@ -1,0 +1,414 @@
+cs-1 / Bit FROM (24paper1.json)
+Q: Define sample resolution.
+- OLD: Smallest unit of data; represents 0 or 1.
+- NEW: Any two from:
+• The number of bits that are used per sample
+• … that provides the variation in amplitude that can be stored for each sample // defines the number of different amplitudes that can be recorded
+• … that determines how quiet/loud the sounds are that can be recorded
+• Example e.g. 16-bit
+
+cs-1 / Byte FROM (24paper1.json)
+Q: State how many bits in a byte.
+- OLD: Group of 8 bits.
+- NEW: 8
+
+cs-1 / Resolution FROM (24paper1.json)
+Q: Define sample resolution.
+- OLD: Number of pixels in each dimension of an image.
+- NEW: Any two from:
+• The number of bits that are used per sample
+• … that provides the variation in amplitude that can be stored for each sample // defines the number of different amplitudes that can be recorded
+• … that determines how quiet/loud the sounds are that can be recorded
+• Example e.g. 16-bit
+
+cs-1 / Lossless compression FROM (24paper1.json)
+Q: State how SSL protocol secures data transmission.
+- OLD: Compression without losing information.
+- NEW: Any one from:
+• It encrypts it
+• Uses digital certificates
+
+cs-2 / Packet FROM (24paper1.json)
+Q: Describe structure of a data packet.
+- OLD: Unit of data sent across a network with header and payload.
+- NEW: Any three from:
+• A packet is split into three different sections
+• ... the header
+• ... the payload
+• ... the trailer
+
+cs-2 / Header FROM (24paper1.json)
+Q: Describe structure of a data packet.
+- OLD: Control information at the start of a packet.
+- NEW: Any three from:
+• A packet is split into three different sections
+• ... the header
+• ... the payload
+• ... the trailer
+
+cs-2 / Payload FROM (24paper1.json)
+Q: Describe structure of a data packet.
+- OLD: User data carried in a packet.
+- NEW: Any three from:
+• A packet is split into three different sections
+• ... the header
+• ... the payload
+• ... the trailer
+
+cs-2 / Trailer FROM (24paper1.json)
+Q: Describe structure of a data packet.
+- OLD: Data at the end of a packet, often for error checking.
+- NEW: Any three from:
+• A packet is split into three different sections
+• ... the header
+• ... the payload
+• ... the trailer
+
+cs-2 / Odd parity FROM (24paper1.json)
+Q: Describe operation of error detection system using odd parity and ARQ.
+- OLD: Parity method ensuring an odd number of 1s.
+- NEW: Any eight from:
+The 1s are counted (in each byte)
+Each byte has a parity bit
+If the number of 1s are odd the parity bit is 0 (otherwise it is 1)
+(The first packet of) data is sent and a timer is started
+The receiving device counts the number of 1s (in each byte)
+If the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …
+… the sender then sends the next packet of data …
+… and the timer is restarted
+If the number of 1s is even an acknowledgement is not sent
+If no acknowledgement is received within a set timeframe/before timeout …
+… the data packet is resent
+
+cs-2 / ARQ FROM (24paper1.json)
+Q: Describe operation of error detection system using odd parity and ARQ.
+- OLD: Automatic repeat request protocol for retransmission.
+- NEW: Any eight from:
+The 1s are counted (in each byte)
+Each byte has a parity bit
+If the number of 1s are odd the parity bit is 0 (otherwise it is 1)
+(The first packet of) data is sent and a timer is started
+The receiving device counts the number of 1s (in each byte)
+If the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …
+… the sender then sends the next packet of data …
+… and the timer is restarted
+If the number of 1s is even an acknowledgement is not sent
+If no acknowledgement is received within a set timeframe/before timeout …
+… the data packet is resent
+
+cs-2 / Protocol FROM (24paper1.json)
+Q: State how SSL protocol secures data transmission.
+- OLD: Agreed rules for data communication.
+- NEW: Any one from:
+• It encrypts it
+• Uses digital certificates
+
+cs-3 / Clock FROM (24paper1.json)
+Q: Define clock speed.
+- OLD: Generates timing signals controlling the processor.
+- NEW: The maximum number of FDE cycles/instructions a CPU can perform/process/execute in a second
+
+cs-3 / RAM FROM (24paper1.json)
+Q: Describe machine learning capabilities.
+- OLD: Volatile main memory for programs and data in use.
+- NEW: Any four from:
+e.g.
+• It is a form of artificial intelligence
+• Means it can adapt/change (its own processes) // It can edit its own algorithms
+• It can edit its own data
+• It can be trained
+• … this can be supervised/unsupervised
+• … meaning it can learn with/without human interaction
+• Analyses patterns and stores successful/unsuccessful results …
+• … to influence future decisions
+• (Supervised) means a user tells the system the input and output
+• (Unsupervised) means the system is given the input and needs to work out the output
+
+cs-3 / ROM FROM (24paper1.json)
+Q: State purpose of firmware.
+- OLD: Non-volatile memory storing firmware.
+- NEW: Any one from:
+• Permanently store instructions (in ROM)
+• Stores instructions to boot up/start up the computer
+• Provides the operating system with a platform to run on
+• Controls/manages/allows communication with hardware
+• Store instructions securely (to stop them being easily corrupted)
+
+cs-4 / System software FROM (24paper1.json)
+Q: Describe difference between system and application software.
+- OLD: Software managing and supporting computer operations.
+- NEW: Any two from:
+• System software manages/maintains the hardware/software
+• Applications software allows the user to perform tasks
+
+cs-4 / Application software FROM (24paper1.json)
+Q: Describe difference between system and application software.
+- OLD: Programs designed for end-user tasks.
+- NEW: Any two from:
+• System software manages/maintains the hardware/software
+• Applications software allows the user to perform tasks
+
+cs-4 / Firmware FROM (24paper1.json)
+Q: State purpose of firmware.
+- OLD: Software stored in ROM controlling hardware.
+- NEW: Any one from:
+• Permanently store instructions (in ROM)
+• Stores instructions to boot up/start up the computer
+• Provides the operating system with a platform to run on
+• Controls/manages/allows communication with hardware
+• Store instructions securely (to stop them being easily corrupted)
+
+cs-4 / Operating system FROM (24paper1.json)
+Q: Describe operating system purpose.
+- OLD: Manages hardware, resources and provides user interface.
+- NEW: Any three from:
+• It performs the basic functions of a computer
+• It manages the hardware
+• It provides a platform to run software
+• It provides a user interface
+• It performs tasks such as (any example of function of an operating system)
+
+cs-4 / User interface FROM (24paper1.json)
+Q: Describe operating system purpose.
+- OLD: Means by which users interact with a computer.
+- NEW: Any three from:
+• It performs the basic functions of a computer
+• It manages the hardware
+• It provides a platform to run software
+• It provides a user interface
+• It performs tasks such as (any example of function of an operating system)
+
+cs-4 / Security FROM (24paper1.json)
+Q: State how SSL protocol secures data transmission.
+- OLD: Authentication, authorization and protection mechanisms.
+- NEW: Any one from:
+• It encrypts it
+• Uses digital certificates
+
+cs-4 / Compiler FROM (24paper1.json)
+Q: Describe operation of compiler and interpreter.
+- OLD: Translates whole program to object code before execution.
+- NEW: Two from for each compiler and interpreter.
+Compiler
+• Checks all code before executing any code
+• Produces error report with all errors found for the whole code (before translating/running any of the code)
+• Produces executable file
+Interpreter
+• Checks/translates one line of code and then executes it before moving on to the next line
+• Stops when an error is found
+• … when corrected the program can be run from the same position // allows error correction in real time
+
+cs-4 / Interpreter FROM (24paper1.json)
+Q: Describe operation of compiler and interpreter.
+- OLD: Executes program line by line translating at runtime.
+- NEW: Two from for each compiler and interpreter.
+Compiler
+• Checks all code before executing any code
+• Produces error report with all errors found for the whole code (before translating/running any of the code)
+• Produces executable file
+Interpreter
+• Checks/translates one line of code and then executes it before moving on to the next line
+• Stops when an error is found
+• … when corrected the program can be run from the same position // allows error correction in real time
+
+cs-4 / IDE FROM (24paper2.json)
+Q: State improved identifiers for L, S, T, A.
+- OLD: Integrated development environment supporting coding tasks.
+- NEW: L → Largest / Maximum
+S → Smallest / Minimum
+T → Total / Sum
+A → Average / Mean
+
+cs-5 / URL FROM (24paper1.json)
+Q: Describe how web pages are located, retrieved and displayed.
+- OLD: Uniform Resource Locator identifying a resource.
+- NEW: Any six from:
+• The users type the URL into the address bar/web browser
+• The web browser sends the URL to the DNS
+• The DNS searches for the matching IP address
+• The DNS returns the IP address to the web browser
+• If the DNS cannot find the IP address it sends the URL to the next DNS
+• The web browser sends a request to the IP address/web server
+• The web server sends the data for the web page to the web browser
+• The web browser renders the HTML data to display the web page
+
+cs-5 / DNS FROM (24paper1.json)
+Q: Describe how web pages are located, retrieved and displayed.
+- OLD: Domain Name System translating names to IP addresses.
+- NEW: Any six from:
+• The users type the URL into the address bar/web browser
+• The web browser sends the URL to the DNS
+• The DNS searches for the matching IP address
+• The DNS returns the IP address to the web browser
+• If the DNS cannot find the IP address it sends the URL to the next DNS
+• The web browser sends a request to the IP address/web server
+• The web server sends the data for the web page to the web browser
+• The web browser renders the HTML data to display the web page
+
+cs-5 / IP address FROM (24paper1.json)
+Q: Describe how web pages are located, retrieved and displayed.
+- OLD: Numerical label identifying a device on a network.
+- NEW: Any six from:
+• The users type the URL into the address bar/web browser
+• The web browser sends the URL to the DNS
+• The DNS searches for the matching IP address
+• The DNS returns the IP address to the web browser
+• If the DNS cannot find the IP address it sends the URL to the next DNS
+• The web browser sends a request to the IP address/web server
+• The web server sends the data for the web page to the web browser
+• The web browser renders the HTML data to display the web page
+
+cs-5 / HTML FROM (24paper1.json)
+Q: Describe how web pages are located, retrieved and displayed.
+- OLD: Markup language for structuring web content.
+- NEW: Any six from:
+• The users type the URL into the address bar/web browser
+• The web browser sends the URL to the DNS
+• The DNS searches for the matching IP address
+• The DNS returns the IP address to the web browser
+• If the DNS cannot find the IP address it sends the URL to the next DNS
+• The web browser sends a request to the IP address/web server
+• The web server sends the data for the web page to the web browser
+• The web browser renders the HTML data to display the web page
+
+cs-5 / ISP FROM (24paper1.json)
+Q: Describe how web pages are located, retrieved and displayed.
+- OLD: Internet Service Provider offering connectivity.
+- NEW: Any six from:
+• The users type the URL into the address bar/web browser
+• The web browser sends the URL to the DNS
+• The DNS searches for the matching IP address
+• The DNS returns the IP address to the web browser
+• If the DNS cannot find the IP address it sends the URL to the next DNS
+• The web browser sends a request to the IP address/web server
+• The web server sends the data for the web page to the web browser
+• The web browser renders the HTML data to display the web page
+
+cs-5 / Encryption FROM (24paper1.json)
+Q: State how SSL protocol secures data transmission.
+- OLD: Converting data into a secure coded form.
+- NEW: Any one from:
+• It encrypts it
+• Uses digital certificates
+
+cs-5 / TLS/SSL FROM (24paper1.json)
+Q: State how SSL protocol secures data transmission.
+- OLD: Protocols providing secure communication.
+- NEW: Any one from:
+• It encrypts it
+• Uses digital certificates
+
+cs-5 / Digital certificate FROM (24paper1.json)
+Q: State how SSL protocol secures data transmission.
+- OLD: Electronic document verifying identity and public key.
+- NEW: Any one from:
+• It encrypts it
+• Uses digital certificates
+
+cs-6 / Artificial intelligence FROM (24paper1.json)
+Q: Describe meaning of AI.
+- OLD: Systems that perform tasks requiring human intelligence.
+- NEW: Any two from:
+• The **simulation** of intelligent behaviours by computers
+• A collection of data and the rules for using that data
+• Has the ability to reason
+• Has the ability to learn/adapt
+
+cs-6 / Machine learning FROM (24paper1.json)
+Q: Describe meaning of AI.
+- OLD: Algorithms improving performance through data experience.
+- NEW: Any two from:
+• The **simulation** of intelligent behaviours by computers
+• A collection of data and the rules for using that data
+• Has the ability to reason
+• Has the ability to learn/adapt
+
+cs-6 / Robotics FROM (24paper1.json)
+Q: Define robotics.
+- OLD: Design and use of robots for tasks.
+- NEW: Any two from:
+• The design of robots (to perform tasks/operations/functions)
+• The construction of robots (to perform tasks/operations/functions)
+• The operation of robots (to perform tasks/operations/functions)
+
+cs-6 / AR FROM (24paper2.json)
+Q: State whether any field suitable as primary key and give reason.
+- OLD: Augmented reality overlaying digital content onto the real world.
+- NEW: None of the fields are likely to contain unique data.
+
+apl-8 / Integer FROM (24paper2.json)
+Q: State what is meant by integer and real data types with examples.
+- OLD: Whole number data type.
+- NEW: Integer: a whole number … Example 27
+Real: a number that contains a fractional part … Example 18.75
+
+apl-8 / Real FROM (24paper2.json)
+Q: State what is meant by integer and real data types with examples.
+- OLD: Numeric data type representing real numbers (IG scope: used without floating-point internals).
+- NEW: Integer: a whole number … Example 27
+Real: a number that contains a fractional part … Example 18.75
+
+apl-8 / Boolean FROM (24paper2.json)
+Q: State how arithmetic, Boolean, logical operators are used with examples.
+- OLD: Logical true/false data type.
+- NEW: • arithmetic – used in calculations (1) A ← B + C (1)
+• Boolean – used for operations with true or false values (1) IF B AND C (1)
+• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)
+
+apl-8 / Character FROM (24paper2.json)
+Q: Describe characteristics of string and char data types with examples.
+- OLD: Single symbol data type.
+- NEW: String: a group of characters consisting of letters, numbers and special characters, Cambridge2024
+Char: a single character, X
+
+apl-8 / String FROM (24paper2.json)
+Q: Describe characteristics of string and char data types with examples.
+- OLD: Sequence of characters.
+- NEW: String: a group of characters consisting of letters, numbers and special characters, Cambridge2024
+Char: a single character, X
+
+apl-9 / Database FROM (24paper2.json)
+Q: State number of fields and records in Hangar1 table.
+- OLD: Organised collection of related data.
+- NEW: Fields: 7
+Records: 11
+
+apl-9 / Table FROM (24paper2.json)
+Q: State number of fields and records in Hangar1 table.
+- OLD: Structure containing records arranged in fields and rows.
+- NEW: Fields: 7
+Records: 11
+
+apl-9 / Record FROM (24paper2.json)
+Q: State number of fields and records in Hangar1 table.
+- OLD: Single row of related data in a table.
+- NEW: Fields: 7
+Records: 11
+
+apl-9 / Field FROM (24paper2.json)
+Q: State number of fields and records in Hangar1 table.
+- OLD: Single column representing an attribute.
+- NEW: Fields: 7
+Records: 11
+
+apl-9 / Primary key FROM (24paper2.json)
+Q: State whether any field suitable as primary key and give reason.
+- OLD: Unique identifier for a record.
+- NEW: None of the fields are likely to contain unique data.
+
+apl-9 / FROM FROM (24paper1.json)
+Q: State purpose of firmware.
+- OLD: Clause specifying the source table.
+- NEW: Any one from:
+• Permanently store instructions (in ROM)
+• Stores instructions to boot up/start up the computer
+• Provides the operating system with a platform to run on
+• Controls/manages/allows communication with hardware
+• Store instructions securely (to stop them being easily corrupted)
+
+apl-10 / Boolean FROM (24paper2.json)
+Q: State how arithmetic, Boolean, logical operators are used with examples.
+- OLD: • arithmetic – used in calculations (1) A ← B + C (1)\n• Boolean – used for operations with true or false values (1) IF B AND C (1)\n• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)
+- NEW: • arithmetic – used in calculations (1) A ← B + C (1)
+• Boolean – used for operations with true or false values (1) IF B AND C (1)
+• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)

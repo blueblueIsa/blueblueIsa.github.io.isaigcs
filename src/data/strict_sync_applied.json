@@ -1,0 +1,186 @@
+[
+  {
+    "unitId": "cs-1",
+    "term": "Byte",
+    "oldDefinition": "Group of 8 bits.",
+    "newDefinition": "8",
+    "source": "24paper1.json",
+    "question": "State how many bits in a byte."
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Resolution",
+    "oldDefinition": "Number of pixels in each dimension of an image.",
+    "newDefinition": "Any two from:\n• The number of bits that are used per sample\n• … that provides the variation in amplitude that can be stored for each sample // defines the number of different amplitudes that can be recorded\n• … that determines how quiet/loud the sounds are that can be recorded\n• Example e.g. 16-bit",
+    "source": "24paper1.json",
+    "question": "Define sample resolution."
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "oldDefinition": "Unit of data sent across a network with header and payload.",
+    "newDefinition": "Any three from:\n• A packet is split into three different sections\n• ... the header\n• ... the payload\n• ... the trailer",
+    "source": "24paper1.json",
+    "question": "Describe structure of a data packet."
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Odd parity",
+    "oldDefinition": "Parity method ensuring an odd number of 1s.",
+    "newDefinition": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent",
+    "source": "24paper1.json",
+    "question": "Describe operation of error detection system using odd parity and ARQ."
+  },
+  {
+    "unitId": "cs-2",
+    "term": "ARQ",
+    "oldDefinition": "Automatic repeat request protocol for retransmission.",
+    "newDefinition": "Any eight from:\nThe 1s are counted (in each byte)\nEach byte has a parity bit\nIf the number of 1s are odd the parity bit is 0 (otherwise it is 1)\n(The first packet of) data is sent and a timer is started\nThe receiving device counts the number of 1s (in each byte)\nIf the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …\n… the sender then sends the next packet of data …\n… and the timer is restarted\nIf the number of 1s is even an acknowledgement is not sent\nIf no acknowledgement is received within a set timeframe/before timeout …\n… the data packet is resent",
+    "source": "24paper1.json",
+    "question": "Describe operation of error detection system using odd parity and ARQ."
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Protocol",
+    "oldDefinition": "Agreed rules for data communication.",
+    "newDefinition": "Any one from:\n• It encrypts it\n• Uses digital certificates",
+    "source": "24paper1.json",
+    "question": "State how SSL protocol secures data transmission."
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Clock",
+    "oldDefinition": "Generates timing signals controlling the processor.",
+    "newDefinition": "The maximum number of FDE cycles/instructions a CPU can perform/process/execute in a second",
+    "source": "24paper1.json",
+    "question": "Define clock speed."
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ROM",
+    "oldDefinition": "Non-volatile memory storing firmware.",
+    "newDefinition": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)",
+    "source": "24paper1.json",
+    "question": "State purpose of firmware."
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Application software",
+    "oldDefinition": "Programs designed for end-user tasks.",
+    "newDefinition": "Any two from:\n• System software manages/maintains the hardware/software\n• Applications software allows the user to perform tasks",
+    "source": "24paper1.json",
+    "question": "Describe difference between system and application software."
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Firmware",
+    "oldDefinition": "Software stored in ROM controlling hardware.",
+    "newDefinition": "Any one from:\n• Permanently store instructions (in ROM)\n• Stores instructions to boot up/start up the computer\n• Provides the operating system with a platform to run on\n• Controls/manages/allows communication with hardware\n• Store instructions securely (to stop them being easily corrupted)",
+    "source": "24paper1.json",
+    "question": "State purpose of firmware."
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Operating system",
+    "oldDefinition": "Manages hardware, resources and provides user interface.",
+    "newDefinition": "Any three from:\n• It performs the basic functions of a computer\n• It manages the hardware\n• It provides a platform to run software\n• It provides a user interface\n• It performs tasks such as (any example of function of an operating system)",
+    "source": "24paper1.json",
+    "question": "Describe operating system purpose."
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Compiler",
+    "oldDefinition": "Translates whole program to object code before execution.",
+    "newDefinition": "Two from for each compiler and interpreter.\nCompiler\n• Checks all code before executing any code\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\n• Produces executable file\nInterpreter\n• Checks/translates one line of code and then executes it before moving on to the next line\n• Stops when an error is found\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "source": "24paper1.json",
+    "question": "Describe operation of compiler and interpreter."
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Interpreter",
+    "oldDefinition": "Executes program line by line translating at runtime.",
+    "newDefinition": "Two from for each compiler and interpreter.\nCompiler\n• Checks all code before executing any code\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\n• Produces executable file\nInterpreter\n• Checks/translates one line of code and then executes it before moving on to the next line\n• Stops when an error is found\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "source": "24paper1.json",
+    "question": "Describe operation of compiler and interpreter."
+  },
+  {
+    "unitId": "cs-5",
+    "term": "DNS",
+    "oldDefinition": "Domain Name System translating names to IP addresses.",
+    "newDefinition": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page",
+    "source": "24paper1.json",
+    "question": "Describe how web pages are located, retrieved and displayed."
+  },
+  {
+    "unitId": "cs-5",
+    "term": "IP address",
+    "oldDefinition": "Numerical label identifying a device on a network.",
+    "newDefinition": "Any six from:\n• The users type the URL into the address bar/web browser\n• The web browser sends the URL to the DNS\n• The DNS searches for the matching IP address\n• The DNS returns the IP address to the web browser\n• If the DNS cannot find the IP address it sends the URL to the next DNS\n• The web browser sends a request to the IP address/web server\n• The web server sends the data for the web page to the web browser\n• The web browser renders the HTML data to display the web page",
+    "source": "24paper1.json",
+    "question": "Describe how web pages are located, retrieved and displayed."
+  },
+  {
+    "unitId": "cs-6",
+    "term": "Robotics",
+    "oldDefinition": "Design and use of robots for tasks.",
+    "newDefinition": "Any two from:\n• The design of robots (to perform tasks/operations/functions)\n• The construction of robots (to perform tasks/operations/functions)\n• The operation of robots (to perform tasks/operations/functions)",
+    "source": "24paper1.json",
+    "question": "Define robotics."
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Integer",
+    "oldDefinition": "Whole number data type.",
+    "newDefinition": "Integer: a whole number … Example 27\nReal: a number that contains a fractional part … Example 18.75",
+    "source": "24paper2.json",
+    "question": "State what is meant by integer and real data types with examples."
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Real",
+    "oldDefinition": "Numeric data type representing real numbers (IG scope: used without floating-point internals).",
+    "newDefinition": "Integer: a whole number … Example 27\nReal: a number that contains a fractional part … Example 18.75",
+    "source": "24paper2.json",
+    "question": "State what is meant by integer and real data types with examples."
+  },
+  {
+    "unitId": "apl-8",
+    "term": "Boolean",
+    "oldDefinition": "Logical true/false data type.",
+    "newDefinition": "• arithmetic – used in calculations (1) A ← B + C (1)\n• Boolean – used for operations with true or false values (1) IF B AND C (1)\n• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)",
+    "source": "24paper2.json",
+    "question": "State how arithmetic, Boolean, logical operators are used with examples."
+  },
+  {
+    "unitId": "apl-8",
+    "term": "String",
+    "oldDefinition": "Sequence of characters.",
+    "newDefinition": "String: a group of characters consisting of letters, numbers and special characters, Cambridge2024\nChar: a single character, X",
+    "source": "24paper2.json",
+    "question": "Describe characteristics of string and char data types with examples."
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Table",
+    "oldDefinition": "Structure containing records arranged in fields and rows.",
+    "newDefinition": "Fields: 7\nRecords: 11",
+    "source": "24paper2.json",
+    "question": "State number of fields and records in Hangar1 table."
+  },
+  {
+    "unitId": "apl-9",
+    "term": "Primary key",
+    "oldDefinition": "Unique identifier for a record.",
+    "newDefinition": "None of the fields are likely to contain unique data.",
+    "source": "24paper2.json",
+    "question": "State whether any field suitable as primary key and give reason."
+  },
+  {
+    "unitId": "apl-10",
+    "term": "Boolean",
+    "oldDefinition": "• arithmetic – used in calculations (1) A ← B + C (1)\\n• Boolean – used for operations with true or false values (1) IF B AND C (1)\\n• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)",
+    "newDefinition": "• arithmetic – used in calculations (1) A ← B + C (1)\n• Boolean – used for operations with true or false values (1) IF B AND C (1)\n• logical – used in comparisons/conditional statements/selection statements (1) IF B > C (1)",
+    "source": "24paper2.json",
+    "question": "State how arithmetic, Boolean, logical operators are used with examples."
+  }
+]

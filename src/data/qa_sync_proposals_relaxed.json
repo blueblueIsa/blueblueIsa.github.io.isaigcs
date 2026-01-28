@@ -1,0 +1,2252 @@
+[
+  {
+    "unitId": "cs-1",
+    "term": "Colour depth",
+    "question": "Define colour depth and explain its effect on image file size.",
+    "paper": "",
+    "oldAnswer": "Colour depth is the number of bits used to represent each pixel\\nGreater colour depth allows more colours to be represented\\n... which increases the file size\\n... as more bits are needed for each pixel",
+    "suggestedAnswer": "Bits used to represent the colour of a pixel.",
+    "matchType": "define_question",
+    "confidence": 0.9
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Embedded system",
+    "question": "Define embedded system and give an example.",
+    "paper": "",
+    "oldAnswer": "An embedded system is dedicated to a specific function within a larger system, e.g., a washing machine controller.",
+    "suggestedAnswer": "Computer dedicated to a specific function within a larger system.",
+    "matchType": "define_question",
+    "confidence": 0.9
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit",
+    "question": "Explain why overflow occurs in 8-bit unsigned binary addition. Give an example.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIn 8-bit unsigned binary, the largest value is 255\\nThe result of the addition exceeds 255\\nThe most significant bit (carry bit) is discarded\\n... causing wrap-around\\nExample: 11111111₂ (255) + 00000001₂ (1) → 00000000₂",
+    "suggestedAnswer": "Smallest unit of data; represents 0 or 1.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit",
+    "question": "Calculate the file size of a 400×300 image with 16-bit colour depth, uncompressed.",
+    "paper": "",
+    "oldAnswer": "Pixels: 400 × 300 = 120,000\\nBits: 120,000 × 16 = 1,920,000 bits\\nBytes: 1,920,000 / 8 = 240,000 bytes\\n(≈ 234.4 KB)",
+    "suggestedAnswer": "Smallest unit of data; represents 0 or 1.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit",
+    "question": "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed.",
+    "paper": "",
+    "oldAnswer": "Samples: 44,100 × 30 = 1,323,000\\nTotal bits: 1,323,000 × 16 = 21,168,000 bits\\nBytes: 21,168,000 / 8 = 2,646,000 bytes\\n(≈ 2.52 MB)",
+    "suggestedAnswer": "Smallest unit of data; represents 0 or 1.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Binary",
+    "question": "Explain why overflow occurs in 8-bit unsigned binary addition. Give an example.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIn 8-bit unsigned binary, the largest value is 255\\nThe result of the addition exceeds 255\\nThe most significant bit (carry bit) is discarded\\n... causing wrap-around\\nExample: 11111111₂ (255) + 00000001₂ (1) → 00000000₂",
+    "suggestedAnswer": "Base-2 number system using digits 0 and 1.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Binary",
+    "question": "Perform logical left shift of 3 places on binary number 10100011.",
+    "paper": "",
+    "oldAnswer": "00011000",
+    "suggestedAnswer": "Base-2 number system using digits 0 and 1.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Denary",
+    "question": "Convert 11010110₂ to denary and hexadecimal.",
+    "paper": "",
+    "oldAnswer": "Denary: 214\\nHexadecimal: D6",
+    "suggestedAnswer": "Base-10 number system using digits 0–9.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Denary",
+    "question": "Convert denary numbers 20, 32, and 165 to hexadecimal.",
+    "paper": "",
+    "oldAnswer": "14\\n20\\nA5",
+    "suggestedAnswer": "Base-10 number system using digits 0–9.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Denary",
+    "question": "Convert two's complement 10100011 to denary.",
+    "paper": "",
+    "oldAnswer": "-93",
+    "suggestedAnswer": "Base-10 number system using digits 0–9.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Hexadecimal",
+    "question": "Convert 11010110₂ to denary and hexadecimal.",
+    "paper": "",
+    "oldAnswer": "Denary: 214\\nHexadecimal: D6",
+    "suggestedAnswer": "Base-16 number system using 0–9 and A–F.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Hexadecimal",
+    "question": "Give two reasons why ticket numbers are displayed as hexadecimal.",
+    "paper": "",
+    "oldAnswer": "1. Shorter representation than binary\\n2. Easier for humans to read",
+    "suggestedAnswer": "Base-16 number system using 0–9 and A–F.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Hexadecimal",
+    "question": "Identify incorrect statement about hexadecimal number system.",
+    "paper": "",
+    "oldAnswer": "It is a base 10 system",
+    "suggestedAnswer": "Base-16 number system using 0–9 and A–F.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Hexadecimal",
+    "question": "Convert denary numbers 20, 32, and 165 to hexadecimal.",
+    "paper": "",
+    "oldAnswer": "14\\n20\\nA5",
+    "suggestedAnswer": "Base-16 number system using 0–9 and A–F.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Overflow",
+    "question": "Explain why overflow occurs in 8-bit unsigned binary addition. Give an example.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIn 8-bit unsigned binary, the largest value is 255\\nThe result of the addition exceeds 255\\nThe most significant bit (carry bit) is discarded\\n... causing wrap-around\\nExample: 11111111₂ (255) + 00000001₂ (1) → 00000000₂",
+    "suggestedAnswer": "Condition when a value exceeds the representable range.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "ASCII",
+    "question": "Describe a difference between ASCII and Unicode and why Unicode is needed.",
+    "paper": "",
+    "oldAnswer": "Difference:\\nASCII uses 7 or 8 bits (per character)\\nUnicode uses 16 or 32 bits (per character)\\n\\nReason:\\nASCII has a limited character set (Latin only)\\nUnicode covers all major languages/symbols (internationalization)",
+    "suggestedAnswer": "7/8-bit character encoding for Latin characters.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "ASCII",
+    "question": "Explain why extended ASCII is insufficient for representing some languages.",
+    "paper": "",
+    "oldAnswer": "Extended ASCII provides 256 codes\\n... which is insufficient for languages with many characters (e.g., Chinese/Japanese)\\nUnicode supports thousands of code points",
+    "suggestedAnswer": "7/8-bit character encoding for Latin characters.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Unicode",
+    "question": "Describe a difference between ASCII and Unicode and why Unicode is needed.",
+    "paper": "",
+    "oldAnswer": "Difference:\\nASCII uses 7 or 8 bits (per character)\\nUnicode uses 16 or 32 bits (per character)\\n\\nReason:\\nASCII has a limited character set (Latin only)\\nUnicode covers all major languages/symbols (internationalization)",
+    "suggestedAnswer": "Universal character encoding standard with code points.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Resolution",
+    "question": "State how sample rate and resolution affect sound quality and file size.",
+    "paper": "",
+    "oldAnswer": "Sample rate: Number of samples taken per second\\nHigher sample rate improves sound accuracy/quality\\n... but increases file size\\n\\nResolution: Number of bits per sample\\nHigher resolution improves dynamic range/quality\\n... but increases file size",
+    "suggestedAnswer": "Number of pixels in each dimension of an image.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Resolution",
+    "question": "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed.",
+    "paper": "",
+    "oldAnswer": "Samples: 44,100 × 30 = 1,323,000\\nTotal bits: 1,323,000 × 16 = 21,168,000 bits\\nBytes: 21,168,000 / 8 = 2,646,000 bytes\\n(≈ 2.52 MB)",
+    "suggestedAnswer": "Number of pixels in each dimension of an image.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Colour depth",
+    "question": "Calculate the file size of a 400×300 image with 16-bit colour depth, uncompressed.",
+    "paper": "",
+    "oldAnswer": "Pixels: 400 × 300 = 120,000\\nBits: 120,000 × 16 = 1,920,000 bits\\nBytes: 1,920,000 / 8 = 240,000 bytes\\n(≈ 234.4 KB)",
+    "suggestedAnswer": "Bits used to represent the colour of a pixel.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Sample rate",
+    "question": "State how sample rate and resolution affect sound quality and file size.",
+    "paper": "",
+    "oldAnswer": "Sample rate: Number of samples taken per second\\nHigher sample rate improves sound accuracy/quality\\n... but increases file size\\n\\nResolution: Number of bits per sample\\nHigher resolution improves dynamic range/quality\\n... but increases file size",
+    "suggestedAnswer": "Samples per second measured in Hz.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Sample rate",
+    "question": "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed.",
+    "paper": "",
+    "oldAnswer": "Samples: 44,100 × 30 = 1,323,000\\nTotal bits: 1,323,000 × 16 = 21,168,000 bits\\nBytes: 21,168,000 / 8 = 2,646,000 bytes\\n(≈ 2.52 MB)",
+    "suggestedAnswer": "Samples per second measured in Hz.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Compression",
+    "question": "Compare lossless and lossy compression with a suitable use case for each.",
+    "paper": "",
+    "oldAnswer": "Lossless:\\nNo data is lost/original file can be recreated perfectly\\nUse: Text files/Source code/Spreadsheets\\n\\nLossy:\\nSome data is permanently removed/discarded (to reduce size)\\nUse: Images (JPEG)/Audio (MP3)/Video",
+    "suggestedAnswer": "Reducing file size while preserving information.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Compression",
+    "question": "Describe what a dictionary-based compression method does in general terms.",
+    "paper": "",
+    "oldAnswer": "Builds a dictionary/index of frequent patterns/words\\nReplaces instances of patterns with short references/tokens to the dictionary",
+    "suggestedAnswer": "Reducing file size while preserving information.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossy compression",
+    "question": "Compare lossless and lossy compression with a suitable use case for each.",
+    "paper": "",
+    "oldAnswer": "Lossless:\\nNo data is lost/original file can be recreated perfectly\\nUse: Text files/Source code/Spreadsheets\\n\\nLossy:\\nSome data is permanently removed/discarded (to reduce size)\\nUse: Images (JPEG)/Audio (MP3)/Video",
+    "suggestedAnswer": "Compression that removes some information.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Simplex",
+    "question": "Tick (✓) one box to show which of the terms is not a method for transmitting data.\\nA serial\\nB simplex\\nC parallel\\nD parity",
+    "paper": "",
+    "oldAnswer": "D parity",
+    "suggestedAnswer": "Communication in one direction only.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Simplex",
+    "question": "Explain the difference between simplex, half-duplex and full-duplex data transmission.",
+    "paper": "",
+    "oldAnswer": "Simplex:\\nData flows in one direction only\\nExample: Keyboard to CPU\\n\\nHalf-duplex:\\nData flows in both directions but not at the same time\\nExample: Walkie-talkie\\n\\nFull-duplex:\\nData flows in both directions simultaneously\\nExample: Telephone call",
+    "suggestedAnswer": "Communication in one direction only.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Half-duplex",
+    "question": "Explain the difference between simplex, half-duplex and full-duplex data transmission.",
+    "paper": "",
+    "oldAnswer": "Simplex:\\nData flows in one direction only\\nExample: Keyboard to CPU\\n\\nHalf-duplex:\\nData flows in both directions but not at the same time\\nExample: Walkie-talkie\\n\\nFull-duplex:\\nData flows in both directions simultaneously\\nExample: Telephone call",
+    "suggestedAnswer": "Communication both ways but not at the same time.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Full-duplex",
+    "question": "Explain the difference between simplex, half-duplex and full-duplex data transmission.",
+    "paper": "",
+    "oldAnswer": "Simplex:\\nData flows in one direction only\\nExample: Keyboard to CPU\\n\\nHalf-duplex:\\nData flows in both directions but not at the same time\\nExample: Walkie-talkie\\n\\nFull-duplex:\\nData flows in both directions simultaneously\\nExample: Telephone call",
+    "suggestedAnswer": "Communication both ways simultaneously.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "question": "Describe the structure of a data packet.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer",
+    "suggestedAnswer": "Unit of data sent across a network with header and payload.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "question": "Packet switching is used to transmit the data packets across the network.\\nIdentify the device that controls which path is taken by each data packet.",
+    "paper": "",
+    "oldAnswer": "Router",
+    "suggestedAnswer": "Unit of data sent across a network with header and payload.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Checksum",
+    "question": "Explain what a checksum is and how it is used.",
+    "paper": "",
+    "oldAnswer": "A checksum is a value computed from the data\\nThe sender transmits it with the packet\\nThe receiver recomputes the checksum\\n... and compares it to the received checksum to detect errors",
+    "suggestedAnswer": "Calculated value used to detect errors in data.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "ARQ",
+    "question": "Describe how an Automatic Repeat Request (ARQ) system is used to check for errors.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe sender transmits a data packet\\n... and waits for an acknowledgement (ACK)\\nIf no ACK is received within a timeout period\\n... or if a negative acknowledgement (NACK) is received\\nThe sender retransmits the packet\\nThis process repeats until an ACK is received or a limit is reached",
+    "suggestedAnswer": "Automatic repeat request protocol for retransmission.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet switching",
+    "question": "Packet switching is used to transmit the data packets across the network.\\nIdentify the device that controls which path is taken by each data packet.",
+    "paper": "",
+    "oldAnswer": "Router",
+    "suggestedAnswer": "Data split into packets routed independently.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "CPU",
+    "question": "Explain the function of the ALU and Control Unit in a CPU.",
+    "paper": "",
+    "oldAnswer": "The ALU performs arithmetic and logic operations; the Control Unit fetches, decodes and coordinates execution of instructions.",
+    "suggestedAnswer": "Central processing unit executing instructions.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "CPU",
+    "question": "Explain how clock speed and cache size affect CPU performance.",
+    "paper": "",
+    "oldAnswer": "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM.",
+    "suggestedAnswer": "Central processing unit executing instructions.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ALU",
+    "question": "Explain the function of the ALU and Control Unit in a CPU.",
+    "paper": "",
+    "oldAnswer": "The ALU performs arithmetic and logic operations; the Control Unit fetches, decodes and coordinates execution of instructions.",
+    "suggestedAnswer": "Arithmetic logic unit performing operations.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Control unit",
+    "question": "Explain the function of the ALU and Control Unit in a CPU.",
+    "paper": "",
+    "oldAnswer": "The ALU performs arithmetic and logic operations; the Control Unit fetches, decodes and coordinates execution of instructions.",
+    "suggestedAnswer": "Directs operations of the processor.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Clock",
+    "question": "Explain how clock speed and cache size affect CPU performance.",
+    "paper": "",
+    "oldAnswer": "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM.",
+    "suggestedAnswer": "Generates timing signals controlling the processor.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "question": "Compare RAM and ROM with one use case for each.",
+    "paper": "",
+    "oldAnswer": "RAM is volatile working memory used during program execution. ROM is non-volatile and stores firmware that runs at start-up.",
+    "suggestedAnswer": "Volatile main memory for programs and data in use.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "ROM",
+    "question": "Compare RAM and ROM with one use case for each.",
+    "paper": "",
+    "oldAnswer": "RAM is volatile working memory used during program execution. ROM is non-volatile and stores firmware that runs at start-up.",
+    "suggestedAnswer": "Any one from:\\n• Permanently store instructions (in ROM)\\n• Stores instructions to boot up/start up the computer\\n• Provides the operating system with a platform to run on\\n• Controls/manages/allows communication with hardware\\n• Store instructions securely (to stop them being easily corrupted)",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Von Neumann architecture",
+    "question": "Name the three buses in Von Neumann architecture and state their roles.",
+    "paper": "",
+    "oldAnswer": "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+    "suggestedAnswer": "Shared memory for instructions and data.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Input device",
+    "question": "Give one example each of an input device, output device and sensor.",
+    "paper": "",
+    "oldAnswer": "Input: keyboard; Output: monitor; Sensor: temperature sensor.",
+    "suggestedAnswer": "Hardware used to enter data into a system.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Output device",
+    "question": "Give one example each of an input device, output device and sensor.",
+    "paper": "",
+    "oldAnswer": "Input: keyboard; Output: monitor; Sensor: temperature sensor.",
+    "suggestedAnswer": "Hardware used to present data from a system.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Output device",
+    "question": "Identify one output device built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "Any one from:\\n• Screen\\n• Speaker\\n• LED",
+    "suggestedAnswer": "Hardware used to present data from a system.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Sensor",
+    "question": "Give one example each of an input device, output device and sensor.",
+    "paper": "",
+    "oldAnswer": "Input: keyboard; Output: monitor; Sensor: temperature sensor.",
+    "suggestedAnswer": "Device detecting physical properties to produce data.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "HDD",
+    "question": "State one advantage and one disadvantage of SSD compared to HDD.",
+    "paper": "",
+    "oldAnswer": "Advantage: faster access and no moving parts. Disadvantage: typically higher cost per GB.",
+    "suggestedAnswer": "Magnetic storage using spinning disks.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "SSD",
+    "question": "State one advantage and one disadvantage of SSD compared to HDD.",
+    "paper": "",
+    "oldAnswer": "Advantage: faster access and no moving parts. Disadvantage: typically higher cost per GB.",
+    "suggestedAnswer": "Solid-state storage using flash memory.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Optical storage",
+    "question": "Describe how data is written to and read from optical storage.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA laser beam is used to read/write data\\nData is stored as pits and lands\\n... on a spiral track\\nWhen reading, the laser is reflected differently by pits and lands\\n... which is interpreted as binary 1s and 0s",
+    "suggestedAnswer": "Storage using lasers to read/write data.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "System software",
+    "question": "Explain the difference between system software and application software.",
+    "paper": "",
+    "oldAnswer": "System software manages and supports computer operations; application software performs user-facing tasks.",
+    "suggestedAnswer": "Any two from:\\n• System software manages/maintains the hardware/software\\n• Applications software allows the user to perform tasks",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Application software",
+    "question": "Explain the difference between system software and application software.",
+    "paper": "",
+    "oldAnswer": "System software manages and supports computer operations; application software performs user-facing tasks.",
+    "suggestedAnswer": "Any two from:\\n• System software manages/maintains the hardware/software\\n• Applications software allows the user to perform tasks",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Operating system",
+    "question": "State two functions of an operating system.",
+    "paper": "",
+    "oldAnswer": "Examples: memory management, file management, process scheduling, device control, security.",
+    "suggestedAnswer": "Any three from:\\n• It performs the basic functions of a computer\\n• It manages the hardware\\n• It provides a platform to run software\\n• It provides a user interface\\n• It performs tasks such as (any example of function of an operating system)",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "CLI",
+    "question": "Compare CLI and GUI with one advantage of each.",
+    "paper": "",
+    "oldAnswer": "CLI:\\nAllows precise control via commands\\n... uses fewer system resources\\n\\nGUI:\\nMore intuitive/easier for beginners\\n... allows WIMP interactions (windows, icons, menus, pointer)",
+    "suggestedAnswer": "Command-line interface using typed commands.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "GUI",
+    "question": "Compare CLI and GUI with one advantage of each.",
+    "paper": "",
+    "oldAnswer": "CLI:\\nAllows precise control via commands\\n... uses fewer system resources\\n\\nGUI:\\nMore intuitive/easier for beginners\\n... allows WIMP interactions (windows, icons, menus, pointer)",
+    "suggestedAnswer": "Graphical user interface using windows, icons and menus.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Compiler",
+    "question": "Compare compiler and interpreter.",
+    "paper": "",
+    "oldAnswer": "A compiler translates the whole program into object code before execution; an interpreter translates and executes line by line at runtime.",
+    "suggestedAnswer": "Two from for each compiler and interpreter.\\nCompiler\\n• Checks all code before executing any code\\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\\n• Produces executable file\\nInterpreter\\n• Checks/translates one line of code and then executes it before moving on to the next line\\n• Stops when an error is found\\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Interpreter",
+    "question": "Compare compiler and interpreter.",
+    "paper": "",
+    "oldAnswer": "A compiler translates the whole program into object code before execution; an interpreter translates and executes line by line at runtime.",
+    "suggestedAnswer": "Two from for each compiler and interpreter.\\nCompiler\\n• Checks all code before executing any code\\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\\n• Produces executable file\\nInterpreter\\n• Checks/translates one line of code and then executes it before moving on to the next line\\n• Stops when an error is found\\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "High-level language",
+    "question": "State two advantages of using a High-Level Language (HLL) compared to a Low-Level Language (LLL).",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nEasier to understand/read/write (for humans)\\n... as it uses English-like statements\\nEasier to debug/find errors\\nPortable/machine independent\\n... code can run on different hardware without rewrite",
+    "suggestedAnswer": "Language close to human readability and abstraction.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Low-level language",
+    "question": "State two advantages of using a High-Level Language (HLL) compared to a Low-Level Language (LLL).",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nEasier to understand/read/write (for humans)\\n... as it uses English-like statements\\nEasier to debug/find errors\\nPortable/machine independent\\n... code can run on different hardware without rewrite",
+    "suggestedAnswer": "Language close to machine operations and hardware.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Proprietary software",
+    "question": "State one advantage of open-source software and one advantage of proprietary software.",
+    "paper": "",
+    "oldAnswer": "Open-source: free to use/modify; community support; transparency.\\nProprietary: dedicated vendor support; regular updates; polished features.",
+    "suggestedAnswer": "Software licensed with restricted use and access.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "DNS",
+    "question": "Describe the role of DNS in accessing websites.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups",
+    "suggestedAnswer": "Domain Name System translating names to IP addresses.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "HTTP",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "HyperText Transfer Protocol for web communication.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "HTTPS",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "Secure version of HTTP using TLS encryption.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "HTTPS",
+    "question": "State two advantages of using HTTPS when shopping online.",
+    "paper": "",
+    "oldAnswer": "Encrypts data to prevent interception/read by third parties\\nAuthenticates the web server via digital certificates",
+    "suggestedAnswer": "Secure version of HTTP using TLS encryption.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Cookie",
+    "question": "Explain the purpose of a cookie.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo store user preferences/settings\\n... e.g., language choice, theme\\nTo track user browsing habits/analytics\\nTo implement shopping carts\\n... holding items while user browses\\nTo keep a user logged in (session management)",
+    "suggestedAnswer": "Small data stored by a browser for a website.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Firewall",
+    "question": "Explain how a firewall helps protect a network.",
+    "paper": "",
+    "oldAnswer": "Monitors and filters incoming/outgoing traffic\\nBlocks unauthorised access based on rules\\nCan prevent certain types of attacks (e.g., port scans)\\nAllows permitted traffic while denying suspicious connections",
+    "suggestedAnswer": "Network security system controlling traffic.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Phishing",
+    "question": "State two methods to protect users from phishing.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nEducate users to check URLs/email addresses carefully\\nUse spam filters to block suspicious emails\\nDo not click links in unsolicited emails\\nCheck for the padlock symbol/HTTPS",
+    "suggestedAnswer": "Fraudulent attempt to obtain sensitive information.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Phishing",
+    "question": "Explain the difference between phishing and pharming.",
+    "paper": "",
+    "oldAnswer": "Phishing:\\nInvolves sending fraudulent emails/messages\\n... to trick users into revealing personal data (by clicking links)\\n\\nPharming:\\nInvolves malicious code installed on a user's hard drive or web server\\n... which redirects the user to a fake website (even if correct URL is typed)\\n... without the user's knowledge",
+    "suggestedAnswer": "Fraudulent attempt to obtain sensitive information.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Trojan",
+    "question": "Describe what a Trojan horse is and one way it can be spread.",
+    "paper": "",
+    "oldAnswer": "Trojan horse: Malware disguised as legitimate software that performs malicious actions when executed\\nSpread: Via email attachments or through downloads from untrusted/malicious websites",
+    "suggestedAnswer": "Malware disguised as legitimate software.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital signature",
+    "question": "Explain how a digital signature is used to verify the authenticity of a document.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA hash/digest of the document is created\\n... using a hashing algorithm\\nThe hash is encrypted using the sender's private key\\n... to create the digital signature\\nThe receiver decrypts the signature using the sender's public key\\n... to get the original hash\\nThe receiver recalculates the hash of the received document\\nIf the two hashes match, the document is authentic and unaltered",
+    "suggestedAnswer": "Cryptographic proof of content integrity and origin.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Algorithm",
+    "question": "Describe how a Bubble Sort algorithm sorts a list of numbers into ascending order.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe algorithm loops through the list\\nIt compares each pair of adjacent elements\\nIf they are in the wrong order, it swaps them\\nIt records that a swap has occurred\\nIt repeats the loop until a pass is made with no swaps",
+    "suggestedAnswer": "Finite sequence of steps to solve a problem.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "question": "Trace this pseudocode and state the final value of total given input n=5.",
+    "paper": "",
+    "oldAnswer": "For i from 1 to 5, total accumulates 15. Final value: 15.",
+    "suggestedAnswer": "Structured English describing algorithms independent of language.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Pseudocode",
+    "question": "Explain the difference between selection and iteration using pseudocode examples.",
+    "paper": "",
+    "oldAnswer": "Selection uses if/else to choose a path; iteration uses loops to repeat steps. Example: IF X>0 THEN...; FOR i=1 TO n ...",
+    "suggestedAnswer": "Structured English describing algorithms independent of language.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Flowchart",
+    "question": "Identify the standard flowchart symbol used for an assignment or process.",
+    "paper": "",
+    "oldAnswer": "Rectangle",
+    "suggestedAnswer": "Diagram representing sequence and control flow.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Trace table",
+    "question": "Explain the purpose of a trace table.",
+    "paper": "",
+    "oldAnswer": "To manually track the values of variables as the code executes, allowing logic errors to be identified.",
+    "suggestedAnswer": "Table tracking variable values step by step.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Linear search",
+    "question": "Compare Linear Search and Binary Search.",
+    "paper": "",
+    "oldAnswer": "Linear search checks every item in sequence; it works on any list but is slow for large lists. Binary search keeps dividing the list in half; it is much faster but requires the list to be sorted.",
+    "suggestedAnswer": "Searching sequentially through a list.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Binary search",
+    "question": "Compare Linear Search and Binary Search.",
+    "paper": "",
+    "oldAnswer": "Linear search checks every item in sequence; it works on any list but is slow for large lists. Binary search keeps dividing the list in half; it is much faster but requires the list to be sorted.",
+    "suggestedAnswer": "Searching a sorted list by halving the search space.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Bubble sort",
+    "question": "Describe how a Bubble Sort algorithm sorts a list of numbers into ascending order.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe algorithm loops through the list\\nIt compares each pair of adjacent elements\\nIf they are in the wrong order, it swaps them\\nIt records that a swap has occurred\\nIt repeats the loop until a pass is made with no swaps",
+    "suggestedAnswer": "Repeatedly swapping adjacent out-of-order elements.",
+    "matchType": "term_in_question",
+    "confidence": 0.8
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Binary",
+    "question": "Give two reasons why ticket numbers are displayed as hexadecimal.",
+    "paper": "",
+    "oldAnswer": "1. Shorter representation than binary\\n2. Easier for humans to read",
+    "suggestedAnswer": "Base-2 number system using digits 0 and 1.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Binary",
+    "question": "Identify correct statement about logical left shift of 2 places.",
+    "paper": "",
+    "oldAnswer": "It would multiply the binary number by 4",
+    "suggestedAnswer": "Base-2 number system using digits 0 and 1.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Character set",
+    "question": "Describe a difference between ASCII and Unicode and why Unicode is needed.",
+    "paper": "",
+    "oldAnswer": "Difference:\\nASCII uses 7 or 8 bits (per character)\\nUnicode uses 16 or 32 bits (per character)\\n\\nReason:\\nASCII has a limited character set (Latin only)\\nUnicode covers all major languages/symbols (internationalization)",
+    "suggestedAnswer": "Collection of characters each with a unique code.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-1",
+    "term": "pixel",
+    "question": "Define colour depth and explain its effect on image file size.",
+    "paper": "",
+    "oldAnswer": "Colour depth is the number of bits used to represent each pixel\\nGreater colour depth allows more colours to be represented\\n... which increases the file size\\n... as more bits are needed for each pixel",
+    "suggestedAnswer": "Smallest addressable element of a raster image.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Serial transmission",
+    "question": "Serial data transmission is used to transmit the data packets across the network.\\nExplain why serial data transmission is used to transmit the data packets.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nThe network may be spread over a long distance ...\\n... so it is more reliable\\nBits will be sent/arrive in sequence\\n...so bits less likely to be skewed\\nLess crosstalk/interference\\n... so less likely to have errors\\nThe data may not need to be transmitted at a fast speed // data transmission speed of serial is adequate\\nThe cables in the network only use serial transmission",
+    "suggestedAnswer": "Bits sent one after another over a single channel.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "question": "Data is broken down into smaller units to be transmitted from one device to another.\\nGive the name of the unit that data is broken down into.",
+    "paper": "",
+    "oldAnswer": "Packet",
+    "suggestedAnswer": "Unit of data sent across a network with header and payload.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "question": "Describe how an Automatic Repeat Request (ARQ) system is used to check for errors.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe sender transmits a data packet\\n... and waits for an acknowledgement (ACK)\\nIf no ACK is received within a timeout period\\n... or if a negative acknowledgement (NACK) is received\\nThe sender retransmits the packet\\nThis process repeats until an ACK is received or a limit is reached",
+    "suggestedAnswer": "Unit of data sent across a network with header and payload.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet",
+    "question": "Explain what a checksum is and how it is used.",
+    "paper": "",
+    "oldAnswer": "A checksum is a value computed from the data\\nThe sender transmits it with the packet\\nThe receiver recomputes the checksum\\n... and compares it to the received checksum to detect errors",
+    "suggestedAnswer": "Unit of data sent across a network with header and payload.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Header",
+    "question": "Describe the structure of a data packet.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer",
+    "suggestedAnswer": "Control information at the start of a packet.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Payload",
+    "question": "Describe the structure of a data packet.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer",
+    "suggestedAnswer": "User data carried in a packet.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Trailer",
+    "question": "Describe the structure of a data packet.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer",
+    "suggestedAnswer": "Data at the end of a packet, often for error checking.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "question": "Explain how clock speed and cache size affect CPU performance.",
+    "paper": "",
+    "oldAnswer": "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM.",
+    "suggestedAnswer": "Volatile main memory for programs and data in use.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "RAM",
+    "question": "Explain the purpose of Virtual Memory.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed",
+    "suggestedAnswer": "Volatile main memory for programs and data in use.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Bus",
+    "question": "Name the three buses in Von Neumann architecture and state their roles.",
+    "paper": "",
+    "oldAnswer": "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+    "suggestedAnswer": "Set of wires carrying data, addresses and control signals.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Bus",
+    "question": "Describe the steps of the Fetch-Execute cycle.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe PC holds the address of the next instruction\\nThe address is copied to the MAR\\nThe address is sent along the address bus\\nThe instruction is fetched from that address in memory\\n... and transferred to the MDR\\nThe instruction is sent to the CIR\\nThe PC is incremented\\nThe instruction is decoded and executed",
+    "suggestedAnswer": "Set of wires carrying data, addresses and control signals.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Data bus",
+    "question": "Name the three buses in Von Neumann architecture and state their roles.",
+    "paper": "",
+    "oldAnswer": "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+    "suggestedAnswer": "Transfers actual data between components.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Address bus",
+    "question": "Name the three buses in Von Neumann architecture and state their roles.",
+    "paper": "",
+    "oldAnswer": "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+    "suggestedAnswer": "Carries memory addresses for data access.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Address bus",
+    "question": "Describe the steps of the Fetch-Execute cycle.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe PC holds the address of the next instruction\\nThe address is copied to the MAR\\nThe address is sent along the address bus\\nThe instruction is fetched from that address in memory\\n... and transferred to the MDR\\nThe instruction is sent to the CIR\\nThe PC is incremented\\nThe instruction is decoded and executed",
+    "suggestedAnswer": "Carries memory addresses for data access.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Control bus",
+    "question": "Name the three buses in Von Neumann architecture and state their roles.",
+    "paper": "",
+    "oldAnswer": "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+    "suggestedAnswer": "Carries control signals coordinating operations.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Sensor",
+    "question": "A greenhouse system controls temperature automatically. Describe how the system uses sensors and actuators to maintain temperature.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe temperature sensor constantly measures the temperature\\nIt sends analogue data to the ADC\\n... which converts it to digital data for the microprocessor\\nThe microprocessor compares the reading to a pre-set value\\nIf temperature < pre-set value, it signals the actuator\\n... to turn on the heater\\nIf temperature > pre-set value, it signals the actuator to turn off the heater/open windows",
+    "suggestedAnswer": "Device detecting physical properties to produce data.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Actuator",
+    "question": "A greenhouse system controls temperature automatically. Describe how the system uses sensors and actuators to maintain temperature.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe temperature sensor constantly measures the temperature\\nIt sends analogue data to the ADC\\n... which converts it to digital data for the microprocessor\\nThe microprocessor compares the reading to a pre-set value\\nIf temperature < pre-set value, it signals the actuator\\n... to turn on the heater\\nIf temperature > pre-set value, it signals the actuator to turn off the heater/open windows",
+    "suggestedAnswer": "Device converting data signals into physical action.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Secondary storage",
+    "question": "Explain the purpose of Virtual Memory.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed",
+    "suggestedAnswer": "Non-volatile storage for long-term data.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "HDD",
+    "question": "Explain the purpose of Virtual Memory.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed",
+    "suggestedAnswer": "Magnetic storage using spinning disks.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "SSD",
+    "question": "Explain the purpose of Virtual Memory.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed",
+    "suggestedAnswer": "Solid-state storage using flash memory.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-3",
+    "term": "SSD",
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "SSD // Solid-state drive // Solid-state (device)",
+    "suggestedAnswer": "Solid-state storage using flash memory.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Scheduling",
+    "question": "State two functions of an operating system.",
+    "paper": "",
+    "oldAnswer": "Examples: memory management, file management, process scheduling, device control, security.",
+    "suggestedAnswer": "Deciding which process runs and for how long.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Memory management",
+    "question": "State two functions of an operating system.",
+    "paper": "",
+    "oldAnswer": "Examples: memory management, file management, process scheduling, device control, security.",
+    "suggestedAnswer": "Allocation and control of primary memory.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-4",
+    "term": "File management",
+    "question": "State two functions of an operating system.",
+    "paper": "",
+    "oldAnswer": "Examples: memory management, file management, process scheduling, device control, security.",
+    "suggestedAnswer": "Creation, storage and access of files and directories.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Security",
+    "question": "State two functions of an operating system.",
+    "paper": "",
+    "oldAnswer": "Examples: memory management, file management, process scheduling, device control, security.",
+    "suggestedAnswer": "Authentication, authorization and protection mechanisms.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Compiler",
+    "question": "Explain why a programmer might choose to write code in Assembly Language.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access",
+    "suggestedAnswer": "Two from for each compiler and interpreter.\\nCompiler\\n• Checks all code before executing any code\\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\\n• Produces executable file\\nInterpreter\\n• Checks/translates one line of code and then executes it before moving on to the next line\\n• Stops when an error is found\\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Interpreter",
+    "question": "Explain why a programmer might choose to write code in Assembly Language.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access",
+    "suggestedAnswer": "Two from for each compiler and interpreter.\\nCompiler\\n• Checks all code before executing any code\\n• Produces error report with all errors found for the whole code (before translating/running any of the code)\\n• Produces executable file\\nInterpreter\\n• Checks/translates one line of code and then executes it before moving on to the next line\\n• Stops when an error is found\\n• … when corrected the program can be run from the same position // allows error correction in real time",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Assembler",
+    "question": "Explain why a programmer might choose to write code in Assembly Language.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access",
+    "suggestedAnswer": "Converts assembly language to machine code.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Object code",
+    "question": "Compare compiler and interpreter.",
+    "paper": "",
+    "oldAnswer": "A compiler translates the whole program into object code before execution; an interpreter translates and executes line by line at runtime.",
+    "suggestedAnswer": "Machine code produced by a translator.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "URL",
+    "question": "Describe the role of DNS in accessing websites.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups",
+    "suggestedAnswer": "Uniform Resource Locator identifying a resource.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "URL",
+    "question": "Explain the difference between phishing and pharming.",
+    "paper": "",
+    "oldAnswer": "Phishing:\\nInvolves sending fraudulent emails/messages\\n... to trick users into revealing personal data (by clicking links)\\n\\nPharming:\\nInvolves malicious code installed on a user's hard drive or web server\\n... which redirects the user to a fake website (even if correct URL is typed)\\n... without the user's knowledge",
+    "suggestedAnswer": "Uniform Resource Locator identifying a resource.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Domain name",
+    "question": "Describe the role of DNS in accessing websites.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups",
+    "suggestedAnswer": "Human-readable address of an internet resource.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "IP address",
+    "question": "Describe the role of DNS in accessing websites.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups",
+    "suggestedAnswer": "Numerical label identifying a device on a network.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "HTTPS",
+    "question": "State two methods to protect users from phishing.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nEducate users to check URLs/email addresses carefully\\nUse spam filters to block suspicious emails\\nDo not click links in unsolicited emails\\nCheck for the padlock symbol/HTTPS",
+    "suggestedAnswer": "Secure version of HTTP using TLS encryption.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Email",
+    "question": "State two methods to protect users from phishing.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nEducate users to check URLs/email addresses carefully\\nUse spam filters to block suspicious emails\\nDo not click links in unsolicited emails\\nCheck for the padlock symbol/HTTPS",
+    "suggestedAnswer": "Electronic mail system for messages.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Email",
+    "question": "Describe what a Trojan horse is and one way it can be spread.",
+    "paper": "",
+    "oldAnswer": "Trojan horse: Malware disguised as legitimate software that performs malicious actions when executed\\nSpread: Via email attachments or through downloads from untrusted/malicious websites",
+    "suggestedAnswer": "Electronic mail system for messages.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Firewall",
+    "question": "Explain what a denial-of-service (DoS) attack is and state one method to prevent it.",
+    "paper": "",
+    "oldAnswer": "DoS attack: A malicious attempt to make a network or service unavailable by overwhelming it with traffic/requests\\nPrevention: Use a firewall to filter incoming traffic or apply rate limiting to block excessive requests",
+    "suggestedAnswer": "Network security system controlling traffic.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Malware",
+    "question": "Describe what a Trojan horse is and one way it can be spread.",
+    "paper": "",
+    "oldAnswer": "Trojan horse: Malware disguised as legitimate software that performs malicious actions when executed\\nSpread: Via email attachments or through downloads from untrusted/malicious websites",
+    "suggestedAnswer": "Malicious software designed to cause harm.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "TLS/SSL",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "Protocols providing secure communication.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital certificate",
+    "question": "Describe the process of SSL/TLS handshaking.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe client sends a request to the server to establish a secure connection\\nThe server sends its digital certificate to the client\\n... which includes the server's public key\\nThe client verifies the digital certificate (authenticity and date)\\nThe client generates a session key\\n... encrypts it with the server's public key\\n... and sends it to the server\\nThe server decrypts the session key with its private key\\nBoth parties now use the session key for encrypted communication",
+    "suggestedAnswer": "Electronic document verifying identity and public key.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Authentication",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "Verifying user identity.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Normal data",
+    "question": "Identify three types of test data used to test a system.",
+    "paper": "",
+    "oldAnswer": "Normal data (valid/typical), Boundary data (extreme ends of valid range), Erroneous/Abnormal data (invalid).",
+    "suggestedAnswer": "Typical valid inputs expected during regular use.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Boundary data",
+    "question": "Identify three types of test data used to test a system.",
+    "paper": "",
+    "oldAnswer": "Normal data (valid/typical), Boundary data (extreme ends of valid range), Erroneous/Abnormal data (invalid).",
+    "suggestedAnswer": "Inputs at the extremes of acceptable ranges.",
+    "matchType": "term_in_answer",
+    "confidence": 0.65
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Vector graphics",
+    "question": "Explain RLE and when it is effective.",
+    "paper": "",
+    "oldAnswer": "Run-length encoding stores consecutive identical values as a count and the value\\nExample: AAAAA becomes 5A\\nEffective for data with long runs of repeated values (e.g., simple graphics)\\nNot effective for random data",
+    "suggestedAnswer": "Images defined using geometric primitives.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit rate",
+    "question": "Explain why overflow occurs in 8-bit unsigned binary addition. Give an example.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIn 8-bit unsigned binary, the largest value is 255\\nThe result of the addition exceeds 255\\nThe most significant bit (carry bit) is discarded\\n... causing wrap-around\\nExample: 11111111₂ (255) + 00000001₂ (1) → 00000000₂",
+    "suggestedAnswer": "Bits transmitted/stored per second.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit rate",
+    "question": "Calculate the file size of a 400×300 image with 16-bit colour depth, uncompressed.",
+    "paper": "",
+    "oldAnswer": "Pixels: 400 × 300 = 120,000\\nBits: 120,000 × 16 = 1,920,000 bits\\nBytes: 1,920,000 / 8 = 240,000 bytes\\n(≈ 234.4 KB)",
+    "suggestedAnswer": "Bits transmitted/stored per second.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit rate",
+    "question": "State how sample rate and resolution affect sound quality and file size.",
+    "paper": "",
+    "oldAnswer": "Sample rate: Number of samples taken per second\\nHigher sample rate improves sound accuracy/quality\\n... but increases file size\\n\\nResolution: Number of bits per sample\\nHigher resolution improves dynamic range/quality\\n... but increases file size",
+    "suggestedAnswer": "Bits transmitted/stored per second.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Bit rate",
+    "question": "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed.",
+    "paper": "",
+    "oldAnswer": "Samples: 44,100 × 30 = 1,323,000\\nTotal bits: 1,323,000 × 16 = 21,168,000 bits\\nBytes: 21,168,000 / 8 = 2,646,000 bytes\\n(≈ 2.52 MB)",
+    "suggestedAnswer": "Bits transmitted/stored per second.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Sampling resolution",
+    "question": "State how sample rate and resolution affect sound quality and file size.",
+    "paper": "",
+    "oldAnswer": "Sample rate: Number of samples taken per second\\nHigher sample rate improves sound accuracy/quality\\n... but increases file size\\n\\nResolution: Number of bits per sample\\nHigher resolution improves dynamic range/quality\\n... but increases file size",
+    "suggestedAnswer": "Bits used to store each sample’s amplitude.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Sampling resolution",
+    "question": "Calculate the file size of a 30-second mono audio clip, 44.1 kHz sample rate, 16-bit resolution, uncompressed.",
+    "paper": "",
+    "oldAnswer": "Samples: 44,100 × 30 = 1,323,000\\nTotal bits: 1,323,000 × 16 = 21,168,000 bits\\nBytes: 21,168,000 / 8 = 2,646,000 bytes\\n(≈ 2.52 MB)",
+    "suggestedAnswer": "Bits used to store each sample’s amplitude.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossless compression",
+    "question": "Compare lossless and lossy compression with a suitable use case for each.",
+    "paper": "",
+    "oldAnswer": "Lossless:\\nNo data is lost/original file can be recreated perfectly\\nUse: Text files/Source code/Spreadsheets\\n\\nLossy:\\nSome data is permanently removed/discarded (to reduce size)\\nUse: Images (JPEG)/Audio (MP3)/Video",
+    "suggestedAnswer": "Compression without losing information.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossless compression",
+    "question": "Describe what a dictionary-based compression method does in general terms.",
+    "paper": "",
+    "oldAnswer": "Builds a dictionary/index of frequent patterns/words\\nReplaces instances of patterns with short references/tokens to the dictionary",
+    "suggestedAnswer": "Compression without losing information.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Lossy compression",
+    "question": "Describe what a dictionary-based compression method does in general terms.",
+    "paper": "",
+    "oldAnswer": "Builds a dictionary/index of frequent patterns/words\\nReplaces instances of patterns with short references/tokens to the dictionary",
+    "suggestedAnswer": "Compression that removes some information.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-1",
+    "term": "Run-length encoding (RLE)",
+    "question": "Explain RLE and when it is effective.",
+    "paper": "",
+    "oldAnswer": "Run-length encoding stores consecutive identical values as a count and the value\\nExample: AAAAA becomes 5A\\nEffective for data with long runs of repeated values (e.g., simple graphics)\\nNot effective for random data",
+    "suggestedAnswer": "Encoding consecutive repeated values as count-value pairs.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Serial transmission",
+    "question": "Tick (✓) one box to show which of the terms is not a method for transmitting data.\\nA serial\\nB simplex\\nC parallel\\nD parity",
+    "paper": "",
+    "oldAnswer": "D parity",
+    "suggestedAnswer": "Bits sent one after another over a single channel.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Serial transmission",
+    "question": "Explain the difference between simplex, half-duplex and full-duplex data transmission.",
+    "paper": "",
+    "oldAnswer": "Simplex:\\nData flows in one direction only\\nExample: Keyboard to CPU\\n\\nHalf-duplex:\\nData flows in both directions but not at the same time\\nExample: Walkie-talkie\\n\\nFull-duplex:\\nData flows in both directions simultaneously\\nExample: Telephone call",
+    "suggestedAnswer": "Bits sent one after another over a single channel.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parallel transmission",
+    "question": "Serial data transmission is used to transmit the data packets across the network.\\nExplain why serial data transmission is used to transmit the data packets.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nThe network may be spread over a long distance ...\\n... so it is more reliable\\nBits will be sent/arrive in sequence\\n...so bits less likely to be skewed\\nLess crosstalk/interference\\n... so less likely to have errors\\nThe data may not need to be transmitted at a fast speed // data transmission speed of serial is adequate\\nThe cables in the network only use serial transmission",
+    "suggestedAnswer": "Multiple bits sent simultaneously across several channels.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parallel transmission",
+    "question": "Tick (✓) one box to show which of the terms is not a method for transmitting data.\\nA serial\\nB simplex\\nC parallel\\nD parity",
+    "paper": "",
+    "oldAnswer": "D parity",
+    "suggestedAnswer": "Multiple bits sent simultaneously across several channels.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parallel transmission",
+    "question": "Explain the difference between simplex, half-duplex and full-duplex data transmission.",
+    "paper": "",
+    "oldAnswer": "Simplex:\\nData flows in one direction only\\nExample: Keyboard to CPU\\n\\nHalf-duplex:\\nData flows in both directions but not at the same time\\nExample: Walkie-talkie\\n\\nFull-duplex:\\nData flows in both directions simultaneously\\nExample: Telephone call",
+    "suggestedAnswer": "Multiple bits sent simultaneously across several channels.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parity bit",
+    "question": "Tick (✓) one box to show which of the terms is not a method for transmitting data.\\nA serial\\nB simplex\\nC parallel\\nD parity",
+    "paper": "",
+    "oldAnswer": "D parity",
+    "suggestedAnswer": "Bit added to make the total number of 1s even/odd.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Parity bit",
+    "question": "Describe parity bits and a limitation of parity checking.",
+    "paper": "",
+    "oldAnswer": "Parity adds a bit to make the number of 1s even or odd\\nLimitation: it detects single-bit errors\\n... but not all multi-bit errors (e.g., two-bit flips retain parity)",
+    "suggestedAnswer": "Bit added to make the total number of 1s even/odd.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Even parity",
+    "question": "Tick (✓) one box to show which of the terms is not a method for transmitting data.\\nA serial\\nB simplex\\nC parallel\\nD parity",
+    "paper": "",
+    "oldAnswer": "D parity",
+    "suggestedAnswer": "Parity method ensuring an even number of 1s.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Even parity",
+    "question": "Describe parity bits and a limitation of parity checking.",
+    "paper": "",
+    "oldAnswer": "Parity adds a bit to make the number of 1s even or odd\\nLimitation: it detects single-bit errors\\n... but not all multi-bit errors (e.g., two-bit flips retain parity)",
+    "suggestedAnswer": "Parity method ensuring an even number of 1s.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Odd parity",
+    "question": "Tick (✓) one box to show which of the terms is not a method for transmitting data.\\nA serial\\nB simplex\\nC parallel\\nD parity",
+    "paper": "",
+    "oldAnswer": "D parity",
+    "suggestedAnswer": "Parity method ensuring an odd number of 1s.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Odd parity",
+    "question": "Describe parity bits and a limitation of parity checking.",
+    "paper": "",
+    "oldAnswer": "Parity adds a bit to make the number of 1s even or odd\\nLimitation: it detects single-bit errors\\n... but not all multi-bit errors (e.g., two-bit flips retain parity)",
+    "suggestedAnswer": "Parity method ensuring an odd number of 1s.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet switching",
+    "question": "Describe the structure of a data packet.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA packet is split into three different sections\\n... the header\\n... the payload\\n... the trailer",
+    "suggestedAnswer": "Data split into packets routed independently.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet switching",
+    "question": "Data is broken down into smaller units to be transmitted from one device to another.\\nGive the name of the unit that data is broken down into.",
+    "paper": "",
+    "oldAnswer": "Packet",
+    "suggestedAnswer": "Data split into packets routed independently.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet switching",
+    "question": "Describe how an Automatic Repeat Request (ARQ) system is used to check for errors.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe sender transmits a data packet\\n... and waits for an acknowledgement (ACK)\\nIf no ACK is received within a timeout period\\n... or if a negative acknowledgement (NACK) is received\\nThe sender retransmits the packet\\nThis process repeats until an ACK is received or a limit is reached",
+    "suggestedAnswer": "Data split into packets routed independently.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-2",
+    "term": "Packet switching",
+    "question": "Explain what a checksum is and how it is used.",
+    "paper": "",
+    "oldAnswer": "A checksum is a value computed from the data\\nThe sender transmits it with the packet\\nThe receiver recomputes the checksum\\n... and compares it to the received checksum to detect errors",
+    "suggestedAnswer": "Data split into packets routed independently.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Control unit",
+    "question": "Name the three buses in Von Neumann architecture and state their roles.",
+    "paper": "",
+    "oldAnswer": "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+    "suggestedAnswer": "Directs operations of the processor.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Control unit",
+    "question": "Describe the stored program concept.",
+    "paper": "",
+    "oldAnswer": "Instructions and data are stored in the same memory unit\\n... and are accessed via the same buses.",
+    "suggestedAnswer": "Directs operations of the processor.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Cache memory",
+    "question": "Name the three buses in Von Neumann architecture and state their roles.",
+    "paper": "",
+    "oldAnswer": "Data bus carries data; Address bus carries memory addresses; Control bus carries control signals.",
+    "suggestedAnswer": "Fast memory storing frequently accessed data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Cache memory",
+    "question": "Describe the stored program concept.",
+    "paper": "",
+    "oldAnswer": "Instructions and data are stored in the same memory unit\\n... and are accessed via the same buses.",
+    "suggestedAnswer": "Fast memory storing frequently accessed data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Cache memory",
+    "question": "Describe the steps of the Fetch-Execute cycle.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe PC holds the address of the next instruction\\nThe address is copied to the MAR\\nThe address is sent along the address bus\\nThe instruction is fetched from that address in memory\\n... and transferred to the MDR\\nThe instruction is sent to the CIR\\nThe PC is incremented\\nThe instruction is decoded and executed",
+    "suggestedAnswer": "Fast memory storing frequently accessed data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Cache memory",
+    "question": "Explain how clock speed and cache size affect CPU performance.",
+    "paper": "",
+    "oldAnswer": "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM.",
+    "suggestedAnswer": "Fast memory storing frequently accessed data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Cache memory",
+    "question": "Compare RAM and ROM with one use case for each.",
+    "paper": "",
+    "oldAnswer": "RAM is volatile working memory used during program execution. ROM is non-volatile and stores firmware that runs at start-up.",
+    "suggestedAnswer": "Fast memory storing frequently accessed data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Cache memory",
+    "question": "Explain the purpose of Virtual Memory.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed",
+    "suggestedAnswer": "Fast memory storing frequently accessed data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Data bus",
+    "question": "Describe the stored program concept.",
+    "paper": "",
+    "oldAnswer": "Instructions and data are stored in the same memory unit\\n... and are accessed via the same buses.",
+    "suggestedAnswer": "Transfers actual data between components.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Data bus",
+    "question": "Describe the steps of the Fetch-Execute cycle.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe PC holds the address of the next instruction\\nThe address is copied to the MAR\\nThe address is sent along the address bus\\nThe instruction is fetched from that address in memory\\n... and transferred to the MDR\\nThe instruction is sent to the CIR\\nThe PC is incremented\\nThe instruction is decoded and executed",
+    "suggestedAnswer": "Transfers actual data between components.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Data bus",
+    "question": "Explain how clock speed and cache size affect CPU performance.",
+    "paper": "",
+    "oldAnswer": "Clock speed: Higher speed means more cycles per second, so more instructions can be processed.\\nCache size: Larger cache stores more frequently used instructions/data closer to the CPU, reducing access time compared to RAM.",
+    "suggestedAnswer": "Transfers actual data between components.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Data bus",
+    "question": "Describe how data is written to and read from optical storage.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA laser beam is used to read/write data\\nData is stored as pits and lands\\n... on a spiral track\\nWhen reading, the laser is reflected differently by pits and lands\\n... which is interpreted as binary 1s and 0s",
+    "suggestedAnswer": "Transfers actual data between components.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Data bus",
+    "question": "A greenhouse system controls temperature automatically. Describe how the system uses sensors and actuators to maintain temperature.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe temperature sensor constantly measures the temperature\\nIt sends analogue data to the ADC\\n... which converts it to digital data for the microprocessor\\nThe microprocessor compares the reading to a pre-set value\\nIf temperature < pre-set value, it signals the actuator\\n... to turn on the heater\\nIf temperature > pre-set value, it signals the actuator to turn off the heater/open windows",
+    "suggestedAnswer": "Transfers actual data between components.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Control bus",
+    "question": "Explain the function of the ALU and Control Unit in a CPU.",
+    "paper": "",
+    "oldAnswer": "The ALU performs arithmetic and logic operations; the Control Unit fetches, decodes and coordinates execution of instructions.",
+    "suggestedAnswer": "Carries control signals coordinating operations.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Control bus",
+    "question": "Describe the steps of the Fetch-Execute cycle.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe PC holds the address of the next instruction\\nThe address is copied to the MAR\\nThe address is sent along the address bus\\nThe instruction is fetched from that address in memory\\n... and transferred to the MDR\\nThe instruction is sent to the CIR\\nThe PC is incremented\\nThe instruction is decoded and executed",
+    "suggestedAnswer": "Carries control signals coordinating operations.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Input device",
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "SSD // Solid-state drive // Solid-state (device)",
+    "suggestedAnswer": "Hardware used to enter data into a system.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Input device",
+    "question": "Identify two input devices built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\n• Touch screen\\n• Microphone\\n• Button\\n• Webcam // (digital) camera\\n• Accelerometer\\n• Biometric device",
+    "suggestedAnswer": "Hardware used to enter data into a system.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Input device",
+    "question": "Identify one output device built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "Any one from:\\n• Screen\\n• Speaker\\n• LED",
+    "suggestedAnswer": "Hardware used to enter data into a system.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Output device",
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "SSD // Solid-state drive // Solid-state (device)",
+    "suggestedAnswer": "Hardware used to present data from a system.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Output device",
+    "question": "Identify two input devices built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\n• Touch screen\\n• Microphone\\n• Button\\n• Webcam // (digital) camera\\n• Accelerometer\\n• Biometric device",
+    "suggestedAnswer": "Hardware used to present data from a system.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Secondary storage",
+    "question": "Describe how data is written to and read from optical storage.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA laser beam is used to read/write data\\nData is stored as pits and lands\\n... on a spiral track\\nWhen reading, the laser is reflected differently by pits and lands\\n... which is interpreted as binary 1s and 0s",
+    "suggestedAnswer": "Non-volatile storage for long-term data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Secondary storage",
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "SSD // Solid-state drive // Solid-state (device)",
+    "suggestedAnswer": "Non-volatile storage for long-term data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Optical storage",
+    "question": "Explain the purpose of Virtual Memory.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nIt is used when RAM is full\\nData not currently in use is moved from RAM to secondary storage (HDD/SSD)\\n... creating 'pages'\\nIt extends the available memory for running programs\\nData is swapped back to RAM when needed",
+    "suggestedAnswer": "Storage using lasers to read/write data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Optical storage",
+    "question": "Identify one storage device built into a portable tablet computer.",
+    "paper": "",
+    "oldAnswer": "SSD // Solid-state drive // Solid-state (device)",
+    "suggestedAnswer": "Storage using lasers to read/write data.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-3",
+    "term": "Embedded system",
+    "question": "A greenhouse system controls temperature automatically. Describe how the system uses sensors and actuators to maintain temperature.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe temperature sensor constantly measures the temperature\\nIt sends analogue data to the ADC\\n... which converts it to digital data for the microprocessor\\nThe microprocessor compares the reading to a pre-set value\\nIf temperature < pre-set value, it signals the actuator\\n... to turn on the heater\\nIf temperature > pre-set value, it signals the actuator to turn off the heater/open windows",
+    "suggestedAnswer": "Computer dedicated to a specific function within a larger system.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "System software",
+    "question": "State two functions of an operating system.",
+    "paper": "",
+    "oldAnswer": "Examples: memory management, file management, process scheduling, device control, security.",
+    "suggestedAnswer": "Any two from:\\n• System software manages/maintains the hardware/software\\n• Applications software allows the user to perform tasks",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "System software",
+    "question": "Compare CLI and GUI with one advantage of each.",
+    "paper": "",
+    "oldAnswer": "CLI:\\nAllows precise control via commands\\n... uses fewer system resources\\n\\nGUI:\\nMore intuitive/easier for beginners\\n... allows WIMP interactions (windows, icons, menus, pointer)",
+    "suggestedAnswer": "Any two from:\\n• System software manages/maintains the hardware/software\\n• Applications software allows the user to perform tasks",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "System software",
+    "question": "State one advantage of open-source software and one advantage of proprietary software.",
+    "paper": "",
+    "oldAnswer": "Open-source: free to use/modify; community support; transparency.\\nProprietary: dedicated vendor support; regular updates; polished features.",
+    "suggestedAnswer": "Any two from:\\n• System software manages/maintains the hardware/software\\n• Applications software allows the user to perform tasks",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Application software",
+    "question": "State one advantage of open-source software and one advantage of proprietary software.",
+    "paper": "",
+    "oldAnswer": "Open-source: free to use/modify; community support; transparency.\\nProprietary: dedicated vendor support; regular updates; polished features.",
+    "suggestedAnswer": "Any two from:\\n• System software manages/maintains the hardware/software\\n• Applications software allows the user to perform tasks",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Utility software",
+    "question": "Explain the difference between system software and application software.",
+    "paper": "",
+    "oldAnswer": "System software manages and supports computer operations; application software performs user-facing tasks.",
+    "suggestedAnswer": "Programs performing maintenance or optimization tasks.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Utility software",
+    "question": "State one advantage of open-source software and one advantage of proprietary software.",
+    "paper": "",
+    "oldAnswer": "Open-source: free to use/modify; community support; transparency.\\nProprietary: dedicated vendor support; regular updates; polished features.",
+    "suggestedAnswer": "Programs performing maintenance or optimization tasks.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Operating system",
+    "question": "Compare CLI and GUI with one advantage of each.",
+    "paper": "",
+    "oldAnswer": "CLI:\\nAllows precise control via commands\\n... uses fewer system resources\\n\\nGUI:\\nMore intuitive/easier for beginners\\n... allows WIMP interactions (windows, icons, menus, pointer)",
+    "suggestedAnswer": "Any three from:\\n• It performs the basic functions of a computer\\n• It manages the hardware\\n• It provides a platform to run software\\n• It provides a user interface\\n• It performs tasks such as (any example of function of an operating system)",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Operating system",
+    "question": "Explain the difference between system software and application software.",
+    "paper": "",
+    "oldAnswer": "System software manages and supports computer operations; application software performs user-facing tasks.",
+    "suggestedAnswer": "Any three from:\\n• It performs the basic functions of a computer\\n• It manages the hardware\\n• It provides a platform to run software\\n• It provides a user interface\\n• It performs tasks such as (any example of function of an operating system)",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Device driver",
+    "question": "State two functions of an operating system.",
+    "paper": "",
+    "oldAnswer": "Examples: memory management, file management, process scheduling, device control, security.",
+    "suggestedAnswer": "Software controlling communication with hardware devices.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "User interface",
+    "question": "Explain the difference between system software and application software.",
+    "paper": "",
+    "oldAnswer": "System software manages and supports computer operations; application software performs user-facing tasks.",
+    "suggestedAnswer": "Any three from:\\n• It performs the basic functions of a computer\\n• It manages the hardware\\n• It provides a platform to run software\\n• It provides a user interface\\n• It performs tasks such as (any example of function of an operating system)",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Memory management",
+    "question": "Explain why a programmer might choose to write code in Assembly Language.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access",
+    "suggestedAnswer": "Allocation and control of primary memory.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Process management",
+    "question": "State two functions of an operating system.",
+    "paper": "",
+    "oldAnswer": "Examples: memory management, file management, process scheduling, device control, security.",
+    "suggestedAnswer": "Scheduling and control of running tasks.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Source code",
+    "question": "Describe how an interrupt is handled by the CPU.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe CPU completes the current fetch-execute cycle\\nThe contents of the registers (PC/ACC) are saved\\n... to the stack\\nThe source of the interrupt is identified\\nThe appropriate Interrupt Service Routine (ISR) is called/executed\\nOnce the ISR is complete, the saved register values are restored\\n... from the stack\\nThe CPU continues with the next instruction of the original program",
+    "suggestedAnswer": "Human-readable program text.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Source code",
+    "question": "Compare compiler and interpreter.",
+    "paper": "",
+    "oldAnswer": "A compiler translates the whole program into object code before execution; an interpreter translates and executes line by line at runtime.",
+    "suggestedAnswer": "Human-readable program text.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Source code",
+    "question": "State two advantages of using a High-Level Language (HLL) compared to a Low-Level Language (LLL).",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nEasier to understand/read/write (for humans)\\n... as it uses English-like statements\\nEasier to debug/find errors\\nPortable/machine independent\\n... code can run on different hardware without rewrite",
+    "suggestedAnswer": "Human-readable program text.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Source code",
+    "question": "Explain why a programmer might choose to write code in Assembly Language.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access",
+    "suggestedAnswer": "Human-readable program text.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Source code",
+    "question": "State one advantage of open-source software and one advantage of proprietary software.",
+    "paper": "",
+    "oldAnswer": "Open-source: free to use/modify; community support; transparency.\\nProprietary: dedicated vendor support; regular updates; polished features.",
+    "suggestedAnswer": "Human-readable program text.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Object code",
+    "question": "State two advantages of using a High-Level Language (HLL) compared to a Low-Level Language (LLL).",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nEasier to understand/read/write (for humans)\\n... as it uses English-like statements\\nEasier to debug/find errors\\nPortable/machine independent\\n... code can run on different hardware without rewrite",
+    "suggestedAnswer": "Machine code produced by a translator.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Object code",
+    "question": "Explain why a programmer might choose to write code in Assembly Language.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access",
+    "suggestedAnswer": "Machine code produced by a translator.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "High-level language",
+    "question": "Explain why a programmer might choose to write code in Assembly Language.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access",
+    "suggestedAnswer": "Language close to human readability and abstraction.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Low-level language",
+    "question": "Explain why a programmer might choose to write code in Assembly Language.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nTo have direct control over the hardware\\nTo write code that occupies less memory\\nTo write code that executes faster/more efficiently\\nNo need for a compiler/interpreter (only assembler needed)\\nSpecific hardware drivers often require low-level access",
+    "suggestedAnswer": "Language close to machine operations and hardware.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Open source",
+    "question": "Describe how an interrupt is handled by the CPU.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe CPU completes the current fetch-execute cycle\\nThe contents of the registers (PC/ACC) are saved\\n... to the stack\\nThe source of the interrupt is identified\\nThe appropriate Interrupt Service Routine (ISR) is called/executed\\nOnce the ISR is complete, the saved register values are restored\\n... from the stack\\nThe CPU continues with the next instruction of the original program",
+    "suggestedAnswer": "Software released with source code and permissive license.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Open source",
+    "question": "State one advantage of open-source software and one advantage of proprietary software.",
+    "paper": "",
+    "oldAnswer": "Open-source: free to use/modify; community support; transparency.\\nProprietary: dedicated vendor support; regular updates; polished features.",
+    "suggestedAnswer": "Software released with source code and permissive license.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-4",
+    "term": "Proprietary software",
+    "question": "Explain the difference between system software and application software.",
+    "paper": "",
+    "oldAnswer": "System software manages and supports computer operations; application software performs user-facing tasks.",
+    "suggestedAnswer": "Software licensed with restricted use and access.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "World Wide Web",
+    "question": "Describe the role of DNS in accessing websites.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups",
+    "suggestedAnswer": "Interlinked documents and resources accessed via browsers.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "World Wide Web",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "Interlinked documents and resources accessed via browsers.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "World Wide Web",
+    "question": "State two advantages of using HTTPS when shopping online.",
+    "paper": "",
+    "oldAnswer": "Encrypts data to prevent interception/read by third parties\\nAuthenticates the web server via digital certificates",
+    "suggestedAnswer": "Interlinked documents and resources accessed via browsers.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "World Wide Web",
+    "question": "Explain the difference between phishing and pharming.",
+    "paper": "",
+    "oldAnswer": "Phishing:\\nInvolves sending fraudulent emails/messages\\n... to trick users into revealing personal data (by clicking links)\\n\\nPharming:\\nInvolves malicious code installed on a user's hard drive or web server\\n... which redirects the user to a fake website (even if correct URL is typed)\\n... without the user's knowledge",
+    "suggestedAnswer": "Interlinked documents and resources accessed via browsers.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Web browser",
+    "question": "Describe the role of DNS in accessing websites.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups",
+    "suggestedAnswer": "Software used to retrieve, render and navigate web pages.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Web browser",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "Software used to retrieve, render and navigate web pages.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Web browser",
+    "question": "State two advantages of using HTTPS when shopping online.",
+    "paper": "",
+    "oldAnswer": "Encrypts data to prevent interception/read by third parties\\nAuthenticates the web server via digital certificates",
+    "suggestedAnswer": "Software used to retrieve, render and navigate web pages.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Web browser",
+    "question": "Explain the difference between phishing and pharming.",
+    "paper": "",
+    "oldAnswer": "Phishing:\\nInvolves sending fraudulent emails/messages\\n... to trick users into revealing personal data (by clicking links)\\n\\nPharming:\\nInvolves malicious code installed on a user's hard drive or web server\\n... which redirects the user to a fake website (even if correct URL is typed)\\n... without the user's knowledge",
+    "suggestedAnswer": "Software used to retrieve, render and navigate web pages.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital certificate",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "Electronic document verifying identity and public key.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital certificate",
+    "question": "State two advantages of using HTTPS when shopping online.",
+    "paper": "",
+    "oldAnswer": "Encrypts data to prevent interception/read by third parties\\nAuthenticates the web server via digital certificates",
+    "suggestedAnswer": "Electronic document verifying identity and public key.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital certificate",
+    "question": "Explain how a digital signature is used to verify the authenticity of a document.",
+    "paper": "",
+    "oldAnswer": "Any three from:\\nA hash/digest of the document is created\\n... using a hashing algorithm\\nThe hash is encrypted using the sender's private key\\n... to create the digital signature\\nThe receiver decrypts the signature using the sender's public key\\n... to get the original hash\\nThe receiver recalculates the hash of the received document\\nIf the two hashes match, the document is authentic and unaltered",
+    "suggestedAnswer": "Electronic document verifying identity and public key.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital signature",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "Cryptographic proof of content integrity and origin.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital signature",
+    "question": "State two advantages of using HTTPS when shopping online.",
+    "paper": "",
+    "oldAnswer": "Encrypts data to prevent interception/read by third parties\\nAuthenticates the web server via digital certificates",
+    "suggestedAnswer": "Cryptographic proof of content integrity and origin.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Digital signature",
+    "question": "Describe the process of SSL/TLS handshaking.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe client sends a request to the server to establish a secure connection\\nThe server sends its digital certificate to the client\\n... which includes the server's public key\\nThe client verifies the digital certificate (authenticity and date)\\nThe client generates a session key\\n... encrypts it with the server's public key\\n... and sends it to the server\\nThe server decrypts the session key with its private key\\nBoth parties now use the session key for encrypted communication",
+    "suggestedAnswer": "Cryptographic proof of content integrity and origin.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Proxy server",
+    "question": "Describe the role of DNS in accessing websites.",
+    "paper": "",
+    "oldAnswer": "Any two from:\\nA user enters a URL/domain name in the browser\\nThe DNS system is queried to resolve the name\\nDNS servers maintain a distributed database of domain names and IP addresses\\nIf the local DNS does not have the record, it queries other DNS servers\\nThe DNS returns the corresponding IP address to the client\\nThe browser uses the IP address to connect to the web server\\nDNS may cache results to speed up future lookups",
+    "suggestedAnswer": "Intermediate server forwarding requests.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Proxy server",
+    "question": "Explain the difference between HTTP and HTTPS.",
+    "paper": "",
+    "oldAnswer": "HTTP:\\nData is sent in plain text\\n... so it can be intercepted/read by a third party\\nDoes not provide authentication of the server\\n\\nHTTPS:\\nUses TLS/SSL to encrypt communication\\n... so intercepted data cannot be understood\\nVerifies the identity of the web server (via digital certificates)",
+    "suggestedAnswer": "Intermediate server forwarding requests.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Proxy server",
+    "question": "State two advantages of using HTTPS when shopping online.",
+    "paper": "",
+    "oldAnswer": "Encrypts data to prevent interception/read by third parties\\nAuthenticates the web server via digital certificates",
+    "suggestedAnswer": "Intermediate server forwarding requests.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Proxy server",
+    "question": "Describe the process of SSL/TLS handshaking.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe client sends a request to the server to establish a secure connection\\nThe server sends its digital certificate to the client\\n... which includes the server's public key\\nThe client verifies the digital certificate (authenticity and date)\\nThe client generates a session key\\n... encrypts it with the server's public key\\n... and sends it to the server\\nThe server decrypts the session key with its private key\\nBoth parties now use the session key for encrypted communication",
+    "suggestedAnswer": "Intermediate server forwarding requests.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "cs-5",
+    "term": "Proxy server",
+    "question": "Explain the difference between phishing and pharming.",
+    "paper": "",
+    "oldAnswer": "Phishing:\\nInvolves sending fraudulent emails/messages\\n... to trick users into revealing personal data (by clicking links)\\n\\nPharming:\\nInvolves malicious code installed on a user's hard drive or web server\\n... which redirects the user to a fake website (even if correct URL is typed)\\n... without the user's knowledge",
+    "suggestedAnswer": "Intermediate server forwarding requests.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Trace table",
+    "question": "Trace this pseudocode and state the final value of total given input n=5.",
+    "paper": "",
+    "oldAnswer": "For i from 1 to 5, total accumulates 15. Final value: 15.",
+    "suggestedAnswer": "Table tracking variable values step by step.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Dry run",
+    "question": "Explain the difference between a WHILE loop and a REPEAT...UNTIL loop.",
+    "paper": "",
+    "oldAnswer": "WHILE loop checks the condition at the start (pre-condition) and may not run at all. REPEAT...UNTIL checks the condition at the end (post-condition) and always runs at least once.",
+    "suggestedAnswer": "Manual simulation of code to check logic.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Test plan",
+    "question": "Identify three types of test data used to test a system.",
+    "paper": "",
+    "oldAnswer": "Normal data (valid/typical), Boundary data (extreme ends of valid range), Erroneous/Abnormal data (invalid).",
+    "suggestedAnswer": "Structured approach outlining tests to validate software.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Erroneous data",
+    "question": "Identify three types of test data used to test a system.",
+    "paper": "",
+    "oldAnswer": "Normal data (valid/typical), Boundary data (extreme ends of valid range), Erroneous/Abnormal data (invalid).",
+    "suggestedAnswer": "Inputs with incorrect types or invalid values.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Insertion sort",
+    "question": "Describe how a Bubble Sort algorithm sorts a list of numbers into ascending order.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe algorithm loops through the list\\nIt compares each pair of adjacent elements\\nIf they are in the wrong order, it swaps them\\nIt records that a swap has occurred\\nIt repeats the loop until a pass is made with no swaps",
+    "suggestedAnswer": "Building sorted list by inserting elements into position.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  },
+  {
+    "unitId": "apl-7",
+    "term": "Merge sort",
+    "question": "Describe how a Bubble Sort algorithm sorts a list of numbers into ascending order.",
+    "paper": "",
+    "oldAnswer": "Any four from:\\nThe algorithm loops through the list\\nIt compares each pair of adjacent elements\\nIf they are in the wrong order, it swaps them\\nIt records that a swap has occurred\\nIt repeats the loop until a pass is made with no swaps",
+    "suggestedAnswer": "Divide and conquer sorting by merging sorted sublists.",
+    "matchType": "token_fuzzy",
+    "confidence": 0.6
+  }
+]

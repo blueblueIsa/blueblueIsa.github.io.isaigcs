@@ -5,6 +5,8 @@ export interface Term {
   example?: string;
   misconception?: string;
   contrast?: string;
+  // set to true once verified against syllabus / textbook / mark scheme
+  sourceVerified?: boolean;
 }
 
 export interface Unit {

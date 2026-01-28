@@ -33,8 +33,8 @@ export const TermCard: React.FC<TermCardProps> = ({ term, onViewQA }) => {
       <div className="detail" style={{ fontSize: '11px', marginTop: '8px', opacity: 0.6 }}>
         {term.topic}
       </div>
-      {onViewQA && (
-        <div style={{ marginTop: 10 }}>
+      <div style={{ marginTop: 10, display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+        {onViewQA && (
           <button
             className="confusions-toggle"
             data-term={term.term}
@@ -47,8 +47,8 @@ export const TermCard: React.FC<TermCardProps> = ({ term, onViewQA }) => {
           >
             Related Q&A
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

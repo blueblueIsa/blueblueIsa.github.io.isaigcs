@@ -55,6 +55,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           <div>Resources</div>
         </NavLink>
       </div>
+
+      <div className="group">
+        <div className="group-title">Games</div>
+        <NavLink
+          to="/games"
+          className={({ isActive }) => classNames('unit-item', { active: isActive })}
+          onClick={onClose}
+        >
+          <div className="unit-number">🎮</div>
+          <div>Games</div>
+        </NavLink>
+      </div>
     </nav>
   );
 };

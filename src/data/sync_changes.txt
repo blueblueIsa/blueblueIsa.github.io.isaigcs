@@ -1,0 +1,15 @@
+cs-2 / Odd parity FROM (24paper1.json)
+- OLD: Parity method ensuring an odd number of 1s.
+- NEW: Parity
+
+cs-2 / Even parity FROM (24paper1.json)
+- OLD: Parity method ensuring an even number of 1s.
+- NEW: Parity
+
+cs-1 / ASCII FROM (24paper1.json)
+- OLD: 7/8-bit character encoding for Latin characters.
+- NEW: 8
+
+cs-1 / Byte FROM (24paper1.json)
+- OLD: Group of 8 bits.
+- NEW: 8

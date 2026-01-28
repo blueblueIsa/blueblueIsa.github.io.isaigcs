@@ -1,0 +1,193 @@
+cs-1 / Byte (unitTopic=numbers paperTopic=1 data representation) FROM (24paper1.json)
+Q: State how many bits in a byte.
+- OLD: Group of 8 bits.
+- NEW: 8
+
+cs-2 / Header (unitTopic=packets paperTopic=2 data transmission) FROM (24paper1.json)
+Q: Describe structure of a data packet.
+- OLD: Control information at the start of a packet.
+- NEW: Any three from:
+• A packet is split into three different sections
+• ... the header
+• ... the payload
+• ... the trailer
+
+cs-2 / Payload (unitTopic=packets paperTopic=2 data transmission) FROM (24paper1.json)
+Q: Describe structure of a data packet.
+- OLD: User data carried in a packet.
+- NEW: Any three from:
+• A packet is split into three different sections
+• ... the header
+• ... the payload
+• ... the trailer
+
+cs-2 / Trailer (unitTopic=packets paperTopic=2 data transmission) FROM (24paper1.json)
+Q: Describe structure of a data packet.
+- OLD: Data at the end of a packet, often for error checking.
+- NEW: Any three from:
+• A packet is split into three different sections
+• ... the header
+• ... the payload
+• ... the trailer
+
+cs-2 / Odd parity (unitTopic=errors paperTopic=2 data transmission) FROM (24paper1.json)
+Q: Describe operation of error detection system using odd parity and ARQ.
+- OLD: Parity method ensuring an odd number of 1s.
+- NEW: Any eight from:
+The 1s are counted (in each byte)
+Each byte has a parity bit
+If the number of 1s are odd the parity bit is 0 (otherwise it is 1)
+(The first packet of) data is sent and a timer is started
+The receiving device counts the number of 1s (in each byte)
+If the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …
+… the sender then sends the next packet of data …
+… and the timer is restarted
+If the number of 1s is even an acknowledgement is not sent
+If no acknowledgement is received within a set timeframe/before timeout …
+… the data packet is resent
+
+cs-2 / ARQ (unitTopic=errors paperTopic=2 data transmission) FROM (24paper1.json)
+Q: Describe operation of error detection system using odd parity and ARQ.
+- OLD: Automatic repeat request protocol for retransmission.
+- NEW: Any eight from:
+The 1s are counted (in each byte)
+Each byte has a parity bit
+If the number of 1s are odd the parity bit is 0 (otherwise it is 1)
+(The first packet of) data is sent and a timer is started
+The receiving device counts the number of 1s (in each byte)
+If the number of 1s are odd/data meets odd parity an acknowledgement is sent to say the data is error free …
+… the sender then sends the next packet of data …
+… and the timer is restarted
+If the number of 1s is even an acknowledgement is not sent
+If no acknowledgement is received within a set timeframe/before timeout …
+… the data packet is resent
+
+cs-3 / ROM (unitTopic=memory paperTopic=4 software) FROM (24paper1.json)
+Q: State purpose of firmware.
+- OLD: Non-volatile memory storing firmware.
+- NEW: Any one from:
+• Permanently store instructions (in ROM)
+• Stores instructions to boot up/start up the computer
+• Provides the operating system with a platform to run on
+• Controls/manages/allows communication with hardware
+• Store instructions securely (to stop them being easily corrupted)
+
+cs-4 / System software (unitTopic=software paperTopic=4 software) FROM (24paper1.json)
+Q: Describe difference between system and application software.
+- OLD: Software managing and supporting computer operations.
+- NEW: Any two from:
+• System software manages/maintains the hardware/software
+• Applications software allows the user to perform tasks
+
+cs-4 / Application software (unitTopic=software paperTopic=4 software) FROM (24paper1.json)
+Q: Describe difference between system and application software.
+- OLD: Programs designed for end-user tasks.
+- NEW: Any two from:
+• System software manages/maintains the hardware/software
+• Applications software allows the user to perform tasks
+
+cs-4 / Firmware (unitTopic=software paperTopic=4 software) FROM (24paper1.json)
+Q: State purpose of firmware.
+- OLD: Software stored in ROM controlling hardware.
+- NEW: Any one from:
+• Permanently store instructions (in ROM)
+• Stores instructions to boot up/start up the computer
+• Provides the operating system with a platform to run on
+• Controls/manages/allows communication with hardware
+• Store instructions securely (to stop them being easily corrupted)
+
+cs-4 / Operating system (unitTopic=os paperTopic=4 software) FROM (24paper1.json)
+Q: Describe operating system purpose.
+- OLD: Manages hardware, resources and provides user interface.
+- NEW: Any three from:
+• It performs the basic functions of a computer
+• It manages the hardware
+• It provides a platform to run software
+• It provides a user interface
+• It performs tasks such as (any example of function of an operating system)
+
+cs-4 / User interface (unitTopic=os paperTopic=4 software) FROM (24paper1.json)
+Q: Describe operating system purpose.
+- OLD: Means by which users interact with a computer.
+- NEW: Any three from:
+• It performs the basic functions of a computer
+• It manages the hardware
+• It provides a platform to run software
+• It provides a user interface
+• It performs tasks such as (any example of function of an operating system)
+
+cs-4 / Compiler (unitTopic=languages paperTopic=4 software) FROM (24paper1.json)
+Q: Describe operation of compiler and interpreter.
+- OLD: Translates whole program to object code before execution.
+- NEW: Two from for each compiler and interpreter.
+Compiler
+• Checks all code before executing any code
+• Produces error report with all errors found for the whole code (before translating/running any of the code)
+• Produces executable file
+Interpreter
+• Checks/translates one line of code and then executes it before moving on to the next line
+• Stops when an error is found
+• … when corrected the program can be run from the same position // allows error correction in real time
+
+cs-4 / Interpreter (unitTopic=languages paperTopic=4 software) FROM (24paper1.json)
+Q: Describe operation of compiler and interpreter.
+- OLD: Executes program line by line translating at runtime.
+- NEW: Two from for each compiler and interpreter.
+Compiler
+• Checks all code before executing any code
+• Produces error report with all errors found for the whole code (before translating/running any of the code)
+• Produces executable file
+Interpreter
+• Checks/translates one line of code and then executes it before moving on to the next line
+• Stops when an error is found
+• … when corrected the program can be run from the same position // allows error correction in real time
+
+cs-5 / DNS (unitTopic=web paperTopic=5 the internet and its uses) FROM (24paper1.json)
+Q: Describe how web pages are located, retrieved and displayed.
+- OLD: Domain Name System translating names to IP addresses.
+- NEW: Any six from:
+• The users type the URL into the address bar/web browser
+• The web browser sends the URL to the DNS
+• The DNS searches for the matching IP address
+• The DNS returns the IP address to the web browser
+• If the DNS cannot find the IP address it sends the URL to the next DNS
+• The web browser sends a request to the IP address/web server
+• The web server sends the data for the web page to the web browser
+• The web browser renders the HTML data to display the web page
+
+cs-5 / IP address (unitTopic=web paperTopic=5 the internet and its uses) FROM (24paper1.json)
+Q: Describe how web pages are located, retrieved and displayed.
+- OLD: Numerical label identifying a device on a network.
+- NEW: Any six from:
+• The users type the URL into the address bar/web browser
+• The web browser sends the URL to the DNS
+• The DNS searches for the matching IP address
+• The DNS returns the IP address to the web browser
+• If the DNS cannot find the IP address it sends the URL to the next DNS
+• The web browser sends a request to the IP address/web server
+• The web server sends the data for the web page to the web browser
+• The web browser renders the HTML data to display the web page
+
+cs-5 / Encryption (unitTopic=security paperTopic=5 the internet and its uses) FROM (24paper1.json)
+Q: State how SSL protocol secures data transmission.
+- OLD: Converting data into a secure coded form.
+- NEW: Any one from:
+• It encrypts it
+• Uses digital certificates
+
+cs-6 / Artificial intelligence (unitTopic=ai paperTopic=6 automated and emerging technologies) FROM (24paper1.json)
+Q: Describe meaning of AI.
+- OLD: Systems that perform tasks requiring human intelligence.
+- NEW: Any two from:
+• The **simulation** of intelligent behaviours by computers
+• A collection of data and the rules for using that data
+• Has the ability to reason
+• Has the ability to learn/adapt
+
+cs-6 / Robotics (unitTopic=robotics paperTopic=6 automated and emerging technologies) FROM (24paper1.json)
+Q: Define robotics.
+- OLD: Design and use of robots for tasks.
+- NEW: Any two from:
+• The design of robots (to perform tasks/operations/functions)
+• The construction of robots (to perform tasks/operations/functions)
+• The operation of robots (to perform tasks/operations/functions)
