@@ -5,6 +5,7 @@ import { UnitRoute } from './modules/unit/UnitRoute';
 import { QAView } from './modules/qa/QAView';
 import { units } from './data/units';
 import { Resources } from './modules/resources/Resources';
+import { GamesView } from './modules/games/GamesView';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="unit/:id" element={<UnitRoute />} />
         <Route path="qa/*" element={<QAView />} />
         <Route path="resources" element={<Resources />} />
+        <Route path="games" element={<GamesView />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

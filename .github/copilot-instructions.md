@@ -14,10 +14,11 @@
 **Stack:** React 19 + TypeScript 5 + SCSS. Routing: react-router-dom v7. Tested with Jest + @testing-library/react (jsdom).
 
 **Core module structure:**
-- `src/modules/*` — Top-level feature modules (qa, resources, unit, manage, common)
+- `src/modules/*` — Top-level feature modules (qa, resources, unit, manage, common, games)
   - `qa/QAView.tsx` — Main Q&A search/filter UI; parses URL params via `parseQAUrl()` and canonicalizes with `window.history.replaceState()`
   - `unit/UnitRoute.tsx` — Displays unit terms/definitions; reads from `src/data/units.ts`
   - `resources/` — Quiz and resource views
+  - `games/` — Educational mini-games (BreakoutGame, InvadersGame, MemoryGame, MinesweeperGame, PacmanGame, SnakeGame); see `games/types.ts` for game interfaces
   - `common/GenericUnitView.tsx` — Shared term display logic
 - `src/components/` — Presentational layout (Header, Layout, Sidebar, shared UI)
 - `src/data/*` — Canonical state (immutable at runtime)
@@ -50,15 +51,17 @@
 **Feature flags:**
 - Define Vite env vars as `VITE_*` (e.g., `VITE_SHOW_VISITS=true` in `.env` or CI)
 - Evaluate in `src/config/featureFlags.ts` and export boolean constants (e.g., `VISITS_ENABLED`)
-- Gate rendering AND side effects — see `Layout.tsx` for pattern: hooks run unconditionally, but imports/effects check flag
-- Feature gates work cross-environment (dev, build, test, production)
+- Gate rendering AND side effects — see `Layout.tsx` for pattern: condition imports and effects on flag, not just JSX rendering
+- Feature flags work cross-environment (dev, build, test, production); fallback to `globalThis.process.env` for Node contexts
+- Example pattern: `if (VISITS_ENABLED) { ... }` wraps both component imports and `useEffect()` hooks to prevent dead code in builds
 
 **Data synchronization:**
 - Critical scripts: `sync_qa_from_units.mjs`, `sync_qa_from_units_relaxed.mjs`, `sync_units_with_papers.mjs`
-- Apply scripts track changes: `apply_strict_sync.mjs`, `apply_strict_with_topic_v2.mjs`, etc.
-- Output logs stored in `*_applied.json` and `*_applied.txt` for audit trail
-- **Always check `strict_topic_v2_applied.json`** for history of structural QA changes
+- Apply scripts track changes: `apply_strict_sync.mjs`, `apply_strict_with_topic_v2.mjs`, `apply_safe_sync.mjs`, `apply_safe_sync_improved.mjs`
+- Output logs stored in `*_applied.json` (structured changes) and `*_applied.txt` (human-readable audit trail)
+- **Always check `strict_topic_v2_applied.json`** for history of structural QA changes; this is the current canonical sync strategy
 - Use `npm run check:language` before committing; language files track standardization
+- Note: Multiple `.bak` and `.revert-*` files in `src/data/` are version history artifacts—ignore these for code analysis
 
 **Data type definitions:**
 - Core types in `src/types/index.ts`: `Unit` (id, number, title, group, terms[]), `Term` (term, topic, definition, example?, misconception?, contrast?, sourceVerified?), `Question`, `QAData`, `ViewMode`

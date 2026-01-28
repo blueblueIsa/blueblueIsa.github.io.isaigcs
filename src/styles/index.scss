@@ -1,12 +1,12 @@
 :root {
-  /* Slightly softer dark theme for better long-session comfort */
-  --bg: #071428;       /* dark navy, a touch less saturated */
-  --text: #dbeeff;     /* softer off-white for reading comfort */
-  --muted: #9fbccf;    /* muted cyan/blue for secondary text */
-  --surface: #0f2433;  /* surface panels influenced by bg */
-  --border: rgba(110,180,200,0.12);
-  --accent: #60a5fa;   /* cooler blue accent */
-  --accent-2: #64ffda; /* secondary cyan */
+  /* Comfortable warm-dark theme with improved contrast and readability */
+  --bg: #0f1419;       /* very dark slate with slight warmth */
+  --text: #e5e7eb;     /* softer light gray for eye comfort */
+  --muted: #9ca3af;    /* medium gray for secondary text */
+  --surface: #1a2332;  /* elevated surface with slight blue tint */
+  --border: rgba(148,163,184,0.08);
+  --accent: #3b82f6;   /* stable blue accent */
+  --accent-2: #10b981; /* emerald green for secondary */
 }
 
 * {
@@ -64,16 +64,23 @@ nav .group {
   border: 1px solid var(--border);
   border-radius: 8px;
   font-size: 13px;
-  color: #334155;
-  background: #f8fafc;
+  color: #475569;
+  background: #f1f5f9;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.topic-item:hover {
+  background: #e2e8f0;
+  border-color: rgba(51,65,85,0.2);
 }
 
 .topic-item.active {
-  background: #eef2ff;
-  border-color: #c7d2fe;
+  background: #dbeafe;
+  border-color: #93c5fd;
   color: #1e40af;
+  font-weight: 500;
 }
 
 .group-title {
@@ -185,12 +192,18 @@ nav .group {
   align-items: center;
   gap: 6px;
   padding: 4px 8px;
-  border: 1px solid #bae6fd;
+  border: 1px solid #67e8f9;
   border-radius: 8px;
   font-size: 12px;
   color: #0369a1;
-  background: #e0f2fe;
+  background: #cffafe;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chip:hover {
+  background: #a5f3fc;
+  border-color: #22d3ee;
 }
 
 .letter-chip {
@@ -319,15 +332,20 @@ nav .group {
 }
 
 .qa-line {
-  background: #ffffff;
-  border: 1px solid var(--border);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
   border-left-width: 4px;
   border-radius: 6px;
   padding: 8px 10px;
   margin: 6px 0;
   font-size: 14px;
+  transition: all 0.2s ease;
 }
-.qa-line-easy { border-left-color: #22c55e; }   /* green */
+.qa-line:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+.qa-line-easy { border-left-color: #10b981; }   /* emerald */
 .qa-line-medium { border-left-color: #f59e0b; } /* amber */
 .qa-line-hard { border-left-color: #ef4444; }   /* red */
 
@@ -441,9 +459,15 @@ nav .group {
 
 .term-card {
   border: 1px solid var(--border);
-  background: linear-gradient(135deg, #1b2845 0%, #0f172a 100%);
+  background: linear-gradient(135deg, rgba(59,130,246,0.08) 0%, rgba(16,185,129,0.04) 100%);
   border-radius: 12px;
   padding: 16px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.term-card:hover {
+  border-color: rgba(148,163,184,0.16);
+  background: linear-gradient(135deg, rgba(59,130,246,0.12) 0%, rgba(16,185,129,0.08) 100%);
 }
 
 .footer-contact {

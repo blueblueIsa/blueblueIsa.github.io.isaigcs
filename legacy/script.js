@@ -194,16 +194,10 @@ const units = [
       { term: "Internet of Things", topic: "IoT", definition: "Network of connected devices collecting and sharing data." },
       { term: "Wearable technology", topic: "IoT", definition: "Electronics worn on the body collecting data." },
       { term: "Autonomous vehicle", topic: "Robotics", definition: "Vehicle capable of self-navigation without human input." },
-      { term: "Drone", topic: "Robotics", definition: "Unmanned aerial vehicle controlled remotely or autonomously." },
       { term: "Big data", topic: "Data", definition: "Large, complex datasets requiring advanced processing." },
       { term: "Data mining", topic: "Data", definition: "Discovering patterns and insights in large datasets." },
       { term: "Biometric authentication", topic: "Security", definition: "Identification using biological characteristics." },
-      { term: "3D printing", topic: "Manufacturing", definition: "Creating physical objects layer by layer from a digital model." },
-      { term: "AR", topic: "XR", definition: "Augmented reality overlaying digital content onto the real world." },
-      { term: "VR", topic: "XR", definition: "Virtual reality creating immersive simulated environments." },
-      { term: "Ethical bias", topic: "Ethics", definition: "Systematic errors unfairly affecting groups or outcomes." },
-      { term: "Transparency", topic: "Ethics", definition: "Clarity about how systems operate and make decisions." },
-      { term: "Explainability", topic: "Ethics", definition: "Ability to understand and justify system outputs." }
+      { term: "3D printing", topic: "Manufacturing", definition: "Creating physical objects layer by layer from a digital model." }
     ]
   },
   {

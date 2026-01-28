@@ -728,6 +728,209 @@ const baseQaData: QAData = {
         keywords: ["test data", "normal", "boundary", "erroneous"]
       }
     ]
+  },
+  "apl-8": {
+    "Basics": [
+      {
+        question: "What is a variable in programming?",
+        answer: "A variable is a named storage location in memory that holds a value, which can be changed during program execution.",
+        paper: "2024 May/June Paper 21",
+        topic: "Basics",
+        tags: ["define"],
+        marks: 2,
+        keywords: ["variable", "storage", "memory", "value"]
+      },
+      {
+        question: "Explain the difference between a variable and a constant.",
+        answer: "A variable is a named storage location whose value can change during execution. A constant is a named value that cannot be changed once assigned.",
+        paper: "2023 Oct/Nov Paper 22",
+        topic: "Basics",
+        tags: ["explain", "compare"],
+        marks: 3,
+        keywords: ["variable", "constant", "change", "fixed"]
+      },
+      {
+        question: "Write a statement to input a student's name and store it in a variable called studentName.",
+        answer: "INPUT studentName",
+        paper: "2025 Feb/Mar Paper 21",
+        topic: "Basics",
+        tags: ["write code"],
+        marks: 1,
+        keywords: ["input", "variable", "pseudocode"]
+      },
+      {
+        question: "Write a statement to assign the value 25 to a variable called age.",
+        answer: "age <- 25",
+        paper: "2024 Oct/Nov Paper 12",
+        topic: "Basics",
+        tags: ["write code"],
+        marks: 1,
+        keywords: ["assignment", "variable", "pseudocode"]
+      }
+    ],
+    "Types": [
+      {
+        question: "State what is meant by a data type.",
+        answer: "A classification that specifies what kind of values a variable can hold and what operations can be performed on it.",
+        paper: "2023 May/June Paper 21",
+        topic: "Types",
+        tags: ["state"],
+        marks: 1,
+        keywords: ["data type", "classification"]
+      },
+      {
+        question: "Name four basic data types used in programming.",
+        answer: "Integer, Real/Float, Boolean, String (or Character)",
+        paper: "2024 May/June Paper 22",
+        topic: "Types",
+        tags: ["name", "list"],
+        marks: 2,
+        keywords: ["data types", "integer", "real", "boolean", "string"]
+      },
+      {
+        question: "A variable is to store whether a person is over 18. State the most appropriate data type.",
+        answer: "Boolean",
+        paper: "2025 May/June Paper 11",
+        topic: "Types",
+        tags: ["identify"],
+        marks: 1,
+        keywords: ["boolean", "data type", "age"]
+      },
+      {
+        question: "What is meant by casting in programming?",
+        answer: "Converting a value from one data type to another.",
+        paper: "2023 Oct/Nov Paper 22",
+        topic: "Types",
+        tags: ["define"],
+        marks: 1,
+        keywords: ["casting", "type conversion"]
+      }
+    ],
+    "Operators": [
+      {
+        question: "What is an arithmetic operator?",
+        answer: "A symbol or word used to perform mathematical operations such as addition (+), subtraction (−), multiplication (×), and division (÷).",
+        paper: "2024 May/June Paper 21",
+        topic: "Operators",
+        tags: ["define"],
+        marks: 1,
+        keywords: ["arithmetic operator", "operation", "calculation"]
+      },
+      {
+        question: "Evaluate the expression: 2 + 3 * 4 - 1",
+        answer: "13 (multiplication is performed first: 3 * 4 = 12, then 2 + 12 - 1 = 13)",
+        paper: "2025 Feb/Mar Paper 22",
+        topic: "Operators",
+        tags: ["calculate"],
+        marks: 2,
+        keywords: ["operator precedence", "arithmetic", "evaluation"]
+      },
+      {
+        question: "State what logical operators are used for.",
+        answer: "To combine or modify Boolean expressions to create more complex conditions.",
+        paper: "2023 May/June Paper 21",
+        topic: "Operators",
+        tags: ["state"],
+        marks: 1,
+        keywords: ["logical operator", "boolean", "condition"]
+      }
+    ],
+    "Control": [
+      {
+        question: "Explain the difference between sequence, selection, and iteration in programming.",
+        answer: "Sequence: statements execute one after another in order. Selection: code branches based on conditions (IF/ELSE). Iteration: code repeats using loops.",
+        paper: "2024 Oct/Nov Paper 12",
+        topic: "Control",
+        tags: ["explain", "compare"],
+        marks: 3,
+        keywords: ["sequence", "selection", "iteration", "control flow"]
+      },
+      {
+        question: "Write pseudocode to output all numbers from 1 to 10.",
+        answer: "FOR i <- 1 TO 10\n  OUTPUT i\nNEXT i",
+        paper: "2025 May/June Paper 11",
+        topic: "Control",
+        tags: ["write code"],
+        marks: 2,
+        keywords: ["loop", "for", "iteration", "pseudocode"]
+      },
+      {
+        question: "What is the key difference between FOR and WHILE loops?",
+        answer: "FOR loops execute a fixed number of times (definite iteration). WHILE loops execute while a condition is true (indefinite iteration).",
+        paper: "2023 Oct/Nov Paper 22",
+        topic: "Control",
+        tags: ["explain"],
+        marks: 2,
+        keywords: ["for loop", "while loop", "definite", "indefinite"]
+      }
+    ],
+    "Procedures": [
+      {
+        question: "What is a subroutine?",
+        answer: "A named block of code that performs a specific task and can be called multiple times within a program.",
+        paper: "2024 May/June Paper 21",
+        topic: "Procedures",
+        tags: ["define"],
+        marks: 1,
+        keywords: ["subroutine", "function", "procedure"]
+      },
+      {
+        question: "Explain the difference between a procedure and a function.",
+        answer: "A procedure is a subroutine that performs an action but does not return a value. A function is a subroutine that returns a value.",
+        paper: "2023 May/June Paper 21",
+        topic: "Procedures",
+        tags: ["explain", "compare"],
+        marks: 3,
+        keywords: ["procedure", "function", "return value"]
+      },
+      {
+        question: "What is the purpose of parameters in a subroutine?",
+        answer: "Parameters allow data to be passed into a subroutine, making the subroutine more flexible and reusable.",
+        paper: "2024 Oct/Nov Paper 12",
+        topic: "Procedures",
+        tags: ["explain"],
+        marks: 2,
+        keywords: ["parameter", "argument", "subroutine", "data passing"]
+      },
+      {
+        question: "What is meant by variable scope?",
+        answer: "The part of the program where a variable is accessible. Local variables are accessible only within a subroutine; global variables are accessible throughout the program.",
+        paper: "2025 May/June Paper 11",
+        topic: "Procedures",
+        tags: ["define"],
+        marks: 2,
+        keywords: ["scope", "local", "global", "variable"]
+      }
+    ],
+    "Structures": [
+      {
+        question: "What is an array?",
+        answer: "An indexed collection of elements of the same data type stored in contiguous memory locations.",
+        paper: "2023 Oct/Nov Paper 22",
+        topic: "Structures",
+        tags: ["define"],
+        marks: 1,
+        keywords: ["array", "collection", "indexed"]
+      },
+      {
+        question: "How do you access the third element of an array called marks?",
+        answer: "marks[3] (using index 3 or marks[2] if using 0-based indexing, depending on language convention)",
+        paper: "2024 May/June Paper 22",
+        topic: "Structures",
+        tags: ["write code"],
+        marks: 1,
+        keywords: ["array access", "index", "element"]
+      },
+      {
+        question: "Write pseudocode to store numbers 10, 20, 30 in an array called values.",
+        answer: "values[1] <- 10\nvalues[2] <- 20\nvalues[3] <- 30\n(or using a loop from 1 to 3)",
+        paper: "2025 Feb/Mar Paper 22",
+        topic: "Structures",
+        tags: ["write code"],
+        marks: 2,
+        keywords: ["array", "assignment", "pseudocode"]
+      }
+    ]
   }
 };
 
