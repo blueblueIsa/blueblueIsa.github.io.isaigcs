@@ -77,7 +77,6 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
   const BOMB_SIZE_MIN = 10;
   const BOMB_SIZE_MAX = 30;
   const BOMB_DAMAGE_MULT = 12; // damage per unit size
-  const FAIL_THRESHOLD = -200; // if score below this, player fails
 
   
 

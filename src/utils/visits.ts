@@ -7,8 +7,9 @@ function getSessionId(): string {
   try {
     let id = localStorage.getItem('session:id');
     if (!id) {
-      id = (crypto as any).randomUUID?.() || `session-${Date.now()}-${Math.random()}`;
-      localStorage.setItem('session:id', id);
+      const newId = (crypto as any).randomUUID?.() || `session-${Date.now()}-${Math.random()}`;
+      localStorage.setItem('session:id', newId);
+      return newId;
     }
     return id;
   } catch {
