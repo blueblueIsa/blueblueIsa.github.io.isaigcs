@@ -45,6 +45,8 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
   const [powerUpSpeed, setPowerUpSpeed] = useState(0.6);
   const [showTrail, setShowTrail] = useState(true);
   const [gestureMode, setGestureMode] = useState(true);
+  const [initialDifficulty, setInitialDifficulty] = useState(1);
+  const [failThresholdState, setFailThresholdState] = useState( -200 );
 
   const gameStateRef = useRef({
     score: 0,
@@ -58,11 +60,26 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
     particles: [] as Particle[],
     energyOrbs: [] as EnergyOrb[],
     bombs: [] as Bomb[],
+    // difficulty scaling and effects
+    difficultyMultiplier: 1,
+    nextDifficultyAt: 1000,
+    bombHitFlash: { active: false, opacity: 0 },
+    failThreshold: -200,
     isSlicing: false,
     sliceTrail: [] as Array<{ x: number; y: number }>,
     handX: 0,
     handY: 0,
   });
+
+  // Gameplay tuning constants
+  const ORB_SIZE_MIN = 6;
+  const ORB_SIZE_MAX = 18;
+  const BOMB_SIZE_MIN = 10;
+  const BOMB_SIZE_MAX = 30;
+  const BOMB_DAMAGE_MULT = 12; // damage per unit size
+  const FAIL_THRESHOLD = -200; // if score below this, player fails
+
+  
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -131,17 +148,19 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
 
         if (distance < orb.size + 10) {
           orb.hit = true;
-          gameStateRef.current.score += orb.points * gameStateRef.current.combo;
+          const gained = Math.round((orb.points || 100) * gameStateRef.current.difficultyMultiplier);
+          gameStateRef.current.score += gained * gameStateRef.current.combo;
           setScore(gameStateRef.current.score);
 
-          // Create explosion particles
-          for (let j = 0; j < 20; j++) {
+          // Create explosion particles (scaled by orb size)
+          const particleCount = Math.min(60, 8 + Math.floor(orb.size * 2));
+          for (let j = 0; j < particleCount; j++) {
             gameStateRef.current.particles.push({
               x: orb.x,
               y: orb.y,
-              vx: (Math.random() - 0.5) * 8,
-              vy: (Math.random() - 0.5) * 8,
-              size: Math.random() * 4 + 2,
+              vx: (Math.random() - 0.5) * (6 + orb.size / 2),
+              vy: (Math.random() - 0.5) * (6 + orb.size / 2),
+              size: Math.random() * (particleSizeRange || 2) + 1,
               color: orb.color,
               life: 1,
             });
@@ -170,26 +189,42 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
 
         if (distance < bomb.size + 10) {
           bomb.hit = true;
-          gameStateRef.current.score -= bomb.damage;
-          if (gameStateRef.current.score < 0) gameStateRef.current.score = 0;
+          // compute damage from size if not set
+          const damage = bomb.damage || Math.round(bomb.size * BOMB_DAMAGE_MULT);
+          gameStateRef.current.score -= damage;
           setScore(gameStateRef.current.score);
 
-          // Create red explosion particles for bomb
-          for (let j = 0; j < 15; j++) {
+          // Create exaggerated red explosion particles for bomb
+          const particleCount = 30 + Math.floor(bomb.size * 2);
+          for (let j = 0; j < particleCount; j++) {
             gameStateRef.current.particles.push({
               x: bomb.x,
               y: bomb.y,
-              vx: (Math.random() - 0.5) * 8,
-              vy: (Math.random() - 0.5) * 8,
-              size: Math.random() * 4 + 2,
+              vx: (Math.random() - 0.5) * (10 + bomb.size),
+              vy: (Math.random() - 0.5) * (10 + bomb.size),
+              size: Math.random() * (particleSizeRange || 2) + 2,
               color: '#ff3333',
               life: 1,
             });
           }
 
+          // Trigger canvas red flash
+          gameStateRef.current.bombHitFlash.active = true;
+          gameStateRef.current.bombHitFlash.opacity = 0.95;
+
           // Reset combo on bomb hit
           gameStateRef.current.combo = 1;
           setCombo(1);
+
+          // If score fell below fail threshold, end the game
+          if (gameStateRef.current.score < (gameStateRef.current.failThreshold ?? -200)) {
+            gameStateRef.current.gameActive = false;
+            setGameActive(false);
+            if (gameStateRef.current.gameTimer) {
+              clearInterval(gameStateRef.current.gameTimer);
+              gameStateRef.current.gameTimer = null;
+            }
+          }
         }
       }
     };
@@ -285,8 +320,8 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
           }
         }
 
-        // Randomly create new orbs
-        if (Math.random() < 0.02) {
+        // Randomly create new orbs (scale frequency with difficulty)
+        if (Math.random() < 0.02 * (gameStateRef.current.difficultyMultiplier || 1)) {
           const orbTypes = [
             { color: '#ff3366', points: 100 },
             { color: '#6ee7ff', points: 200 },
@@ -295,27 +330,31 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
             { color: '#ff9900', points: 500 },
           ];
           const type = orbTypes[Math.floor(Math.random() * orbTypes.length)];
+          const size = ORB_SIZE_MIN + Math.random() * (ORB_SIZE_MAX - ORB_SIZE_MIN);
+          const points = Math.round(type.points * (size / 12));
           gameStateRef.current.energyOrbs.push({
             x: Math.random() * canvas.width,
             y: -30,
-            vx: (Math.random() - 0.5) * 2,
-            vy: 2 + Math.random() * 2,
-            size: 12,
+            vx: (Math.random() - 0.5) * (1.5 + gameStateRef.current.difficultyMultiplier),
+            vy: 1.5 + Math.random() * (1.5 + gameStateRef.current.difficultyMultiplier),
+            size,
             color: type.color,
             hit: false,
-            points: type.points,
+            points,
           });
         }
 
-        // Randomly create bombs
-        if (Math.random() < 0.005) {
+        // Randomly create bombs (scale frequency with difficulty)
+        if (Math.random() < 0.005 * (gameStateRef.current.difficultyMultiplier || 1)) {
+          const size = BOMB_SIZE_MIN + Math.random() * (BOMB_SIZE_MAX - BOMB_SIZE_MIN);
+          const damage = Math.round(size * BOMB_DAMAGE_MULT);
           gameStateRef.current.bombs.push({
             x: Math.random() * canvas.width,
             y: -30,
-            vy: 1.5 + Math.random() * 1,
-            size: 10,
+            vy: 1 + Math.random() * (1.5 + gameStateRef.current.difficultyMultiplier),
+            size,
             hit: false,
-            damage: 150,
+            damage,
           });
         }
       }
@@ -340,6 +379,32 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
           ctx.fill();
           ctx.globalAlpha = 1;
         }
+      }
+
+      // Render bomb flash overlay (canvas effect)
+      if (gameStateRef.current.bombHitFlash && gameStateRef.current.bombHitFlash.active) {
+        const op = gameStateRef.current.bombHitFlash.opacity;
+        ctx.save();
+        ctx.fillStyle = `rgba(255,0,0,${Math.min(1, op)})`;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.restore();
+        // decay
+        gameStateRef.current.bombHitFlash.opacity *= 0.92;
+        if (gameStateRef.current.bombHitFlash.opacity < 0.02) {
+          gameStateRef.current.bombHitFlash.active = false;
+          gameStateRef.current.bombHitFlash.opacity = 0;
+        }
+      }
+
+      // Difficulty increase based on score
+      if (gameStateRef.current.score >= (gameStateRef.current.nextDifficultyAt || 1000)) {
+        gameStateRef.current.difficultyMultiplier = (gameStateRef.current.difficultyMultiplier || 1) + 0.5;
+        gameStateRef.current.nextDifficultyAt = (gameStateRef.current.nextDifficultyAt || 1000) * 2;
+      }
+
+      // If score falls below fail threshold, ensure game stops (safety)
+          if (gameStateRef.current.score < (gameStateRef.current.failThreshold ?? -200)) {
+        gameStateRef.current.gameActive = false;
       }
 
       // Draw slice trail
@@ -395,6 +460,10 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
       gameStateRef.current.sliceCount = 0;
       gameStateRef.current.totalSwipes = 0;
       gameStateRef.current.gameStartTime = Date.now();
+      // initialize difficulty and fail threshold from UI
+      gameStateRef.current.difficultyMultiplier = initialDifficulty;
+      gameStateRef.current.failThreshold = failThresholdState;
+      gameStateRef.current.nextDifficultyAt = Math.max(500, Math.floor(1000 * gameStateRef.current.difficultyMultiplier));
 
       setGameActive(true);
       setScore(0);
@@ -435,6 +504,11 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
         flexDirection: 'column',
       }}
     >
+      <div className="game-header" style={{ position: 'absolute', top: 12, left: 12, right: 12, zIndex: 60, display: 'flex', alignItems: 'center', gap: 12 }}>
+        <button onClick={onBack} className="back-button" title="Back to games">← Back</button>
+        <h2 style={{ margin: 0, color: '#e5e7eb' }}>Cosmic Cutter</h2>
+      </div>
+
       <canvas
         ref={canvasRef}
         style={{
@@ -446,36 +520,6 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
           display: 'block',
         }}
       />
-
-      {/* Back button */}
-      <button
-        onClick={onBack}
-        style={{
-          position: 'fixed',
-          top: '20px',
-          left: '20px',
-          background: 'rgba(110, 231, 255, 0.2)',
-          border: '1px solid rgba(110, 231, 255, 0.4)',
-          color: '#6ee7ff',
-          padding: '8px 14px',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          zIndex: 50,
-          fontSize: 'clamp(12px, 3.5vw, 14px)',
-          fontWeight: 600,
-          transition: 'all 0.2s ease',
-        }}
-        onMouseEnter={(e) => {
-          (e.target as HTMLButtonElement).style.background = 'rgba(110, 231, 255, 0.4)';
-          (e.target as HTMLButtonElement).style.transform = 'scale(1.05)';
-        }}
-        onMouseLeave={(e) => {
-          (e.target as HTMLButtonElement).style.background = 'rgba(110, 231, 255, 0.2)';
-          (e.target as HTMLButtonElement).style.transform = 'scale(1)';
-        }}
-      >
-        ← Back
-      </button>
 
       {/* Game Stats */}
       <div
@@ -516,6 +560,20 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
           <div style={{ fontSize: 'clamp(14px, 2.5vw, 18px)', fontWeight: 'bold', color: '#6ee7ff' }}>{accuracy}</div>
         </div>
       </div>
+
+      {/* End-game overlay: show when game not active but was started */}
+      {(!gameActive && gameStateRef.current.gameStartTime > 0) && (
+        <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.5)', zIndex: 60 }}>
+          <div style={{ background: '#0b1220', padding: 18, borderRadius: 10, minWidth: 300, color: '#fff', textAlign: 'center' }}>
+            <h2 style={{ margin: 0 }}>{gameStateRef.current.score < (gameStateRef.current.failThreshold ?? -200) ? 'You Failed' : 'Game Over'}</h2>
+            <p style={{ marginTop: 8 }}>Final Score: {gameStateRef.current.score}</p>
+            <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginTop: 12 }}>
+              <button onClick={() => { handleStartGame(); }} style={{ padding: '8px 12px' }}>Retry</button>
+              <button onClick={onBack} style={{ padding: '8px 12px' }}>Back</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Control Panel */}
       <div
@@ -600,6 +658,36 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
             step="0.1"
             value={powerUpSpeed}
             onChange={(e) => setPowerUpSpeed(parseFloat(e.target.value))}
+            style={{ width: '100%' }}
+          />
+        </div>
+
+        <div style={{ marginBottom: '12px' }}>
+          <label style={{ fontSize: '13px', color: '#9ca3af', display: 'block', marginBottom: '6px' }}>
+            Initial Difficulty Multiplier: {initialDifficulty.toFixed(1)}x
+          </label>
+          <input
+            type="range"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value={initialDifficulty}
+            onChange={(e) => setInitialDifficulty(parseFloat(e.target.value))}
+            style={{ width: '100%' }}
+          />
+        </div>
+
+        <div style={{ marginBottom: '12px' }}>
+          <label style={{ fontSize: '13px', color: '#9ca3af', display: 'block', marginBottom: '6px' }}>
+            Fail Threshold: {failThresholdState}
+          </label>
+          <input
+            type="range"
+            min="-1000"
+            max="0"
+            step="50"
+            value={failThresholdState}
+            onChange={(e) => setFailThresholdState(parseInt(e.target.value))}
             style={{ width: '100%' }}
           />
         </div>

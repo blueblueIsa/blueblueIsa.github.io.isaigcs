@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import '../../styles/games.scss';
 
@@ -8,6 +8,7 @@ interface InvadersGameProps {
 
 export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [controlsState, setControlsState] = useState<any>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -366,6 +367,13 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
     };
   }, []);
 
+  useEffect(() => {
+    const id = setInterval(() => {
+      setControlsState((window as any).invadersControls?.gameState || null);
+    }, 200);
+    return () => clearInterval(id);
+  }, []);
+
   const handleStart = () => {
     (window as any).invadersControls?.startGame();
   };
@@ -379,7 +387,7 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
   };
 
   return (
-    <div className="game-container">
+    <div className="game-container" style={{ position: 'relative' }}>
       <div className="game-header">
         <button className="back-button" onClick={onBack} title="Back to games">
           <ArrowLeft size={20} />
@@ -413,6 +421,25 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
           </div>
         </div>
       </div>
+
+      {(controlsState && !controlsState.isPlaying) && (
+        <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)' }}>
+          <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center' }}>
+            <h3 style={{ margin: 0 }}>{(() => {
+              try {
+                const enemies = controlsState.enemies || [];
+                const anyAlive = enemies.flat().some((e: any) => e && e.status === 1);
+                return anyAlive ? 'Game Over' : 'Wave Cleared!';
+              } catch { return 'Game Over'; }
+            })()}</h3>
+            <div style={{ marginTop: 10, display: 'flex', gap: 8, justifyContent: 'center' }}>
+              <button onClick={() => (window as any).invadersControls?.resetGame()}>Retry</button>
+              <button onClick={() => { const controls = (window as any).invadersControls; if (controls && controls.gameState) { controls.gameState.wave = (controls.gameState.wave || 1) + 1; controls.resetGame(); } }}>Next</button>
+              <button onClick={onBack}>Back</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

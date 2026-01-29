@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import '../../styles/games.scss';
 
@@ -8,6 +8,7 @@ interface SnakeGameProps {
 
 export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [controlsState, setControlsState] = useState<any>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -221,6 +222,13 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
     };
   }, []);
 
+  useEffect(() => {
+    const id = setInterval(() => {
+      setControlsState((window as any).snakeControls?.gameState || null);
+    }, 200);
+    return () => clearInterval(id);
+  }, []);
+
   const handleStart = () => {
     (window as any).snakeControls?.startGame();
   };
@@ -234,7 +242,7 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
   };
 
   return (
-    <div className="game-container">
+    <div className="game-container" style={{ position: 'relative' }}>
       <div className="game-header">
         <button className="back-button" onClick={onBack} title="Back to games">
           <ArrowLeft size={20} />
@@ -267,6 +275,18 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
           </div>
         </div>
       </div>
+
+      {(controlsState && !controlsState.isPlaying) && (
+        <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)' }}>
+          <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 240, textAlign: 'center' }}>
+            <h3 style={{ margin: 0 }}>Game Over</h3>
+            <div style={{ marginTop: 10, display: 'flex', gap: 8, justifyContent: 'center' }}>
+              <button onClick={() => (window as any).snakeControls?.resetGame()}>Retry</button>
+              <button onClick={onBack}>Back</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

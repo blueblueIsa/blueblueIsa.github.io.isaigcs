@@ -103,6 +103,77 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
 
       if (board[row][col].revealed || board[row][col].flagged) return prevState;
 
+      // If this is the first reveal, regenerate mines to guarantee the
+      // clicked cell and its neighbours are safe, ensuring a larger open area
+      if (newState.revealed === 0) {
+        const rows = board.length;
+        const cols = board[0].length;
+        const mines = newState.mines;
+
+        // clear existing mines
+        for (let r = 0; r < rows; r++) {
+          for (let c = 0; c < cols; c++) board[r][c].mine = false;
+        }
+
+        // build exclusion set: clicked cell and its neighbors
+        const excluded = new Set<string>();
+        for (let dr = -1; dr <= 1; dr++) {
+          for (let dc = -1; dc <= 1; dc++) {
+            const rr = row + dr;
+            const cc = col + dc;
+            if (rr >= 0 && rr < rows && cc >= 0 && cc < cols) {
+              excluded.add(`${rr},${cc}`);
+            }
+          }
+        }
+
+        // place mines avoiding excluded cells
+        let minesPlaced = 0;
+        const maxAttempts = rows * cols * 10;
+        let attempts = 0;
+        while (minesPlaced < mines && attempts < maxAttempts) {
+          attempts++;
+          const r = Math.floor(Math.random() * rows);
+          const c = Math.floor(Math.random() * cols);
+          if (excluded.has(`${r},${c}`)) continue;
+          if (!board[r][c].mine) {
+            board[r][c].mine = true;
+            minesPlaced++;
+          }
+        }
+
+        // Fallback linear fill if not enough placed
+        if (minesPlaced < mines) {
+          for (let r = 0; r < rows && minesPlaced < mines; r++) {
+            for (let c = 0; c < cols && minesPlaced < mines; c++) {
+              if (!board[r][c].mine && !excluded.has(`${r},${c}`)) {
+                board[r][c].mine = true;
+                minesPlaced++;
+              }
+            }
+          }
+        }
+
+        // recalc nearby counts
+        for (let r = 0; r < rows; r++) {
+          for (let c = 0; c < cols; c++) {
+            if (!board[r][c].mine) {
+              let count = 0;
+              for (let dr = -1; dr <= 1; dr++) {
+                for (let dc = -1; dc <= 1; dc++) {
+                  const nr = r + dr;
+                  const nc = c + dc;
+                  if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && board[nr][nc].mine) count++;
+                }
+              }
+              board[r][c].nearbyMines = count;
+            } else {
+              board[r][c].nearbyMines = 0;
+            }
+          }
+        }
+      }
+
       board[row][col].revealed = true;
       newState.revealed++;
 
@@ -472,10 +543,10 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
   return (
     <div className="game-container">
       <div className="game-header">
-        <h1>Minesweeper</h1>
         <button onClick={onBack} className="back-button">
           ← Back
         </button>
+        <h1>Minesweeper</h1>
       </div>
 
       <div className="minesweeper-controls">

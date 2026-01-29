@@ -17,6 +17,17 @@
   }
 }
 
+:root {
+  /* Layout can set --sidebar-width to prevent header/back buttons overlapping a left sidebar */
+  --sidebar-width: 0px;
+}
+
+/* Ensure game back buttons respect a left sidebar safe area when present */
+.game-container .game-header .back-button {
+  /* push the back button right by sidebar width + small padding */
+  margin-left: calc(var(--sidebar-width) + 8px);
+}
+
 /* Games Grid */
 .games-grid {
   display: grid;

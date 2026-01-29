@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
 import '../../styles/games.scss';
 
@@ -8,6 +8,8 @@ interface BreakoutGameProps {
 
 export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [controlsState, setControlsState] = useState<any>(null);
+  const [selectedDifficulty, setSelectedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium');
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -106,8 +108,18 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
         } else {
           gameState.ball.x = canvas.width / 2;
           gameState.ball.y = canvas.height - 30;
-          gameState.ball.speedX = 4 * (Math.random() > 0.5 ? 1 : -1);
-          gameState.ball.speedY = -4;
+          // keep the same base speed for the current difficulty
+          const baseSpeed = (() => {
+            switch (gameState.difficulty) {
+              case 'easy': return 3;
+              case 'hard': return 7;
+              case 'medium':
+              default:
+                return 5;
+            }
+          })();
+          gameState.ball.speedX = baseSpeed * (Math.random() > 0.5 ? 1 : -1);
+          gameState.ball.speedY = -baseSpeed;
         }
       }
 
@@ -198,7 +210,22 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
       if (!gameState.isPlaying) {
         gameState.isPlaying = true;
         gameState.isPaused = false;
-        gameState.gameLoop = setInterval(gameLoop, 30);
+        // set ball speed based on difficulty for clear differences
+        switch (gameState.difficulty) {
+          case 'easy':
+            gameState.ball.speedX = 3 * (Math.random() > 0.5 ? 1 : -1);
+            gameState.ball.speedY = -3;
+            break;
+          case 'medium':
+            gameState.ball.speedX = 5 * (Math.random() > 0.5 ? 1 : -1);
+            gameState.ball.speedY = -5;
+            break;
+          case 'hard':
+            gameState.ball.speedX = 7 * (Math.random() > 0.5 ? 1 : -1);
+            gameState.ball.speedY = -7;
+            break;
+        }
+        gameState.gameLoop = setInterval(gameLoop, 25);
       }
     };
 
@@ -222,8 +249,25 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
       gameState.isPlaying = false;
       gameState.isPaused = false;
 
-      gameState.ball = { x: 300, y: 350, radius: 8, speedX: 4, speedY: -4 };
-      gameState.paddle = { x: 250, y: 380, width: 100, height: 10, speed: 8 };
+      // adjust initial ball/paddle and brick rows by difficulty
+      switch (gameState.difficulty) {
+        case 'easy':
+          gameState.ball = { x: 300, y: 350, radius: 8, speedX: 3, speedY: -3 };
+          gameState.paddle = { x: 250, y: 380, width: 120, height: 10, speed: 8 };
+          gameState.brickRows = 4;
+          break;
+        case 'medium':
+          gameState.ball = { x: 300, y: 350, radius: 8, speedX: 5, speedY: -5 };
+          gameState.paddle = { x: 250, y: 380, width: 100, height: 10, speed: 9 };
+          gameState.brickRows = 5;
+          break;
+        case 'hard':
+        default:
+          gameState.ball = { x: 300, y: 350, radius: 8, speedX: 7, speedY: -7 };
+          gameState.paddle = { x: 250, y: 380, width: 75, height: 10, speed: 10 };
+          gameState.brickRows = 6;
+          break;
+      }
 
       initBricks();
 
@@ -260,6 +304,14 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
     };
   }, []);
 
+  // Poll global controls state so React can render overlays when game ends
+  useEffect(() => {
+    const id = setInterval(() => {
+      setControlsState((window as any).breakoutControls?.gameState || null);
+    }, 200);
+    return () => clearInterval(id);
+  }, []);
+
   const handleStart = () => {
     (window as any).breakoutControls?.startGame();
   };
@@ -273,34 +325,40 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
   };
 
   const changeDifficulty = (difficulty: 'easy' | 'medium' | 'hard') => {
+    setSelectedDifficulty(difficulty);
     const controls = (window as any).breakoutControls;
     if (controls && controls.gameState) {
       controls.gameState.difficulty = difficulty;
-      
       switch (difficulty) {
         case 'easy':
           controls.gameState.ball.speedX = 3;
           controls.gameState.ball.speedY = -3;
           controls.gameState.paddle.width = 120;
+          controls.gameState.paddle.speed = 8;
+          controls.gameState.brickRows = 4;
           break;
         case 'medium':
-          controls.gameState.ball.speedX = 4;
-          controls.gameState.ball.speedY = -4;
+          controls.gameState.ball.speedX = 5;
+          controls.gameState.ball.speedY = -5;
           controls.gameState.paddle.width = 100;
+          controls.gameState.paddle.speed = 9;
+          controls.gameState.brickRows = 5;
           break;
         case 'hard':
-          controls.gameState.ball.speedX = 5.5;
-          controls.gameState.ball.speedY = -5.5;
+          controls.gameState.ball.speedX = 7;
+          controls.gameState.ball.speedY = -7;
           controls.gameState.paddle.width = 75;
+          controls.gameState.paddle.speed = 10;
+          controls.gameState.brickRows = 6;
           break;
       }
-      
+
       controls.resetGame();
     }
   };
 
   return (
-    <div className="game-container">
+    <div className="game-container" style={{ position: 'relative' }}>
       <div className="game-header">
         <button className="back-button" onClick={onBack} title="Back to games">
           <ArrowLeft size={20} />
@@ -333,14 +391,26 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
             </div>
           </div>
 
-          <div className="difficulty-buttons">
-            <button className="btn btn-secondary" onClick={() => changeDifficulty('easy')}>
+          <div className="difficulty-buttons" style={{ display: 'flex', gap: 8, justifyContent: 'center' }}>
+            <button
+              className="btn btn-secondary"
+              onClick={() => changeDifficulty('easy')}
+              style={selectedDifficulty === 'easy' ? { background: 'linear-gradient(90deg,#bbf7d0,#86efac)', borderColor: '#34d399', color: '#065f46' } : {}}
+            >
               Easy
             </button>
-            <button className="btn btn-secondary" onClick={() => changeDifficulty('medium')}>
+            <button
+              className="btn btn-secondary"
+              onClick={() => changeDifficulty('medium')}
+              style={selectedDifficulty === 'medium' ? { background: 'linear-gradient(90deg,#bfdbfe,#93c5fd)', borderColor: '#3b82f6', color: '#1e3a8a' } : {}}
+            >
               Medium
             </button>
-            <button className="btn btn-secondary" onClick={() => changeDifficulty('hard')}>
+            <button
+              className="btn btn-secondary"
+              onClick={() => changeDifficulty('hard')}
+              style={selectedDifficulty === 'hard' ? { background: 'linear-gradient(90deg,#fed7aa,#fdba74)', borderColor: '#fb923c', color: '#7c2d12' } : {}}
+            >
               Hard
             </button>
           </div>
@@ -362,6 +432,41 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
           </div>
         </div>
       </div>
+
+      {(controlsState) && (() => {
+        // determine real end condition: out of lives OR level cleared
+        try {
+          const bricks = controlsState.bricks || [];
+          const anyAlive = bricks.flat().some((b: any) => b && b.status === 1);
+          const levelComplete = !anyAlive;
+          const outOfLives = typeof controlsState.lives === 'number' && controlsState.lives <= 0;
+          const showOverlay = !controlsState.isPlaying && (levelComplete || outOfLives);
+
+          if (!showOverlay) return null;
+
+          return (
+            <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)', zIndex: 60 }}>
+              <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center' }}>
+                <h3 style={{ margin: 0 }}>{levelComplete ? 'Level Complete!' : 'Game Over'}</h3>
+                <div style={{ marginTop: 10, display: 'flex', gap: 8, justifyContent: 'center' }}>
+                  <button onClick={() => { (window as any).breakoutControls?.resetGame(); (window as any).breakoutControls?.startGame?.(); }}>Retry</button>
+                  <button onClick={() => {
+                    const controls = (window as any).breakoutControls;
+                    if (controls && controls.gameState) {
+                      controls.gameState.level = (controls.gameState.level || 1) + 1;
+                      controls.resetGame();
+                      controls.startGame?.();
+                    }
+                  }}>Next</button>
+                  <button onClick={onBack}>Back</button>
+                </div>
+              </div>
+            </div>
+          );
+        } catch (e) {
+          return null;
+        }
+      })()}
     </div>
   );
 };
