@@ -4,7 +4,8 @@ import { test, expect } from '@playwright/test';
 test('RELATED_QA_FUZZY runtime override shows Related Q&A for fuzzy matches', async ({ page }) => {
   // Inject runtime overrides before any scripts run
   // Debug console logs from the page
-  page.on('console', msg => console.log('PAGE LOG:', msg.text()));
+  page.on('console', msg => console.log('PAGE LOG:', msg.type(), msg.text()));
+  page.on('pageerror', err => console.log('PAGE ERROR:', err.message));
 
   await page.addInitScript(() => {
     (window as any).__RELATED_QA_FUZZY = true;

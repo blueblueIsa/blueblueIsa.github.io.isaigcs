@@ -27,5 +27,7 @@ export function hasRelatedQAForTerm(termName, assignedMap, unitId, qaData, RELAT
   return false;
 }
 
-// Support CommonJS require() for tests
-module.exports = { hasRelatedQAForTerm };
+// Support CommonJS require() for tests (guarded to avoid ReferenceError in browser)
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = { hasRelatedQAForTerm };
+}

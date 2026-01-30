@@ -4,6 +4,7 @@ import { units } from '../../data/units';
 import { QACard } from '../../components/shared/QACard';
 import { useSearchParams, useLocation } from 'react-router-dom';
 import { parseQAUrl, buildQAPath } from './qaUrl.ts';
+import type { Question } from '../../types';
 
 export const QAView: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -15,15 +16,16 @@ export const QAView: React.FC = () => {
   const [keyword, setKeyword] = useState<string>(parsed.q || '');
   const kwOnly: string = parsed.kw || searchParams.get('kw') || '';
 
-  const unitQA = qaData[selectedUnitId] || {};
+  const effectiveQaData = (typeof (globalThis as any).__QA_DATA_OVERRIDE !== 'undefined') ? (globalThis as any).__QA_DATA_OVERRIDE : qaData;
+  const unitQA = effectiveQaData[selectedUnitId] || {};
   const topics = Object.keys(unitQA);
   const hasTopicData = selectedTopic && Array.isArray(unitQA[selectedTopic]) && (unitQA[selectedTopic]!.length > 0);
   const sourceQuestions = hasTopicData ? (unitQA[selectedTopic] || []) : Object.values(unitQA).flat();
-  const filteredQuestions = sourceQuestions.filter(q => {
+  const filteredQuestions = sourceQuestions.filter((q: Question) => {
     const k = keyword.trim().toLowerCase();
     const kw = kwOnly.trim().toLowerCase();
     if (kw) {
-      const inKeywordsStrict = Array.isArray(q.keywords) && q.keywords.some(w => w.toLowerCase() === kw);
+      const inKeywordsStrict = Array.isArray(q.keywords) && q.keywords.some((w: string) => w.toLowerCase() === kw);
       if (inKeywordsStrict) return true;
       // fallback: fuzzy text match when no strict keywords
       const terms = kw.split(/\s+/).filter(x => x.length > 1);
@@ -33,13 +35,13 @@ export const QAView: React.FC = () => {
     }
     if (!k) return true;
     const inText = q.question.toLowerCase().includes(k) || q.answer.toLowerCase().includes(k);
-    const inKeywords = Array.isArray(q.keywords) && q.keywords.some(w => w.toLowerCase().includes(k));
+    const inKeywords = Array.isArray(q.keywords) && q.keywords.some((w: string) => w.toLowerCase().includes(k));
     return inText || inKeywords;
   });
 
   useEffect(() => {
     if (import.meta.env.MODE !== 'production') {
-      const sample = sourceQuestions.slice(0, 5).map(q => q.question);
+      const sample = sourceQuestions.slice(0, 5).map((q: Question) => q.question);
       console.debug('[QAView] selectedUnitId', selectedUnitId, 'keyword', keyword, 'sourceCount', sourceQuestions.length, 'filteredCount', filteredQuestions.length, 'sample', sample);
     }
   }, [selectedUnitId, keyword, sourceQuestions, filteredQuestions]);
@@ -169,7 +171,7 @@ export const QAView: React.FC = () => {
         data-testid={import.meta.env.MODE !== 'production' && qaReady ? 'qa-ready' : undefined}
       >
         {filteredQuestions.length > 0 ? (
-          filteredQuestions.map((q, i) => (
+          filteredQuestions.map((q: Question, i: number) => (
             <QACard key={i} question={q} />
           ))
         ) : (
