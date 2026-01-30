@@ -26,6 +26,7 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
   const [flaggingMode, setFlaggingMode] = useState(false);
   const touchTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
+  const lastTouchTimeRef = useRef<number>(0);
 
   const getDimensions = (difficulty: 'easy' | 'medium' | 'hard') => {
     switch (difficulty) {
@@ -398,6 +399,11 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
   const handleCanvasClick = useCallback((e: React.MouseEvent<HTMLCanvasElement>) => {
     if (!gameState || !gameState.isPlaying) return;
 
+    // Ignore synthetic clicks shortly after a touch interaction to prevent double events
+    if (lastTouchTimeRef.current && (Date.now() - lastTouchTimeRef.current) < 700) {
+      return;
+    }
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -455,6 +461,10 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
     touchStartRef.current = { x: touch.clientX, y: touch.clientY };
 
     // Set a timeout for long press (flag) - 500ms
+    if (touchTimeoutRef.current) {
+      clearTimeout(touchTimeoutRef.current);
+      touchTimeoutRef.current = null;
+    }
     touchTimeoutRef.current = setTimeout(() => {
       const canvas = canvasRef.current;
       if (!canvas) return;
@@ -473,6 +483,8 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
 
       if (row >= 0 && row < rows && col >= 0 && col < cols) {
         toggleFlag(row, col);
+        // record touch time so subsequent synthetic click is ignored
+        lastTouchTimeRef.current = Date.now();
       }
     }, 500);
   }, [gameState, toggleFlag]);
@@ -482,10 +494,18 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
       clearTimeout(touchTimeoutRef.current);
       touchTimeoutRef.current = null;
     }
+    touchStartRef.current = null;
   }, []);
 
   const handleTouchClick = useCallback((e: React.TouchEvent<HTMLCanvasElement>) => {
     if (!gameState || !gameState.isPlaying) return;
+
+    // Clear any pending long-press timeout: short taps should not be followed by the
+    // delayed long-press action which could toggle the flag back off.
+    if (touchTimeoutRef.current) {
+      clearTimeout(touchTimeoutRef.current);
+      touchTimeoutRef.current = null;
+    }
 
     const touch = e.changedTouches[0];
     const startPos = touchStartRef.current;
@@ -573,7 +593,15 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
         
         {/* Mobile flagging mode toggle */}
         <button 
-          onClick={() => setFlaggingMode(!flaggingMode)}
+          onClick={() => {
+            // Clear any pending touch timeouts so toggling mode doesn't cause an accidental flag
+            if (touchTimeoutRef.current) {
+              clearTimeout(touchTimeoutRef.current);
+              touchTimeoutRef.current = null;
+            }
+            touchStartRef.current = null;
+            setFlaggingMode(!flaggingMode);
+          }}
           style={{
             marginLeft: '8px',
             padding: '8px 12px',

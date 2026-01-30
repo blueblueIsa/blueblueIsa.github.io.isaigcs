@@ -3,6 +3,8 @@ import type { Unit, ViewMode, Term } from '../../types';
 import { TermCard } from '../../components/shared/TermCard';
 import { Flashcard } from '../../components/shared/Flashcard';
 import { qaData } from '../../data/qa';
+import { RELATED_QA_FUZZY } from '../../config/featureFlags';
+import { hasRelatedQAForTerm } from './qaHelpers.js';
 import { Shuffle, BookOpen, Layers, MessageCircleQuestion } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { buildQAPath } from '../qa/qaUrl.ts';
@@ -93,22 +95,9 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
     return assigned;
   }, [unit]);
 
+  // Delegate to helper to make behavior testable without importing TSX component
   const hasRelatedQA = (term: Term) => {
-    const set = assignedMap[term.term];
-    if (set && set.size > 0) return true;
-    const unitQA = qaData[unit.id] || {};
-    const allQs = Object.values(unitQA).flat();
-    const re = new RegExp(`\\b${term.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
-    const skipAssignRe = /identify.*error|identify.*incorrect|identify.*incorrect statement/i;
-    const matches = allQs.filter(q => {
-      if (skipAssignRe.test(q.question)) return false;
-      return re.test(q.question) || (Array.isArray(q.keywords) && q.keywords.some(w => re.test(w)));
-    });
-    const found = matches.length > 0;
-    if (import.meta.env.MODE !== 'production') {
-      console.debug('[hasRelatedQA]', term.term, 'assignedSetSize', set ? set.size : 0, 'foundInAllQs', found, 'unitQAKeys', Object.keys(unitQA), 'matches', matches.map(m => m.question).slice(0, 5));
-    }
-    return found;
+    return hasRelatedQAForTerm(term.term, assignedMap, unit.id, qaData, RELATED_QA_FUZZY);
   };
 
   return (
