@@ -7,13 +7,19 @@ test.use({ ...iPhone });
 
 test('touch flagging persists on mobile', async ({ page }) => {
   await page.goto('/games');
-  // Click Minesweeper tile
-  await page.click('a[href="/unit/cs-1"]', { timeout: 2000 }).catch(() => {});
-  // Navigate directly to Minesweeper route
-  await page.goto('/games/minesweeper');
+  // Click Minesweeper card to open the game (GamesView is client-side)
+  await page.waitForSelector('.games-grid', { timeout: 5000 });
+  const minesCard = page.locator('.game-card', { hasText: 'Minesweeper' }).first();
+  await minesCard.click();
 
-  // Ensure game is ready
-  await page.waitForSelector('.minesweeper-canvas', { timeout: 5000 });
+  // Ensure game is ready (wait for explicit readiness marker)
+  try {
+    await page.waitForSelector('[data-testid="minesweeper-ready"]', { timeout: 10000 });
+  } catch (err) {
+    const body = await page.evaluate(() => document.body ? document.body.innerHTML : 'no body');
+    console.log('MINESWEEPER BODY DUMP:\n', body.slice(0, 3000));
+    throw err;
+  }
 
   // Enable flag mode
   const flagBtn = page.locator('button[title="Toggle flagging mode on mobile"]').first();

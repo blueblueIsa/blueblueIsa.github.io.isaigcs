@@ -27,6 +27,7 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
   const touchTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const lastTouchTimeRef = useRef<number>(0);
+  const [canvasReady, setCanvasReady] = useState(false);
 
   const getDimensions = (difficulty: 'easy' | 'medium' | 'hard') => {
     switch (difficulty) {
@@ -550,8 +551,12 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
     if (gameState) {
       gameStateRef.current = gameState;
       render();
+      if (!canvasReady) {
+        setCanvasReady(true);
+        if (import.meta.env.MODE !== 'production') console.debug('[Minesweeper] canvas ready');
+      }
     }
-  }, [gameState, render]);
+  }, [gameState, render, canvasReady]);
 
   const changeDifficulty = useCallback((difficulty: 'easy' | 'medium' | 'hard') => {
     const newState = initializeGame(difficulty);
@@ -624,6 +629,7 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
         width={600}
         height={600}
         className="game-canvas minesweeper-canvas"
+        data-testid={canvasReady ? 'minesweeper-ready' : undefined}
         onClick={handleCanvasClick}
         onContextMenu={handleContextMenu}
         onTouchStart={handleTouchStart}
