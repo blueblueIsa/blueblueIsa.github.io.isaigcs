@@ -16,7 +16,11 @@ export const QAView: React.FC = () => {
   const [keyword, setKeyword] = useState<string>(parsed.q || '');
   const kwOnly: string = parsed.kw || searchParams.get('kw') || '';
 
-  const effectiveQaData = (typeof (globalThis as any).__QA_DATA_OVERRIDE !== 'undefined') ? (globalThis as any).__QA_DATA_OVERRIDE : qaData;
+  // Dev/E2E-only: allow runtime override of QA data via `window.__QA_DATA_OVERRIDE`.
+  // Set value like: window.__QA_DATA_OVERRIDE = { 'cs-3': { 'Memory': [ { question: '...', answer: '', keywords: ['...'] } ] } };
+  // This override is intentionally restricted to non-production builds to avoid
+  // accidental data changes in production environments.
+  const effectiveQaData = (import.meta.env.MODE !== 'production' && typeof (globalThis as any).__QA_DATA_OVERRIDE !== 'undefined') ? (globalThis as any).__QA_DATA_OVERRIDE : qaData;
   const unitQA = effectiveQaData[selectedUnitId] || {};
   const topics = Object.keys(unitQA);
   const hasTopicData = selectedTopic && Array.isArray(unitQA[selectedTopic]) && (unitQA[selectedTopic]!.length > 0);
