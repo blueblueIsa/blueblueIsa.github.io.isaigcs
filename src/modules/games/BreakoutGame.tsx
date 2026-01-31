@@ -40,6 +40,8 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
     };
 
     const activeKeys = new Set<string>();
+    let touchX = 0;
+    let isTouching = false;
 
     const initBricks = () => {
       gameState.bricks = [];
@@ -174,6 +176,12 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
         gameState.paddle.x += gameState.paddle.speed;
       }
 
+      // Touch control
+      if (isTouching) {
+        const paddleCenter = touchX - (gameState.paddle.width / 2);
+        gameState.paddle.x = Math.max(0, Math.min(canvas.width - gameState.paddle.width, paddleCenter));
+      }
+
       // Check if all bricks are destroyed
       for (let c = 0; c < gameState.brickCols; c++) {
         for (let r = 0; r < gameState.brickRows; r++) {
@@ -288,6 +296,34 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
     document.addEventListener('keydown', keydownHandler);
     document.addEventListener('keyup', keyupHandler);
 
+    // Touch event handlers for mobile/tablet
+    const touchstartHandler = (e: TouchEvent) => {
+      e.preventDefault();
+      const rect = canvas.getBoundingClientRect();
+      touchX = e.touches[0].clientX - rect.left;
+      isTouching = true;
+    };
+
+    const touchmoveHandler = (e: TouchEvent) => {
+      e.preventDefault();
+      const rect = canvas.getBoundingClientRect();
+      touchX = e.touches[0].clientX - rect.left;
+    };
+
+    const touchendHandler = () => {
+      isTouching = false;
+    };
+
+    const touchcancelHandler = () => {
+      isTouching = false;
+    };
+
+    // Add touch event listeners
+    canvas.addEventListener('touchstart', touchstartHandler);
+    canvas.addEventListener('touchmove', touchmoveHandler);
+    canvas.addEventListener('touchend', touchendHandler);
+    canvas.addEventListener('touchcancel', touchcancelHandler);
+
     // Initial draw
     drawBricks();
     drawBall();
@@ -300,6 +336,10 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
       clearInterval(gameState.gameLoop);
       document.removeEventListener('keydown', keydownHandler);
       document.removeEventListener('keyup', keyupHandler);
+      canvas.removeEventListener('touchstart', touchstartHandler);
+      canvas.removeEventListener('touchmove', touchmoveHandler);
+      canvas.removeEventListener('touchend', touchendHandler);
+      canvas.removeEventListener('touchcancel', touchcancelHandler);
       delete (window as any).breakoutControls;
     };
   }, []);
@@ -429,6 +469,7 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
 
           <div className="keyboard-info">
             <p>Left/Right Arrow Keys: Move Paddle</p>
+            <p>Touch/Swipe: Move Paddle (Mobile/Tablet)</p>
           </div>
         </div>
       </div>

@@ -97,13 +97,13 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
     };
   }, []);
 
-  const revealCell = useCallback((row: number, col: number) => {
+  const revealCell = useCallback((row: number, col: number, force: boolean = false) => {
     setGameState(prevState => {
       if (!prevState) return prevState;
       const newState = JSON.parse(JSON.stringify(prevState));
       const board = newState.board;
 
-      if (board[row][col].revealed || board[row][col].flagged) return prevState;
+      if (board[row][col].revealed || (!force && board[row][col].flagged)) return prevState;
 
       // If this is the first reveal, regenerate mines to guarantee the
       // clicked cell and its neighbours are safe, ensuring a larger open area
@@ -177,6 +177,10 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
       }
 
       board[row][col].revealed = true;
+      if (board[row][col].flagged) {
+        board[row][col].flagged = false;
+        newState.flags--;
+      }
       newState.revealed++;
 
       if (board[row][col].mine) {
@@ -414,8 +418,10 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
     const cellSize = Math.min(canvas.width / cols, canvas.height / rows);
 
     const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
 
     const col = Math.floor(x / cellSize);
     const row = Math.floor(y / cellSize);
@@ -442,8 +448,10 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
     const cellSize = Math.min(canvas.width / cols, canvas.height / rows);
 
     const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
 
     const col = Math.floor(x / cellSize);
     const row = Math.floor(y / cellSize);
@@ -461,7 +469,7 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
     const touch = e.touches[0];
     touchStartRef.current = { x: touch.clientX, y: touch.clientY };
 
-    // Set a timeout for long press (flag) - 500ms
+    // Set a timeout for long press - 500ms
     if (touchTimeoutRef.current) {
       clearTimeout(touchTimeoutRef.current);
       touchTimeoutRef.current = null;
@@ -476,19 +484,26 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
       const cellSize = Math.min(canvas.width / cols, canvas.height / rows);
 
       const rect = canvas.getBoundingClientRect();
-      const x = touch.clientX - rect.left;
-      const y = touch.clientY - rect.top;
+      const scaleX = canvas.width / rect.width;
+      const scaleY = canvas.height / rect.height;
+      const x = (touch.clientX - rect.left) * scaleX;
+      const y = (touch.clientY - rect.top) * scaleY;
 
       const col = Math.floor(x / cellSize);
       const row = Math.floor(y / cellSize);
 
       if (row >= 0 && row < rows && col >= 0 && col < cols) {
-        toggleFlag(row, col);
+        if (flaggingMode) {
+          // In flagging mode, long press should unflag and reveal (force reveal)
+          revealCell(row, col, true);
+        } else {
+          toggleFlag(row, col);
+        }
         // record touch time so subsequent synthetic click is ignored
         lastTouchTimeRef.current = Date.now();
       }
     }, 500);
-  }, [gameState, toggleFlag]);
+  }, [gameState, flaggingMode, revealCell, toggleFlag]);
 
   const handleTouchCancel = useCallback(() => {
     if (touchTimeoutRef.current) {
@@ -500,6 +515,11 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
 
   const handleTouchClick = useCallback((e: React.TouchEvent<HTMLCanvasElement>) => {
     if (!gameState || !gameState.isPlaying) return;
+
+    // Ignore synthetic touches shortly after a touch interaction to prevent double events
+    if (lastTouchTimeRef.current && (Date.now() - lastTouchTimeRef.current) < 700) {
+      return;
+    }
 
     // Clear any pending long-press timeout: short taps should not be followed by the
     // delayed long-press action which could toggle the flag back off.
@@ -527,8 +547,10 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
     const cellSize = Math.min(canvas.width / cols, canvas.height / rows);
 
     const rect = canvas.getBoundingClientRect();
-    const x = touch.clientX - rect.left;
-    const y = touch.clientY - rect.top;
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const x = (touch.clientX - rect.left) * scaleX;
+    const y = (touch.clientY - rect.top) * scaleY;
 
     const col = Math.floor(x / cellSize);
     const row = Math.floor(y / cellSize);
@@ -571,79 +593,75 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
         <button onClick={onBack} className="back-button">
           ← Back
         </button>
-        <h1>Minesweeper</h1>
+        <h2>Minesweeper</h2>
       </div>
 
-      <div className="minesweeper-controls">
-        <div className="difficulty-buttons">
-          <button onClick={() => changeDifficulty('easy')} className={gameState.difficulty === 'easy' ? 'active' : ''}>
-            Easy (8x8, 10 mines)
-          </button>
-          <button onClick={() => changeDifficulty('medium')} className={gameState.difficulty === 'medium' ? 'active' : ''}>
-            Medium (12x12, 30 mines)
-          </button>
-          <button onClick={() => changeDifficulty('hard')} className={gameState.difficulty === 'hard' ? 'active' : ''}>
-            Hard (16x16, 99 mines)
-          </button>
+      <div className="game-content">
+        <canvas
+          ref={canvasRef}
+          width={600}
+          height={600}
+          className="game-canvas minesweeper-canvas"
+          data-testid={canvasReady ? 'minesweeper-ready' : undefined}
+          onClick={handleCanvasClick}
+          onContextMenu={handleContextMenu}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchClick}
+          onTouchCancel={handleTouchCancel}
+          style={{ cursor: 'pointer', border: '2px solid #333', borderRadius: '8px', maxWidth: '100%', height: 'auto' }}
+        />
+
+        <div className="game-controls">
+          <h3>Controls</h3>
+          
+          <div className="difficulty-buttons">
+            <button onClick={() => changeDifficulty('easy')} className={gameState.difficulty === 'easy' ? 'active' : ''}>
+              Easy (8x8, 10 mines)
+            </button>
+            <button onClick={() => changeDifficulty('medium')} className={gameState.difficulty === 'medium' ? 'active' : ''}>
+              Medium (12x12, 30 mines)
+            </button>
+            <button onClick={() => changeDifficulty('hard')} className={gameState.difficulty === 'hard' ? 'active' : ''}>
+              Hard (16x16, 99 mines)
+            </button>
+          </div>
+
+          <div className="game-stats">
+            <div>Flags: {gameState.flags} / {gameState.mines}</div>
+            <div>Revealed: {gameState.revealed}</div>
+          </div>
+
+          <div className="button-group">
+            <button className="btn btn-primary" onClick={() => changeDifficulty(gameState.difficulty)}>
+              New Game
+            </button>
+            
+            {/* Mobile flagging mode toggle */}
+            <button 
+              className="btn btn-secondary"
+              onClick={() => {
+                // Clear any pending touch timeouts so toggling mode doesn't cause an accidental flag
+                if (touchTimeoutRef.current) {
+                  clearTimeout(touchTimeoutRef.current);
+                  touchTimeoutRef.current = null;
+                }
+                touchStartRef.current = null;
+                setFlaggingMode(!flaggingMode);
+              }}
+              title="Toggle flagging mode on mobile"
+            >
+              🚩 {flaggingMode ? 'Flag Mode' : 'Reveal Mode'}
+            </button>
+          </div>
+
+          <div className="game-instructions">
+            <p>
+              {window.innerWidth < 768 
+                ? `${flaggingMode ? 'Tap to flag' : 'Tap to reveal'} • Long press to ${flaggingMode ? 'reveal' : 'flag'}` 
+                : 'Left click to reveal a cell • Right click to flag a cell'}
+            </p>
+          </div>
         </div>
-
-        <div className="game-stats">
-          <span>Flags: {gameState.flags} / {gameState.mines}</span>
-          <span>Revealed: {gameState.revealed}</span>
-        </div>
-
-        <button onClick={() => changeDifficulty(gameState.difficulty)} className="new-game-button">
-          New Game
-        </button>
-        
-        {/* Mobile flagging mode toggle */}
-        <button 
-          onClick={() => {
-            // Clear any pending touch timeouts so toggling mode doesn't cause an accidental flag
-            if (touchTimeoutRef.current) {
-              clearTimeout(touchTimeoutRef.current);
-              touchTimeoutRef.current = null;
-            }
-            touchStartRef.current = null;
-            setFlaggingMode(!flaggingMode);
-          }}
-          style={{
-            marginLeft: '8px',
-            padding: '8px 12px',
-            background: flaggingMode ? 'rgba(110, 231, 255, 0.3)' : 'rgba(110, 231, 255, 0.1)',
-            border: `2px solid ${flaggingMode ? 'rgba(110, 231, 255, 0.8)' : 'rgba(110, 231, 255, 0.3)'}`,
-            color: '#6ee7ff',
-            borderRadius: '6px',
-            cursor: 'pointer',
-            fontWeight: 600,
-            fontSize: '12px',
-          }}
-          title="Toggle flagging mode on mobile"
-        >
-          🚩 {flaggingMode ? 'Flag Mode' : 'Reveal Mode'}
-        </button>
-      </div>
-
-      <canvas
-        ref={canvasRef}
-        width={600}
-        height={600}
-        className="game-canvas minesweeper-canvas"
-        data-testid={canvasReady ? 'minesweeper-ready' : undefined}
-        onClick={handleCanvasClick}
-        onContextMenu={handleContextMenu}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchClick}
-        onTouchCancel={handleTouchCancel}
-        style={{ cursor: 'pointer', border: '2px solid #333', borderRadius: '8px' }}
-      />
-
-      <div className="game-instructions">
-        <p>
-          {window.innerWidth < 768 
-            ? `${flaggingMode ? 'Tap to flag' : 'Tap to reveal'} • Long press to ${flaggingMode ? 'reveal' : 'flag'}` 
-            : 'Left click to reveal a cell • Right click to flag a cell'}
-        </p>
       </div>
     </div>
   );
