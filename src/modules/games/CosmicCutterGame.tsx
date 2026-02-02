@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { ArrowLeft } from 'lucide-react';
 import type { GameProps } from './types';
 
 interface Particle {
@@ -193,23 +194,23 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
           gameStateRef.current.score -= damage;
           setScore(gameStateRef.current.score);
 
-          // Create exaggerated red explosion particles for bomb
-          const particleCount = 30 + Math.floor(bomb.size * 2);
+          // Create less intense red explosion particles for bomb
+          const particleCount = Math.min(20 + Math.floor(bomb.size * 1.5), 40); // Reduced particle count
           for (let j = 0; j < particleCount; j++) {
             gameStateRef.current.particles.push({
               x: bomb.x,
               y: bomb.y,
-              vx: (Math.random() - 0.5) * (10 + bomb.size),
-              vy: (Math.random() - 0.5) * (10 + bomb.size),
-              size: Math.random() * (particleSizeRange || 2) + 2,
-              color: '#ff3333',
+              vx: (Math.random() - 0.5) * (8 + bomb.size), // Reduced velocity
+              vy: (Math.random() - 0.5) * (8 + bomb.size), // Reduced velocity
+              size: Math.random() * (particleSizeRange || 2) + 1.5, // Slightly smaller particles
+              color: '#ff6666', // Less saturated red
               life: 1,
             });
           }
 
-          // Trigger canvas red flash
+          // Trigger canvas red flash with reduced intensity
           gameStateRef.current.bombHitFlash.active = true;
-          gameStateRef.current.bombHitFlash.opacity = 0.95;
+          gameStateRef.current.bombHitFlash.opacity = 0.6; // Reduced opacity
 
           // Reset combo on bomb hit
           gameStateRef.current.combo = 1;
@@ -504,7 +505,35 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
       }}
     >
       <div className="game-header" style={{ position: 'absolute', top: 12, left: 12, right: 12, zIndex: 60, display: 'flex', alignItems: 'center', gap: 12 }}>
-        <button onClick={onBack} className="back-button" title="Back to games">← Back</button>
+        <button 
+          className="back-button" 
+          onClick={onBack} 
+          title="Back to games"
+          style={{
+            background: 'rgba(10, 15, 35, 0.95)',
+            border: '1px solid rgba(110, 231, 255, 0.4)',
+            borderRadius: '8px',
+            padding: '8px',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.3s ease',
+            color: '#6ee7ff'
+          }}
+          onMouseEnter={(e) => {
+            (e.target as HTMLButtonElement).style.background = 'rgba(10, 15, 35, 1)';
+            (e.target as HTMLButtonElement).style.borderColor = 'rgba(110, 231, 255, 0.6)';
+            (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+          }}
+          onMouseLeave={(e) => {
+            (e.target as HTMLButtonElement).style.background = 'rgba(10, 15, 35, 0.95)';
+            (e.target as HTMLButtonElement).style.borderColor = 'rgba(110, 231, 255, 0.4)';
+            (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+          }}
+        >
+          <ArrowLeft size={20} />
+        </button>
         <h2 style={{ margin: 0, color: '#e5e7eb' }}>Cosmic Cutter</h2>
       </div>
 
@@ -695,23 +724,38 @@ export const CosmicCutterGame: React.FC<GameProps> = ({ onBack }) => {
           onClick={handleStartGame}
           style={{
             width: '100%',
-            background: 'linear-gradient(135deg, rgba(110, 231, 255, 0.2), rgba(80, 120, 255, 0.2))',
-            border: '1px solid rgba(110, 231, 255, 0.4)',
+            background: 'linear-gradient(135deg, rgba(110, 231, 255, 0.3), rgba(80, 120, 255, 0.3))',
+            border: '2px solid rgba(110, 231, 255, 0.6)',
             color: '#6ee7ff',
-            padding: '10px',
-            borderRadius: '8px',
+            padding: '14px',
+            borderRadius: '10px',
             cursor: 'pointer',
-            fontWeight: 600,
-            marginTop: '12px',
-            transition: 'all 0.3s',
+            fontWeight: 'bold',
+            fontSize: '16px',
+            marginTop: '16px',
+            transition: 'all 0.3s ease',
+            boxShadow: '0 4px 12px rgba(110, 231, 255, 0.3)',
+            textShadow: '0 0 8px rgba(110, 231, 255, 0.6)',
           }}
           onMouseEnter={(e) => {
             (e.target as HTMLButtonElement).style.background =
-              'linear-gradient(135deg, rgba(110, 231, 255, 0.4), rgba(80, 120, 255, 0.4))';
+              'linear-gradient(135deg, rgba(110, 231, 255, 0.5), rgba(80, 120, 255, 0.5))';
+            (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+            (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(110, 231, 255, 0.4)';
           }}
           onMouseLeave={(e) => {
             (e.target as HTMLButtonElement).style.background =
-              'linear-gradient(135deg, rgba(110, 231, 255, 0.2), rgba(80, 120, 255, 0.2))';
+              'linear-gradient(135deg, rgba(110, 231, 255, 0.3), rgba(80, 120, 255, 0.3))';
+            (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+            (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(110, 231, 255, 0.3)';
+          }}
+          onMouseDown={(e) => {
+            (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+            (e.target as HTMLButtonElement).style.boxShadow = '0 2px 8px rgba(110, 231, 255, 0.4)';
+          }}
+          onMouseUp={(e) => {
+            (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+            (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(110, 231, 255, 0.4)';
           }}
         >
           {gameActive ? '⏸ Pause' : '▶ Start Game'}

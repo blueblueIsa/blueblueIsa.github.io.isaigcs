@@ -21,6 +21,7 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
       score: 0,
       lives: 3,
       wave: 1,
+      maxWaves: 3,
       isPlaying: false,
       isPaused: false,
       gameLoop: null as unknown as ReturnType<typeof setInterval>,
@@ -40,11 +41,14 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
       lastShot: 0,
       shotDelay: 300,
       enemyShots: [] as any[],
-      enemyShotChance: 0.01,
-      hitEffect: { active: false, x: 0, y: 0, duration: 0, maxDuration: 10 }
+      enemyShotChance: 0.005,
+      hitEffect: { active: false, x: 0, y: 0, duration: 0, maxDuration: 10 },
+      waveCompleteEffect: { active: false, fadeOpacity: 0, maxFadeDuration: 30 }
     };
 
     const activeKeys = new Set<string>();
+
+
 
     const initEnemies = () => {
       gameState.enemies = [];
@@ -226,7 +230,7 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
 
       for (let c = 0; c < gameState.enemyCols; c++) {
         for (let r = 0; r < gameState.enemyRows; r++) {
-          if (gameState.enemies[c][r].status === 1 && Math.random() < gameState.enemyShotChance * 3) {
+          if (gameState.enemies[c][r].status === 1 && Math.random() < gameState.enemyShotChance) {
             gameState.enemyShots.push({
               x: gameState.enemies[c][r].x + gameState.enemyWidth / 2 - 2,
               y: gameState.enemies[c][r].y + gameState.enemyHeight
@@ -257,11 +261,67 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
 
         return shot.y < canvas.height;
       });
+
+      // Check if all enemies are destroyed (wave complete)
+      let allEnemiesDestroyed = true;
+      for (let c = 0; c < gameState.enemyCols; c++) {
+        for (let r = 0; r < gameState.enemyRows; r++) {
+          if (gameState.enemies[c][r].status === 1) {
+            allEnemiesDestroyed = false;
+            break;
+          }
+        }
+        if (!allEnemiesDestroyed) break;
+      }
+
+      if (allEnemiesDestroyed) {
+        if (gameState.wave < gameState.maxWaves) {
+          // Wave complete, move to next wave
+          gameState.wave++;
+          gameState.waveCompleteEffect.active = true;
+          gameState.waveCompleteEffect.fadeOpacity = 0;
+          
+          // Increase difficulty for next wave
+          gameState.enemySpeed += 0.5;
+          gameState.enemyShotChance += 0.002;
+          gameState.enemyDropDistance += 2;
+          
+          // Add more enemies for higher waves
+          if (gameState.wave === 2) {
+            gameState.enemyRows = 4;
+            gameState.enemyCols = 9;
+          } else if (gameState.wave === 3) {
+            gameState.enemyRows = 5;
+            gameState.enemyCols = 10;
+          }
+          
+          // Reset game elements for next wave
+          gameState.bullets = [];
+          gameState.enemyShots = [];
+          initEnemies();
+          
+          // Reset player position
+          gameState.player.x = canvas.width / 2 - 25;
+          
+          // Auto-dismiss wave complete effect after 2 seconds
+          setTimeout(() => {
+            gameState.waveCompleteEffect.active = false;
+          }, 2000);
+        } else {
+          // Game won! All waves completed
+          gameState.isPlaying = false;
+          clearInterval(gameState.gameLoop);
+        }
+      }
     };
 
     const gameLoop = () => {
       if (!gameState.isPlaying) return;
 
+      // First update game state
+      update();
+
+      // Then draw game elements
       ctx.fillStyle = '#000033';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -269,8 +329,8 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
       drawBullets();
       drawEnemies();
 
-      // Draw hit effect
-      if (gameState.hitEffect.active && gameState.hitEffect.duration > 0) {
+      // Draw hit effect only if game is still playing
+      if (gameState.isPlaying && gameState.hitEffect.active && gameState.hitEffect.duration > 0) {
         const progress = 1 - gameState.hitEffect.duration / gameState.hitEffect.maxDuration;
         const radius = 20 + progress * 30;
         
@@ -291,14 +351,46 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
       } else if (gameState.hitEffect.duration <= 0) {
         gameState.hitEffect.active = false;
       }
-
-      update();
+      
+      // Draw wave complete effect only if game is not playing
+      if (!gameState.isPlaying && gameState.waveCompleteEffect.active) {
+        gameState.waveCompleteEffect.fadeOpacity = Math.min(gameState.waveCompleteEffect.fadeOpacity + 0.05, 0.7);
+        
+        ctx.save();
+        ctx.fillStyle = '#000033';
+        ctx.globalAlpha = gameState.waveCompleteEffect.fadeOpacity;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // Draw WAVE COMPLETE text
+        ctx.fillStyle = '#00FF00';
+        ctx.globalAlpha = Math.min(gameState.waveCompleteEffect.fadeOpacity * 1.5, 1);
+        ctx.font = 'bold 48px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('WAVE COMPLETE!', canvas.width / 2, canvas.height / 2 - 30);
+        
+        ctx.font = '24px Arial';
+        ctx.fillText(`Advancing to Wave ${gameState.wave}`, canvas.width / 2, canvas.height / 2 + 20);
+        
+        ctx.restore();
+      }
     };
 
     const startGame = () => {
       if (!gameState.isPlaying) {
         gameState.isPlaying = true;
         gameState.isPaused = false;
+        // Reset all game effects
+        gameState.hitEffect.active = false;
+        gameState.hitEffect.duration = 0;
+        gameState.waveCompleteEffect.active = false;
+        gameState.waveCompleteEffect.fadeOpacity = 0;
+        // Reset game elements
+        gameState.bullets = [];
+        gameState.enemyShots = [];
+        // Reset player position
+        gameState.player.x = canvas.width / 2 - 25;
+        gameState.player.y = canvas.height - 40;
         gameState.gameLoop = setInterval(gameLoop, 30);
       }
     };
@@ -328,7 +420,11 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
       gameState.enemyShots = [];
       gameState.enemySpeed = 1;
       gameState.enemyDirection = 1;
-      gameState.enemyShotChance = 0.01;
+      gameState.enemyDropDistance = 10;
+      gameState.enemyShotChance = 0.005;
+      gameState.enemyRows = 3;
+      gameState.enemyCols = 8;
+      gameState.waveCompleteEffect = { active: false, fadeOpacity: 0, maxFadeDuration: 30 };
       gameState.lastShot = 0;
 
       initEnemies();
@@ -350,19 +446,63 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
     document.addEventListener('keydown', keydownHandler);
     document.addEventListener('keyup', keyupHandler);
 
+    // Touch event handlers for mobile/tablet
+    const touchstartHandler = (e: TouchEvent) => {
+      e.preventDefault();
+    };
+
+    const touchmoveHandler = (e: TouchEvent) => {
+      e.preventDefault();
+      if (!gameState.isPlaying || gameState.isPaused) return;
+
+      const touchX = e.touches[0].clientX;
+      const rect = canvas.getBoundingClientRect();
+      const canvasWidth = rect.width;
+      
+      // Calculate target position based on touch position
+      const targetX = (touchX - rect.left) / canvasWidth * canvas.width;
+      const centerX = canvas.width / 2;
+      
+      // Move player left or right based on touch position relative to center
+      if (targetX < centerX - 50) {
+        // Move left
+        if (gameState.player.x > 0) {
+          gameState.player.x -= gameState.player.speed;
+        }
+      } else if (targetX > centerX + 50) {
+        // Move right
+        if (gameState.player.x + gameState.player.width < canvas.width) {
+          gameState.player.x += gameState.player.speed;
+        }
+      }
+    };
+
+    // Add touch event listeners
+    canvas.addEventListener('touchstart', touchstartHandler);
+    canvas.addEventListener('touchmove', touchmoveHandler);
+
     // Initial draw
     ctx.fillStyle = '#000033';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     drawPlayer();
     drawEnemies();
 
-    // Expose controls
-    (window as any).invadersControls = { startGame, pauseGame, resetGame };
+    // Expose controls with gameState getter
+    (window as any).invadersControls = { 
+      startGame, 
+      pauseGame, 
+      resetGame,
+      get gameState() {
+        return gameState;
+      }
+    };
 
     return () => {
       clearInterval(gameState.gameLoop);
       document.removeEventListener('keydown', keydownHandler);
       document.removeEventListener('keyup', keyupHandler);
+      canvas.removeEventListener('touchstart', touchstartHandler);
+      canvas.removeEventListener('touchmove', touchmoveHandler);
       delete (window as any).invadersControls;
     };
   }, []);
@@ -396,21 +536,184 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
       </div>
 
       <div className="game-content">
-        <canvas ref={canvasRef} width={700} height={450} className="game-canvas" />
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <canvas ref={canvasRef} width={700} height={450} className="game-canvas" />
+
+          {/* Mobile touch controls */}
+          <div style={{ 
+            display: 'flex', 
+            gap: '40px', 
+            marginTop: '20px',
+            justifyContent: 'center'
+          }}>
+            {/* Left and Right buttons */}
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <button 
+                style={{
+                  width: '100px', 
+                  height: '80px', 
+                  fontSize: '32px',
+                  borderRadius: '8px',
+                  background: '#4CAF50',
+                  color: 'white',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+                onClick={() => {
+                  // Create and dispatch keyboard events for left arrow
+                  const keydownEvent = new KeyboardEvent('keydown', { key: 'ArrowLeft', bubbles: true });
+                  const keyupEvent = new KeyboardEvent('keyup', { key: 'ArrowLeft', bubbles: true });
+                  document.dispatchEvent(keydownEvent);
+                  setTimeout(() => document.dispatchEvent(keyupEvent), 300);
+                }}
+              >
+                ←
+              </button>
+              <button 
+                style={{
+                  width: '100px', 
+                  height: '80px', 
+                  fontSize: '32px',
+                  borderRadius: '8px',
+                  background: '#4CAF50',
+                  color: 'white',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+                onClick={() => {
+                  // Create and dispatch keyboard events for right arrow
+                  const keydownEvent = new KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true });
+                  const keyupEvent = new KeyboardEvent('keyup', { key: 'ArrowRight', bubbles: true });
+                  document.dispatchEvent(keydownEvent);
+                  setTimeout(() => document.dispatchEvent(keyupEvent), 300);
+                }}
+              >
+                →
+              </button>
+            </div>
+            
+            {/* Shoot button */}
+            <button 
+              style={{
+                width: '100px', 
+                height: '80px', 
+                fontSize: '24px',
+                borderRadius: '8px',
+                background: '#FF5722',
+                color: 'white',
+                border: 'none',
+                cursor: 'pointer'
+              }}
+              onClick={() => {
+                // Create and dispatch keyboard events for space bar
+                const keydownEvent = new KeyboardEvent('keydown', { key: ' ', bubbles: true });
+                const keyupEvent = new KeyboardEvent('keyup', { key: ' ', bubbles: true });
+                document.dispatchEvent(keydownEvent);
+                setTimeout(() => document.dispatchEvent(keyupEvent), 300);
+              }}
+            >
+              Fire
+            </button>
+          </div>
+        </div>
 
         <div className="game-controls">
           <h3>Controls</h3>
           <p>Use arrow keys to move your ship.</p>
           <p>Press Space to shoot down the invaders!</p>
 
-          <div className="button-group">
-            <button className="btn btn-primary" onClick={handleStart}>
+          <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '16px', padding: '12px', background: 'var(--background)', borderRadius: '6px', fontSize: '0.9rem' }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>Score</div>
+              <div style={{ fontFamily: 'monospace', fontWeight: '600', fontSize: '1.1rem', color: 'var(--accent)' }}>{controlsState?.score || 0}</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>Lives</div>
+              <div style={{ fontFamily: 'monospace', fontWeight: '600', fontSize: '1.1rem', color: '#ef4444' }}>{controlsState?.lives || 3}</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>Wave</div>
+              <div style={{ fontFamily: 'monospace', fontWeight: '600', fontSize: '1.1rem', color: '#10b981' }}>{controlsState?.wave || 1}</div>
+            </div>
+          </div>
+
+          <div className="button-group" style={{ display: 'flex', gap: '12px', margin: '16px 0' }}>
+            <button 
+              onClick={handleStart}
+              style={{
+                background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(76, 175, 80, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(76, 175, 80, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(76, 175, 80, 0.3)';
+              }}
+            >
               Start
             </button>
-            <button className="btn btn-warning" onClick={handlePause}>
+            <button 
+              onClick={handlePause}
+              style={{
+                background: 'linear-gradient(135deg, #ff9800, #f57c00)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(255, 152, 0, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(255, 152, 0, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(255, 152, 0, 0.3)';
+              }}
+            >
               Pause
             </button>
-            <button className="btn btn-danger" onClick={handleReset}>
+            <button 
+              onClick={handleReset}
+              style={{
+                background: 'linear-gradient(135deg, #f44336, #d32f2f)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(244, 67, 54, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(244, 67, 54, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(244, 67, 54, 0.3)';
+              }}
+            >
               Reset
             </button>
           </div>
@@ -422,19 +725,34 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
         </div>
       </div>
 
-      {(controlsState && !controlsState.isPlaying) && (
+      {/* Only show game over dialog if the game was actually played */}
+      {(controlsState && !controlsState.isPlaying && controlsState.score > 0) && (
         <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)' }}>
           <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center' }}>
             <h3 style={{ margin: 0 }}>{(() => {
               try {
+                if (controlsState.wave >= controlsState.maxWaves) {
+                  return 'Congratulations! You Won!';
+                }
                 const enemies = controlsState.enemies || [];
                 const anyAlive = enemies.flat().some((e: any) => e && e.status === 1);
                 return anyAlive ? 'Game Over' : 'Wave Cleared!';
               } catch { return 'Game Over'; }
             })()}</h3>
+            <p style={{ margin: '10px 0' }}>Score: {controlsState.score}</p>
+            <p style={{ margin: '0 0 10px 0' }}>Wave: {controlsState.wave}</p>
             <div style={{ marginTop: 10, display: 'flex', gap: 8, justifyContent: 'center' }}>
               <button onClick={() => (window as any).invadersControls?.resetGame()}>Retry</button>
-              <button onClick={() => { const controls = (window as any).invadersControls; if (controls && controls.gameState) { controls.gameState.wave = (controls.gameState.wave || 1) + 1; controls.resetGame(); } }}>Next</button>
+              {controlsState.wave < controlsState.maxWaves && (
+                <button onClick={() => { 
+                  const controls = (window as any).invadersControls;
+                  if (controls) {
+                    // Start next wave
+                    controls.resetGame();
+                    controls.startGame();
+                  }
+                }}>Next Wave</button>
+              )}
               <button onClick={onBack}>Back</button>
             </div>
           </div>

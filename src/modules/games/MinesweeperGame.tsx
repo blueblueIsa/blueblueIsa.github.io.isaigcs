@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { ArrowLeft } from 'lucide-react';
 import type { GameProps } from './types';
 
 interface Cell {
@@ -590,8 +591,8 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
   return (
     <div className="game-container">
       <div className="game-header">
-        <button onClick={onBack} className="back-button">
-          ← Back
+        <button className="back-button" onClick={onBack} title="Back to games">
+          <ArrowLeft size={20} />
         </button>
         <h2>Minesweeper</h2>
       </div>
@@ -614,14 +615,59 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
         <div className="game-controls">
           <h3>Controls</h3>
           
-          <div className="difficulty-buttons">
-            <button onClick={() => changeDifficulty('easy')} className={gameState.difficulty === 'easy' ? 'active' : ''}>
+          <div className="difficulty-buttons" style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
+            <button 
+              onClick={() => changeDifficulty('easy')} 
+              className={gameState.difficulty === 'easy' ? 'active' : ''}
+              style={{
+                padding: '8px 12px',
+                borderRadius: '6px',
+                border: '1px solid #ddd',
+                cursor: 'pointer',
+                background: gameState.difficulty === 'easy' 
+                  ? 'linear-gradient(90deg, #dcfce7, #22c55e)' 
+                  : '#f9fafb',
+                color: gameState.difficulty === 'easy' ? '#065f46' : '#374151',
+                fontWeight: gameState.difficulty === 'easy' ? 'bold' : 'normal',
+                transition: 'all 0.3s ease'
+              }}
+            >
               Easy (8x8, 10 mines)
             </button>
-            <button onClick={() => changeDifficulty('medium')} className={gameState.difficulty === 'medium' ? 'active' : ''}>
+            <button 
+              onClick={() => changeDifficulty('medium')} 
+              className={gameState.difficulty === 'medium' ? 'active' : ''}
+              style={{
+                padding: '8px 12px',
+                borderRadius: '6px',
+                border: '1px solid #ddd',
+                cursor: 'pointer',
+                background: gameState.difficulty === 'medium' 
+                  ? 'linear-gradient(90deg, #dbeafe, #3b82f6)' 
+                  : '#f9fafb',
+                color: gameState.difficulty === 'medium' ? '#1e40af' : '#374151',
+                fontWeight: gameState.difficulty === 'medium' ? 'bold' : 'normal',
+                transition: 'all 0.3s ease'
+              }}
+            >
               Medium (12x12, 30 mines)
             </button>
-            <button onClick={() => changeDifficulty('hard')} className={gameState.difficulty === 'hard' ? 'active' : ''}>
+            <button 
+              onClick={() => changeDifficulty('hard')} 
+              className={gameState.difficulty === 'hard' ? 'active' : ''}
+              style={{
+                padding: '8px 12px',
+                borderRadius: '6px',
+                border: '1px solid #ddd',
+                cursor: 'pointer',
+                background: gameState.difficulty === 'hard' 
+                  ? 'linear-gradient(90deg, #fee2e2, #ef4444)' 
+                  : '#f9fafb',
+                color: gameState.difficulty === 'hard' ? '#991b1b' : '#374151',
+                fontWeight: gameState.difficulty === 'hard' ? 'bold' : 'normal',
+                transition: 'all 0.3s ease'
+              }}
+            >
               Hard (16x16, 99 mines)
             </button>
           </div>
@@ -631,14 +677,36 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
             <div>Revealed: {gameState.revealed}</div>
           </div>
 
-          <div className="button-group">
-            <button className="btn btn-primary" onClick={() => changeDifficulty(gameState.difficulty)}>
+          <div className="button-group" style={{ display: 'flex', gap: '12px', margin: '16px 0' }}>
+            <button 
+              onClick={() => changeDifficulty(gameState.difficulty)}
+              style={{
+                background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 20px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(76, 175, 80, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(76, 175, 80, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(76, 175, 80, 0.3)';
+              }}
+            >
               New Game
             </button>
             
             {/* Mobile flagging mode toggle */}
             <button 
-              className="btn btn-secondary"
               onClick={() => {
                 // Clear any pending touch timeouts so toggling mode doesn't cause an accidental flag
                 if (touchTimeoutRef.current) {
@@ -649,6 +717,35 @@ export const MinesweeperGame: React.FC<GameProps> = ({ onBack }) => {
                 setFlaggingMode(!flaggingMode);
               }}
               title="Toggle flagging mode on mobile"
+              style={{
+                background: flaggingMode 
+                  ? 'linear-gradient(135deg, #fca5a5, #ef4444)' 
+                  : 'linear-gradient(135deg, #93c5fd, #3b82f6)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: flaggingMode 
+                  ? '0 4px 12px rgba(239, 68, 68, 0.3)' 
+                  : '0 4px 12px rgba(59, 130, 246, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = flaggingMode 
+                  ? '0 6px 16px rgba(239, 68, 68, 0.4)' 
+                  : '0 6px 16px rgba(59, 130, 246, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = flaggingMode 
+                  ? '0 4px 12px rgba(239, 68, 68, 0.3)' 
+                  : '0 4px 12px rgba(59, 130, 246, 0.3)';
+              }}
             >
               🚩 {flaggingMode ? 'Flag Mode' : 'Reveal Mode'}
             </button>

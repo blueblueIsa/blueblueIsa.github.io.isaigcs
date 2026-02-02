@@ -10,6 +10,8 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [controlsState, setControlsState] = useState<any>(null);
   const [selectedDifficulty, setSelectedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium');
+  const leftButtonIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const rightButtonIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -407,7 +409,160 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
       </div>
 
       <div className="game-content">
-        <canvas ref={canvasRef} width={700} height={450} className="game-canvas" />
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <canvas ref={canvasRef} width={700} height={450} className="game-canvas" />
+
+          {/* Mobile touch controls */}
+          <div style={{ 
+            display: 'flex', 
+            gap: '20px', 
+            marginTop: '20px',
+            justifyContent: 'center'
+          }}>
+            <button 
+              style={{
+                width: '100px', 
+                height: '80px', 
+                fontSize: '32px',
+                borderRadius: '8px',
+                background: '#4CAF50',
+                color: 'white',
+                border: 'none',
+                cursor: 'pointer'
+              }}
+              onMouseDown={() => {
+                const gameState = (window as any).breakoutControls?.gameState;
+                if (gameState && gameState.isPlaying && !gameState.isPaused) {
+                  // Initial move
+                  gameState.paddle.x = Math.max(0, gameState.paddle.x - gameState.paddle.speed * 2);
+                  // Start interval for continuous movement
+                  if (!leftButtonIntervalRef.current) {
+                    leftButtonIntervalRef.current = setInterval(() => {
+                      const currentGameState = (window as any).breakoutControls?.gameState;
+                      if (currentGameState && currentGameState.isPlaying && !currentGameState.isPaused) {
+                        currentGameState.paddle.x = Math.max(0, currentGameState.paddle.x - currentGameState.paddle.speed);
+                      }
+                    }, 50);
+                  }
+                }
+              }}
+              onMouseUp={() => {
+                if (leftButtonIntervalRef.current) {
+                  clearInterval(leftButtonIntervalRef.current);
+                  leftButtonIntervalRef.current = null;
+                }
+              }}
+              onMouseLeave={() => {
+                if (leftButtonIntervalRef.current) {
+                  clearInterval(leftButtonIntervalRef.current);
+                  leftButtonIntervalRef.current = null;
+                }
+              }}
+              onTouchStart={(e) => {
+                e.preventDefault();
+                const gameState = (window as any).breakoutControls?.gameState;
+                if (gameState && gameState.isPlaying && !gameState.isPaused) {
+                  // Initial move
+                  gameState.paddle.x = Math.max(0, gameState.paddle.x - gameState.paddle.speed * 2);
+                  // Start interval for continuous movement
+                  if (!leftButtonIntervalRef.current) {
+                    leftButtonIntervalRef.current = setInterval(() => {
+                      const currentGameState = (window as any).breakoutControls?.gameState;
+                      if (currentGameState && currentGameState.isPlaying && !currentGameState.isPaused) {
+                        currentGameState.paddle.x = Math.max(0, currentGameState.paddle.x - currentGameState.paddle.speed);
+                      }
+                    }, 50);
+                  }
+                }
+              }}
+              onTouchEnd={() => {
+                if (leftButtonIntervalRef.current) {
+                  clearInterval(leftButtonIntervalRef.current);
+                  leftButtonIntervalRef.current = null;
+                }
+              }}
+              onTouchCancel={() => {
+                if (leftButtonIntervalRef.current) {
+                  clearInterval(leftButtonIntervalRef.current);
+                  leftButtonIntervalRef.current = null;
+                }
+              }}
+            >
+              ←
+            </button>
+            <button 
+              style={{
+                width: '100px', 
+                height: '80px', 
+                fontSize: '32px',
+                borderRadius: '8px',
+                background: '#4CAF50',
+                color: 'white',
+                border: 'none',
+                cursor: 'pointer'
+              }}
+              onMouseDown={() => {
+                const gameState = (window as any).breakoutControls?.gameState;
+                if (gameState && gameState.isPlaying && !gameState.isPaused) {
+                  // Initial move
+                  gameState.paddle.x = Math.min(gameState.paddle.x + gameState.paddle.speed * 2, 700 - gameState.paddle.width);
+                  // Start interval for continuous movement
+                  if (!rightButtonIntervalRef.current) {
+                    rightButtonIntervalRef.current = setInterval(() => {
+                      const currentGameState = (window as any).breakoutControls?.gameState;
+                      if (currentGameState && currentGameState.isPlaying && !currentGameState.isPaused) {
+                        currentGameState.paddle.x = Math.min(currentGameState.paddle.x + currentGameState.paddle.speed, 700 - currentGameState.paddle.width);
+                      }
+                    }, 50);
+                  }
+                }
+              }}
+              onMouseUp={() => {
+                if (rightButtonIntervalRef.current) {
+                  clearInterval(rightButtonIntervalRef.current);
+                  rightButtonIntervalRef.current = null;
+                }
+              }}
+              onMouseLeave={() => {
+                if (rightButtonIntervalRef.current) {
+                  clearInterval(rightButtonIntervalRef.current);
+                  rightButtonIntervalRef.current = null;
+                }
+              }}
+              onTouchStart={(e) => {
+                e.preventDefault();
+                const gameState = (window as any).breakoutControls?.gameState;
+                if (gameState && gameState.isPlaying && !gameState.isPaused) {
+                  // Initial move
+                  gameState.paddle.x = Math.min(gameState.paddle.x + gameState.paddle.speed * 2, 700 - gameState.paddle.width);
+                  // Start interval for continuous movement
+                  if (!rightButtonIntervalRef.current) {
+                    rightButtonIntervalRef.current = setInterval(() => {
+                      const currentGameState = (window as any).breakoutControls?.gameState;
+                      if (currentGameState && currentGameState.isPlaying && !currentGameState.isPaused) {
+                        currentGameState.paddle.x = Math.min(currentGameState.paddle.x + currentGameState.paddle.speed, 700 - currentGameState.paddle.width);
+                      }
+                    }, 50);
+                  }
+                }
+              }}
+              onTouchEnd={() => {
+                if (rightButtonIntervalRef.current) {
+                  clearInterval(rightButtonIntervalRef.current);
+                  rightButtonIntervalRef.current = null;
+                }
+              }}
+              onTouchCancel={() => {
+                if (rightButtonIntervalRef.current) {
+                  clearInterval(rightButtonIntervalRef.current);
+                  rightButtonIntervalRef.current = null;
+                }
+              }}
+            >
+              →
+            </button>
+          </div>
+        </div>
 
         <div className="game-controls">
           <h3>Controls</h3>
@@ -455,14 +610,83 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
             </button>
           </div>
 
-          <div className="button-group">
-            <button className="btn btn-primary" onClick={handleStart}>
+          <div className="button-group" style={{ display: 'flex', gap: '12px', margin: '16px 0' }}>
+            <button 
+              onClick={handleStart}
+              style={{
+                background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(76, 175, 80, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(76, 175, 80, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(76, 175, 80, 0.3)';
+              }}
+            >
               Start
             </button>
-            <button className="btn btn-warning" onClick={handlePause}>
+            <button 
+              onClick={handlePause}
+              style={{
+                background: 'linear-gradient(135deg, #ff9800, #f57c00)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(255, 152, 0, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(255, 152, 0, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(255, 152, 0, 0.3)';
+              }}
+            >
               Pause
             </button>
-            <button className="btn btn-danger" onClick={handleReset}>
+            <button 
+              onClick={handleReset}
+              style={{
+                background: 'linear-gradient(135deg, #f44336, #d32f2f)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(244, 67, 54, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(244, 67, 54, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(244, 67, 54, 0.3)';
+              }}
+            >
               Reset
             </button>
           </div>
@@ -470,6 +694,7 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
           <div className="keyboard-info">
             <p>Left/Right Arrow Keys: Move Paddle</p>
             <p>Touch/Swipe: Move Paddle (Mobile/Tablet)</p>
+            <p>Direction Buttons: Move Paddle (Mobile/Tablet)</p>
           </div>
         </div>
       </div>

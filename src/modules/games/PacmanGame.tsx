@@ -21,6 +21,7 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
       score: 0,
       lives: 3,
       level: 1,
+      maxLevels: 3,
       isPlaying: false,
       isPaused: false,
       gameLoop: null as unknown as ReturnType<typeof setInterval>,
@@ -39,10 +40,15 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
       frightenedTimer: 0,
       collisionEffect: { active: false, x: 0, y: 0, duration: 0, maxDuration: 15 },
       gameOverEffect: { active: false, fadeOpacity: 0, maxFadeDuration: 30 },
+      levelCompleteEffect: { active: false, fadeOpacity: 0, maxFadeDuration: 30 },
       eatenGhosts: [] as Array<{ ghostIndex: number; x: number; y: number; duration: number; maxDuration: number }>
     };
 
     const activeKeys = new Set<string>();
+
+    // Touch control variables
+    let touchStartX = 0;
+    let touchStartY = 0;
 
     // Initialize dots
     for (let x = 40; x < 660; x += 40) {
@@ -264,6 +270,8 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
     };
 
     const gameLoop = () => {
+      if (!gameState.isPlaying) return;
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       drawMaze();
@@ -298,8 +306,54 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
         gameState.collisionEffect.duration--;
       }
 
-      // Render game-over effect
-      if (gameState.gameOverEffect.active) {
+      if (gameState.dots.length === 0 && gameState.powerDots.length === 0) {
+        if (gameState.level < gameState.maxLevels) {
+          // Level complete, move to next level
+          gameState.level++;
+          gameState.levelCompleteEffect.active = true;
+          gameState.levelCompleteEffect.fadeOpacity = 0;
+          
+          // Reset game elements for next level
+          gameState.dots = [];
+          gameState.powerDots = [];
+          
+          // Add dots for next level
+          for (let x = 40; x < 660; x += 40) {
+            for (let y = 40; y < 410; y += 40) {
+              if (Math.random() > 0.15) {
+                gameState.dots.push({ x, y });
+              }
+            }
+          }
+          
+          // Add power dots
+          gameState.powerDots = [
+            { x: 50, y: 50 },
+            { x: 650, y: 50 },
+            { x: 50, y: 400 },
+            { x: 650, y: 400 }
+          ];
+          
+          // Reset ghosts to alive and increase speed slightly for next level
+          gameState.ghosts.forEach(ghost => {
+            ghost.alive = true;
+            ghost.speed += 0.2; // Increase difficulty each level
+          });
+          
+          // Reset Pac-Man position
+          gameState.pacman.x = 350;
+          gameState.pacman.y = 225;
+        } else {
+          // Game won! All levels completed
+          gameState.isPlaying = false;
+          gameState.gameOverEffect.active = true;
+          gameState.gameOverEffect.fadeOpacity = 0;
+          clearInterval(gameState.gameLoop);
+        }
+      }
+      
+      // Render game-over effect only when game is not playing
+      if (!gameState.isPlaying && gameState.gameOverEffect.active) {
         gameState.gameOverEffect.fadeOpacity = Math.min(gameState.gameOverEffect.fadeOpacity + 0.05, 0.7);
         
         ctx.save();
@@ -320,26 +374,33 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
         
         ctx.restore();
       }
-
-      if (gameState.dots.length === 0 && gameState.powerDots.length === 0) {
-        gameState.level++;
-        for (let x = 40; x < 660; x += 40) {
-          for (let y = 40; y < 410; y += 40) {
-            if (Math.random() > 0.15) {
-              gameState.dots.push({ x, y });
-            }
-          }
-        }
-        gameState.powerDots = [
-          { x: 50, y: 50 },
-          { x: 650, y: 50 },
-          { x: 50, y: 400 },
-          { x: 650, y: 400 }
-        ];
-        // Reset ghosts to alive
-        gameState.ghosts.forEach(ghost => {
-          ghost.alive = true;
-        });
+      
+      // Render level complete effect only when game is not playing
+      if (!gameState.isPlaying && gameState.levelCompleteEffect.active) {
+        gameState.levelCompleteEffect.fadeOpacity = Math.min(gameState.levelCompleteEffect.fadeOpacity + 0.05, 0.7);
+        
+        ctx.save();
+        ctx.fillStyle = '#000000';
+        ctx.globalAlpha = gameState.levelCompleteEffect.fadeOpacity;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // Draw LEVEL COMPLETE text
+        ctx.fillStyle = '#00FF00';
+        ctx.globalAlpha = Math.min(gameState.levelCompleteEffect.fadeOpacity * 1.5, 1);
+        ctx.font = 'bold 48px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('LEVEL COMPLETE!', canvas.width / 2, canvas.height / 2 - 30);
+        
+        ctx.font = '24px Arial';
+        ctx.fillText(`Advancing to Level ${gameState.level}`, canvas.width / 2, canvas.height / 2 + 20);
+        
+        ctx.restore();
+        
+        // Auto-dismiss after 2 seconds
+        setTimeout(() => {
+          gameState.levelCompleteEffect.active = false;
+        }, 2000);
       }
     };
 
@@ -347,6 +408,14 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
       if (!gameState.isPlaying) {
         gameState.isPlaying = true;
         gameState.isPaused = false;
+        // Reset game over and level complete effects
+        gameState.gameOverEffect.active = false;
+        gameState.gameOverEffect.fadeOpacity = 0;
+        gameState.levelCompleteEffect.active = false;
+        gameState.levelCompleteEffect.fadeOpacity = 0;
+        // Reset collision effect
+        gameState.collisionEffect.active = false;
+        gameState.collisionEffect.duration = 0;
         gameState.gameLoop = setInterval(gameLoop, 50);
       }
     };
@@ -374,9 +443,11 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
       gameState.powerDots = [];
       gameState.collisionEffect = { active: false, x: 0, y: 0, duration: 0, maxDuration: 15 };
       gameState.gameOverEffect = { active: false, fadeOpacity: 0, maxFadeDuration: 30 };
+      gameState.levelCompleteEffect = { active: false, fadeOpacity: 0, maxFadeDuration: 30 };
       gameState.eatenGhosts = [];
       gameState.ghosts.forEach(ghost => {
         ghost.alive = true;
+        ghost.speed = 2; // Reset ghost speed to initial value
       });
 
       for (let x = 40; x < 660; x += 40) {
@@ -412,19 +483,74 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
     document.addEventListener('keydown', keydownHandler);
     document.addEventListener('keyup', keyupHandler);
 
+    // Touch event handlers for mobile/tablet
+    const touchstartHandler = (e: TouchEvent) => {
+      e.preventDefault();
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    };
+
+    const touchendHandler = (e: TouchEvent) => {
+      e.preventDefault();
+      if (!gameState.isPlaying) return;
+
+      const touchEndX = e.changedTouches[0].clientX;
+      const touchEndY = e.changedTouches[0].clientY;
+
+      const dx = touchEndX - touchStartX;
+      const dy = touchEndY - touchStartY;
+
+      if (Math.abs(dx) > Math.abs(dy)) {
+        // Horizontal swipe
+        if (dx > 0) {
+          // Right
+          activeKeys.add('ArrowRight');
+          setTimeout(() => activeKeys.delete('ArrowRight'), 300);
+        } else {
+          // Left
+          activeKeys.add('ArrowLeft');
+          setTimeout(() => activeKeys.delete('ArrowLeft'), 300);
+        }
+      } else {
+        // Vertical swipe
+        if (dy > 0) {
+          // Down
+          activeKeys.add('ArrowDown');
+          setTimeout(() => activeKeys.delete('ArrowDown'), 300);
+        } else {
+          // Up
+          activeKeys.add('ArrowUp');
+          setTimeout(() => activeKeys.delete('ArrowUp'), 300);
+        }
+      }
+    };
+
+    // Add touch event listeners
+    canvas.addEventListener('touchstart', touchstartHandler);
+    canvas.addEventListener('touchend', touchendHandler);
+
     // Initial draw
     drawMaze();
     drawDots();
     drawPacman(gameState.pacman);
     gameState.ghosts.forEach((ghost, index) => drawGhost(ghost, index));
 
-    // Expose controls to global
-    (window as any).pacmanControls = { startGame, pauseGame, resetGame };
+    // Expose controls to global with gameState getter
+    (window as any).pacmanControls = { 
+      startGame, 
+      pauseGame, 
+      resetGame,
+      get gameState() {
+        return gameState;
+      }
+    };
 
     return () => {
       clearInterval(gameState.gameLoop);
       document.removeEventListener('keydown', keydownHandler);
       document.removeEventListener('keyup', keyupHandler);
+      canvas.removeEventListener('touchstart', touchstartHandler);
+      canvas.removeEventListener('touchend', touchendHandler);
       delete (window as any).pacmanControls;
     };
   }, []);
@@ -458,38 +584,248 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
       </div>
 
       <div className="game-content">
-        <canvas ref={canvasRef} width={700} height={450} className="game-canvas" />
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <canvas ref={canvasRef} width={700} height={450} className="game-canvas" />
+
+          {/* Mobile touch controls */}
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(3, 1fr)', 
+            gap: '10px', 
+            marginTop: '20px', 
+            width: '250px',
+            maxWidth: '100%'
+          }}>
+            <div style={{ gridColumn: '2', gridRow: '1' }}>
+              <button 
+                style={{
+                  width: '80px', 
+                  height: '80px', 
+                  fontSize: '24px',
+                  borderRadius: '8px',
+                  background: '#4CAF50',
+                  color: 'white',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+                onClick={() => {
+                  // Create and dispatch keyboard events
+                  const keydownEvent = new KeyboardEvent('keydown', { key: 'ArrowUp', bubbles: true });
+                  const keyupEvent = new KeyboardEvent('keyup', { key: 'ArrowUp', bubbles: true });
+                  document.dispatchEvent(keydownEvent);
+                  setTimeout(() => document.dispatchEvent(keyupEvent), 300);
+                }}
+              >
+                ↑
+              </button>
+            </div>
+            <div style={{ gridColumn: '1', gridRow: '2' }}>
+              <button 
+                style={{
+                  width: '80px', 
+                  height: '80px', 
+                  fontSize: '24px',
+                  borderRadius: '8px',
+                  background: '#4CAF50',
+                  color: 'white',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+                onClick={() => {
+                  // Create and dispatch keyboard events
+                  const keydownEvent = new KeyboardEvent('keydown', { key: 'ArrowLeft', bubbles: true });
+                  const keyupEvent = new KeyboardEvent('keyup', { key: 'ArrowLeft', bubbles: true });
+                  document.dispatchEvent(keydownEvent);
+                  setTimeout(() => document.dispatchEvent(keyupEvent), 300);
+                }}
+              >
+                ←
+              </button>
+            </div>
+            <div style={{ gridColumn: '2', gridRow: '2' }}>
+              <button 
+                style={{
+                  width: '80px', 
+                  height: '80px', 
+                  fontSize: '24px',
+                  borderRadius: '8px',
+                  background: '#4CAF50',
+                  color: 'white',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+                onClick={() => {
+                  // Create and dispatch keyboard events
+                  const keydownEvent = new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true });
+                  const keyupEvent = new KeyboardEvent('keyup', { key: 'ArrowDown', bubbles: true });
+                  document.dispatchEvent(keydownEvent);
+                  setTimeout(() => document.dispatchEvent(keyupEvent), 300);
+                }}
+              >
+                ↓
+              </button>
+            </div>
+            <div style={{ gridColumn: '3', gridRow: '2' }}>
+              <button 
+                style={{
+                  width: '80px', 
+                  height: '80px', 
+                  fontSize: '24px',
+                  borderRadius: '8px',
+                  background: '#4CAF50',
+                  color: 'white',
+                  border: 'none',
+                  cursor: 'pointer'
+                }}
+                onClick={() => {
+                  // Create and dispatch keyboard events
+                  const keydownEvent = new KeyboardEvent('keydown', { key: 'ArrowRight', bubbles: true });
+                  const keyupEvent = new KeyboardEvent('keyup', { key: 'ArrowRight', bubbles: true });
+                  document.dispatchEvent(keydownEvent);
+                  setTimeout(() => document.dispatchEvent(keyupEvent), 300);
+                }}
+              >
+                →
+              </button>
+            </div>
+          </div>
+        </div>
 
         <div className="game-controls">
           <h3>Controls</h3>
           <p>Use arrow keys to move Pac-Man. Eat all the dots to win!</p>
           <p>Power dots make ghosts vulnerable for a short time.</p>
 
-          <div className="button-group">
-            <button className="btn btn-primary" onClick={handleStart}>
+          <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '16px', padding: '12px', background: 'var(--background)', borderRadius: '6px', fontSize: '0.9rem' }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>Score</div>
+              <div style={{ fontFamily: 'monospace', fontWeight: '600', fontSize: '1.1rem', color: 'var(--accent)' }}>{controlsState?.score || 0}</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>Lives</div>
+              <div style={{ fontFamily: 'monospace', fontWeight: '600', fontSize: '1.1rem', color: '#ef4444' }}>{controlsState?.lives || 3}</div>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ color: 'var(--muted)', fontSize: '0.8rem' }}>Level</div>
+              <div style={{ fontFamily: 'monospace', fontWeight: '600', fontSize: '1.1rem', color: '#10b981' }}>{controlsState?.level || 1}</div>
+            </div>
+          </div>
+
+          <div className="button-group" style={{ display: 'flex', gap: '12px', margin: '16px 0' }}>
+            <button 
+              onClick={handleStart}
+              style={{
+                background: 'linear-gradient(135deg, #4CAF50, #45a049)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(76, 175, 80, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(76, 175, 80, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(76, 175, 80, 0.3)';
+              }}
+            >
               Start
             </button>
-            <button className="btn btn-warning" onClick={handlePause}>
+            <button 
+              onClick={handlePause}
+              style={{
+                background: 'linear-gradient(135deg, #ff9800, #f57c00)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(255, 152, 0, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(255, 152, 0, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(255, 152, 0, 0.3)';
+              }}
+            >
               Pause
             </button>
-            <button className="btn btn-danger" onClick={handleReset}>
+            <button 
+              onClick={handleReset}
+              style={{
+                background: 'linear-gradient(135deg, #f44336, #d32f2f)',
+                border: 'none',
+                color: 'white',
+                padding: '12px 16px',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                fontSize: '14px',
+                transition: 'all 0.3s ease',
+                boxShadow: '0 4px 12px rgba(244, 67, 54, 0.3)',
+                flex: 1
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(-2px)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 6px 16px rgba(244, 67, 54, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLButtonElement).style.transform = 'translateY(0)';
+                (e.target as HTMLButtonElement).style.boxShadow = '0 4px 12px rgba(244, 67, 54, 0.3)';
+              }}
+            >
               Reset
             </button>
           </div>
 
           <div className="keyboard-info">
             <p>Arrow Keys: Move</p>
+            <p>Touch/Swipe: Move (Mobile/Tablet)</p>
+            <p>Direction Buttons: Move (Mobile/Tablet)</p>
           </div>
         </div>
       </div>
 
-      {(controlsState && !controlsState.isPlaying) && (
+      {/* Only show game over dialog if the game was actually played */}
+      {(controlsState && !controlsState.isPlaying && controlsState.pacman && controlsState.score > 0) && (
         <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)' }}>
           <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center' }}>
-            <h3 style={{ margin: 0 }}>{(controlsState.dots?.length === 0 && controlsState.powerDots?.length === 0) ? 'You Win!' : 'Game Over'}</h3>
+            <h3 style={{ margin: 0 }}>
+              {controlsState.level >= controlsState.maxLevels 
+                ? 'Congratulations! You Won!' 
+                : (controlsState.dots?.length === 0 && controlsState.powerDots?.length === 0) 
+                  ? 'Level Complete!' 
+                  : 'Game Over'
+              }
+            </h3>
+            <p style={{ margin: '10px 0' }}>Score: {controlsState.score}</p>
+            <p style={{ margin: '0 0 10px 0' }}>Level: {controlsState.level}</p>
             <div style={{ marginTop: 10, display: 'flex', gap: 8, justifyContent: 'center' }}>
               <button onClick={() => (window as any).pacmanControls?.resetGame()}>Retry</button>
-              <button onClick={() => { (window as any).pacmanControls?.resetGame(); }}>Next</button>
+              {controlsState.level < controlsState.maxLevels && (
+                <button onClick={() => { 
+                  const controls = (window as any).pacmanControls;
+                  if (controls) {
+                    // Start next level
+                    controls.resetGame();
+                    controls.startGame();
+                  }
+                }}>Next Level</button>
+              )}
               <button onClick={onBack}>Back</button>
             </div>
           </div>
