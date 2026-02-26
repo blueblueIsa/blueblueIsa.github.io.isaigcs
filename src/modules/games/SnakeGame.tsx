@@ -189,20 +189,40 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
     };
 
     const keydownHandler = (e: KeyboardEvent) => {
-      if (!gameState.isPlaying || gameState.isPaused) return;
+      if (gameState.isPaused) return;
 
       switch (e.key) {
         case 'ArrowUp':
-          if (gameState.direction !== 'down') gameState.nextDirection = 'up';
+          if (!gameState.isPlaying || gameState.direction !== 'down') {
+            gameState.nextDirection = 'up';
+            if (!gameState.isPlaying) {
+              gameState.direction = 'up';
+            }
+          }
           break;
         case 'ArrowDown':
-          if (gameState.direction !== 'up') gameState.nextDirection = 'down';
+          if (!gameState.isPlaying || gameState.direction !== 'up') {
+            gameState.nextDirection = 'down';
+            if (!gameState.isPlaying) {
+              gameState.direction = 'down';
+            }
+          }
           break;
         case 'ArrowLeft':
-          if (gameState.direction !== 'right') gameState.nextDirection = 'left';
+          if (!gameState.isPlaying || gameState.direction !== 'right') {
+            gameState.nextDirection = 'left';
+            if (!gameState.isPlaying) {
+              gameState.direction = 'left';
+            }
+          }
           break;
         case 'ArrowRight':
-          if (gameState.direction !== 'left') gameState.nextDirection = 'right';
+          if (!gameState.isPlaying || gameState.direction !== 'left') {
+            gameState.nextDirection = 'right';
+            if (!gameState.isPlaying) {
+              gameState.direction = 'right';
+            }
+          }
           break;
       }
     };
@@ -218,7 +238,7 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
 
     const touchendHandler = (e: TouchEvent) => {
       e.preventDefault();
-      if (!gameState.isPlaying || gameState.isPaused) return;
+      if (gameState.isPaused) return;
 
       const touchEndX = e.changedTouches[0].clientX;
       const touchEndY = e.changedTouches[0].clientY;
@@ -228,17 +248,29 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
 
       if (Math.abs(dx) > Math.abs(dy)) {
         // Horizontal swipe
-        if (dx > 0 && gameState.direction !== 'left') {
+        if (dx > 0 && (!gameState.isPlaying || gameState.direction !== 'left')) {
           gameState.nextDirection = 'right';
-        } else if (dx < 0 && gameState.direction !== 'right') {
+          if (!gameState.isPlaying) {
+            gameState.direction = 'right';
+          }
+        } else if (dx < 0 && (!gameState.isPlaying || gameState.direction !== 'right')) {
           gameState.nextDirection = 'left';
+          if (!gameState.isPlaying) {
+            gameState.direction = 'left';
+          }
         }
       } else {
         // Vertical swipe
-        if (dy > 0 && gameState.direction !== 'up') {
+        if (dy > 0 && (!gameState.isPlaying || gameState.direction !== 'up')) {
           gameState.nextDirection = 'down';
-        } else if (dy < 0 && gameState.direction !== 'down') {
+          if (!gameState.isPlaying) {
+            gameState.direction = 'down';
+          }
+        } else if (dy < 0 && (!gameState.isPlaying || gameState.direction !== 'down')) {
           gameState.nextDirection = 'up';
+          if (!gameState.isPlaying) {
+            gameState.direction = 'up';
+          }
         }
       }
     };
@@ -328,8 +360,13 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
                   }}
                   onClick={() => {
                     const gameState = (window as any).snakeControls?.gameState;
-                    if (gameState && gameState.isPlaying && !gameState.isPaused) {
-                      if (gameState.direction !== 'down') gameState.nextDirection = 'up';
+                    if (gameState && !gameState.isPaused) {
+                      if (!gameState.isPlaying || gameState.direction !== 'down') {
+                        gameState.nextDirection = 'up';
+                        if (!gameState.isPlaying) {
+                          gameState.direction = 'up';
+                        }
+                      }
                     }
                   }}
                 >
@@ -350,8 +387,13 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
                   }}
                   onClick={() => {
                     const gameState = (window as any).snakeControls?.gameState;
-                    if (gameState && gameState.isPlaying && !gameState.isPaused) {
-                      if (gameState.direction !== 'right') gameState.nextDirection = 'left';
+                    if (gameState && !gameState.isPaused) {
+                      if (!gameState.isPlaying || gameState.direction !== 'right') {
+                        gameState.nextDirection = 'left';
+                        if (!gameState.isPlaying) {
+                          gameState.direction = 'left';
+                        }
+                      }
                     }
                   }}
                 >
@@ -372,8 +414,13 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
                   }}
                   onClick={() => {
                     const gameState = (window as any).snakeControls?.gameState;
-                    if (gameState && gameState.isPlaying && !gameState.isPaused) {
-                      if (gameState.direction !== 'up') gameState.nextDirection = 'down';
+                    if (gameState && !gameState.isPaused) {
+                      if (!gameState.isPlaying || gameState.direction !== 'up') {
+                        gameState.nextDirection = 'down';
+                        if (!gameState.isPlaying) {
+                          gameState.direction = 'down';
+                        }
+                      }
                     }
                   }}
                 >
@@ -394,8 +441,13 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
                   }}
                   onClick={() => {
                     const gameState = (window as any).snakeControls?.gameState;
-                    if (gameState && gameState.isPlaying && !gameState.isPaused) {
-                      if (gameState.direction !== 'left') gameState.nextDirection = 'right';
+                    if (gameState && !gameState.isPaused) {
+                      if (!gameState.isPlaying || gameState.direction !== 'left') {
+                        gameState.nextDirection = 'right';
+                        if (!gameState.isPlaying) {
+                          gameState.direction = 'right';
+                        }
+                      }
                     }
                   }}
                 >
