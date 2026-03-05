@@ -37,6 +37,21 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       ))}
       
       <div className="group">
+        <div className="group-title">Reviews</div>
+        {units.map(unit => (
+          <NavLink
+            key={`review-${unit.id}`}
+            to={`/review/unit/${unit.id}`}
+            className={({ isActive }) => classNames('unit-item', { active: isActive })}
+            onClick={onClose}
+          >
+            <div className="unit-number">📚</div>
+            <div>Unit {unit.number} Review</div>
+          </NavLink>
+        ))}
+      </div>
+      
+      <div className="group">
         <div className="group-title">Practice</div>
         <NavLink
           to="/qa"

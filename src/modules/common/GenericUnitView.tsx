@@ -3,8 +3,8 @@ import type { Unit, ViewMode, Term } from '../../types';
 import { TermCard } from '../../components/shared/TermCard';
 import { Flashcard } from '../../components/shared/Flashcard';
 import { qaData } from '../../data/qa';
+import { unitReviews } from '../../data/unitReviews';
 import { RELATED_QA_FUZZY } from '../../config/featureFlags';
-import { hasRelatedQAForTerm } from './qaHelpers.js';
 import { Shuffle, BookOpen, Layers, MessageCircleQuestion } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { buildQAPath } from '../qa/qaUrl.ts';
@@ -97,6 +97,8 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
 
   // Delegate to helper to make behavior testable without importing TSX component
   const hasRelatedQA = (term: Term) => {
+    const hasRelatedQAForTerm = (window as any).hasRelatedQAForTerm;
+    if (!hasRelatedQAForTerm) return false;
     return hasRelatedQAForTerm(term.term, assignedMap, unit.id, qaData, RELATED_QA_FUZZY);
   };
 
@@ -146,6 +148,14 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
              </button>
              <button onClick={() => setViewMode('flashcards')} className="confusions-toggle" title="Flashcards">
                <Layers size={16} />
+             </button>
+             <button
+               className="confusions-toggle"
+               onClick={() => navigate(`/review/unit/${encodeURIComponent(unit.id)}`)}
+               title="Unit Review"
+               style={{ marginLeft: 8 }}
+             >
+               Review
              </button>
           </div>
         </div>
@@ -204,7 +214,12 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
         <div className="flashcards">
           {filteredTerms.length > 0 ? (
             <div style={{ maxWidth: '600px', margin: '0 auto', width: '100%' }}>
-              <Flashcard term={filteredTerms[flashcardIndex % filteredTerms.length]} />
+              <Flashcard
+                term={filteredTerms[flashcardIndex % filteredTerms.length]}
+                review={
+                  unitReviews[unit.id]?.terms?.[filteredTerms[flashcardIndex % filteredTerms.length].term] ?? null
+                }
+              />
               
               <div className="flash-controls" style={{ justifyContent: 'center', marginTop: '20px' }}>
                 <button onClick={() => setFlashcardIndex(Math.max(0, flashcardIndex - 1))}>Previous</button>

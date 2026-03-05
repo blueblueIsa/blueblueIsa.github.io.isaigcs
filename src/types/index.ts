@@ -56,6 +56,16 @@ export interface UnitSyllabus {
   assessmentCriteria: string[];
 }
 
+export interface ReviewNote {
+  back?: string;
+  memoryAid?: string;
+}
+
+export interface UnitReview {
+  overview?: string;
+  terms?: Record<string, ReviewNote>;
+}
+
 export interface SyllabusData {
   metadata: SyllabusMetadata;
   units: UnitSyllabus[];

@@ -6,6 +6,7 @@ import { QAView } from './modules/qa/QAView';
 import { units } from './data/units';
 import { Resources } from './modules/resources/Resources';
 import { GamesView } from './modules/games/GamesView';
+import { UnitReview } from './modules/review/UnitReview';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Navigate to={`/unit/${units[0].id}`} replace />} />
         <Route path="unit/:id" element={<UnitRoute />} />
+        <Route path="review/unit/:id" element={<UnitReview />} />
         <Route path="qa/*" element={<QAView />} />
         <Route path="resources" element={<Resources />} />
         <Route path="games" element={<GamesView />} />

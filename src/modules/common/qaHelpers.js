@@ -4,7 +4,7 @@ function escapeForWordBoundary(s) {
   return s.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&');
 }
 
-export function hasRelatedQAForTerm(termName, assignedMap, unitId, qaData, RELATED_QA_FUZZY) {
+function hasRelatedQAForTerm(termName, assignedMap, unitId, qaData, RELATED_QA_FUZZY) {
   const set = assignedMap && assignedMap[termName];
   const hasAssigned = !!(set && set.size > 0);
   if (hasAssigned) return true;
@@ -30,4 +30,7 @@ export function hasRelatedQAForTerm(termName, assignedMap, unitId, qaData, RELAT
 // Support CommonJS require() for tests (guarded to avoid ReferenceError in browser)
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
   module.exports = { hasRelatedQAForTerm };
+} else {
+  // ES module export for browser
+  window.hasRelatedQAForTerm = hasRelatedQAForTerm;
 }
