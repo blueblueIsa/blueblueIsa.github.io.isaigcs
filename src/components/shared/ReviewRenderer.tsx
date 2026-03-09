@@ -37,14 +37,15 @@ export const ReviewContent: React.FC<ReviewContentProps> = ({ content = '' }) =>
         <div style={{ marginTop: 16, paddingTop: 16, borderTop: '1px solid rgba(148,163,184,0.2)' }}>
           <div style={{
             fontSize: '15px',
-            color: '#fbbf24',
+            color: '#8b5cf6',
             textTransform: 'uppercase',
             marginBottom: 10,
             fontWeight: '700',
             letterSpacing: '0.5px',
             display: 'flex',
             alignItems: 'center',
-            gap: '6px'
+            gap: '6px',
+            textShadow: '0 0 8px rgba(139, 92, 246, 0.3)'
           }}>
             🔑 MS Keywords
           </div>
@@ -53,14 +54,16 @@ export const ReviewContent: React.FC<ReviewContentProps> = ({ content = '' }) =>
               <div
                 key={idx}
                 style={{
-                  background: 'rgba(59,130,246,0.12)',
-                  color: '#3b82f6',
-                  padding: '8px 12px',
-                  borderRadius: '6px',
+                  background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(251, 191, 36, 0.08) 100%)',
+                  color: '#f59e0b',
+                  padding: '10px 14px',
+                  borderRadius: '8px',
                   fontSize: '15px',
-                  fontWeight: '600',
-                  border: '1px solid rgba(59,130,246,0.2)',
-                  display: 'inline-block'
+                  fontWeight: '700',
+                  border: '2px solid rgba(245, 158, 11, 0.3)',
+                  display: 'inline-block',
+                  boxShadow: '0 2px 8px rgba(245, 158, 11, 0.15)',
+                  textShadow: '0 1px 2px rgba(0, 0, 0, 0.1)'
                 }}
               >
                 • {keyword}
