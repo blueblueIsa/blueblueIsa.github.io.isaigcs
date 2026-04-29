@@ -59,6 +59,8 @@ export interface UnitSyllabus {
 export interface ReviewNote {
   back?: string;
   memoryAid?: string;
+  diagram?: string;
+  animation?: string;
 }
 
 export interface UnitReview {

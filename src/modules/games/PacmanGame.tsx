@@ -803,8 +803,8 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
       {/* Only show game over dialog if the game was actually played */}
       {(controlsState && !controlsState.isPlaying && controlsState.pacman && controlsState.score > 0) && (
         <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)' }}>
-          <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center' }}>
-            <h3 style={{ margin: 0 }}>
+          <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center', color: '#1e293b' }}>
+            <h3 style={{ margin: 0, color: '#1e293b' }}>
               {controlsState.level >= controlsState.maxLevels 
                 ? 'Congratulations! You Won!' 
                 : (controlsState.dots?.length === 0 && controlsState.powerDots?.length === 0) 
@@ -812,7 +812,7 @@ export const PacmanGame: React.FC<PacmanProps> = ({ onBack }) => {
                   : 'Game Over'
               }
             </h3>
-            <p style={{ margin: '10px 0' }}>Score: {controlsState.score}</p>
+            <p style={{ margin: '10px 0', color: '#1e293b' }}>Score: {controlsState.score}</p>
             <p style={{ margin: '0 0 10px 0' }}>Level: {controlsState.level}</p>
             <div style={{ marginTop: 10, display: 'flex', gap: 8, justifyContent: 'center' }}>
               <button onClick={() => (window as any).pacmanControls?.resetGame()}>Retry</button>

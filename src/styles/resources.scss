@@ -73,6 +73,217 @@
   }
 }
 
+.paper-terms-view.paper-terms-table-view {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+
+  .paper-terms-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .paper-terms-title {
+    margin: 0 0 12px 0;
+    font-size: 1.7rem;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+
+  .paper-terms-section {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .paper-empty-state {
+    color: var(--muted);
+    padding: 24px;
+    text-align: center;
+  }
+
+  .paper-section-block {
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.05);
+    margin-bottom: 20px;
+  }
+
+  .paper-section-title {
+    margin-bottom: 12px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.01em;
+  }
+
+  .paper-terms-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 0;
+  }
+
+  .paper-terms-table th,
+  .paper-terms-table td {
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .paper-terms-table th {
+    background: rgba(239, 246, 255, 0.95);
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: none;
+  }
+
+  .paper-terms-table tbody tr {
+    background: #f8fbff;
+    border-radius: 14px;
+  }
+
+  .paper-terms-table tbody tr td {
+    border-top: 1px solid rgba(148, 163, 184, 0.12);
+  }
+
+  .paper-terms-table tbody tr:first-child td {
+    border-top: none;
+  }
+
+  .paper-section-title {
+    margin-bottom: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .term-cell {
+    font-weight: 700;
+    color: #1d4ed8;
+    background: #eff6ff;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .paper-terms-table tbody td:nth-child(2) {
+    color: #334155;
+    line-height: 1.75;
+    font-size: 0.95rem;
+  }
+
+  .paper-term-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .definition-highlight {
+    background: #fef3c7;
+    color: #92400e;
+    border-radius: 6px;
+    padding: 0 4px;
+  }
+
+  .paper-terms-table tr.section-row td {
+    background: rgba(232, 244, 255, 0.9);
+    color: #2563eb;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border-bottom: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+  }
+
+  .paper-terms-table tr:nth-child(even):not(.section-row) {
+    background: #f3f8ff;
+  }
+
+  .term-cell {
+    font-weight: 800;
+    color: #1d4ed8;
+    background: #eff6ff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+
+  .paper-terms-table tbody tr:not(.section-row) td:nth-child(2) {
+    color: #334155;
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+
+  .paper-terms-table tbody tr:not(.section-row) td:nth-child(3) {
+    color: #475569;
+  }
+
+  .keyword-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin: 4px 4px 4px 0;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #e0f2fe;
+    color: #1d4ed8;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+}
+
+.sidebar .unit-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.sidebar .sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-left: 0;
+  margin-top: 8px;
+}
+
+.sidebar .sub-item {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.sidebar .sub-item:hover {
+  background: #e2e8f0;
+  border-color: rgba(59, 130, 246, 0.24);
+}
+
+.sidebar .sub-item.active {
+  background: rgba(59, 130, 246, 0.14);
+  color: var(--accent);
+  border-color: rgba(59, 130, 246, 0.32);
+}
+
 /* Unit Section */
 .unit-section {
   background: var(--surface);

@@ -728,8 +728,8 @@ export const InvadersGame: React.FC<InvadersGameProps> = ({ onBack }) => {
       {/* Only show game over dialog if the game was actually played */}
       {(controlsState && !controlsState.isPlaying && controlsState.score > 0) && (
         <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)' }}>
-          <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center' }}>
-            <h3 style={{ margin: 0 }}>{(() => {
+          <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center', color: '#1e293b' }}>
+            <h3 style={{ margin: 0, color: '#1e293b' }}>{(() => {
               try {
                 if (controlsState.wave >= controlsState.maxWaves) {
                   return 'Congratulations! You Won!';

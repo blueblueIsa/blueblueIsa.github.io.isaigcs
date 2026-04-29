@@ -712,8 +712,8 @@ export const BreakoutGame: React.FC<BreakoutGameProps> = ({ onBack }) => {
 
           return (
             <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)', zIndex: 60 }}>
-              <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center' }}>
-                <h3 style={{ margin: 0 }}>{levelComplete ? 'Level Complete!' : 'Game Over'}</h3>
+              <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 260, textAlign: 'center', color: '#1e293b' }}>
+                <h3 style={{ margin: 0, color: '#1e293b' }}>{levelComplete ? 'Level Complete!' : 'Game Over'}</h3>
                 <div style={{ marginTop: 10, display: 'flex', gap: 8, justifyContent: 'center' }}>
                   <button onClick={() => { (window as any).breakoutControls?.resetGame(); (window as any).breakoutControls?.startGame?.(); }}>Retry</button>
                   <button onClick={() => {

@@ -231,8 +231,16 @@ export const unitReviews: Record<string, UnitReview> = {
         memoryAid: '传命令，谁谁干活'
       },
       'FDE cycle': {
-        back: 'Fetch-Decode-Execute\nMS Keywords: fetch from memory, decode by CU, execute by ALU',
-        memoryAid: '取指解码加执行，循环不止步不停'
+        back: 'Fetch-Decode-Execute\nMS Keywords: fetch, decode, execute, CPU cycle',
+        memoryAid: 'Execute a continuous cycle of fetch, decode, then execute.',
+        diagram: '1. PC → MAR → Memory → MDR → CIR\n2. CU decodes IR, prepares ALU/controls.\n3. ALU executes and stores result in ACC/MDR/memory.',
+        animation: 'fde-cycle'
+      },
+      'Phasing process': {
+        back: 'Instruction cycle phases\nMS Keywords: fetch phase, decode phase, execute phase, sequential',
+        memoryAid: 'CPU processes each instruction in sequential phases.',
+        diagram: 'Fetch → Decode → Execute → Repeat',
+        animation: 'phasing-process'
       },
       'Core': {
         back: 'Processing unit in CPU\nMS Keywords: multiple cores = parallel processing, better performance',
@@ -357,8 +365,10 @@ export const unitReviews: Record<string, UnitReview> = {
         memoryAid: '浏览器，渲染网页'
       },
       'DNS': {
-        back: 'Domain Name System\nMS Keywords: translates URL to IP, searches database, returns IP',
-        memoryAid: '域名转 IP，电话本'
+        back: 'Domain Name System\nMS Keywords: DNS lookup, resolution, cache, recursive query, authoritative server',
+        memoryAid: 'Translate URLs to IP addresses through DNS resolution.',
+        diagram: '1. User enters URL.\n2. Browser asks resolver.\n3. Resolver queries root/TLD/auth DNS.\n4. Resolver returns IP to browser.\n5. Browser connects to web server.',
+        animation: 'dns-resolution'
       },
       'HTML': {
         back: 'HyperText Markup Language\nMS Keywords: structure of web pages, tags',

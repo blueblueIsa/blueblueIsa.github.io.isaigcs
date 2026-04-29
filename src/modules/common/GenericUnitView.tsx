@@ -2,10 +2,11 @@ import React, { useState, useMemo } from 'react';
 import type { Unit, ViewMode, Term } from '../../types';
 import { TermCard } from '../../components/shared/TermCard';
 import { Flashcard } from '../../components/shared/Flashcard';
+import { UnitSelfTest } from '../unit/UnitSelfTest';
 import { qaData } from '../../data/qa';
 import { unitReviews } from '../../data/unitReviews';
 import { RELATED_QA_FUZZY } from '../../config/featureFlags';
-import { Shuffle, BookOpen, Layers, MessageCircleQuestion } from 'lucide-react';
+import { Shuffle, BookOpen, Layers } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { buildQAPath } from '../qa/qaUrl.ts';
 import type { Question } from '../../types';
@@ -126,18 +127,9 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
           </select>
 
           <button 
-            className="confusions-toggle"
-            onClick={() => navigate(`/qa/unit/${encodeURIComponent(unit.id)}`)}
-            style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'white' }}
-          >
-            <MessageCircleQuestion size={16} />
-            Common Questions
-          </button>
-
-          <button 
             className={`confusions-toggle ${confusionsOnly ? 'active' : ''}`}
             onClick={() => setConfusionsOnly(!confusionsOnly)}
-            style={{ background: confusionsOnly ? '#eef2ff' : 'white', borderColor: confusionsOnly ? '#c7d2fe' : 'var(--border)' }}
+            style={{ background: confusionsOnly ? '#eef2ff' : 'white', borderColor: confusionsOnly ? '#c7d2fe' : 'var(--border)', color: '#1e293b' }}
           >
             ⚠️ Confusions
           </button>
@@ -156,6 +148,14 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
                style={{ marginLeft: 8 }}
              >
                Review
+             </button>
+             <button
+               className="confusions-toggle"
+               onClick={() => navigate(`/animation/unit/${encodeURIComponent(unit.id)}`)}
+               title="Unit Animation"
+               style={{ marginLeft: 8 }}
+             >
+               Animation
              </button>
           </div>
         </div>
@@ -239,6 +239,11 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
           )}
         </div>
       )}
+
+      {/* Self-Test Section */}
+      <div style={{ marginTop: 40, borderTop: '2px solid #e5e7eb', paddingTop: 32 }}>
+        <UnitSelfTest unit={unit} />
+      </div>
     </div>
   );
 };

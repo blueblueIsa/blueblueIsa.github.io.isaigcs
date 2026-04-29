@@ -565,8 +565,8 @@ export const SnakeGame: React.FC<SnakeGameProps> = ({ onBack }) => {
         {/* Only show game over dialog if the game was actually played and started */}
         {(controlsState && !controlsState.isPlaying && controlsState.snake && controlsState.snake.length > 0 && controlsState.score > 0) && (
           <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.45)' }}>
-            <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 240, textAlign: 'center' }}>
-              <h3 style={{ margin: 0 }}>Game Over</h3>
+            <div style={{ background: '#fff', padding: 18, borderRadius: 8, minWidth: 240, textAlign: 'center', color: '#1e293b' }}>
+              <h3 style={{ margin: 0, color: '#1e293b' }}>Game Over</h3>
               <div style={{ marginTop: 10, display: 'flex', gap: 8, justifyContent: 'center' }}>
                 <button onClick={() => (window as any).snakeControls?.resetGame()}>Retry</button>
                 <button onClick={onBack}>Back</button>

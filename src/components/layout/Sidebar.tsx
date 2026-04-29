@@ -23,15 +23,32 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         <div key={group} className="group">
           <div className="group-title">{group}</div>
           {groupUnits.map(unit => (
-            <NavLink
-              key={unit.id}
-              to={`/unit/${unit.id}`}
-              className={({ isActive }) => classNames('unit-item', { active: isActive })}
-              onClick={onClose}
-            >
-              <div className="unit-number">{unit.number}</div>
-              <div>{unit.title}</div>
-            </NavLink>
+            <div key={unit.id} className="unit-block">
+              <NavLink
+                to={`/unit/${unit.id}`}
+                className={({ isActive }) => classNames('unit-item', { active: isActive })}
+                onClick={onClose}
+              >
+                <div className="unit-number">{unit.number}</div>
+                <div>{unit.title}</div>
+              </NavLink>
+              <div className="sub-list">
+                <NavLink
+                  to={`/qa/unit/${unit.id}`}
+                  className={({ isActive }) => classNames('sub-item', { active: isActive })}
+                  onClick={onClose}
+                >
+                  Common Questions
+                </NavLink>
+                <NavLink
+                  to={`/unit/${unit.id}/paper-terms`}
+                  className={({ isActive }) => classNames('sub-item', { active: isActive })}
+                  onClick={onClose}
+                >
+                  Paper Terms
+                </NavLink>
+              </div>
+            </div>
           ))}
         </div>
       ))}
@@ -53,6 +70,14 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       
       <div className="group">
         <div className="group-title">Practice</div>
+        <NavLink
+          to="/self-test"
+          className={({ isActive }) => classNames('unit-item', { active: isActive })}
+          onClick={onClose}
+        >
+          <div className="unit-number">📝</div>
+          <div>Self-Test</div>
+        </NavLink>
         <NavLink
           to="/qa"
           className={({ isActive }) => classNames('unit-item', { active: isActive })}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { units } from '../../data/units';
 import { unitReviews } from '../../data/unitReviews';
 import { Flashcard } from '../../components/shared/Flashcard';
@@ -9,6 +9,7 @@ import { Shuffle, BookOpen, Layers } from 'lucide-react';
 export const UnitReview: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const unit = units.find(u => u.id === id);
+  const navigate = useNavigate();
   const [viewMode, setViewMode] = useState<'list' | 'flashcards'>('flashcards');
   const [flashcardIndex, setFlashcardIndex] = useState(0);
 
@@ -44,7 +45,17 @@ export const UnitReview: React.FC = () => {
         </div>
 
         <div className="filters">
-          <div style={{ marginLeft: 'auto', display: 'flex', gap: '8px' }}>
+          <div style={{ marginLeft: 'auto', display: 'flex', gap: '8px', alignItems: 'center' }}>
+            {unit.id === 'cs-3' && (
+              <button
+                onClick={() => navigate(`/review/unit/${unit.id}/cpu-cycle`)}
+                className="confusions-toggle"
+                title="CPU FDE Cycle"
+                style={{ fontSize: '13px', padding: '8px 10px' }}
+              >
+                CPU FDE Cycle
+              </button>
+            )}
             <button onClick={() => setViewMode('list')} className="confusions-toggle" title="List View">
               <BookOpen size={16} />
             </button>
@@ -113,8 +124,24 @@ export const UnitReview: React.FC = () => {
                   }}>
                     💡 <strong style={{ color: '#10b981' }}>"{note.memoryAid}"</strong>
                   </p>
+                )}                {note.diagram && (
+                  <div style={{ marginTop: 14, paddingTop: 14, borderTop: '1px solid rgba(148,163,184,0.2)' }}>
+                    <strong style={{ color: '#3b82f6' }}>🧩 Diagram</strong>
+                    <pre style={{ whiteSpace: 'pre-wrap', background: 'rgba(243,244,246,0.95)', borderRadius: '8px', padding: '10px', marginTop: 8, fontSize: '13px' }}>
+                      {note.diagram}
+                    </pre>
+                  </div>
                 )}
-              </div>
+                {note.animation && (
+                  <div style={{ marginTop: 14, paddingTop: 14, borderTop: '1px solid rgba(148,163,184,0.2)' }}>
+                    <strong style={{ color: '#ec4899' }}>🎬 Animation</strong>
+                    <p style={{ margin: '8px 0 0 0' }}>
+                      <a href={note.animation} target="_blank" rel="noreferrer" style={{ color: '#ec4899', textDecoration: 'underline' }}>
+                        View animation resource
+                      </a>
+                    </p>
+                  </div>
+                )}              </div>
             ))}
           </div>
         </div>
