@@ -120,7 +120,215 @@ const paper1Terms: Omit<PaperKeyTerm, 'paper'>[] = [
   { unit: 'Unit 6', section: 'Automated and Emerging Technologies', term: 'Rule base', definition: 'Component that stores logical rules.', keywords: ['stores logical rules'] }
 ];
 
+const paper2Terms: Omit<PaperKeyTerm, 'paper'>[] = [
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Program development life cycle', definition: 'The organised stages of software creation: analysis, design, coding and testing.', keywords: ['analysis', 'design', 'coding', 'testing'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Decomposition', definition: 'Breaking a problem into smaller, manageable sub-problems or components.', keywords: ['break into smaller parts', 'sub-problems'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Abstraction', definition: 'Removing unnecessary detail to focus on the essential features of a problem.', keywords: ['remove detail', 'focus on essentials'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Algorithm', definition: 'A finite sequence of steps designed to solve a specific problem.', keywords: ['finite sequence', 'steps', 'solve problem'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Trace table', definition: 'A table used to record the values of variables after each step of an algorithm during a dry run.', keywords: ['record values', 'each step', 'algorithm'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Dry run', definition: 'Manually executing an algorithm using a trace table to check its logic before coding.', keywords: ['manually execute', 'trace table', 'check logic'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Validation check', definition: 'A check on input data to ensure it is sensible and within expected limits.', keywords: ['sensible data', 'expected limits'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Verification check', definition: 'A check that data has been entered correctly, often by comparing two entries or using a visual check.', keywords: ['entered correctly', 'compare entries'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Test data', definition: 'Data chosen to exercise different paths in an algorithm, including normal, abnormal, extreme and boundary values.', keywords: ['normal', 'abnormal', 'extreme', 'boundary'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Linear search', definition: 'A search algorithm that checks each item in a list sequentially until a match is found.', keywords: ['checks each item', 'sequentially'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Bubble sort', definition: 'A sorting method that repeatedly swaps adjacent out-of-order items until the list is ordered.', keywords: ['swap adjacent items', 'repeat until sorted'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Totalling', definition: 'Calculating the sum of a series of values by adding each item one by one.', keywords: ['sum', 'add values'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Counting', definition: 'Determining how many times a particular item or condition occurs in a set of data.', keywords: ['count occurrences', 'data set'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Maximum/minimum', definition: 'Finding the highest or lowest value in a collection of data.', keywords: ['highest value', 'lowest value'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Average', definition: 'Calculating the mean value of a set of numbers by totalling and dividing by the count.', keywords: ['mean', 'total divided by count'] },
+  { unit: 'Unit 7', section: 'Algorithm design and problem-solving', term: 'Flowchart', definition: 'A diagram showing the steps of an algorithm using standard symbols for processes, decisions and input/output.', keywords: ['diagram', 'standard symbols'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Variable', definition: 'A named storage location that can hold a value which may change during program execution.', keywords: ['named storage', 'value can change'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Constant', definition: 'A named storage location whose value does not change while the program runs.', keywords: ['named storage', 'value fixed'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Integer', definition: 'A whole number data type without fractional parts.', keywords: ['whole number', 'no fraction'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Real', definition: 'A numeric data type used for numbers that may have fractional parts.', keywords: ['fractional numbers', 'decimal'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Char', definition: 'A data type that stores a single character.', keywords: ['single character'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'String', definition: 'A sequence of characters used to store text.', keywords: ['sequence of characters', 'text'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Boolean', definition: 'A logical data type that can hold only True or False.', keywords: ['True or False', 'logical'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Input', definition: 'Data entered into a program from a user or another system.', keywords: ['data entered', 'user input'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Output', definition: 'Data produced by a program and sent to the screen, printer or another device.', keywords: ['data produced', 'displayed'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Sequence', definition: 'The order in which statements are executed one after the other.', keywords: ['order of execution', 'one after another'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Selection', definition: 'A control structure that chooses between alternatives based on a condition, such as IF or CASE.', keywords: ['control structure', 'condition'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Iteration', definition: 'Repeating a block of code while a condition remains true or for a set number of times.', keywords: ['repeat code', 'loop'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Totalling', definition: 'Accumulating a running sum of values inside a loop or sequence.', keywords: ['running sum', 'loop'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Counting', definition: 'Incrementing a counter to keep track of how many times an event or item occurs.', keywords: ['increment counter', 'event count'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'String handling', definition: 'Operations on text such as finding length, changing case and extracting substrings.', keywords: ['length', 'case', 'substring'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Nested statements', definition: 'Statements placed inside other statements, such as IF inside IF or loops inside loops.', keywords: ['statements inside others', 'nested'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Procedure', definition: 'A named block of code that performs a task but does not return a value.', keywords: ['named block', 'no return'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Function', definition: 'A named block of code that performs a task and returns a value.', keywords: ['named block', 'returns value'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Parameter', definition: 'A variable used inside a procedure or function to receive a value.', keywords: ['receive value', 'procedure/function'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Local variable', definition: 'A variable that is only accessible within the procedure or function where it is defined.', keywords: ['accessible inside', 'procedure/function'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Global variable', definition: 'A variable that can be accessed by any part of the program.', keywords: ['accessible anywhere', 'program-wide'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'Library routine', definition: 'A predefined function or procedure provided by the programming environment, such as ROUND or RANDOM.', keywords: ['predefined', 'ROUND', 'RANDOM'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'MOD', definition: 'An arithmetic operator that returns the remainder after integer division.', keywords: ['remainder', 'integer division'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'DIV', definition: 'An arithmetic operator that returns the integer quotient of a division.', keywords: ['integer quotient', 'division'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'ROUND', definition: 'A library routine that rounds a real number to a specified number of decimal places.', keywords: ['round number', 'decimal places'] },
+  { unit: 'Unit 8', section: 'Programming concepts', term: 'RANDOM', definition: 'A library routine that returns a random value, typically between 0 and 1.', keywords: ['random value', '0 to 1'] },
+  { unit: 'Unit 8', section: 'Arrays', term: 'Array', definition: 'An indexed collection of values of the same data type.', keywords: ['indexed', 'collection', 'same type'] },
+  { unit: 'Unit 8', section: 'Arrays', term: '1D array', definition: 'A single-dimensional list of values accessed by one index.', keywords: ['single dimension', 'one index'] },
+  { unit: 'Unit 8', section: 'Arrays', term: '2D array', definition: 'An array of arrays where values are accessed by a row and column index.', keywords: ['two dimensions', 'row and column'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'File handling', definition: 'Using a file to store and retrieve data from persistent storage during program execution.', keywords: ['store data', 'retrieve data', 'persistent storage'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'OPENFILE', definition: 'A command to open a file in read or write mode before accessing its contents.', keywords: ['open file', 'read mode', 'write mode'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'READFILE', definition: 'A command to read data from an open file into a variable.', keywords: ['read data', 'open file'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'WRITEFILE', definition: 'A command to write data from a variable into an open file.', keywords: ['write data', 'open file'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'CLOSEFILE', definition: 'A command to close a file once reading or writing is complete.', keywords: ['close file', 'complete'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'String LENGTH', definition: 'A function that returns the number of characters in a string.', keywords: ['number of characters', 'string'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'SUBSTRING', definition: 'A function that returns a part of a string starting at a given position for a given length.', keywords: ['part of string', 'start position', 'length'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'UCASE', definition: 'A function that converts all letters in a string to upper case.', keywords: ['upper case', 'string'] },
+  { unit: 'Unit 8', section: 'File handling', term: 'LCASE', definition: 'A function that converts all letters in a string to lower case.', keywords: ['lower case', 'string'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'Database', definition: 'An organised collection of related data stored in tables.', keywords: ['organised', 'related data', 'tables'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'Table', definition: 'A set of records arranged in rows and columns within a database.', keywords: ['rows', 'columns', 'records'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'Field', definition: 'A single piece of information in a table column; each record has fields.', keywords: ['single piece', 'column'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'Record', definition: 'A single row in a table representing one complete set of fields.', keywords: ['single row', 'set of fields'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'Primary key', definition: 'A field that uniquely identifies each record in a table.', keywords: ['unique field', 'identify record'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'Validation', definition: 'A check to ensure entered data meets required rules before it is stored in a database.', keywords: ['check', 'meets rules'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'SQL', definition: 'Structured Query Language used to communicate with a database.', keywords: ['query language', 'database'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'SELECT', definition: 'An SQL command used to retrieve data from a table.', keywords: ['retrieve data', 'from table'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'FROM', definition: 'An SQL clause specifying the table from which to retrieve data.', keywords: ['specify table', 'retrieve data'] },
+  { unit: 'Unit 9', section: 'Databases', term: 'WHERE', definition: 'An SQL clause used to filter rows based on a condition.', keywords: ['filter rows', 'condition'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'Boolean logic', definition: 'A form of algebra using True/False values and logical operations.', keywords: ['True/False', 'logical operations'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'Logic gate', definition: 'An electronic symbol that performs a logical operation on one or more binary inputs.', keywords: ['electronic symbol', 'logical operation'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'NOT', definition: 'A logic gate that inverts its single input: True becomes False and False becomes True.', keywords: ['invert', 'single input'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'AND', definition: 'A logic gate that outputs True only when both inputs are True.', keywords: ['both true', 'logical and'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'OR', definition: 'A logic gate that outputs True when at least one input is True.', keywords: ['one or more true', 'logical or'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'NAND', definition: 'A logic gate that outputs False only when both inputs are True; it is the inverse of AND.', keywords: ['inverse of AND', 'false when both true'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'NOR', definition: 'A logic gate that outputs True only when both inputs are False; it is the inverse of OR.', keywords: ['inverse of OR', 'true when both false'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'XOR', definition: 'A logic gate that outputs True when exactly one input is True.', keywords: ['exactly one true', 'exclusive or'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'Truth table', definition: 'A table listing the output of a logic circuit for every possible combination of inputs.', keywords: ['all combinations', 'logic output'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'Logic circuit', definition: 'A diagram of logic gates wired together to perform a logical function.', keywords: ['diagram', 'logic gates'] },
+  { unit: 'Unit 10', section: 'Boolean logic', term: 'Logic expression', definition: 'A textual expression describing a logical relationship between variables and operators.', keywords: ['textual expression', 'logical relationship'] },
+];
+
+export const paper2Comparisons: Record<string, Array<{
+  leftLabel: string;
+  leftText: string;
+  rightLabel: string;
+  rightText: string;
+  similarities: string[];
+  differences: string[];
+}>> = {
+  'Unit 7': [
+    {
+      leftLabel: 'Decomposition',
+      leftText: 'Breaks a problem into smaller parts so each part can be solved independently.',
+      rightLabel: 'Abstraction',
+      rightText: 'Removes unnecessary details so the essential aspects of a problem are easier to work with.',
+      similarities: [
+        'Both are problem-solving strategies used during analysis and design.',
+        'Both simplify a complex problem before coding.',
+      ],
+      differences: [
+        'Decomposition splits a problem into parts; abstraction hides irrelevant detail.',
+        'Abstraction focuses on what is important, while decomposition focuses on how to divide work.',
+      ],
+    },
+    {
+      leftLabel: 'Validation',
+      leftText: 'Checks that input data is sensible and meets required rules before processing.',
+      rightLabel: 'Verification',
+      rightText: 'Checks that input data has been entered correctly against the original source or a second entry.',
+      similarities: [
+        'Both are checks performed on input data.',
+        'Both help reduce errors in a program.',
+      ],
+      differences: [
+        'Validation tests whether data is sensible; verification tests whether it is entered correctly.',
+        'Verification often compares two copies of the same data, while validation checks the value itself.',
+      ],
+    },
+  ],
+  'Unit 8': [
+    {
+      leftLabel: 'Procedure',
+      leftText: 'A named block of code that performs a task but does not return a value.',
+      rightLabel: 'Function',
+      rightText: 'A named block of code that performs a task and returns a value to the caller.',
+      similarities: [
+        'Both are reusable blocks of code.',
+        'Both can accept parameters.',
+      ],
+      differences: [
+        'A procedure does not return a value; a function does.',
+        'A function is used within an expression, while a procedure is called as a statement.',
+      ],
+    },
+    {
+      leftLabel: 'FOR loop',
+      leftText: 'Repeats a block of code a fixed number of times using a counter.',
+      rightLabel: 'WHILE loop',
+      rightText: 'Repeats a block of code while a condition remains true, with no fixed count required.',
+      similarities: [
+        'Both are used for iteration.',
+        'Both execute a block of code multiple times.',
+      ],
+      differences: [
+        'A FOR loop uses a predetermined number of iterations.',
+        'A WHILE loop continues until a condition becomes false.',
+      ],
+    },
+  ],
+  'Unit 9': [
+    {
+      leftLabel: 'Field',
+      leftText: 'A column in a database table that stores a single piece of information for each record.',
+      rightLabel: 'Record',
+      rightText: 'A row in a database table that contains a set of related fields for one item or entity.',
+      similarities: [
+        'Both are fundamental parts of a database table.',
+        'Both help organise data in a structured way.',
+      ],
+      differences: [
+        'A field is a single data element in a column.',
+        'A record is a complete set of fields in a row.',
+      ],
+    },
+    {
+      leftLabel: 'SELECT',
+      leftText: 'An SQL command to retrieve chosen data from a table.',
+      rightLabel: 'WHERE',
+      rightText: 'An SQL clause to filter which rows are returned based on a condition.',
+      similarities: [
+        'Both are used in SQL queries.',
+        'Both help specify which data is returned.',
+      ],
+      differences: [
+        'SELECT chooses which columns or values to retrieve.',
+        'WHERE chooses which rows to include in the result.',
+      ],
+    },
+  ],
+  'Unit 10': [
+    {
+      leftLabel: 'AND',
+      leftText: 'Logic gate that outputs True only when all inputs are True.',
+      rightLabel: 'OR',
+      rightText: 'Logic gate that outputs True when at least one input is True.',
+      similarities: [
+        'Both are basic logic gates used in Boolean circuits.',
+        'Both combine binary inputs to produce a single output.',
+      ],
+      differences: [
+        'AND requires all inputs to be True for the output to be True.',
+        'OR requires only one input to be True for the output to be True.',
+      ],
+    },
+    {
+      leftLabel: 'Truth table',
+      leftText: 'A table that lists the possible input combinations and the resulting output for a logic circuit.',
+      rightLabel: 'Logic circuit',
+      rightText: 'A diagram of logic gates connected to perform a Boolean operation.',
+      similarities: [
+        'Both represent the behaviour of Boolean logic.',
+        'Both can be derived from the same logical expression.',
+      ],
+      differences: [
+        'A truth table is a textual/table format; a logic circuit is a graphical diagram.',
+        'A truth table shows all input-output combinations; a logic circuit shows gate connections.',
+      ],
+    },
+  ],
+};
+
 export const paperKeyTerms: PaperKeyTerm[] = [
   ...paper1Terms.map((term) => ({ ...term, paper: 'Paper 1' as const })),
-  ...paper1Terms.map((term) => ({ ...term, paper: 'Paper 2' as const }))
+  ...paper2Terms.map((term) => ({ ...term, paper: 'Paper 2' as const }))
 ];

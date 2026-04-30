@@ -1,8 +1,17 @@
 import React, { useMemo } from 'react';
-import { paperKeyTerms } from '../../data/paperKeyTerms';
+import { paperKeyTerms, paper2Comparisons } from '../../data/paperKeyTerms';
 import type { PaperKeyTerm, PaperName } from '../../data/paperKeyTerms';
 
 const paperNames: PaperName[] = ['Paper 1', 'Paper 2'];
+
+type ComparisonItem = {
+  leftLabel: string;
+  leftText: string;
+  rightLabel: string;
+  rightText: string;
+  similarities: string[];
+  differences: string[];
+};
 
 export const PaperKeyTerms: React.FC = () => {
   const termsByPaper = useMemo(() => {
@@ -66,6 +75,46 @@ export const PaperKeyTerms: React.FC = () => {
                   </div>
                 </div>
               ))}
+
+              {paperName === 'Paper 2' && paper2Comparisons[unit] ? (
+                <div className="comparison-section">
+                  <div className="comparison-title">Unit {unit.replace('Unit ', '')} comparison notes</div>
+                  <div className="comparison-grid">
+                    {paper2Comparisons[unit].map((item, idx) => (
+                      <div key={idx} className="comparison-card">
+                        <div className="comparison-card-content">
+                          <div className="comparison-item">
+                            <div className="comparison-item-label">{item.leftLabel}</div>
+                            <div className="comparison-item-text">{item.leftText}</div>
+                          </div>
+                          <div className="comparison-item">
+                            <div className="comparison-item-label">{item.rightLabel}</div>
+                            <div className="comparison-item-text">{item.rightText}</div>
+                          </div>
+                        </div>
+                        <div className="comparison-list-section">
+                          <div className="comparison-list-block">
+                            <div className="comparison-list-heading">Similarities</div>
+                            <ul>
+                              {item.similarities.map((point, pointIdx) => (
+                                <li key={pointIdx}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div className="comparison-list-block differences-block">
+                            <div className="comparison-list-heading">Differences</div>
+                            <ul>
+                              {item.differences.map((point, pointIdx) => (
+                                <li key={pointIdx}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
             </div>
           ))}
         </section>

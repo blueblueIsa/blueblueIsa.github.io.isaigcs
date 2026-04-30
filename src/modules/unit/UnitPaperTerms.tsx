@@ -283,7 +283,7 @@ export const UnitPaperTerms: React.FC = () => {
   }
 
   const unitTerms = useMemo(
-    () => paperKeyTerms.filter((term) => term.unit === `Unit ${unit.number}` && term.paper === 'Paper 1'),
+    () => paperKeyTerms.filter((term) => term.unit === `Unit ${unit.number}`),
     [unit.number]
   );
 
