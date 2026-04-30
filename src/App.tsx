@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useParams } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import { UnitRoute } from './modules/unit/UnitRoute';
 import { SelfTestRoute } from './modules/unit/SelfTestRoute';
@@ -13,13 +13,19 @@ import { UnitReview } from './modules/review/UnitReview';
 import { CpuCycleReview } from './modules/review/CpuCycleReview';
 import { SelfTestView } from './modules/self-test/SelfTestView';
 
+const RedirectToKeyTerms: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
+  return <Navigate to={`/unit/${id}/key-terms`} replace />;
+};
+
 const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Navigate to={`/unit/${units[0].id}`} replace />} />
         <Route path="unit/:id" element={<UnitRoute />} />
-        <Route path="unit/:id/paper-terms" element={<UnitPaperTerms />} />
+        <Route path="unit/:id/key-terms" element={<UnitPaperTerms />} />
+        <Route path="unit/:id/paper-terms" element={<RedirectToKeyTerms />} />
         <Route path="review/unit/:id" element={<UnitReview />} />
         <Route path="review/unit/:id/cpu-cycle" element={<CpuCycleReview />} />
         <Route path="animation/unit/:id" element={<UnitAnimation />} />

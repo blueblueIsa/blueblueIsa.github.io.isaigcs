@@ -41,11 +41,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                   Common Questions
                 </NavLink>
                 <NavLink
-                  to={`/unit/${unit.id}/paper-terms`}
+                  to={`/unit/${unit.id}/key-terms`}
                   className={({ isActive }) => classNames('sub-item', { active: isActive })}
                   onClick={onClose}
                 >
-                  Paper Terms
+                  Key Terms
                 </NavLink>
               </div>
             </div>
