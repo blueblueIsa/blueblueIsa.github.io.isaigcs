@@ -143,11 +143,11 @@ export const GenericUnitView: React.FC<GenericUnitViewProps> = ({ unit }) => {
              </button>
              <button
                className="confusions-toggle"
-               onClick={() => navigate(`/review/unit/${encodeURIComponent(unit.id)}`)}
-               title="Unit Review"
+               onClick={() => navigate(`/cards/unit/${encodeURIComponent(unit.id)}`)}
+               title="Magic Rhyme Cards"
                style={{ marginLeft: 8 }}
              >
-               Review
+               Magic Rhyme Cards
              </button>
              <button
                className="confusions-toggle"

@@ -23,11 +23,11 @@ export const UnitReview: React.FC = () => {
     return (
       <div className="content-header">
         <div className="header-main">
-          <h1>Review · Unit {unit.number} · {unit.title}</h1>
+          <h1>Magic Rhyme Cards · Unit {unit.number} · {unit.title}</h1>
           <p className="muted">{unit.description}</p>
         </div>
         <div style={{ padding: 20, textAlign: 'center', color: 'var(--muted)' }}>
-          No review content available for this unit.
+          No Magic Rhyme Cards available for this unit.
         </div>
       </div>
     );
@@ -40,7 +40,7 @@ export const UnitReview: React.FC = () => {
     <div>
       <div className="content-header">
         <div className="header-main">
-          <h1>Review · Unit {unit.number} · {unit.title}</h1>
+          <h1>Magic Rhyme Cards · Unit {unit.number} · {unit.title}</h1>
           <p className="muted">{unit.description}</p>
         </div>
 
@@ -48,7 +48,7 @@ export const UnitReview: React.FC = () => {
           <div style={{ marginLeft: 'auto', display: 'flex', gap: '8px', alignItems: 'center' }}>
             {unit.id === 'cs-3' && (
               <button
-                onClick={() => navigate(`/review/unit/${unit.id}/cpu-cycle`)}
+                onClick={() => navigate(`/cards/unit/${unit.id}/cpu-cycle`)}
                 className="confusions-toggle"
                 title="CPU FDE Cycle"
                 style={{ fontSize: '13px', padding: '8px 10px' }}
@@ -73,7 +73,7 @@ export const UnitReview: React.FC = () => {
             {review?.overview ?? 'No overview available for this unit.'}
           </p>
 
-          <h3 style={{ marginBottom: 18, color: 'var(--text)', fontSize: '20px', fontWeight: '700', letterSpacing: '0.3px' }}>📚 Key Terms Review</h3>
+          <h3 style={{ marginBottom: 18, color: 'var(--text)', fontSize: '20px', fontWeight: '700', letterSpacing: '0.3px' }}>✨ Magic Rhyme Cards</h3>
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',

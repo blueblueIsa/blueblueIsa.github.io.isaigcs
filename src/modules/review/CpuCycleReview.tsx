@@ -94,7 +94,7 @@ export const CpuCycleReview: React.FC = () => {
   }
 
   if (unit.id !== 'cs-3') {
-    return <Navigate to={`/review/unit/${unit.id}`} replace />;
+    return <Navigate to={`/cards/unit/${unit.id}`} replace />;
   }
 
   const currentStep = cycleSteps[stepIndex];
@@ -129,8 +129,8 @@ export const CpuCycleReview: React.FC = () => {
         <div className="cpu-review-grid">
           <section className="cpu-diagram-panel">
             <div className="cpu-controls">
-              <button className="subpage-button" onClick={() => navigate(`/review/unit/${unit.id}`)}>
-                ← Back to Review
+              <button className="subpage-button" onClick={() => navigate(`/cards/unit/${unit.id}`)}>
+                ← Back to Magic Rhyme Cards
               </button>
               <button className="subpage-button" onClick={handlePrevious} disabled={stepIndex === 0}>
                 ◀ Previous

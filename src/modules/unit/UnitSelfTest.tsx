@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import type { Unit } from '../../types';
 import { selfTestSets } from '../../data/self-test';
 import { CheckCircle2, XCircle, Volume2, BookMarked } from 'lucide-react';
@@ -24,7 +24,8 @@ interface UnitSelfTestProps {
 export const UnitSelfTest: React.FC<UnitSelfTestProps> = ({ unit }) => {
   const [selectedDifficulty, setSelectedDifficulty] = useState<'ALL' | 'EASY' | 'MEDIUM' | 'HARD'>('ALL');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<Record<string, number>>({});
+  const [userAnswers, setUserAnswers] = useState<Record<number, number>>({});
+  const [submittedQuestions, setSubmittedQuestions] = useState<Record<number, boolean>>({});
   const [showResults, setShowResults] = useState(false);
 
   // Load self-test questions from curated dataset
@@ -83,6 +84,13 @@ export const UnitSelfTest: React.FC<UnitSelfTestProps> = ({ unit }) => {
     }));
   };
 
+  useEffect(() => {
+    setCurrentIndex(0);
+    setUserAnswers({});
+    setSubmittedQuestions({});
+    setShowResults(false);
+  }, [unit.id]);
+
   const handleNext = () => {
     if (currentIndex < filteredQuestions.length - 1) {
       setCurrentIndex(currentIndex + 1);
@@ -97,8 +105,28 @@ export const UnitSelfTest: React.FC<UnitSelfTestProps> = ({ unit }) => {
 
   const handleReset = () => {
     setUserAnswers({});
+    setSubmittedQuestions({});
     setCurrentIndex(0);
     setShowResults(false);
+  };
+
+  const handleSubmit = () => {
+    if (userAnswers[currentIndex] == null) {
+      window.alert('Please select an answer for this question before submitting.');
+      return;
+    }
+
+    setSubmittedQuestions(prev => ({
+      ...prev,
+      [currentIndex]: true,
+    }));
+
+    const allAnswered = filteredQuestions.every((_, idx) => userAnswers[idx] != null);
+    const lastQuestion = currentIndex === filteredQuestions.length - 1;
+
+    if (lastQuestion && allAnswered) {
+      setShowResults(true);
+    }
   };
 
   if (allQuestions.length === 0) {
@@ -211,10 +239,10 @@ export const UnitSelfTest: React.FC<UnitSelfTestProps> = ({ unit }) => {
 
             <button
               className="btn-submit"
-              onClick={() => setShowResults(true)}
+              onClick={handleSubmit}
             >
               <Volume2 size={16} />
-              Submit & Review
+              Submit answer
             </button>
 
             <button
@@ -225,6 +253,28 @@ export const UnitSelfTest: React.FC<UnitSelfTestProps> = ({ unit }) => {
               Next →
             </button>
           </div>
+
+          {submittedQuestions[currentIndex] && (
+            <div className={`current-feedback ${userAnswers[currentIndex] === currentQuestion?.correctIndex ? 'correct' : 'incorrect'}`}>
+              {userAnswers[currentIndex] === currentQuestion?.correctIndex ? (
+                <>
+                  <CheckCircle2 size={20} />
+                  <div>
+                    <strong>Nice job!</strong>
+                    <p>The answer is {currentQuestion?.options[currentQuestion.correctIndex]}.</p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <XCircle size={20} />
+                  <div>
+                    <strong>Oops — not quite.</strong>
+                    <p>The correct answer is {currentQuestion?.options[currentQuestion.correctIndex]}.</p>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
 
           <div className="progress-bar">
             <div
@@ -288,6 +338,9 @@ export const UnitSelfTest: React.FC<UnitSelfTestProps> = ({ unit }) => {
           <div className="results-controls">
             <button className="btn-reset" onClick={handleReset}>
               Try Again
+            </button>
+            <button className="btn-continue" onClick={() => setShowResults(false)}>
+              Continue practicing
             </button>
             {selectedDifficulty !== 'ALL' && (
               <button

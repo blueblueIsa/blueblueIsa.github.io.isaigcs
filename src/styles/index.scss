@@ -84,6 +84,31 @@ nav .group {
   font-weight: 500;
 }
 
+.sidebar-part-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 20px 8px 10px;
+}
+
+.part-number {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.part-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.part-title.practice-name {
+  color: #7c3aed;
+}
+
 .group-title {
   font-size: 14px;
   font-weight: 600;
@@ -114,6 +139,16 @@ nav .group {
   background: var(--surface);
   border-color: var(--border);
   color: var(--text);
+}
+
+.unit-item.practice-item {
+  border-color: rgba(124, 58, 237, 0.16);
+  background: rgba(124, 58, 237, 0.06);
+  color: #5b21b6;
+}
+
+.unit-item.practice-item:hover {
+  background: rgba(124, 58, 237, 0.12);
 }
 
 .unit-number {

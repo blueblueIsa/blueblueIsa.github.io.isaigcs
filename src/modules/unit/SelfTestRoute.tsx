@@ -22,7 +22,7 @@ export const SelfTestRoute: React.FC = () => {
         </div>
       </div>
 
-      <UnitSelfTest unit={unit} />
+      <UnitSelfTest key={unit.id} unit={unit} />
     </div>
   );
 };

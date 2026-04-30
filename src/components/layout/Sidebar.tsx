@@ -19,6 +19,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     <nav className={classNames('sidebar', { open: isOpen })}>
       <div className="brand">IGCSE Computer Science</div>
       
+      <div className="sidebar-part-header">
+        <span className="part-number">Part 1</span>
+        <span className="part-title">Learn</span>
+      </div>
       {Object.entries(groupedUnits).map(([group, groupUnits]) => (
         <div key={group} className="group">
           <div className="group-title">{group}</div>
@@ -53,31 +57,33 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         </div>
       ))}
       
+      <div className="sidebar-part-header practice">
+        <span className="part-number">Part 2</span>
+        <span className="part-title practice-name">Practice</span>
+      </div>
       <div className="group">
-        <div className="group-title">Reviews</div>
-        {units.map(unit => (
+        <div className="unit-block">
           <NavLink
-            key={`review-${unit.id}`}
-            to={`/review/unit/${unit.id}`}
+            to="/self-test"
             className={({ isActive }) => classNames('unit-item', { active: isActive })}
             onClick={onClose}
           >
-            <div className="unit-number">📚</div>
-            <div>Unit {unit.number} Review</div>
+            <div className="unit-number">📝</div>
+            <div>Self-Test Hub</div>
           </NavLink>
-        ))}
-      </div>
-      
-      <div className="group">
-        <div className="group-title">Practice</div>
-        <NavLink
-          to="/self-test"
-          className={({ isActive }) => classNames('unit-item', { active: isActive })}
-          onClick={onClose}
-        >
-          <div className="unit-number">📝</div>
-          <div>Self-Test</div>
-        </NavLink>
+          <div className="sub-list">
+            {units.map(unit => (
+              <NavLink
+                key={`self-test-${unit.id}`}
+                to={`/self-test/${unit.id}`}
+                className={({ isActive }) => classNames('sub-item', { active: isActive })}
+                onClick={onClose}
+              >
+                Unit {unit.number}
+              </NavLink>
+            ))}
+          </div>
+        </div>
         <NavLink
           to="/qa"
           className={({ isActive }) => classNames('unit-item', { active: isActive })}
@@ -86,14 +92,28 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           <div className="unit-number">?</div>
           <div>Past Paper Q&A</div>
         </NavLink>
-        <NavLink
-          to="/resources"
-          className={({ isActive }) => classNames('unit-item', { active: isActive })}
-          onClick={onClose}
-        >
-          <div className="unit-number">R</div>
-          <div>Resources</div>
-        </NavLink>
+        <div className="unit-block">
+          <NavLink
+            to="/cards"
+            className={({ isActive }) => classNames('unit-item', 'practice-item', { active: isActive })}
+            onClick={onClose}
+          >
+            <div className="unit-number">✨</div>
+            <div>Magic Rhyme Cards</div>
+          </NavLink>
+          <div className="sub-list">
+            {units.map(unit => (
+              <NavLink
+                key={`cards-${unit.id}`}
+                to={`/cards/unit/${unit.id}`}
+                className={({ isActive }) => classNames('sub-item', { active: isActive })}
+                onClick={onClose}
+              >
+                Unit {unit.number}
+              </NavLink>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="group">

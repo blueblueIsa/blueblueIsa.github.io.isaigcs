@@ -26,8 +26,9 @@ const App: React.FC = () => {
         <Route path="unit/:id" element={<UnitRoute />} />
         <Route path="unit/:id/key-terms" element={<UnitPaperTerms />} />
         <Route path="unit/:id/paper-terms" element={<RedirectToKeyTerms />} />
-        <Route path="review/unit/:id" element={<UnitReview />} />
-        <Route path="review/unit/:id/cpu-cycle" element={<CpuCycleReview />} />
+        <Route path="cards" element={<Navigate to={`/cards/unit/${units[0].id}`} replace />} />
+        <Route path="cards/unit/:id" element={<UnitReview />} />
+        <Route path="cards/unit/:id/cpu-cycle" element={<CpuCycleReview />} />
         <Route path="animation/unit/:id" element={<UnitAnimation />} />
         <Route path="self-test" element={<SelfTestView />} />
         <Route path="self-test/:id" element={<SelfTestRoute />} />
