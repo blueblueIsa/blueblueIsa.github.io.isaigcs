@@ -1,17 +1,9 @@
 import React, { useMemo } from 'react';
 import { paperKeyTerms, paper2Comparisons } from '../../data/paperKeyTerms';
 import type { PaperKeyTerm, PaperName } from '../../data/paperKeyTerms';
+import { TermIllustration } from '../../components/shared/TermIllustration';
 
 const paperNames: PaperName[] = ['Paper 1', 'Paper 2'];
-
-type ComparisonItem = {
-  leftLabel: string;
-  leftText: string;
-  rightLabel: string;
-  rightText: string;
-  similarities: string[];
-  differences: string[];
-};
 
 export const PaperKeyTerms: React.FC = () => {
   const termsByPaper = useMemo(() => {
@@ -61,8 +53,18 @@ export const PaperKeyTerms: React.FC = () => {
                   <div className="paper-terms-grid">
                     {terms.map((term) => (
                       <div key={`${paperName}-${unit}-${section}-${term.term}`} className="paper-term-card">
-                        <div className="paper-term-name">{term.term}</div>
+                        <div className="paper-term-card-header">
+                          <div className="paper-term-name">{term.term}</div>
+                          {term.illustration ? (
+                            <TermIllustration type={term.illustration} example={term.example} />
+                          ) : null}
+                        </div>
                         <div className="paper-term-definition">{term.definition}</div>
+                        {term.example ? (
+                          <div className="paper-term-example">
+                            <strong>Example:</strong> <code>{term.example}</code>
+                          </div>
+                        ) : null}
                         {term.keywords?.length ? (
                           <div className="paper-term-keywords">
                             {term.keywords.map((keyword, idx) => (

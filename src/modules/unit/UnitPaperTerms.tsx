@@ -2,7 +2,13 @@ import React, { useMemo, useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { units } from '../../data/units';
 import { paperKeyTerms } from '../../data/paperKeyTerms';
+import { TermIllustration } from '../../components/shared/TermIllustration';
 import '../../styles/resources.scss';
+
+const resolveUnit = (id?: string) => {
+  if (!id) return undefined;
+  return units.find((u) => u.id === id || String(u.number) === id);
+};
 
 const highlightDefinition = (definition: string, keywords: string[] = []) => {
   const uniqueKeywords = Array.from(new Set(keywords.filter(Boolean))).sort((a, b) => b.length - a.length);
@@ -273,18 +279,17 @@ const unitComparisons: Record<
 
 export const UnitPaperTerms: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const unit = units.find((u) => u.id === id);
+  const unit = resolveUnit(id);
 
   const [search, setSearch] = useState('');
   const [sectionFilter, setSectionFilter] = useState('');
 
-  if (!unit) {
-    return <Navigate to={`/unit/${units[0].id}`} replace />;
-  }
-
   const unitTerms = useMemo(
-    () => paperKeyTerms.filter((term) => term.unit === `Unit ${unit.number}`),
-    [unit.number]
+    () => {
+      if (!unit) return [];
+      return paperKeyTerms.filter((term) => term.unit === `Unit ${unit.number}`);
+    },
+    [unit]
   );
 
   const sections = useMemo(() => {
@@ -306,6 +311,10 @@ export const UnitPaperTerms: React.FC = () => {
       );
     });
   }, [unitTerms, search, sectionFilter]);
+
+  if (!unit) {
+    return <Navigate to={`/unit/${units[0].id}`} replace />;
+  }
 
   const comparisons = unitComparisons[unit.number] ?? [];
 
@@ -350,22 +359,37 @@ export const UnitPaperTerms: React.FC = () => {
               <div key={section} className="paper-section-block">
                 <div className="paper-section-title">{section}</div>
                 <table className="paper-terms-table">
-                  <thead>
-                    <tr>
-                      <th>Key Term</th>
-                      <th>Definition</th>
-                      <th>Keywords</th>
-                    </tr>
-                  </thead>
                   <tbody>
                     {terms.map((term) => (
-                      <tr key={term.term}>
-                        <td className="term-cell">{term.term}</td>
-                        <td>{renderDefinitionText(term.definition, term.keywords)}</td>
-                        <td>
-                          {term.keywords?.map((keyword, idx) => (
-                            <span key={idx} className="keyword-pill">{keyword}</span>
-                          ))}
+                      <tr key={`${section}-${term.term}`} className="paper-term-row">
+                        <td className="paper-term-name-cell">
+                          <div className="term-cell">{term.term}</div>
+                        </td>
+                        <td className="paper-term-content-cell">
+                          <div className="paper-term-definition">
+                            {renderDefinitionText(term.definition, term.keywords)}
+                          </div>
+                          {(term.example || term.illustration) && (
+                            <div className="paper-term-extras">
+                              {term.example && (
+                                <div className="paper-term-example">
+                                  <strong>Example:</strong> <code>{term.example}</code>
+                                </div>
+                              )}
+                              {term.illustration && (
+                                <div className="paper-term-illustration-inline">
+                                  <TermIllustration type={term.illustration} example={term.example} />
+                                </div>
+                              )}
+                            </div>
+                          )}
+                          {term.keywords?.length ? (
+                            <div className="paper-term-keywords">
+                              {term.keywords.map((keyword, idx) => (
+                                <span key={idx} className="keyword-pill">{keyword}</span>
+                              ))}
+                            </div>
+                          ) : null}
                         </td>
                       </tr>
                     ))}
@@ -375,7 +399,7 @@ export const UnitPaperTerms: React.FC = () => {
             ))
           )}
         </section>
-        </div>
+      </div>
 
         {comparisons.length > 0 && (
           <div className="comparison-section">

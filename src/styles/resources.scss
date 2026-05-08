@@ -124,104 +124,145 @@
 
   .paper-terms-table {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 10px;
+    border-collapse: collapse;
     margin-top: 0;
   }
 
-  .paper-terms-table th,
-  .paper-terms-table td {
-    padding: 12px 14px;
-    text-align: left;
+  .paper-term-row {
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  }
+
+  .paper-term-row:last-child {
+    border-bottom: none;
+  }
+
+  .paper-term-name-cell {
     vertical-align: top;
+    padding: 16px 12px;
+    width: 160px;
   }
 
-  .paper-terms-table th {
-    background: rgba(239, 246, 255, 0.95);
-    color: #0f172a;
-    font-weight: 700;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    border-bottom: none;
+  .paper-term-content-cell {
+    vertical-align: top;
+    padding: 16px 18px;
+    background: #f9fafb;
   }
 
-  .paper-terms-table tbody tr {
-    background: #f8fbff;
-    border-radius: 14px;
-  }
-
-  .paper-terms-table tbody tr td {
-    border-top: 1px solid rgba(148, 163, 184, 0.12);
-  }
-
-  .paper-terms-table tbody tr:first-child td {
-    border-top: none;
-  }
-
-  .paper-section-title {
-    margin-bottom: 14px;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--accent);
-  }
-
-  .term-cell {
-    font-weight: 700;
-    color: #1d4ed8;
-    background: #eff6ff;
-    border-radius: 12px;
-    padding: 12px 14px;
-    font-size: 1rem;
-    white-space: nowrap;
-  }
-
-  .paper-terms-table tbody td:nth-child(2) {
-    color: #334155;
-    line-height: 1.75;
-    font-size: 0.95rem;
-  }
-
-  .paper-term-keywords {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .definition-highlight {
-    background: #fef3c7;
-    color: #92400e;
-    border-radius: 6px;
-    padding: 0 4px;
-  }
-
-  .paper-terms-table tr.section-row td {
-    background: rgba(232, 244, 255, 0.9);
-    color: #2563eb;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    border-bottom: none;
-    padding: 10px 14px;
-    border-radius: 12px;
-  }
-
-  .paper-terms-table tr:nth-child(even):not(.section-row) {
-    background: #f3f8ff;
-  }
-
-  .term-cell {
+  .paper-term-name-cell .term-cell {
     font-weight: 800;
     color: #1d4ed8;
     background: #eff6ff;
     border-radius: 12px;
     padding: 14px 16px;
     font-size: 1rem;
+    white-space: normal;
   }
 
-  .paper-terms-table tbody tr:not(.section-row) td:nth-child(2) {
+  .paper-term-definition {
     color: #334155;
-    line-height: 1.7;
+    line-height: 1.75;
     font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .paper-term-extras {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(148, 163, 184, 0.12);
+  }
+
+  .paper-term-illustration-inline {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .term-illustration {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.88rem;
+    color: #334155;
+    flex-shrink: 0;
+  }
+
+  .term-illustration-label {
+    font-weight: 700;
+    color: #1d4ed8;
+    font-size: 0.85rem;
+  }
+
+  .term-illustration-flowchart {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .flowchart-symbol {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 8px;
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 10px;
+    background: #f8f9fa;
+  }
+
+  .flowchart-symbol span {
+    color: #334155;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .term-illustration-svg {
+    width: 80px;
+    height: auto;
+    display: block;
+  }
+
+  .paper-term-example {
+    background: #eff6ff;
+    border: 1px solid rgba(59, 130, 246, 0.18);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #1e40af;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .paper-term-example code {
+    display: block;
+    margin-top: 6px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-size: 0.85rem;
+  }
+
+  .paper-term-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .keyword-pill {
+    display: inline-block;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: #1d4ed8;
+    border-radius: 16px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 
   .paper-definition-sublist {
@@ -233,6 +274,48 @@
 
   .paper-definition-sublist li {
     margin-bottom: 8px;
+  }
+
+  .term-illustration-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin-top: 8px;
+  }
+
+  .term-illustration-table th,
+  .term-illustration-table td {
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    padding: 6px 8px;
+    text-align: center;
+    font-weight: 600;
+    color: #334155;
+  }
+
+  .term-illustration-table th {
+    background: rgba(59, 130, 246, 0.08);
+  }
+
+  .term-illustration-code {
+    background: rgba(248, 250, 252, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 8px;
+    padding: 10px 12px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 8px;
+  }
+
+  .term-illustration-code code {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
+
+  .term-illustration-circuit {
+    width: 100%;
+    margin-top: 8px;
   }
 
   .paper-terms-table tbody tr:not(.section-row) td:nth-child(3) {
